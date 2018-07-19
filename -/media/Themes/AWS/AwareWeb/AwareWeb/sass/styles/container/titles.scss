@@ -1,0 +1,21 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+.title-section {
+    background: $bg-red url(/aws/-/media/Project/AWS/Images/backgrounds/section-title.jpg) right top no-repeat;
+    background-size: cover;
+
+    h1, h2, h3, h4,
+    .rich-text h1, .rich-text h2, .rich-text h3, .rich-text h4, {
+        color: #fff;
+        text-align: center;
+        margin:40px 0;
+    }
+}
+
+.border-top {
+    @include border-basic(top);
+}
+.border-bottom {
+    @include border-basic(bottom);
+}

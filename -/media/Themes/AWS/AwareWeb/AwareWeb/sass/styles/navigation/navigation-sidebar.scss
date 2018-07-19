@@ -1,0 +1,50 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+.navigation-sidebar {
+    background-color: $bg-light-gray;
+    padding: 10px;
+    margin-bottom: 30px;
+    a {text-decoration: none}
+    //nav>ul {
+        .rel-level1 {
+            >.navigation-title {
+                margin-bottom: 0;
+                >a {
+                    font-size: 20px;
+                    @include raleway-font-stack();
+                    font-weight: 700;
+                    text-transform:uppercase;
+                    padding: 0 0 5px 0;
+                    margin: 0 10px 5px 10px;
+                    display: block;
+                    position: relative;
+                    z-index: 1;
+                    border-bottom: solid 4px #000;
+                }
+            }
+            >ul {
+                //margin-left: $small-margin;
+                margin-top: $extrasmall-margin;
+            }
+        }
+        .rel-level2 {
+            display: block;
+            >.navigation-title {
+                a {
+                    @include opensans-font-stack();
+                    font-size:16px;
+                }
+            }
+            &.active {
+                a, a:hover {
+                    color: $text-red;
+                }
+            }
+            &:hover, &:active, &:focus {
+                a {
+                    color: $text-red;
+                }
+            }
+        }
+    //}
+}

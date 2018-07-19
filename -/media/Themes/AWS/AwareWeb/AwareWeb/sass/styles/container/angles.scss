@@ -1,0 +1,157 @@
+.angle-content-left, .angle-content-right {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    overflow: hidden;
+
+    .image {
+        padding: 0;
+        margin-bottom: -30px;
+
+        a {vertical-align: middle;}
+    }
+
+    @include respond-to(tablet) {
+        background-size: cover;
+    }
+    @include respond-to(desktop) {
+        max-height: 600px;
+
+        .image {
+            margin-bottom: 0;
+            
+            .component-content {
+                overflow: hidden;
+                -moz-transform: skewX(-15deg) skewY(0deg);
+                -webkit-transform: skewX(-15deg) skewY(0deg);
+                -o-transform: skewX(-15deg) skewY(0deg);
+                -ms-transform: skewX(-15deg) skewY(0deg);
+                transform: skewX(-15deg) skewY(0deg);
+
+                img {
+                    -moz-transform: skewX(15deg) skewY(0deg);
+                    -webkit-transform: skewX(15deg) skewY(0deg);
+                    -o-transform: skewX(15deg) skewY(0deg);
+                    -ms-transform: skewX(15deg) skewY(0deg);
+                    transform: skewX(15deg) skewY(0deg);
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+@include respond-to(desktop) {
+    .angle-content-left {
+        .image {
+            .component-content {
+                margin-left: 81px;
+                margin-right: -81px;
+                position: relative;
+                @include box-shadow(-15px, 20px, 30px, rgba(0, 0, 0, 0.15), $inset: false);
+
+                img {
+                    margin-left: -81px !important;
+                    width: auto;
+                    max-width: 220%;
+                    height: 100%;
+                    max-height: 600px;
+
+                }
+            }
+        }
+    }
+    .angle-content-right {
+        .image {
+
+            .component-content {
+                margin-left: -81px;
+                margin-right: 81px;
+                @include box-shadow(-15px, 20px, 30px, rgba(0, 0, 0, 0.15), $inset: false);
+
+                img {
+                    margin-right: -81px !important;
+                    width: auto;
+                    max-width: 220%;
+                    height: 100%;
+                    max-height: 600px;
+                    //float: right;
+                }
+            }
+        }
+    }
+}
+.platform-angle, .platform-angle-gray {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-size: cover;
+}
+.platform-angle {
+    background: #fff url(/aws/-/media/Project/AWS/Images/backgrounds/platform-angle-white.jpg) right bottom no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+.platform-angle-gray {
+    background: $bg-light-gray url(/aws/-/media/Project/AWS/Images/backgrounds/platform-angle-gray.jpg) right top no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+@include respond-to(tablet) {
+    .platform-angle, .platform-angle-gray {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@include respond-to(all-mobile) {
+    .platform-angle {
+        background: $bg-light-gray url(/aws/-/media/Project/AWS/Images/backgrounds/background-white.jpg) left top no-repeat;
+    }
+    .platform-content-gray {
+        background: $bg-light-gray url(/aws/-/media/Project/AWS/Images/backgrounds/background-gray.jpg) right top no-repeat;
+    }
+    .platform-content {
+        text-align: center;
+        background-size: cover;
+
+        .title-underline {
+            h4:after {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+@include respond-to(desktop) {
+    .platform-angle, .platform-angle-gray {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .platform-content {
+        text-align: left;
+    }
+    .platform-angle, .platform-angle-gray {
+        //min-height: 550px;
+
+        .column-splitter {
+            //max-width: 485px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .img-thumbnail {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+@include respond-to(large) {
+    .platform-angle {
+        .column-splitter .column-splitter {
+            padding-left: 100px;
+        }
+    }
+    .platform-angle-gray {
+        .column-splitter .column-splitter {
+            padding-right: 100px;
+        }
+    }
+}

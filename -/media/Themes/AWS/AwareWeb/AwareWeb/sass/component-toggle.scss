@@ -1,0 +1,46 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "base/fontawesome/fontawesome";
+
+.toggle {
+    details[open] summary:before {
+        content: fa-content($fa-var-minus-square);
+    }
+    .toggle-header {
+        &::-webkit-details-marker {
+            display: none
+        }
+        &:before {
+            @include fa-icon();
+            content: fa-content($fa-var-plus-square);
+            position: absolute;
+            font-size: 17px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        padding: 0 10px;
+        //background: $toggle-header-bg;
+
+        cursor: pointer;
+        &.show {
+            display: inline-block !important;
+        }
+        .toggle-label {
+            display: block;
+            float: right;
+            margin: 0 0 0 10px;
+        }
+    }
+    
+    .show {color: $toggle-show-color;}
+    .toggle-content {
+        margin-top: -1px;
+    }
+    @import "styles/toggle/*";
+}
+

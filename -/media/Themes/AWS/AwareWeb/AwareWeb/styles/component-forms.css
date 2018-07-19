@@ -1,0 +1,459 @@
+/* breakpoints */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.form, .sitecore-form {
+  margin: 10px 0;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.form table, .sitecore-form table {
+  width: 100%;
+}
+
+.form .scfSectionContent > div, .sitecore-form .scfSectionContent > div {
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+.form .scfSectionContent > div ~ div, .sitecore-form .scfSectionContent > div ~ div {
+  margin: 0;
+}
+
+.form .scfSectionContent > div > label, .form .scfSectionContent > div > div, .sitecore-form .scfSectionContent > div > label, .sitecore-form .scfSectionContent > div > div {
+  padding: 0;
+}
+
+.form .scfRequired, .sitecore-form .scfRequired {
+  display: none !important;
+}
+
+.form fieldset, .sitecore-form fieldset {
+  border: 1px solid #d2d2d2;
+  padding: 15px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.form fieldset legend, .sitecore-form fieldset legend {
+  font-weight: 700;
+  padding: 0 5px;
+  font-size: 16px;
+  position: absolute;
+  top: -33px;
+  background: #fff;
+  left: 0;
+}
+
+.form .scfSectionContent > div, .sitecore-form .scfSectionContent > div {
+  box-sizing: border-box;
+  margin: 15px 0;
+  border: 1px dashed gray;
+  padding: 10px;
+  position: relative;
+}
+
+.form .scfSectionContent > div:after, .sitecore-form .scfSectionContent > div:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.form .scfSectionContent > div:hover [class$="GeneralPanel"] > [class$="UsefulInfo"], .sitecore-form .scfSectionContent > div:hover [class$="GeneralPanel"] > [class$="UsefulInfo"] {
+  opacity: 1;
+}
+
+.form .scfSectionContent > div select, .form .scfSectionContent > div input, .sitecore-form .scfSectionContent > div select, .sitecore-form .scfSectionContent > div input {
+  margin-left: 5px;
+}
+
+.form .scfSectionContent [class$="UsefulInfo"], .sitecore-form .scfSectionContent [class$="UsefulInfo"] {
+  -webkit-transition: opacity 0.75s;
+  transition: opacity 0.75s;
+  box-sizing: border-box;
+  opacity: 0;
+  font-size: 12px;
+  margin-left: 5px;
+  position: absolute;
+  border: 1px solid #d2d2d2;
+  left: 0px;
+  top: -15px;
+  padding: 4px 8px;
+  max-width: 98%;
+  width: auto;
+  background-color: #F5F5F5;
+  color: #808080;
+}
+
+.form input, .form select, .form textarea, .sitecore-form input, .sitecore-form select, .sitecore-form textarea {
+  border: 1px solid #d2d2d2;
+}
+
+.form .scfCaptcha input[type="text"], .sitecore-form .scfCaptcha input[type="text"] {
+  margin: 0;
+}
+
+.form .scfCaptchaLimitGeneralPanel, .form .scfCaptchStrongTextPanel, .sitecore-form .scfCaptchaLimitGeneralPanel, .sitecore-form .scfCaptchStrongTextPanel {
+  max-width: 100%;
+  width: auto;
+}
+
+.form .scfCaptchaLabel, .sitecore-form .scfCaptchaLabel {
+  display: none;
+}
+
+.form .scfSectionContent .scfCaptchaGeneralPanel embed, .sitecore-form .scfSectionContent .scfCaptchaGeneralPanel embed {
+  max-width: 180px;
+}
+
+.form input[type="image"], .sitecore-form input[type="image"] {
+  border: none;
+}
+
+.form input[type="submit"], .form button, .sitecore-form input[type="submit"], .sitecore-form button {
+  border: 1px solid #d2d2d2;
+  background: #FFFFFF;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+.form input[type="text"], .form input[type="password"], .form textarea, .form input[type="file"], .sitecore-form input[type="text"], .sitecore-form input[type="password"], .sitecore-form textarea, .sitecore-form input[type="file"] {
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.form input[type="text"] + span, .form input[type="password"] + span, .form textarea + span, .form input[type="file"] + span, .sitecore-form input[type="text"] + span, .sitecore-form input[type="password"] + span, .sitecore-form textarea + span, .sitecore-form input[type="file"] + span {
+  vertical-align: middle;
+}
+
+.form input[type="file"], .sitecore-form input[type="file"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form input[type="radio"], .sitecore-form input[type="radio"] {
+  position: absolute;
+}
+
+.form input[type="radio"] + label:before, .sitecore-form input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #FFFFFF;
+}
+
+.form input[type="radio"] + label:after, .sitecore-form input[type="radio"] + label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  display: block;
+  width: 16px;
+  height: 15px;
+  background: image-url("radiobox.png");
+}
+
+.form input[type="radio"]:checked + label:after, .sitecore-form input[type="radio"]:checked + label:after {
+  background-position: -16px 0;
+}
+
+.form input[type="radio"] + label, .sitecore-form input[type="radio"] + label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 20px;
+  margin-left: 5px;
+  position: relative;
+}
+
+.form select, .sitecore-form select {
+  border: 1px solid #d2d2d2;
+  max-height: 30px;
+  position: relative;
+  text-indent: 2px;
+}
+
+.form .scfListBox, .sitecore-form .scfListBox {
+  background: none;
+  max-height: none;
+}
+
+.form .scfDateSelectorDay, .form .scfDateSelectorMonth, .form .scfDateSelectorYear, .sitecore-form .scfDateSelectorDay, .sitecore-form .scfDateSelectorMonth, .sitecore-form .scfDateSelectorYear {
+  width: 30%;
+}
+
+.form.hints-below .scfSectionContent [class$="UsefulInfo"] {
+  position: static;
+  opacity: 1;
+  max-width: 100%;
+  width: 100%;
+  margin: 5px 0 0 5px;
+}
+
+.labels-above label {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.labels-above .scfEmailGeneralPanel, .labels-above .scfMultipleLineGeneralPanel, .labels-above .scfSingleLineGeneralPanel, .labels-above .scfPasswordGeneralPanel, .labels-above .scfNumberGeneralPanel,
+.labels-above .scfDatePickerGeneralPanel, .labels-above .scfListBoxGeneralPanel, .labels-above .scfDropListGeneralPanel, .labels-above .scfDateGeneralPanel, .labels-above .scfRadioButtonListGeneralPanel,
+.labels-above .scfCheckBoxListGeneralPanel, .labels-above .scfFileUploadGeneralPanel, .labels-above .scfDateSelectorGeneralPanel, .labels-above .scfCreditCardGeneralPanel, .labels-above .scfConfirmPasswordGeneralPanel,
+.labels-above .scfCaptchaGeneralPanel, .labels-above .scfTelephoneGeneralPanel, .labels-above .scfSmsTelephoneGeneralPanel {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 93%;
+}
+
+.labels-above .scfSectionContent .scfRequired {
+  margin: 0 5px;
+}
+
+.labels-above .scfMultipleLineGeneralPanel {
+  width: 95%;
+}
+
+.labels-above .scfMultipleLineTextBox {
+  margin: 0 0 0 5px;
+}
+
+.labels-left {
+  margin-top: 0;
+  margin-bottom: 100px;
+  padding-left: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .labels-left {
+    margin-bottom: 200px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .labels-left {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+.labels-left form {
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 767px) {
+  .labels-left form .form-group .row {
+    margin: 0;
+  }
+}
+
+.labels-left form .form-group {
+  margin-bottom: 10px;
+}
+
+.labels-left form .form-group label {
+  width: 30%;
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 4px 15px;
+  float: left;
+  text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .labels-left form .form-group label {
+    width: 100%;
+    float: none;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .labels-left form .form-group label {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .labels-left form .form-group label {
+    font-size: 18px;
+  }
+}
+
+.labels-left form .form-group label.control-label::before {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .labels-left form .form-group:last-child {
+    margin-top: 20px;
+  }
+}
+
+.labels-left form .form-group input[type="text"], .labels-left form .form-group input[type="email"], .labels-left form .form-group textarea {
+  margin: 0;
+  height: 34px;
+}
+
+.labels-left form .form-group input, .labels-left form .form-group .form-control, .labels-left form .form-group textarea {
+  width: 70% !important;
+  border-radius: 0;
+  background-color: #cc0000;
+  border: 0 !important;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+  .labels-left form .form-group input, .labels-left form .form-group .form-control, .labels-left form .form-group textarea {
+    width: 100% !important;
+  }
+}
+
+.labels-left form .form-group input .btn:last-of-type, .labels-left form .form-group .form-control .btn:last-of-type, .labels-left form .form-group textarea .btn:last-of-type {
+  margin-top: 15px;
+}
+
+.labels-left form .form-group input:focus, .labels-left form .form-group .form-control:focus, .labels-left form .form-group textarea:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.labels-left form .form-group textarea {
+  min-height: 80px;
+  font-size: 15px;
+}
+
+.labels-left form .form-group .field-validation-error {
+  color: #FFFFFF;
+  width: 70%;
+  float: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .labels-left form .form-group .field-validation-error {
+    width: 100%;
+  }
+}
+
+.labels-left form .form-group .btn-inverse {
+  background-color: #700000;
+  border: 0;
+  box-shadow: none;
+  color: #ff0000;
+  margin-top: 0;
+  float: right;
+  padding: 15px;
+}
+
+.labels-left form .form-group .btn-inverse:hover, .labels-left form .form-group .btn-inverse:active, .labels-left form .form-group .btn-inverse:focus {
+  background-color: #cc0000;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1199px) {
+  .labels-left {
+    padding-left: 15px;
+  }
+}
+
+.no-labels {
+  padding-bottom: 15px;
+  background-color: #f5f5f5;
+  margin-top: -30px;
+}
+
+.no-labels .scfEmailGeneralPanel, .no-labels .scfMultipleLineGeneralPanel, .no-labels .scfSingleLineGeneralPanel, .no-labels .scfPasswordGeneralPanel, .no-labels .scfNumberGeneralPanel,
+.no-labels .scfDatePickerGeneralPanel, .no-labels .scfListBoxGeneralPanel, .no-labels .scfDropListGeneralPanel, .no-labels .scfDateGeneralPanel, .no-labels .scfRadioButtonListGeneralPanel,
+.no-labels .scfCheckBoxListGeneralPanel, .no-labels .scfFileUploadGeneralPanel, .no-labels .scfDateSelectorGeneralPanel, .no-labels .scfCreditCardGeneralPanel, .no-labels .scfConfirmPasswordGeneralPanel,
+.no-labels .scfCaptchaGeneralPanel, .no-labels .scfTelephoneGeneralPanel, .no-labels .scfSmsTelephoneGeneralPanel {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 93%;
+}
+
+.no-labels .scfSectionContent .scfRequired {
+  margin: 0 5px;
+}
+
+.no-labels .scfMultipleLineGeneralPanel {
+  width: 95%;
+}
+
+.no-labels .scfMultipleLineTextBox {
+  margin: 0 0 0 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .no-labels {
+    padding: 0 30px 30px;
+  }
+}
+
+.no-labels .form-group {
+  margin-bottom: 10px;
+}
+
+.no-labels .form-group.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.no-labels .form-group label {
+  display: none;
+}
+
+.no-labels .form-group input[type="text"], .no-labels .form-group input[type="email"], .no-labels .form-group textarea {
+  border-radius: 0;
+  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+  color: #777;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  width: 100% !important;
+  padding: 6px 12px;
+}
+
+.no-labels .form-group input[type="text"]:-moz-placeholder, .no-labels .form-group input[type="text"]:-ms-input-placeholder, .no-labels .form-group input[type="text"]::-webkit-input-placeholder, .no-labels .form-group input[type="email"]:-moz-placeholder, .no-labels .form-group input[type="email"]:-ms-input-placeholder, .no-labels .form-group input[type="email"]::-webkit-input-placeholder, .no-labels .form-group textarea:-moz-placeholder, .no-labels .form-group textarea:-ms-input-placeholder, .no-labels .form-group textarea::-webkit-input-placeholder {
+  color: #777;
+}
+
+.no-labels .form-group textarea {
+  min-height: 80px;
+  font-size: 15px;
+}
+
+.no-labels .form-group .field-validation-error {
+  color: #cc0000;
+}
+
+.no-labels .form-group .btn-inverse {
+  border: 2px solid #cc0000;
+}

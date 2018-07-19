@@ -1,0 +1,11 @@
+.table-stacked {
+    width: 100%;
+    
+    @include respond-to(all-phone) {
+        display: block;
+
+        tr, td, th {
+            display: block;
+        }
+    }
+}

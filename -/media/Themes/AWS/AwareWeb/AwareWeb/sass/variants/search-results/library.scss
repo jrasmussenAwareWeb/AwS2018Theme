@@ -1,0 +1,188 @@
+//AWS
+@import "../../abstracts/mixins";
+&.library {
+    padding:0 !important; 
+
+    //temp for the blog
+    .field-blogimage { 
+        line-height:1; 
+        img {
+            width:100%;
+            height:auto;
+        }
+    }
+
+    .search-result-list {
+        width: 100%;
+        >li {
+            //display: inline-block;
+            float: left;
+            box-sizing: border-box;
+            @include border-basic();
+            border-width: 1px;
+            position: relative;
+            height: 100%;
+            margin: 0 2% 30px 0;
+            width: 23.2%;
+
+            @include respond-to(all-phone) {
+                min-height:100%;
+                margin-right:0;
+                width: 100%;
+            }
+            
+            @include respond-to(tablet) {
+                min-height: 420px;
+            }
+
+            /*@include respond-to(large) {
+                min-height: 280px;
+            }*/
+
+            .result-image {
+                position:relative;
+                z-index:1;
+
+                .field-customimage {
+                    line-height:1;
+                    img {
+                        width:100%;
+                        height:auto;
+                    }
+                }
+                .field-type {
+                    background:rgba(0,0,0,0.7);
+                    width:100%;
+                    height:100%;
+                    position:absolute;
+                    top:0;
+                    left:0;
+
+                    &.Word {
+                        background:rgba(0, 167, 102, 0.7);
+                    }
+
+                    &.Excel {
+                        background:rgba(82,149,53,0.7);
+                    }
+
+                    &.PDF {
+                        background:rgba(0,0,0,0.7);
+                    }
+
+                    &.Video {
+                        background:rgba(0,87,125,0.7);
+                    }
+
+                    &.External {
+                        background:rgba(183,133,0,0.7);
+                    }
+
+
+                }
+                .field-type-icon {
+                    height:128px;
+                    width:100%;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    text-align:center;
+                    margin:13% auto !important;
+                        @include respond-to(all-phone) {
+                            margin:20% auto !important;
+                        }
+                    //we cant make this linkable (we have to point to a specific field (file/linkexternal) so no hover
+                    /*img {
+                        margin:13% auto !important;
+                        @include respond-to(all-phone) {
+                            margin:20% auto !important;
+                        }
+                    }*/
+
+                    &.Word {
+                        &:after {
+                            content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-word.png');
+                        }
+                    }
+
+                    &.Excel {
+                        &:after {
+                            content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-excel.png');
+                        }
+                    }
+
+                    &.PDF {
+                        &:after {
+                            content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-pdf.png');
+                        }
+                    }
+
+                    &.Video {
+                        &:after {
+                            content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-video.png');
+                        }
+                    }
+
+                    &.External {
+                        &:after {
+                            content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-external-link.png');
+                        }
+                    }
+                }
+            }
+
+            .result-body {
+                padding:20px 15px;
+                position:relative;
+                z-index:2;
+            
+
+                .field-publisheddate {
+                    font-size:14px;
+                }
+                .field-resourcetype {
+                    font-size:14px;
+                    color:$text-black;
+                    text-transform:uppercase;
+                    margin-bottom:-5px;
+                }
+
+                .link {
+                    margin:0 0 10px 0;
+                    display:table-cell;
+                    vertical-align:text-top;
+                    line-height:1.3;
+                    a {
+                        font-size: 16px;
+                        text-decoration: none;
+                        font-weight:700;
+                        color:$text-red;
+
+                        &:hover, &:active, &:focus {
+                            text-decoration:underline;
+                        }
+                    }
+                }
+
+                .field-description, .field-excerpt {
+                    margin-top:10px;
+                    overflow:hidden;
+
+                    /*@include respond-to(tablet) {
+                        min-height:120px;
+                         max-height:120px;
+                    }
+
+                    @include respond-to(large) {
+                        min-height:70px;
+                        max-height:70px;
+                    }*/
+                }
+            }
+
+        }
+        :nth-child(4n) {
+            margin-right:0;
+        }
+    }
+}

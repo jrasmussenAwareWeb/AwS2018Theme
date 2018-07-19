@@ -1,0 +1,266 @@
+/* breakpoints */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../Images/overlay-bg.png);
+  z-index: 9999;
+  display: none;
+  text-align: center;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.overlay.component {
+  margin: 0;
+}
+
+.overlay > .component-content {
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  background: rgba(14, 20, 42, 0.86);
+  padding: 10px 10px 25px;
+  margin: 100px auto auto auto;
+  max-width: 90%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.overlay > .component-content .component {
+  margin: 0;
+}
+
+.overlay > .component-content .component.image img {
+  width: 100%;
+}
+
+.overlay .overlay-inner {
+  min-width: 25px;
+  max-height: inherit;
+  height: inherit;
+  overflow: auto;
+}
+
+.overlay .overlay-inner.overlay-percent {
+  max-height: 100%;
+  height: auto;
+}
+
+.overlay .overlay-inner #InnerCenter {
+  width: auto;
+  height: auto;
+}
+
+.overlay .overlay-inner .column-splitter {
+  padding-top: 30px;
+}
+
+.overlay .overlay-inner .rich-text {
+  color: #fff;
+}
+
+.overlay .overlay-inner .rich-text h6 {
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.overlay .overlay-inner .rich-text ul {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.overlay .overlay-inner .rich-text li {
+  padding: 0;
+  margin: 0 0 0 2px;
+}
+
+.overlay .overlay-inner:focus {
+  border: 1px solid #cccccc;
+}
+
+.overlay .overlay-close {
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.overlay .overlay-close-link:focus {
+  color: #cccccc;
+  outline: none;
+}
+
+.overlay .overlay-close-link:hover {
+  color: #cccccc;
+}
+
+.overlay .overlay-close-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 15px 30px;
+  margin: 0 0 40px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.overlay > .component-content .modal-title {
+  color: #fff;
+  text-align: left;
+  background: rgba(14, 20, 42, 0.7);
+  padding: 15px 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.overlay > .component-content .modal-title h2, .overlay > .component-content .modal-title h3, .overlay > .component-content .modal-title h4 {
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.overlay .button {
+  margin-bottom: 30px;
+}
+
+/* this css class is used on overlay page */
+.overlay-page {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../Images/overlay-bg.png);
+  z-index: 9999;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.overlay-page > .component-content {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  background-color: #E6E6E6;
+  border-radius: 5px;
+  position: relative;
+  padding: 10px 10px 25px;
+  margin: 100px 60px 60px;
+  max-width: 90%;
+  background: rgba(14, 20, 42, 0.86);
+}
+
+.overlay-page > .component-content .component {
+  margin: 0;
+}
+
+.overlay-page > .component-content .component.image img {
+  width: 100%;
+}
+
+.overlay-page .overlay-inner {
+  min-width: 25px;
+  height: inherit;
+  max-height: inherit;
+  min-height: 135px;
+  overflow: auto;
+}
+
+.overlay-page .overlay-inner.overlay-percent {
+  max-height: 100%;
+  height: auto;
+}
+
+.overlay-page .overlay-inner.overlay-percent.edit {
+  max-height: inherit;
+}
+
+.overlay-page .overlay-inner:focus {
+  border: 1px solid #cccccc;
+}
+
+.overlay-page .overlay-close {
+  bottom: 8px;
+  color: #000;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  right: -5px;
+  bottom: -15px;
+}
+
+.overlay-page .overlay-close-link:focus {
+  color: #fff;
+}
+
+.overlay-page .overlay-close-link:hover {
+  color: #cccccc;
+}
+
+.overlay-page .overlay-close-link {
+  text-decoration: none;
+}
+
+#wrapper.overlay-page {
+  margin-bottom: -80px;
+}
+
+body.preview .overlay-page {
+  position: fixed;
+}
+
+.overlay-page .main {
+  width: 100%;
+}
+
+.on-page-editor .overlay .overlay-inner {
+  margin: auto;
+}
+
+.on-page-editor .overlay .overlay-inner .rich-text {
+  color: #fff;
+}
+
+.on-page-editor .overlay .overlay-inner .btn-default {
+  color: #fff;
+  border-color: #fff;
+}
+
+.on-page-editor .overlay-page {
+  z-index: 9000;
+}

@@ -1,0 +1,54 @@
+&.landing {
+    @include respond-to(large) {
+        padding:0;
+    }
+    .item {
+        border:0;
+        width:100%;
+        float:none;
+
+        @include respond-to(all-phone) {
+            padding:30px 15px;
+        }
+
+        @include respond-to(tablet) {
+            width:50%;
+            float:left;
+        }
+        @include respond-to(desktop) {
+            width:33%;
+        }
+        @include respond-to(large) {
+            width:25%;
+        }
+        .column {
+            @include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 0.3), $inset: false);
+        }
+        .body {
+            padding:15px;
+            a {
+                text-transform:uppercase;
+                color:$text-red;
+                font-weight:bold;
+                &:after { 
+                    @include fa-icon();
+                    //font-family:"Font Awesome 5 Pro";
+                    //content:"\f061";
+                    content: fa-content($fa-var-arrow-right);
+                    font-weight:300;
+                    position:relative;
+                    left:5px;
+                    top:-2px;
+                }
+
+            }
+        }
+    }
+    img {width:100%;height:auto}
+    .field-title {
+        color:#777;
+        font-weight:normal;
+        text-align:center;
+        margin:20px auto; 
+    }
+}

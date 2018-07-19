@@ -1,0 +1,16 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+
+&.sidenav-head {
+    @include raleway-font-stack();
+    text-transform: uppercase;
+    background-color: $bg-light-gray;
+    padding-top: 15px;
+
+    h5 {
+        font-size: $font-big;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+        @include border-basic(bottom, $search-title-border, 3px);
+    }
+}

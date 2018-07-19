@@ -1,0 +1,58 @@
+//AWS
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+.library-wrapper {
+    img {
+        width:100%;
+        height:auto;
+    }
+    .row.column-splitter {
+        @include respond-to(tablet) {
+            .col-sm-4:nth-of-type(1) {
+                padding-left:0;
+            }
+            .col-sm-4:nth-of-type(3) {
+                padding-right:0;
+            }
+        }
+        @include respond-to(all-phone) {
+            .col-sm-4 {
+                padding-left:0;
+                padding-right:0;
+                [class*="col-"] {
+                    padding-left:0;
+                    padding-right:0;
+                }
+            }
+            .col-sm-4:nth-of-type(1) {
+                margin-bottom:15px;
+            }
+        }
+    }
+    .facet-component {
+        &.facet-dropdown {
+            select {
+                border-radius:0;
+            }
+        }
+    }
+    .search-results-count {
+        padding:0;
+    }
+    .divider {
+        padding-left:0;
+        hr {
+            @include border-black(top);
+        }
+    }
+    @include respond-to(all-phone) {
+        .facet-title {
+            font-size:14px !important;
+        }
+        .divider {
+            padding-right:0;
+        }
+    }
+}
+ 
+

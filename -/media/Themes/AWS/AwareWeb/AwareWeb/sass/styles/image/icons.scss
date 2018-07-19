@@ -1,0 +1,24 @@
+@import "../../abstracts/mixins";
+
+.icon {
+    text-align: center;
+    @include border-radius(50%);
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+}
+.icon-green, .icon-red {
+    @extend .icon;
+    color: #fff;
+}
+.icon-green {
+    background-color: $bg-green;
+}
+.icon-red {
+    background-color: $bg-red;
+}
+.icon-lg {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}

@@ -1,0 +1,224 @@
+/* breakpoints */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.file-list {
+  background: transparent;
+  /* breakpoints */
+}
+
+.file-list h1, .file-list h2, .file-list h3, .file-list h4, .file-list h5, .file-list h6 {
+  color: #333;
+}
+
+.file-list li {
+  margin: 0 20px 5px 0;
+}
+
+.file-list li * {
+  color: #333;
+}
+
+.file-list .list-item {
+  background: transparent;
+  border-bottom: 1px solid #333;
+}
+
+.file-list .list-item > *, .file-list .list-item > .scEnabledChrome > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.file-list .list-item .field-filetypeicon > a {
+  display: block;
+}
+
+.file-list .list-item .field-filetypeicon span {
+  display: block;
+  height: 17px;
+}
+
+.file-list .list-item .field-filetypeicon span:before {
+  font-size: 18px;
+}
+
+.file-list .field-linktext, .file-list .field-description, .file-list .field-customimage, .file-list .field-size {
+  color: #333;
+  font-size: #333;
+}
+
+.file-list .field-linktext a {
+  text-decoration: none;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.file-list .link .field-title, .file-list .link .field-linktext, .file-list .media-link .field-title, .file-list .media-link .field-linktext, .file-list .file-list .field-title, .file-list .file-list .field-linktext {
+  display: inline-block;
+  line-height: 21px;
+}
+
+.file-list .link span, .file-list .media-link span, .file-list .file-list span {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.file-list .link a, .file-list .media-link a, .file-list .file-list a {
+  text-decoration: none;
+}
+
+.file-list .pdf, .file-list .xls, .file-list .xslx, .file-list .pptx, .file-list .ppt, .file-list .docx, .file-list .doc, .file-list .bmp, .file-list .png, .file-list .jpg, .file-list .jpeg, .file-list .psd, .file-list .gif, .file-list .avi, .file-list .mp4, .file-list .wmv, .file-list .mov, .file-list .mp3, .file-list .wma, .file-list .txt, .file-list .zip {
+  display: inline-block;
+  box-sizing: border-box;
+  font-weight: normal;
+  width: 15px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.file-list .pdf:before, .file-list .xls:before, .file-list .xslx:before, .file-list .pptx:before, .file-list .ppt:before, .file-list .docx:before, .file-list .doc:before, .file-list .bmp:before, .file-list .png:before, .file-list .jpg:before, .file-list .jpeg:before, .file-list .psd:before, .file-list .gif:before, .file-list .avi:before, .file-list .mp4:before, .file-list .wmv:before, .file-list .mov:before, .file-list .mp3:before, .file-list .wma:before, .file-list .txt:before, .file-list .zip:before {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: 'Font Awesome 5 Pro';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  position: absolute;
+  display: block;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.file-list .pdf:before {
+  content: "\f1c1";
+}
+
+.file-list .xlsx:before, .file-list .xls:before {
+  content: "\f1c3";
+}
+
+.file-list .pptx:before, .file-list .ppt:before {
+  content: "\f1c4";
+}
+
+.file-list .docx:before, .file-list .doc:before {
+  content: "\f1c2";
+}
+
+.file-list .bmp:before, .file-list .png:before, .file-list .jpg:before, .file-list .jpeg:before, .file-list .psd:before, .file-list .gif:before {
+  content: "\f1c5";
+}
+
+.file-list .avi:before, .file-list .mp4:before, .file-list .wmv:before, .file-list .mov:before {
+  content: "\f1c8";
+}
+
+.file-list .mp3:before, .file-list .wma:before {
+  content: "\f1c7";
+}
+
+.file-list .txt:before {
+  content: "\f15c";
+}
+
+.file-list .zip:before {
+  content: "\f1c6";
+}
+
+.file-list.file-list-images .file-list-items li {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 30%;
+}
+
+/* breakpoints */
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.file-list.file-list-horizontal .component-content > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.file-list.file-list-horizontal .component-content > ul > li {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.file-list.file-list-horizontal li {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: auto;
+}
+
+.file-list.file-list-horizontal li .field-filetypeicon span {
+  width: 100%;
+}
+
+.file-list.file-list-horizontal li .field-filetypeicon span:before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.file-list.file-list-horizontal .list-item > *, .file-list.file-list-horizontal .list-item > .scEnabledChrome > * {
+  display: block;
+  text-align: center;
+}

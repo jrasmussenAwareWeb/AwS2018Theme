@@ -1,0 +1,42 @@
+@import "abstracts/vars";
+.media-link {
+    background: $media-link-bg;
+    border-bottom: 1px solid $media-link-border;
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .component-content>* {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    &.position-right {
+        .field-filetypeicon, .field-linktext {
+            float: right;
+        }
+    }
+    .field-filetypeicon, .field-linktext {
+        display: inline-block;
+    }
+    .field-filetypeicon {
+        >a {
+            display: block;
+        }
+        span {
+            display: block;
+            height: 17px;
+            &:before {
+                font-size: 18px;
+            }
+        }
+    }
+    .field-linktext {
+        a {
+            font-size: $font-normal;
+        }
+    }
+    @import "variants/media-link/*";
+    @import "base/richtext/richtext-files-icons";
+}

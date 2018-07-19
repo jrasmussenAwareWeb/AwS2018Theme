@@ -1,0 +1,21 @@
+.list-table {
+    display: block;
+    width: 100%;
+
+    li {display: block;}
+    .cell-head {font-weight: 700; display: block;}
+
+    @include respond-to(tablet) {
+        display: table;
+
+        li {
+            width: 80%;
+            display: table-cell;
+        }
+        .cell-head {
+            width: 20%;
+            display: table-cell;
+            border-right: solid 1px #999;
+        }
+    }
+}

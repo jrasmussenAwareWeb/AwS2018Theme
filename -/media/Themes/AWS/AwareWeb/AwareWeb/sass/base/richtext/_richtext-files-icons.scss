@@ -1,0 +1,76 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/mixins";
+@import "../../base/fontawesome/variables";
+
+//files icons
+.link, .media-link, .file-list {
+    .field-title, .field-linktext {
+        display: inline-block;
+        line-height: 21px;
+    }
+    span {
+        @include font-size(1.2);
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.pdf, .xls, .xslx, .pptx, .ppt, .docx, .doc, .bmp, .png, .jpg, .jpeg, .psd, .gif, .avi, .mp4, .wmv, .mov, .mp3, .wma, .txt, .zip {
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: normal;
+    width: 15px;
+    height: 21px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    &:before {
+        @include font-size(1.6);
+        @include fa-icon();
+        position: absolute;
+        display: block;
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+.pdf:before {
+    content: fa-content($fa-var-file-pdf);
+}
+.xlsx, .xls {
+    &:before {
+        content: fa-content($fa-var-file-excel);
+    }
+}
+.pptx, .ppt {
+    &:before {
+        content: fa-content($fa-var-file-powerpoint);
+    }
+}
+.docx, .doc {
+    &:before {
+        content: fa-content($fa-var-file-word);
+    }
+}
+.bmp, .png, .jpg, .jpeg, .psd, .gif {
+    &:before {
+        content: fa-content($fa-var-file-image);
+    }
+}
+.avi, .mp4, .wmv, .mov {
+    &:before {
+        content: fa-content($fa-var-file-video);
+    }
+}
+.mp3, .wma {
+    &:before {
+        content: fa-content($fa-var-file-audio);
+    }
+}
+.txt:before {
+    content: fa-content($fa-var-file-alt);
+}
+.zip:before {
+    content: fa-content($fa-var-file-archive);
+}

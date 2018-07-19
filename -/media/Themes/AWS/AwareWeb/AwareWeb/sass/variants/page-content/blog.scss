@@ -1,0 +1,97 @@
+@import "abstracts/vars"; 
+@import "base/fontawesome/variables";
+@import "base/fontawesome/mixins";
+
+&.blog-article {
+    .author-image, .author, .article-date {
+        float: left;
+        display: block;
+    }
+    .author-image {
+        width: 54px;
+        height: 54px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    
+        img {
+            width: 100%;
+            height: auto;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+    }
+    .author, .article-date {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+    }
+    .article-date:before {
+        @include fa-icon();
+        color: $text-gray;
+        content: "\f073";
+        font-size: 24px;
+        padding-right: 8px;
+        float: left;
+    }
+    .blog-content {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        display: block;
+        clear: both;
+        @include border-basic(bottom);
+    }
+    .tag-list {
+        float: left;
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+        .component-content {
+            &:before {
+                @include fa-icon();
+                color: $text-gray;
+                content: "\f02c";
+                font-size: 24px;
+                padding-right: 8px;
+                float: left;
+            }
+        }
+        span.field-title {
+            &> a {
+                color: #333;
+                background: transparent;
+                border-radius: 0;
+                display: inline-block;
+                height: 24px;
+                line-height: 24px;
+                padding: 0 10px 0 18px;
+                margin-right: 0;
+
+                &:before {
+                    background: $text-gray;
+                    left: 0;
+                    //content: none;
+                    // box-shadow: none;
+                }
+                &:after {
+                    content: none;
+                    background: transparent;
+                    border-left: none;
+                }
+            }
+            &:first-child {
+                &> a {
+                    padding: 0 10px 0 0;
+                    &:before {
+                        content: none;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head><base href="../../">
+<link href="-/media/Feature/Experience Accelerator/Bootstrap/Bootstrap/Styles/bootstrap.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/mediaelementplayer.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/mediaelementplayer-legacy.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/font-awesomemin.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/fullcalendar.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/jquerymCustomScrollbar.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/jquery-ui.css" rel="stylesheet"><link href="-/media/Base Themes/Main Theme/styles/author.css" rel="stylesheet"><link href="-/media/Base Themes/Main Theme/styles/file-type-icons.css" rel="stylesheet"><link href="-/media/Base Themes/Main Theme/styles/reset.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-accordion.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-archive.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-breadcrumb.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-carousel.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-column-splitter.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-container.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-divider.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-event-list.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-feed.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-field-editor.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-file-list.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-flash.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-flip.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-forms.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-fullcalendar.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-galleria.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-iframe.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-image.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-language-selector.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-link.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-link-list.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-login.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-logout.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-map.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-media-link.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-navigation.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-page-list.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-pagination.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-playlist.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-promo.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-richtext-content.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-search-other.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-search-results.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-social-media-share.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-tabs.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-tag-cloud.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-tag-list.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-title.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-toggle.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-twitter.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-video.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/cookie-notification.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/main.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/overlay.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/styles.css" rel="stylesheet">    
+    <title>New Article<span> | Aware Web Solutions</span></title>
+<link href="" rel="shortcut icon">
+<meta content="ITCSSBEMNamingForYourNextEpiserverProject" property="og:title"><meta content="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog/itcssbemnamingforyournextepiserverproject?sc_site=AwareWeb" property="og:url">
+<meta content="ITCSSBEMNamingForYourNextEpiserverProject" property="twitter:title"><meta content="summary_large_image" property="twitter:card">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>/* Google Analytics Key is missing - component won't render */</script>
+</head>
+<body data-pageid="{8C25F96A-6C8F-48D3-AF4B-FCA5AA25CBA6}" data-deviceid="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" data-language="en" class="preview default-device sxa-ce-exported add-your-css-classes-here">
+<!-- #wrapper -->
+<div id="wrapper">
+    <!-- #header -->
+    <header>
+        <div id="header" class="container-fluid">
+            <div class="row">
+<div class="component container add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{4B10F706-51BB-4C86-AC6F-DB275A224033}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component image file-type-icon-media-link col-xs-8 col-sm-3 add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{69D0A00E-FF06-4B17-BE59-BED330577680}" data-uniqueid="{D5CB7DD7-44DF-4F52-AA04-7691359CBB6D}" data-variantid="{24619A93-AFD7-41F8-AC01-B2B10DD03E74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="image">
+    <div class="component-content">
+<a title="Logo - AWS" href="index.html?sc_site=AwareWeb"><img src="-/media/Project/AWS/Images/global/logo-main.png" alt="" width="264" height="120" data-variantitemid="{C68325A8-2598-48D5-9222-7EF0246BCAC7}" data-variantfieldname="Image" style="margin: 0px 0px"></a>    </div>
+</div>
+<div class="component search-box icon-only add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{EECE4E4B-4E5F-42FD-A934-7AFD048AFD03}" data-uniqueid="{10F461B3-AA4D-4574-883A-2DC6F1FA69BA}" data-variantid="{0940AC51-B108-49EC-A17A-FC146E05ED67}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="search-box" data-properties='{"endpoint":"//sxa/search/results/","suggestionEndpoint":"//sxa/search/suggestions/","suggestionsMode":"ShowSearchResults","resultPage":"/search-results?sc_site=AwareWeb","targetSignature":"","v":"{0940AC51-B108-49EC-A17A-FC146E05ED67}","s":"","p":5,"searchResultsSignature":""}'>
+    <div class="component-content">
+                    <button class="search-box-button-with-redirect" type="submit">
+                        Search
+                    </button>
+    </div>
+</div>
+    <div class="component navigation col-xs-12 col-sm-9 hidden-xs navigation-main navigation-main-vertical toggle-mobile  add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{9D3BA81A-EECE-4B5A-9862-0239A9D53EEC}" data-uniqueid="{8F0E69BD-5E9C-45DE-A463-D5B0ED807083}" data-variantid="{B4934F49-C1E9-49C5-851E-0E8948776BEB}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="navigation">
+        <div class="component-content">
+            <nav>
+<ul class="clearfix">
+        <li class=" level1 submenu item0 odd first rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Expertise" href="en/expertise/index.html?sc_site=AwareWeb">Expertise</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Strategy and Planning" href="en/expertise/strategy-and-planning/index.html?sc_site=AwareWeb">Strategy &amp; Planning</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Engagement Marketing" href="en/expertise/engagement-marketing/index.html?sc_site=AwareWeb">Engagement Marketing</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="UX and Design" href="en/expertise/ux-and-design/index.html?sc_site=AwareWeb">UX &amp; Design</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Development" href="en/expertise/development/index.html?sc_site=AwareWeb">Development</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Support" href="en/expertise/support/index.html?sc_site=AwareWeb">Support</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Training" href="en/expertise/training/index.html?sc_site=AwareWeb">Training</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item1 even rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Technologies" href="en/technologies/index.html?sc_site=AwareWeb">Technologies</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Sitecore" href="en/technologies/sitecore/index.html?sc_site=AwareWeb">Sitecore</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Episerver" href="en/technologies/episerver/index.html?sc_site=AwareWeb">Episerver</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="inRiver" href="en/technologies/inriver/index.html?sc_site=AwareWeb">inRiver</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Salesforce" href="en/technologies/salesforce/index.html?sc_site=AwareWeb">Salesforce</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Microsoft" href="en/technologies/microsoft/index.html?sc_site=AwareWeb">Microsoft</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Other Partners" href="en/technologies/other-partners/index.html?sc_site=AwareWeb">Other Partners</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item2 odd rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Work" href="en/work/index.html?sc_site=AwareWeb">Work</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Financial" href="en/work/financial/index.html?sc_site=AwareWeb">Financial</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Healthcare" href="en/work/healthcare/index.html?sc_site=AwareWeb">Healthcare</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Higher Education" href="en/work/higher-education/index.html?sc_site=AwareWeb">Higher Education</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Manufacturing" href="en/work/manufacturing/index.html?sc_site=AwareWeb">Manufacturing</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Non-profit" href="en/work/non-profit/index.html?sc_site=AwareWeb">Non-profit</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Other Industries" href="en/work/other-industries/index.html?sc_site=AwareWeb">Other Industries</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item3 even active rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Blog" href="en/blog/index.html?sc_site=AwareWeb">Blog</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Sitecore8DevelopmentWheretoStart" href="en/blog/sitecore8developmentwheretostart/index.html?sc_site=AwareWeb">Sitecore8DevelopmentWheretoStart</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreCustomFieldandItemValidationBasics" href="en/blog/sitecorecustomfieldanditemvalidationbasics/index.html?sc_site=AwareWeb">SitecoreCustomFieldandItemValidationBasics</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreHostingArchitectureConsiderations" href="en/blog/sitecorehostingarchitectureconsiderations/index.html?sc_site=AwareWeb">SitecoreHostingArchitectureConsiderations</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreMultilingualSolutionConsiderations" href="en/blog/sitecoremultilingualsolutionconsiderations/index.html?sc_site=AwareWeb">SitecoreMultilingualSolutionConsiderations</a></div>
+        </li>
+        <li class=" level2 item4 odd last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreUsercomisTurningOne" href="en/blog/sitecoreusercomisturningone/index.html?sc_site=AwareWeb">SitecoreUsercomisTurningOne</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item4 odd rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="About" href="en/about/index.html?sc_site=AwareWeb">About</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="People and Culture" href="en/about/people-and-culture/index.html?sc_site=AwareWeb">People &amp; Culture</a></div>
+        </li>
+        <li class=" level2 item1 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Resources" href="en/about/resources/index.html?sc_site=AwareWeb">Resources</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 item5 even last rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Contact" href="en/contact/index.html?sc_site=AwareWeb">Contact</a></div>
+        </li>
+</ul>
+            </nav>
+        </div>
+    </div>
+<div class="component toggle col-xs-12 visible-xs-block toggle-mobile  add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{60A49017-0BB4-4D92-AB59-587E6C618B30}" data-uniqueid="{65B9261F-0B3A-4BCC-AA39-31188BD7F140}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="toggle" data-properties="{&quot;easing&quot;:&quot;swing&quot;,&quot;speed&quot;:500,&quot;expandOnHover&quot;:false,&quot;expandedByDefault&quot;:false}">
+    <div class="component-content">
+        <details class="toggle-content clearfix">
+            <summary class="toggle-header" tabindex="0">
+                <span class="toggle-label">
+                </span>
+            </summary>
+                <div class="component navigation col-xs-12 navigation-mobile add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{9D3BA81A-EECE-4B5A-9862-0239A9D53EEC}" data-uniqueid="{6E461B87-310A-42CC-BAF6-C1F559DAEDE9}" data-variantid="{B4934F49-C1E9-49C5-851E-0E8948776BEB}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="navigation">
+        <div class="component-content">
+            <nav>
+<ul class="clearfix">
+        <li class=" level1 submenu item0 odd first rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Expertise" href="en/expertise/index.html?sc_site=AwareWeb">Expertise</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Strategy and Planning" href="en/expertise/strategy-and-planning/index.html?sc_site=AwareWeb">Strategy &amp; Planning</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Engagement Marketing" href="en/expertise/engagement-marketing/index.html?sc_site=AwareWeb">Engagement Marketing</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="UX and Design" href="en/expertise/ux-and-design/index.html?sc_site=AwareWeb">UX &amp; Design</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Development" href="en/expertise/development/index.html?sc_site=AwareWeb">Development</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Support" href="en/expertise/support/index.html?sc_site=AwareWeb">Support</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Training" href="en/expertise/training/index.html?sc_site=AwareWeb">Training</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item1 even rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Technologies" href="en/technologies/index.html?sc_site=AwareWeb">Technologies</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Sitecore" href="en/technologies/sitecore/index.html?sc_site=AwareWeb">Sitecore</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Episerver" href="en/technologies/episerver/index.html?sc_site=AwareWeb">Episerver</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="inRiver" href="en/technologies/inriver/index.html?sc_site=AwareWeb">inRiver</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Salesforce" href="en/technologies/salesforce/index.html?sc_site=AwareWeb">Salesforce</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Microsoft" href="en/technologies/microsoft/index.html?sc_site=AwareWeb">Microsoft</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Other Partners" href="en/technologies/other-partners/index.html?sc_site=AwareWeb">Other Partners</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item2 odd rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Work" href="en/work/index.html?sc_site=AwareWeb">Work</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Financial" href="en/work/financial/index.html?sc_site=AwareWeb">Financial</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Healthcare" href="en/work/healthcare/index.html?sc_site=AwareWeb">Healthcare</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Higher Education" href="en/work/higher-education/index.html?sc_site=AwareWeb">Higher Education</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Manufacturing" href="en/work/manufacturing/index.html?sc_site=AwareWeb">Manufacturing</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Non-profit" href="en/work/non-profit/index.html?sc_site=AwareWeb">Non-profit</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Other Industries" href="en/work/other-industries/index.html?sc_site=AwareWeb">Other Industries</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item3 even active rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Blog" href="en/blog/index.html?sc_site=AwareWeb">Blog</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Sitecore8DevelopmentWheretoStart" href="en/blog/sitecore8developmentwheretostart/index.html?sc_site=AwareWeb">Sitecore8DevelopmentWheretoStart</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreCustomFieldandItemValidationBasics" href="en/blog/sitecorecustomfieldanditemvalidationbasics/index.html?sc_site=AwareWeb">SitecoreCustomFieldandItemValidationBasics</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreHostingArchitectureConsiderations" href="en/blog/sitecorehostingarchitectureconsiderations/index.html?sc_site=AwareWeb">SitecoreHostingArchitectureConsiderations</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreMultilingualSolutionConsiderations" href="en/blog/sitecoremultilingualsolutionconsiderations/index.html?sc_site=AwareWeb">SitecoreMultilingualSolutionConsiderations</a></div>
+        </li>
+        <li class=" level2 item4 odd last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreUsercomisTurningOne" href="en/blog/sitecoreusercomisturningone/index.html?sc_site=AwareWeb">SitecoreUsercomisTurningOne</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item4 odd rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="About" href="en/about/index.html?sc_site=AwareWeb">About</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="People and Culture" href="en/about/people-and-culture/index.html?sc_site=AwareWeb">People &amp; Culture</a></div>
+        </li>
+        <li class=" level2 item1 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Resources" href="en/about/resources/index.html?sc_site=AwareWeb">Resources</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 item5 even last rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Contact" href="en/contact/index.html?sc_site=AwareWeb">Contact</a></div>
+        </li>
+</ul>
+            </nav>
+        </div>
+    </div>
+        </details>
+    </div>
+</div>
+    </div>
+</div>
+            </div>
+        </div>
+    </header>
+    <!-- /#header -->
+    <!-- #content -->
+    <main>
+        <div id="content" class="container-fluid">
+            <div class="row">
+<div class="component container col-xs-12 container-gradient-background-teal add-your-css-classes-here" data-pageid="{95BF3840-6EBD-4AD6-9646-47F264E94916}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{ECCE06D4-9A89-4023-8A63-90BCD44EB17A}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component content content-page-header col-xs-12 add-your-css-classes-here" data-pageid="{95BF3840-6EBD-4AD6-9646-47F264E94916}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{A71161A2-2F45-4D66-AC97-9872385EA0BD}" data-variantid="{5587C750-A988-418B-ADB4-894CE9A4748C}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div><div class="field-image"><img src="-/media/Project/AWS/Images/headers/blogpost_generic.jpg" alt="blog_post_bg" width="1600" height="550" data-variantitemid="{8C25F96A-6C8F-48D3-AF4B-FCA5AA25CBA6}" data-variantfieldname="Image" style="margin: 0px 0px"></div></div>    </div>
+</div>
+<div class="component breadcrumb navigation-title add-your-css-classes-here" data-pageid="{95BF3840-6EBD-4AD6-9646-47F264E94916}" data-renderingid="{BFBD9DE2-3ABF-4078-BBCB-C95C5B2D863F}" data-uniqueid="{22DC5AD6-E39B-4541-AAAF-8D815FCF79F2}" data-variantid="{233B39B3-EE9A-452D-A65B-FA8745F2815B}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="breadcrumb">
+    <div class="component-content">
+        <nav>
+            <ol>
+                    <li class="breadcrumb-item home">
+<div class="navigation-title field-navigationtitle"><a title="Home" href="en/index.html?sc_site=AwareWeb">Home</a></div>                            <span class="separator">/</span>
+                    </li>
+                    <li class="breadcrumb-item ">
+<div class="navigation-title field-navigationtitle"><a title="Blog" href="en/blog/index.html?sc_site=AwareWeb">Blog</a></div>                            <span class="separator">/</span>
+                    </li>
+                    <li class="breadcrumb-item last">
+<div class="navigation-title field-navigationtitle"><a title="ITCSSBEMNamingForYourNextEpiserverProject" href="en/blog/itcssbemnamingforyournextepiserverproject/index.html?sc_site=AwareWeb">New Article</a></div>                            <span class="separator">/</span>
+                    </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<div class="component title title-page-header col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2 add-your-css-classes-here" data-pageid="{95BF3840-6EBD-4AD6-9646-47F264E94916}" data-renderingid="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}" data-uniqueid="{16772344-797F-45E4-A936-C51A930762E0}" data-variantid="{2CF0E41A-C8E1-43FE-B622-B770F38D34BD}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="title">
+    <div class="component-content">
+<h1 class="title-page-header field-title">ITCSS and BEM naming for your next Episerver project</h1>    </div>
+</div>
+    </div>
+</div>
+<div class="component container col-xs-12 add-your-css-classes-here" data-pageid="{95BF3840-6EBD-4AD6-9646-47F264E94916}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{607C3148-75E2-4005-AD4B-B6AB51D5D4CA}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+    </div>
+</div>
+﻿<div class="component addthis col-xs-12 position-right add-your-css-classes-here" data-pageid="{96EABF98-F95A-4388-8CBC-407A9AE9B3A3}" data-renderingid="{A4C39F97-D5B8-4BA5-940F-876610268EC8}" data-uniqueid="{19FDAE94-CF75-45F1-9A9C-6F5AC4EE6F11}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="addthis">
+    <div class="component-content">
+            <div class="addthis_sharing_toolbox"></div>
+            <script type="text/javascript">var addthis_config = { "data_track_addressbar": true };</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5808ecb9665899dc"></script>
+            <div class="addthis_inline_share_toolbox"></div>
+    </div>
+</div>
+<div class="component container col-xs-12 add-your-css-classes-here" data-pageid="{0B41B003-3AB9-4C5C-8A4D-B5D75E9B1E5E}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{3C7BBC03-6645-4B74-A5BA-DDBA03626A3E}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+    </div>
+</div>
+<div class="component container col-xs-12 cover-background add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{1BF9AE58-1EBB-4289-9A9D-94F1D6F2DF67}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component container indent-bottom indent-top add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{4853D08C-AF38-45F6-B5CA-AAA1C13E6867}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="row component column-splitter">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{C25766C8-9AFD-4D28-87FE-147774F6806D}" data-uniqueid="{D02CC18F-761C-4322-BEAA-269BF13DEFD0}" data-stylesfield="Styles1" data-gridfield="ColumnWidth1" data-renderingclass="">
+<div class="component content blog-article col-xs-12 add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{B99F3522-E63C-4AE7-AD0A-D32E02536AEB}" data-variantid="{0278DB2D-6F75-4B89-A91D-E267E4EB4A48}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div><div class="author-image field-author-image"><img src="-/media/Project/AWS/Images/blog/authors/tom-zahratka.jpg" alt="Tom Zahratka" width="60" height="60" data-variantitemid="{8C25F96A-6C8F-48D3-AF4B-FCA5AA25CBA6}" data-variantfieldname="Author Image" style="margin: 0px 0px"></div><div class="author field-author">Tom Zahratka</div><div class="article-date field-published">16 August 2017</div>
+<div class="component tag-list add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{CE780A09-737D-4E58-89B5-31A85101447D}" data-uniqueid="{3287E542-619C-45C9-8139-0F00E5035039}" data-variantid="{EB927B92-9853-42C2-8D7D-50D58CCC0B3A}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="tag-list">
+    <div class="component-content">
+<span class="field-title"><a title="Episerver" href="blog/index.html?sc_site=AwareWeb#sxatags=Episerver">Episerver</a></span>    </div>
+</div><div class="blog-content field-content"><p><img alt="" src="~/media/AwareWeb/Images/Pages/AwareBlog/Post Images/Blog/7-24-17-2.ashx" width="588" height="238"></p>
+<p>As websites grow and become more complicated, you don't want to end up in a state of disarray.</p>
+<p>Continuing from my first blog post (<a rel="noopener noreferrer" rel="noopener noreferrer" href="http://www.awareweb.com/awareblog/4-17-17-episerver_10_alloy_mvc" target="_blank">Episerver 10 Alloy MVC</a>), lets configure the Alloy MVC project to use ITCSS and BEM for structuring your front-end needs. &nbsp;I believe it is very important to have a solid approach when structuring your Episerver website styling needs. &nbsp;As websites grow and become more complicated, you don't want to end up in a state of disarray or the dreaded !important hell 😬. </p>
+<p>During my most recent endeavor, I worked on an Episerver project that was very challenging, and pushed me to create some really cool features on an aggressive timeline. &nbsp;One of the many good takeaways I learned from this experience, was how ITCSS and BEM can make your front-end life a lot easier. &nbsp;Yes, learning and implementing something new took a little more time to create, but the time saved in the long run especially in regards to &ldquo;technical debt&rdquo; was time well spent.</p>
+<p>If you are not familiar with ITCSS, it is a methodology that stands for &ldquo;Inverted Triangle Cascading Style Sheet&rdquo;. &nbsp;ITCSS helps you structure and understand how to break apart your CSS into manageable layers. &nbsp;Below is a picture of the inverted triangle and descriptions for each of the layers.</p>
+<p><img alt="" height="368" width="468" src="~/media/AwareWeb/Images/Pages/AwareBlog/Post Images/Blog/7-24-17-inverted_triangle.ashx"></p>
+<p>Let's go over each of those layers and explain the purpose</p>
+<p><strong>Settings</strong> - used for preprocessors to setup global settings like font size, font colors, definitions, etc. &nbsp;No CSS
+</p>
+<p><strong>Tools</strong> - used for preprocessors to setup global mixins and functions. &nbsp;No CSS&nbsp;
+</p>
+<p><strong>Generic</strong> - houses high level styles that handle things like box-sizing and normalizing browsers. &nbsp;This is where I put normalize.css (https://github.com/necolas/normalize.css).
+</p>
+<p><strong>Elements</strong> - styling for HTML elements without class assignments (like a h1, p, body. etc.). This is usually very simple styling. &nbsp;Example: set HR element's margin and padding to 0.
+</p>
+<p><strong>Objects</strong> - HTML elements with class assignments for non-cosmetic styles. &nbsp;Mostly used for containers, layout systems, etc.. &nbsp;Example: all classes with &ldquo;container&rdquo; will center align children using margin left and margin right of auto.&nbsp;
+</p>
+<p><strong>Components</strong> - This is where most of the work is done to style pages, blocks and views. &nbsp;I usually create sub directories for each purpose (blocks, pages, partials, etc..).&nbsp;
+</p>
+<p><strong>Trumps</strong> - this is where you add any overrides for anything. &nbsp;This is where !important would be used. &nbsp;I usually don't have much if anything is this directory.
+</p>
+<p>As you just read, coupling ITCSS with a preprocessor like Sass (SCSS) can make life a lot easier. &nbsp;Being able to setup Sass variables and mixins allows you to be DRY (don&rsquo;t repeat yourself) and encourage reusability. &nbsp;For the sake of simplicity and understanding how to use ITCSS, I will take the approach of using vanilla CSS. &nbsp;This means some folders will be empty since functionality like variables and mixins are not available.</p>
+<p>Let's continue; basically the idea is to cut down or eliminate any overrides until it is absolutely necessary. &nbsp;When you organize, and layer your CSS in a specific manor - you start to structure and tackle your front-end styling differently. &nbsp;This especially bodes well for large multiple site instances within a single Episerver web property. &nbsp;ITCSS gives you the flexibility to separate your layers that might have brand specific constraints, plus allows you to use shared styles across brands.</p>
+<p>Implementing BEM naming is fairly straight forward and like everything, you get better at it over time. &nbsp;This is especially true on larger projects. &nbsp;BEM stands for Block Element Modifier and helps you label your element's CSS class names based on the element&rsquo;s purpose. &nbsp;I strongly recommend you learn more about BEM from getbem.com and watch the following YouTube video called &ldquo;<a rel="noopener noreferrer" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=IO-4Z32O--c&amp;feature=youtu.be" target="_blank">Introduction to BEM - A front-end methodology</a>&rdquo;.</p>
+<p>
+</p>
+<p>My interpretation/experience has been that the BEM naming methodology makes you take a hard look at your intentions and refactor your code into concise blocks. &nbsp;This pattern fits really well when you are building Episerver websites that are block and contentarea heavy. &nbsp;BEM and Episerver blocks feel a lot like the Web Components isolation movement, but from a server-side approach. &nbsp;The ability to sandbox your block's style and functionality is very powerful and allows for the creation of a dynamic web property managed within a web content management system.</p>
+<p>Now that you have a high level understanding of what ITCSS and BEM can do, let's look at some code examples.</p>
+<p>The following is the HTML rendered for a Teaser Block in the Alloy MVC starter project. &nbsp;This is a good example of a BEM block. &nbsp;The wrapping div element has the &ldquo;teaserblock&rdquo; class identifier and the descendant elements (h2, p, div, img) have the &ldquo;teaserblock__&rdquo; prefix to indicate that they are within this block.</p>
+<p><img alt="" height="126" width="568" src="~/media/AwareWeb/Images/Pages/AwareBlog/Post Images/Blog/7-24-17-blog_code.ashx"></p>
+<p>Now let&rsquo;s look at the project directory structure for ITCSS. &nbsp;The screenshot blow shows how I created separate folders for each of the layers needed. &nbsp;I prefixed a number to each of the folders to help remember the layering order. &nbsp;For the TeaserBlock, you can see it has its own Component and Trump CSS files. &nbsp;As a side note - the Trump was needed since I needed to override Twitter&rsquo;s Bootstrap framework that was packaged along with the Alloy MVC project.</p>
+<p><img alt="" height="250" width="180" src="~/media/AwareWeb/Images/Pages/AwareBlog/Post Images/Blog/7-24-17-teaser_block.ashx"></p>
+<p>The following screenshots are the CSS code for the TeaserBlock&rsquo;s Component and Trump files (respectively).</p>
+<p><img alt="" height="250" width="180" src="~/media/AwareWeb/Images/Pages/AwareBlog/Post Images/Blog/7-24-17-CSS_teaser_code.ashx"><img alt="" height="50" width="180" src="~/media/AwareWeb/Images/Pages/AwareBlog/Post Images/Blog/7-24-17-Trump_files.ashx"></p>
+<p>The example I discussed above is available out on my Github account (<a rel="noopener noreferrer" rel="noopener noreferrer" href="https://github.com/hn3etta/Episerver-AlloyMVC-ITCSS-BEM" target="_blank">Episerver-AlloyMVC-ITCSS-BEM</a>). &nbsp;I basically fired up a new Alloy MVC project, upgraded it to 10.10, and started to replace the traditional CSS files (style.css and media.css) with ITCSS and BEM. &nbsp;I only updated a few things for the blog post (Teaser Block, Jumbtron Block, etc..) and I encourage you to pull the code down and complete the rest of conversion. &nbsp;I think this is a great way to wrap your head around what was discussed and put that knowledge to work in a stable environment. &nbsp;</p>
+<p>I hope you enjoyed this post. &nbsp;If you would like to learn more about Aware&rsquo;s Episerver services email us directly at info@awareweb.com. &nbsp;</p></div></div>    </div>
+</div>
+<div class="component link col-xs-12 btn-back link-inline add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}" data-uniqueid="{69EDD6DC-5705-46FA-A8F4-3CE1E4E4D769}" data-variantid="{D1BA228F-A7EE-414D-9C9E-5AD48B8CF1B7}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="link">
+    <div class="component-content">
+<div class="field-title"><a title="Inriver-connectors" href="en/blog/inriver-connectors/index.html?sc_site=AwareWeb">Aware announces the release of 4 inRiver connectors</a></div>    </div>
+</div>
+<div class="component link col-xs-12 btn-next link-inline add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}" data-uniqueid="{37606499-E94F-488A-95B4-75BE005054C9}" data-variantid="{D1BA228F-A7EE-414D-9C9E-5AD48B8CF1B7}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="link">
+    <div class="component-content">
+<div class="field-title"><a title="Leadership Management and Agile" href="en/blog/leadership-management-and-agile/index.html?sc_site=AwareWeb">Leadership, Management &amp; Agile</a></div>    </div>
+</div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{C25766C8-9AFD-4D28-87FE-147774F6806D}" data-uniqueid="{D02CC18F-761C-4322-BEAA-269BF13DEFD0}" data-stylesfield="Styles2" data-gridfield="ColumnWidth2" data-renderingclass="">
+<div class="component facet-single-selection-list category col-xs-12 add-your-css-classes-here facet-component" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{2B2EC80B-13E2-445D-BA1A-8B8F037DED66}" data-uniqueid="{5806275B-BF48-457C-AA18-07601BF49CBD}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="facet-single-selection-list" data-properties='{&quot;endpoint&quot;:&quot;//sxa/search/facets/&quot;,&quot;f&quot;:&quot;Category&quot;,&quot;s&quot;:&quot;&quot;,&quot;showMoreText&quot;:&quot;Show More&quot;,&quot;showLessText&quot;:&quot;Show Less&quot;,&quot;otherText&quot;:&quot;Other&quot;,&quot;collapseOnSelection&quot;:false,&quot;highlightThreshold&quot;:&quot;2&quot;,&quot;highlightBehaviour&quot;:&quot;&quot;,&quot;multi&quot;:false,&quot;emptyValueText&quot;:&quot;Misc&quot;,&quot;searchResultsSignature&quot;:&quot;&quot;,&quot;sortOrder&quot;:&quot;SortByNames&quot;}'>
+    <div class="component-content">
+<div class='facet-heading'>
+    <h4 class='facet-title'>
+        Category
+    </h4>
+    <span class='clear-filter'>x</span>
+</div>
+            <div class="contentContainer">
+                        <div class="facet-search-filter">                            
+                            <p class="facet-value" data-facetvalue="about">
+                                <span>first <span class="facet-count">(1)</span></span>
+                            </p>
+                            <p class="facet-value active-facet" data-facetvalue="about">
+                                <span>second <span class="facet-count">(1)</span></span>
+                            </p>
+                        </div>
+            </div>
+    <div class="bottom-remove-filter">
+        <button type="button">Clear</button>
+    </div>
+    </div>
+</div>
+    <div class="component rich-text sidenav-head col-xs-12 add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{DCEE78E1-1843-4456-A13A-F10A12191630}" data-uniqueid="{BE6DE38B-9D8B-41AB-B47B-D253F94E54B5}" data-variantid="{FF533924-6AE4-41A7-9D70-6E299AA63840}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="rich-text">
+        <div class="component-content">
+<h5 class="field-text">Archive</h5>        </div>
+    </div>
+<div class="component sxa-archive col-xs-12 add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{1B1FDBF9-551B-4A00-A6D8-BB2FB7B62A62}" data-uniqueid="{2134EB4B-301B-4A34-8E3C-92D3DDED42C2}" data-variantid="{B2A1C4F3-B7AC-42B1-9022-197EE56B4E51}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="sxa-archive">
+    <div class="component-content">
+    <ul class="level-1">
+            <li>
+                <span class="group-header">2018</span>
+    <ul class="level-2">
+            <li>
+                <span class="group-header">February</span>
+                    <ul class="archive-items">
+                            <li class="archive-item">
+                            </li>
+                    </ul>
+            </li>
+            <li>
+                <span class="group-header">June</span>
+                    <ul class="archive-items">
+                            <li class="archive-item">
+<div class="field-title"><a title="AnnouncingAwarespartnershipwithThunderhead" href="en/blog/announcingawarespartnershipwiththunderhead/index.html?sc_site=AwareWeb">Announcing Aware’s partnership with Thunderhead</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="AnnouncingAwaresrenewedpartnershipwithEpiserver" href="en/blog/announcingawaresrenewedpartnershipwithepiserver/index.html?sc_site=AwareWeb">Announcing Aware’s renewed partnership with Episerver</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="AwareaddsfournewSitecoreMVPs" href="en/blog/awareaddsfournewsitecoremvps/index.html?sc_site=AwareWeb">Aware adds four new Sitecore MVPs!</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="AwareHonoredtoReceiveSitecoreExperienceAward2015" href="en/blog/awarehonoredtoreceivesitecoreexperienceaward2015/index.html?sc_site=AwareWeb">Aware Honored to Receive Sitecore Experience Award 2015</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="ContentRelevancyYouHeardAboutItatSymposiumNowMakeItHappen" href="en/blog/contentrelevancyyouheardaboutitatsymposiumnowmakeithappen/index.html?sc_site=AwareWeb">Content Relevancy: You Heard About It at Symposium, Now Make It Happen</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="EasyExtranetwithWFFMEXM" href="en/blog/easyextranetwithwffmexm/index.html?sc_site=AwareWeb">Easy Extranet with WFFM &amp; EXM</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="LimitingUserManagementinSitecore" href="en/blog/limitingusermanagementinsitecore/index.html?sc_site=AwareWeb">Limiting User Management in Sitecore</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="MitsubishiCaterpillarForkliftAmericaIncNowDeliversaMoreUnifiedWebsite" href="en/blog/mitsubishicaterpillarforkliftamericaincnowdeliversamoreunifiedwebsite/index.html?sc_site=AwareWeb">Mitsubishi Caterpillar Forklift America Inc. Now Delivers a More Unified Website</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="Sitecore8DevelopmentWheretoStart" href="en/blog/sitecore8developmentwheretostart/index.html?sc_site=AwareWeb">Sitecore 8 Development: Where to Start?</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="SitecoreCustomFieldandItemValidationBasics" href="en/blog/sitecorecustomfieldanditemvalidationbasics/index.html?sc_site=AwareWeb">Sitecore Custom Field and Item Validation Basics</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="SitecoreHostingArchitectureConsiderations" href="en/blog/sitecorehostingarchitectureconsiderations/index.html?sc_site=AwareWeb">Sitecore Hosting Architecture Considerations</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="SitecoreMultilingualSolutionConsiderations" href="en/blog/sitecoremultilingualsolutionconsiderations/index.html?sc_site=AwareWeb">Sitecore Multilingual Solution Considerations</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="SitecoreUsercomisTurningOne" href="en/blog/sitecoreusercomisturningone/index.html?sc_site=AwareWeb">SitecoreUser.com is Turning One!</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="UsingSitecoreFXMwithLocalizedSites" href="en/blog/usingsitecorefxmwithlocalizedsites/index.html?sc_site=AwareWeb">Using Sitecore FXM with Localized Sites</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="WebinarHowtoManageProjectScopeCreepUsingAgileProcesses" href="en/blog/webinarhowtomanageprojectscopecreepusingagileprocesses/index.html?sc_site=AwareWeb">Webinar – How to Manage Project Scope Creep Using Agile Processes</a></div>                            </li>
+                    </ul>
+            </li>
+            <li>
+                <span class="group-header">January</span>
+                    <ul class="archive-items">
+                            <li class="archive-item">
+<div class="field-title"><a title="AreYouManagingYourProductDataOrIsItManagingYou" href="en/blog/areyoumanagingyourproductdataorisitmanagingyou/index.html?sc_site=AwareWeb">Are You Managing Your Product Data or is it Managing You?</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="Inriver-connectors" href="en/blog/inriver-connectors/index.html?sc_site=AwareWeb">Aware announces the release of 4 inRiver connectors</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="ITCSSBEMNamingForYourNextEpiserverProject" href="en/blog/itcssbemnamingforyournextepiserverproject/index.html?sc_site=AwareWeb">ITCSS and BEM naming for your next Episerver project</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="NewInriverConnector" href="en/blog/newinriverconnector/index.html?sc_site=AwareWeb">Aware announces the release of a new and improved connector between inRiver PIM and Episerver CMS</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="SitecoreSymposium2017" href="en/blog/sitecoresymposium2017/index.html?sc_site=AwareWeb">Sitecore Symposium 2017</a></div>                            </li>
+                    </ul>
+            </li>
+            <li>
+                <span class="group-header">May</span>
+                    <ul class="archive-items">
+                            <li class="archive-item">
+<div class="field-title"><a title="AwareRecognizedTwoNewSitecoreMVPs" href="en/blog/awarerecognizedtwonewsitecoremvps/index.html?sc_site=AwareWeb">Aware Recognized With Two New Sitecore MVP Awards!</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="DontMapYourCustomerJourneysListenToThem" href="en/blog/dontmapyourcustomerjourneyslistentothem/index.html?sc_site=AwareWeb">Don’t Map Your Customer Journeys… Listen to Them</a></div>                            </li>
+                    </ul>
+            </li>
+            <li>
+                <span class="group-header">March</span>
+                    <ul class="archive-items">
+                            <li class="archive-item">
+<div class="field-title"><a title="Episerver 10 Alloy MVC" href="en/blog/episerver-10-alloy-mvc/index.html?sc_site=AwareWeb">Episerver 10 Alloy MVC</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="Leadership Management and Agile" href="en/blog/leadership-management-and-agile/index.html?sc_site=AwareWeb">Leadership, Management &amp; Agile</a></div>                            </li>
+                            <li class="archive-item">
+<div class="field-title"><a title="QuickStartGuideCreativeExchangeLiveInSXA" href="en/blog/quickstartguidecreativeexchangeliveinsxa/index.html?sc_site=AwareWeb">A Quick Start Guide to Setup Creative Exchange Live in SXA 1.4</a></div>                            </li>
+                    </ul>
+            </li>
+    </ul>
+            </li>
+    </ul>
+    </div>
+</div>
+    <div class="component rich-text sidenav-head col-xs-12 add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{DCEE78E1-1843-4456-A13A-F10A12191630}" data-uniqueid="{1A02136C-9A82-4C6A-9BC4-F652AE057A7F}" data-variantid="{FF533924-6AE4-41A7-9D70-6E299AA63840}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="rich-text">
+        <div class="component-content">
+<h5 class="field-text">Tags</h5>        </div>
+    </div>
+<div class="component tag-cloud col-xs-12 add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{2400E52D-F9B3-445D-8629-A69720A22B44}" data-uniqueid="{402996CE-18AE-46C6-A983-4B5AEC12CE59}" data-variantid="{0F40BD9E-5C6C-4B8F-8B3A-8D5F0F41F1E0}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="tag-cloud">
+    <div class="component-content">
+                <span class="tag-cloud-item count-12 tens-1 xxl">
+<span class="field-title"><a title="Sitecore" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Sitecore">Sitecore</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-7 tens-0 xl">
+<span class="field-title"><a title="Aware" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Aware">Aware</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-6 tens-0 xl">
+<span class="field-title"><a title="Development" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Development">Development</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-4 tens-0 l">
+<span class="field-title"><a title="Episerver" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Episerver">Episerver</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-3 tens-0 m">
+<span class="field-title"><a title="PIM" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=PIM">PIM</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-3 tens-0 m">
+<span class="field-title"><a title="Product Data" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Product+Data">Product Data</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-3 tens-0 m">
+<span class="field-title"><a title="inRiver" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=inRiver">inRiver</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="Agile" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Agile">Agile</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="Creative Exchange Live" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Creative+Exchange+Live">Creative Exchange</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="Experience Marketing Digital Marketing System-DMS" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Experience+Marketing+Digital+Marketing+System-DMS">Experience Marketing Digital Marketing System-DMS</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="GULP" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=GULP">GULP</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="Globalization" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Globalization">Globalization</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="Leadership" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Leadership">Leadership</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="Management" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Management">Management</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="SXA" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=SXA">SXA</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="Sitecore Experience Accelerator" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Sitecore+Experience+Accelerator">Sitecore Experience Accelerator</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="Sitecore Forms" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Sitecore+Forms">Sitecore Forms</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="Sitecore Symposium" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=Sitecore+Symposium">Sitecore Symposium</a><span>&nbsp;</span></span>                </span>
+                <span class="tag-cloud-item count-1 tens-0 xs">
+<span class="field-title"><a title="xConnect" href="https://awareweb-paas-rg-497200-single.azurewebsites.net/blog?sc_site=AwareWeb#sxatags=xConnect">xConnect</a><span>&nbsp;</span></span>                </span>
+    </div>
+</div>
+        </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="component container col-xs-12 background-gray add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{EFCBF2AC-B16E-45F0-9C6C-D4ED34B85A27}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content" style="background-image: url('/-/media/Project/AWS/Images/backgrounds/bg-angle-edges.png')">
+<div class="component snippet col-xs-12 indent-bottom indent-top add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{00E2C7CF-2247-4596-B878-E6BB3850A77F}" data-uniqueid="{F5C4D48A-11A6-402B-9B94-6A8954386AC6}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="snippet">
+    <div class="component-content">
+            <div class="snippet-inner">
+                <div class="snippet-container">
+<div class="snippet">
+<div class="component container add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{A5418EE3-8BB2-4D4F-B2DA-C722F829B366}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+    <div class="component rich-text col-xs-12 position-center title-underline add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{87182F78-4399-4896-8D59-9D6A45282F8A}" data-uniqueid="{C6006A0E-0030-479C-ACD6-F00B65B6F7C7}" data-variantid="{581F32A8-C349-422E-A3F5-C5999EDD6D96}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="rich-text">
+        <div class="component-content">
+<h2>You Might Also Like...</h2>        </div>
+    </div>
+<div class="component search-results blog col-xs-12 add-your-css-classes-here" data-pageid="{196CFB28-ED5A-44CF-ADB5-432B53CEFB3A}" data-renderingid="{FAE0D244-55C1-4F1B-8ED5-590C9F131CEE}" data-uniqueid="{E5F3AE18-CE32-4750-89C6-14DC8052AE9F}" data-variantid="{3CC8EB72-892D-445F-AF15-06786512C069}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="search-results" data-class-variant="blog" data-properties='{&quot;endpoint&quot;:&quot;//sxa/search/results/&quot;,&quot;v&quot;:&quot;{3CC8EB72-892D-445F-AF15-06786512C069}&quot;,&quot;s&quot;:&quot;{A302BC1C-6481-45E0-86C8-F3497B8EE257}&quot;,&quot;l&quot;:&quot;&quot;,&quot;p&quot;:4,&quot;defaultSortOrder&quot;:&quot;&quot;,&quot;sig&quot;:&quot;&quot;}'>
+        <ul class="search-result-list">
+            <li>
+<div class="blog-item"><div class="blog-image field-teaserimage"><a title="ITCSSBEMNamingForYourNextEpiserverProject" href="en/blog/itcssbemnamingforyournextepiserverproject/index.html?sc_site=AwareWeb"><img src="-/media/Project/AWS/Images/blog/teasers/teaser_EpiNaming.jpg" alt="ITCSS+BEM" width="345" height="245" data-variantitemid="{8C25F96A-6C8F-48D3-AF4B-FCA5AA25CBA6}" data-variantfieldname="TeaserImage" style="margin: 0px 0px"></a></div><div class="blog-date field-published">08/16/2017</div><div class="blog-author field-author">Tom Zahratka</div><div class="field-title"><a title="ITCSSBEMNamingForYourNextEpiserverProject" href="en/blog/itcssbemnamingforyournextepiserverproject/index.html?sc_site=AwareWeb">ITCSS and BEM naming for your next Episerver project</a></div><div class="field-excerpt">As websites grow and become more complicated, you don't want to end up in a state of disarray.</div></div>            </li>
+        </ul>
+</div>
+    </div>
+</div></div>
+                </div>
+            </div>    
+    </div>
+</div>
+    </div>
+</div>
+<div class="component container col-xs-12 container-gradient-background-red-arrow add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{D0441B98-E13E-48AC-97A0-B0A05E91FBE5}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component container add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{8F270013-D764-47F5-8742-8F81B76CA8AC}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component title col-xs-12 position-center add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}" data-uniqueid="{A0010FBD-A270-40D4-9804-25F6EDCBB064}" data-variantid="{60EAA958-2B9A-49EA-8D91-CEEB4B9D867F}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="title">
+    <div class="component-content">
+<h1 class="title-contact">Let's Get Started</h1>    </div>
+</div>
+    </div>
+</div>
+<div class="component container add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{B2AE7350-81FE-46C7-A321-12391AFA5F85}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="row component column-splitter">
+        <div class="col-xs-12 col-sm-6 add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{C25766C8-9AFD-4D28-87FE-147774F6806D}" data-uniqueid="{706CBCC0-E31F-4FB3-A19B-4F25CB695B93}" data-stylesfield="Styles1" data-gridfield="ColumnWidth1" data-renderingclass="">
+    <div class="component rich-text rich-text-contact col-xs-12 add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{87182F78-4399-4896-8D59-9D6A45282F8A}" data-uniqueid="{86ABC85E-A0F8-476C-9EB7-BB2AFB70D94A}" data-variantid="{6185EC0D-565F-4C29-A7D1-1190EA6F803E}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="rich-text">
+        <div class="component-content">
+<p>We'd love to hear from you. We probably have a lot in common. I mean, you like chatting about data-binding, UX patterns, and javascript functions, right?</p>
+<a class="btn btn-inverse btn-block" href="tel:800-783-8919">call us<span class="hidden-xs">: 1.800.783.8919</span></a>
+<a class="btn btn-inverse btn-block" href="mailto:info@awareweb.com">email us<span class="hidden-xs">: info@awareweb.com</span></a>        </div>
+    </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{C25766C8-9AFD-4D28-87FE-147774F6806D}" data-uniqueid="{706CBCC0-E31F-4FB3-A19B-4F25CB695B93}" data-stylesfield="Styles2" data-gridfield="ColumnWidth2" data-renderingclass="">
+<div class="component sitecore-form col-xs-12 labels-left add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{6AB4EE29-CB78-4DCE-A316-3E6C3D5513F5}" data-uniqueid="{5DC32978-0B00-45BD-ACD4-4F0035DD8812}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="sitecore-form">
+    <div class="component-content">
+        <form action="/formbuilder?sc_itemid=%7B8C25F96A-6C8F-48D3-AF4B-FCA5AA25CBA6%7D&amp;aodisabled=true&amp;overlay=true&amp;sc_mode=preview&amp;CreativeExchangeExport=true&amp;CreativeExchangeMode=AgencyDrop&amp;sc_lang=en&amp;sc_device=%7BFE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3%7D&amp;sc_site=AwareWeb&amp;fxb.FormItemId=6de2319d-f6d4-4333-8694-1a83923efbcf&amp;fxb.HtmlPrefix=fxb.41fb4229-f966-4929-8e4e-0c1f84caf479" data-ajax="true" data-ajax-method="Post" data-ajax-mode="replace-with" data-ajax-success="$.validator.unobtrusive.parse(&#39;#fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_6de2319d-f6d4-4333-8694-1a83923efbcf&#39;);$.fxbFormTracker.parse(&#39;#fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_6de2319d-f6d4-4333-8694-1a83923efbcf&#39;);" data-ajax-update="#fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_6de2319d-f6d4-4333-8694-1a83923efbcf" data-sc-fxb="6de2319d-f6d4-4333-8694-1a83923efbcf" enctype="multipart/form-data" id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_6de2319d-f6d4-4333-8694-1a83923efbcf" method="post"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_FormSessionId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.FormSessionId" type="hidden" value="4adf78f2-779c-488c-8673-f6c5099a4c4e"><input name="__RequestVerificationToken" type="hidden" value="Elsi6yDV4I_IMdwkMpYradfvWiTM7oHjEJkYOUmQlrzS3ZzhvCUbyRsPzr-sKwVSXyD43MZZS2eN1ftzMrmuXSm4mWyd9YP1xzgY6HhtnQ0d0qy6dBnp6dEyAQHHwhx30"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_FormItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.FormItemId" type="hidden" value="6de2319d-f6d4-4333-8694-1a83923efbcf"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_PageItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.PageItemId" type="hidden" value="5a6ebbae-667c-42e0-ad69-756dc9a7025c">
+<div class="form-group row">
+    <input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_Index_0b494b22-0030-480d-a892-a35a2f3898ff" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields.Index" type="hidden" value="0b494b22-0030-480d-a892-a35a2f3898ff"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_0b494b22-0030-480d-a892-a35a2f3898ff__ItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[0b494b22-0030-480d-a892-a35a2f3898ff].ItemId" type="hidden" value="0b494b22-0030-480d-a892-a35a2f3898ff"><label for="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_0b494b22-0030-480d-a892-a35a2f3898ff__Value" class="">First Name</label>
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_0b494b22-0030-480d-a892-a35a2f3898ff__Value" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[0b494b22-0030-480d-a892-a35a2f3898ff].Value" class="" type="text" value="" maxlength="255" placeholder="" data-sc-tracking="True" data-sc-field-name="FirstName" data-val-length="First Name must have at least 0 and no more than 255 characters." data-val-length-max="255" data-val-required="First Name is required." data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[0b494b22-0030-480d-a892-a35a2f3898ff].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_Index_859b06d2-6747-479a-95de-61f24ce380fb" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields.Index" type="hidden" value="859b06d2-6747-479a-95de-61f24ce380fb"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_859b06d2-6747-479a-95de-61f24ce380fb__ItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[859b06d2-6747-479a-95de-61f24ce380fb].ItemId" type="hidden" value="859b06d2-6747-479a-95de-61f24ce380fb"><label for="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_859b06d2-6747-479a-95de-61f24ce380fb__Value" class="">Last Name</label>
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_859b06d2-6747-479a-95de-61f24ce380fb__Value" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[859b06d2-6747-479a-95de-61f24ce380fb].Value" class="" type="text" value="" maxlength="255" placeholder="" data-sc-tracking="True" data-sc-field-name="LastName" data-val-length="Last Name must have at least 0 and no more than 255 characters." data-val-length-max="255" data-val-required="Last Name is required." data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[859b06d2-6747-479a-95de-61f24ce380fb].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_Index_61903767-6caa-4a30-a91b-162fe966dc71" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields.Index" type="hidden" value="61903767-6caa-4a30-a91b-162fe966dc71"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_61903767-6caa-4a30-a91b-162fe966dc71__ItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[61903767-6caa-4a30-a91b-162fe966dc71].ItemId" type="hidden" value="61903767-6caa-4a30-a91b-162fe966dc71"><label for="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_61903767-6caa-4a30-a91b-162fe966dc71__Value" class="">Email</label>
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_61903767-6caa-4a30-a91b-162fe966dc71__Value" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[61903767-6caa-4a30-a91b-162fe966dc71].Value" class="" type="email" value="" maxlength="255" placeholder="" data-sc-tracking="True" data-sc-field-name="EmailAddress" data-val-regex="Email contains an invalid email address." data-val-regex-pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,17}$" data-val-required="Email is required." data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[61903767-6caa-4a30-a91b-162fe966dc71].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_Index_db9bc4f5-f470-4908-a90d-2b540c600dd3" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields.Index" type="hidden" value="db9bc4f5-f470-4908-a90d-2b540c600dd3"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_db9bc4f5-f470-4908-a90d-2b540c600dd3__ItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[db9bc4f5-f470-4908-a90d-2b540c600dd3].ItemId" type="hidden" value="db9bc4f5-f470-4908-a90d-2b540c600dd3"><label for="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_db9bc4f5-f470-4908-a90d-2b540c600dd3__Value" class="">Phone</label>
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_db9bc4f5-f470-4908-a90d-2b540c600dd3__Value" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[db9bc4f5-f470-4908-a90d-2b540c600dd3].Value" class="" type="text" value="" maxlength="255" placeholder="" data-sc-tracking="True" data-sc-field-name="Phone" data-val-regex="Phone contains an invalid telephone number." data-val-regex-pattern="^\+?\d{3,}" data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[db9bc4f5-f470-4908-a90d-2b540c600dd3].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_Index_a1f550f3-a65a-437e-849f-1d4649b0a9e1" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields.Index" type="hidden" value="a1f550f3-a65a-437e-849f-1d4649b0a9e1"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_a1f550f3-a65a-437e-849f-1d4649b0a9e1__ItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[a1f550f3-a65a-437e-849f-1d4649b0a9e1].ItemId" type="hidden" value="a1f550f3-a65a-437e-849f-1d4649b0a9e1"><label for="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_a1f550f3-a65a-437e-849f-1d4649b0a9e1__Value" class="">Message</label>
+<textarea id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_a1f550f3-a65a-437e-849f-1d4649b0a9e1__Value" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[a1f550f3-a65a-437e-849f-1d4649b0a9e1].Value" class="" rows="4" maxlength="512" placeholder="" data-sc-tracking="True" data-sc-field-name="Message" data-val-length="Message must have at least 0 and no more than 512 characters." data-val-length-max="512" data-val-required="Message is required." data-val="true"></textarea>
+<span class="field-validation-valid" data-valmsg-for="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[a1f550f3-a65a-437e-849f-1d4649b0a9e1].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+<input value="Send us a Note" type="submit" class="btn btn-inverse" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.233d1a9c-6264-4470-b81d-1cc2bc911350">
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_NavigationButtons" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.NavigationButtons" type="hidden" value="233d1a9c-6264-4470-b81d-1cc2bc911350">
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_233d1a9c-6264-4470-b81d-1cc2bc911350" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.233d1a9c-6264-4470-b81d-1cc2bc911350" type="hidden" value="0">
+</div>
+</form>
+        <script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery-2.1.3.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery.validate.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/form.validate.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/form.tracking.js"></script>
+    </div>
+</div>
+        </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+            </div>
+        </div>
+    </main>
+    <!-- /#content -->
+    <!-- #footer -->
+    <footer>
+        <div id="footer" class="container-fluid">
+            <div class="row">
+<div class="component container add-your-css-classes-here" data-pageid="{1D52D6F3-8B54-4317-B6EE-8B2630535D48}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{09404636-913D-4F1E-8687-24E1FC5202F7}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component image file-type-icon-media-link col-xs-12 position-center add-your-css-classes-here" data-pageid="{1D52D6F3-8B54-4317-B6EE-8B2630535D48}" data-renderingid="{4A0D4E0B-BC20-4F2E-BD84-A4BD35834E86}" data-uniqueid="{A19235E0-C05E-4926-9604-5C8E5BFCFB9C}" data-variantid="{24619A93-AFD7-41F8-AC01-B2B10DD03E74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="image">
+    <div class="component-content">
+<a title="Image 1" href="#"><img src="-/media/Project/AWS/Images/global/logo-footer.png" alt="" width="138" height="138" data-variantitemid="{ACE59CC2-1F07-4D6C-BFF0-3E364A5F0C32}" data-variantfieldname="Image" style="margin: 0px 0px"></a>    </div>
+</div>
+    <div class="component rich-text col-xs-12 indent-top position-center add-your-css-classes-here" data-pageid="{1D52D6F3-8B54-4317-B6EE-8B2630535D48}" data-renderingid="{DCEE78E1-1843-4456-A13A-F10A12191630}" data-uniqueid="{2EDA7A97-1172-4D56-9876-B64096145B46}" data-variantid="{581F32A8-C349-422E-A3F5-C5999EDD6D96}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="rich-text">
+        <div class="component-content">
+<p>&copy; 2018 Aware Web Solutions, Inc.<br>
+<a href="privacy-policy/index.html?sc_site=AwareWeb">Privacy Policy</a></p>        </div>
+    </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </footer>
+    <!-- /#footer -->
+</div>
+<!-- /#wrapper -->
+<script src="-/media/Base Themes/Core Libraries/scripts/ie-origin-fix.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/xaquery.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/momentmin.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/lo-dash.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/modernizr.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/galleria-129.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/fullcalendarmin.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/fullcalendargcal.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/jqueryuitouch-punchmin.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/hammer.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/backbone-min.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/typeahead.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/jquerymCustomScrollbar.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/mediaelement-and-player.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/dailymotion.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/facebook.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/soundcloud.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/twitch.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/vimeo.js"></script><script src="-/media/Base Themes/XA API/Scripts/xa.js"></script><script src="-/media/Base Themes/Main Theme/scripts/observer.js"></script><script src="-/media/Base Themes/Main Theme/scripts/partial-design-highlight.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackinginit.js"></script><script src="-/media/Base Themes/Main Theme/scripts/tracking.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmovies.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmoviesmejsplayer.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmoviesplayer.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmoviesplayermanager.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmoviesyoutubeplayer.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmoviesyoutubeplayerhandlers.js"></script><script src="-/media/Base Themes/Google Maps JS Connector/Scripts/google-maps-connector.js"></script><script src="-/media/Base Themes/Maps/Scripts/component-location-service.js"></script><script src="-/media/Base Themes/Maps/Scripts/component-map.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-location-service.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-ajax.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-base-model.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-base-view.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-box.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-data.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-dropdown.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-managed-range.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-range-slider.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-slider.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-load-more.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-location-filter.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-page-selector.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-page-size.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-query.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-radius-filter.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-results.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-results-count.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-results-filter.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-sort.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-url.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-variant-filter.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-service.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-router.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-daterange.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-accordions.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-archive.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-breadcrumb.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-carousel.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-container.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-disqus.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-facebook.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-flash.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-flip.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-fullcalendar.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-galleria.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-google-map.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-language-selector.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-navigation.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-overlay.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-snippet.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-social.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-tabs.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-video.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-video-playlist.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/details-polyfill.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/fixheight.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/search-fixheight.js"></script>    <!-- /#wrapper -->
+</body>
+</html>

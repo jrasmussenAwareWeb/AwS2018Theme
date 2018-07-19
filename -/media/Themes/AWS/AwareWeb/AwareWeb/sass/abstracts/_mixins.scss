@@ -1,0 +1,207 @@
+@import "vars";
+
+/* breakpoints */
+$break-xlarge: 1400px;
+$break-large: 1200px;
+$break-desktop: 992px;
+//$break-mobile-large: 768px;
+$break-tablet: 768px;
+//$break-mobile-horizontal: 640px;
+$break-phone-horizontal: 640px;
+//$break-mobile: 380px;
+$break-phone: 380px;
+
+@mixin wrapper() {
+    max-width: 960px;
+    margin: 0 auto !important;
+}
+@mixin clearfix() {
+    &:before, &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}
+
+@mixin opensans-font-stack() {
+    font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif; 
+}
+
+@mixin raleway-font-stack() {
+    font-family: "Raleway", sans-serif;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+// Single side border-radius
+@mixin border-top-radius($radius) {
+    -webkit-border-top-right-radius: $radius;
+    border-top-right-radius: $radius;
+    -webkit-border-top-left-radius: $radius;
+    border-top-left-radius: $radius;
+}
+  @mixin border-right-radius($radius) {
+    -webkit-border-bottom-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+    -webkit-border-top-right-radius: $radius;
+    border-top-right-radius: $radius;
+}
+@mixin border-bottom-radius($radius) {
+    -webkit-border-bottom-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+    -webkit-border-bottom-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+}
+@mixin border-left-radius($radius) {
+    -webkit-border-bottom-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+    -webkit-border-top-left-radius: $radius;
+    border-top-left-radius: $radius;
+}
+
+@mixin loading-gif() {
+    background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSJibGFjayI+DQogIDxwYXRoICBvcGFjaXR5PSIuMjUiIGQ9Ik0xNiAwIEExNiAxNiAwIDAgMCAxNiAzMiBBMTYgMTYgMCAwIDAgMTYgMCBNMTYgNCBBMTIgMTIgMCAwIDEgMTYgMjggQTEyIDEyIDAgMCAxIDE2IDQiLz4NCiAgPHBhdGggZmlsbD0nIzFhODBiNicgZD0iTTE2IDAgQTE2IDE2IDAgMCAxIDMyIDE2IEwyOCAxNiBBMTIgMTIgMCAwIDAgMTYgNHoiPg0KICAgIDxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiBmcm9tPSIwIDE2IDE2IiB0bz0iMzYwIDE2IDE2IiBkdXI9IjAuOHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPg0KICA8L3BhdGg+DQo8L3N2Zz4NCg==);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+@mixin respond-to($media) {
+    @if $media==phone {
+        @media only screen and (max-width: $break-phone) {
+            @content;
+        }
+    }
+    @else if $media==phone-horizontal {
+        @media only screen and (max-width: $break-phone-horizontal - 1) {
+            @content;
+        }
+    }
+    //@else if $media==phone-large {
+    @else if $media==all-phone {
+		//@media only screen and (max-width: $break-desktop - 1) {
+        @media only screen and (max-width: $break-tablet - 1) {
+            @content;
+        }
+    }
+    @else if $media==tablet {
+        //@media only screen and (min-width: $break-mobile + 1) and (max-width: $break-desktop - 1) {
+		@media only screen and (min-width: $break-tablet) {
+            @content;
+        }
+    }
+	@else if $media==all-mobile {
+        @media only screen and (max-width: $break-desktop - 1) {
+            @content;
+        }
+    }
+    @else if $media==desktop {
+        @media only screen and (min-width: $break-desktop) {
+            @content;
+        }
+    }
+	@else if $media==large {
+        @media only screen and (min-width: $break-large) {
+            @content;
+        }
+    }
+    @else if $media==xlarge {
+        @media only screen and (min-width: $break-xlarge) {
+            @content;
+        }
+    }
+}
+@mixin border-basic($position:all, $border-color:$border-gray, $border-width:1px) {
+    @if($position==top) {
+        border-top: $border-width solid $border-color;
+    }
+    @else if($position==bottom) {
+        border-bottom: $border-width solid $border-color;
+    }
+    @else if($position==left) {
+        border-left: $border-width solid $border-color;
+    }
+    @else if($position==right) {
+        border-right: $border-width solid $border-color;
+    }
+    @else {
+        border: $border-width solid $border-color;
+    }
+}
+@mixin border-black($position:all, $border-color:$border-black, $border-width:1px) {
+    @if($position==top) {
+        border-top: $border-width solid $border-color;
+    }
+    @else if($position==bottom) {
+        border-bottom: $border-width solid $border-color;
+    }
+    @else if($position==left) {
+        border-left: $border-width solid $border-color;
+    }
+    @else if($position==right) {
+        border-right: $border-width solid $border-color;
+    }
+    @else {
+        border: $border-width solid $border-color;
+    }
+}
+@mixin fixed-bg($pos, $min-height:240px) {
+    background-position: $pos;
+    background-attachment: fixed;
+    min-height: $min-height;
+}
+@mixin linear-gradient($direction, $color-stops...) {
+    // Direction has been omitted and happens to be a color-stop
+    @if is-direction($direction)==false {
+        $color-stops: $direction, $color-stops;
+        $direction: 180deg;
+    }
+    background: nth(nth($color-stops, 1), 1);
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);
+}
+
+@mixin transition($args) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin title-underline() {
+    content: "";
+    font-weight: 600;
+    background-color: $text-basic;
+    width: 100px;
+    height: 4px;
+    margin-top: 10px;
+    display: block;
+}
+
+@mixin box-shadow($left, $top, $blur, $color, $inset: false) {
+    @if $inset {
+      -webkit-box-shadow:inset $left $top $blur $color;
+      -moz-box-shadow:inset $left $top $blur $color;
+      box-shadow:inset $left $top $blur $color;
+    } @else {
+      -webkit-box-shadow: $left $top $blur $color;
+      -moz-box-shadow: $left $top $blur $color;
+      box-shadow: $left $top $blur $color;
+    }
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(359deg);
+    }
+}

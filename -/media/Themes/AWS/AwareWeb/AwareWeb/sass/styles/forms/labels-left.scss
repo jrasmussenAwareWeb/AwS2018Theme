@@ -1,0 +1,117 @@
+//AwS
+.labels-left {
+    margin-top: 0;
+    margin-bottom: 100px;
+    @include respond-to(all-phone) {
+        margin-bottom: 200px;
+    }
+    padding-left:60px;
+
+    @include respond-to(all-phone) {
+        padding-left:30px !important;
+        padding-right:30px !important;
+    }
+
+    form {
+        vertical-align: top;
+        @include respond-to(all-phone) {
+            .form-group {
+                .row {
+                    margin:0;
+                }
+            }
+        }
+        .form-group {margin-bottom:10px;
+            label {
+                //display: inline-block;
+                width: 30%;
+                color: $text-white;
+                font-size: $font-medium;
+                padding:4px 15px;
+                float:left;
+                text-align:right;
+                @include respond-to(all-phone) {
+                    width:100%;
+                    float:none;
+                    text-align:left;
+                    padding:0;
+                }
+                @include respond-to(tablet) {
+                    font-size:$font-small;
+                }
+                @include respond-to(desktop) {
+                    font-size:$font-medium;
+                }
+                &.control-label {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+            @include respond-to(all-phone) {
+                &:last-child {
+                    margin-top:20px;
+                }
+            }
+            input[type="text"], input[type="email"], textarea {
+                margin:0;
+                height:34px;
+            }
+            input, .form-control, textarea {
+                width: 70% !important;
+                border-radius: 0;
+                background-color: #cc0000;
+                border:0 !important;
+                color: $text-white;
+                font-size: $font-medium;
+                //padding: 6px 12px;
+                @include respond-to(all-phone) {
+                    width:100% !important;
+                }    
+                .btn:last-of-type {
+                    margin-top:15px;
+                }
+                &:focus {
+                    border:0;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            textarea {
+                //padding:2px 12px;
+                min-height:80px;
+                font-size:15px;
+            }
+            .field-validation-error {
+                color: $text-white;
+                width: 70%;
+                float: right;
+                @include respond-to(all-phone) {
+                    width:100%;
+                }
+            }
+
+            //we only need this until we get the one button out of main
+            .btn-inverse {
+                background-color: #700000;
+                border:0;
+                box-shadow:none;
+                color: #ff0000;
+                margin-top: 0;
+                float:right;
+                padding:15px;
+                &:hover, &:active, &:focus {
+                    background-color: #cc0000;
+                    color: $text-white;
+                }
+            }
+        }
+    }
+}
+
+//AWS
+@media(max-width:1199px) {
+    .labels-left {
+        padding-left:15px;
+    }
+}

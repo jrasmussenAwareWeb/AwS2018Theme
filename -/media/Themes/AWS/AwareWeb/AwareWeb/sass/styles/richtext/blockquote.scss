@@ -1,0 +1,29 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+
+blockquote {
+    color: $text-red;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-left: solid 4px #ddd;
+
+    &.pull-left {
+        border-left: none;
+        border-right: solid 4px #ddd;
+        padding-left: 0;
+        margin-right: 30px;
+    }
+
+    @include respond-to(large) {
+        &.pull-left {
+            margin-left: -15px;
+        }
+    }
+
+    @include respond-to(xlarge) {
+        &.pull-left {
+            margin-left: -5%;
+        }
+    }
+}

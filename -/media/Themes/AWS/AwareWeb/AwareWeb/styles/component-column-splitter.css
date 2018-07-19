@@ -1,0 +1,37 @@
+/* breakpoints */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.row.column-splitter {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+  /*> div {
+        padding-left: 0;
+        padding-right: 0
+    }*/
+}
+
+.row.column-splitter:before, .row.column-splitter:after {
+  content: "";
+  display: table;
+  clear: both;
+}

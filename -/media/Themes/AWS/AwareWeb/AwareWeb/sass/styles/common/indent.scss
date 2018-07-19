@@ -1,0 +1,12 @@
+@import "../../abstracts/vars";
+.indent {
+    margin: 0 $extralarge-margin;
+}
+.indent-top {
+    //margin-top: $middle-margin;
+    margin-top:$extralarge-margin;
+}
+.indent-bottom {
+    //margin-bottom: $middle-margin;
+    margin-bottom: $extralarge-margin;
+}

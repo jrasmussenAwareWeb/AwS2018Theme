@@ -1,0 +1,145 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+.event-calendar {
+    background: $bg-basic-color;
+    overflow: hidden;
+    @include border-basic(bottom);
+    box-sizing: border-box;
+    padding: 5px;
+    .fc-view-basicWeek .fc-day>div {
+        min-height: 100px !important;
+    }
+    .fc-header .fc-button {
+        background: none;
+        border-radius: 0;
+        border: 1px solid $border-basic-color;
+        @include border-basic(bottom);
+    }
+    .fc-header {
+        margin-bottom: 10px;
+        h2 {
+            font-weight: bold;
+        }
+        td {
+            vertical-align: middle;
+            white-space: normal;
+        }
+    }
+    .fc-header-left {
+        width: 25%;
+        vertical-align: bottom;
+    }
+    .fc-header-center {
+        width: 40%;
+    }
+    .fc-header-right {
+        width: 35%;
+        white-space: normal;
+        padding: 0px 2px;
+        .fc-button {
+            margin-bottom: 0px;
+        }
+    }
+    .fc-header-title {
+        padding: 0px 10px;
+        h2 {
+            white-space: normal;
+        }
+    }
+    .fc-widget-content {
+        background: #F5F5F5;
+        border: 1px solid white;
+        @include border-basic(bottom);
+        padding: 1px;
+        &.fc-other-month {
+            background: #E8E8E8;
+        }
+    }
+    .fc-day-header {
+        background: #E8E8E8;
+        border: 1px solid white;
+        @include border-basic();
+        border-top-width: 3px;
+        padding: 1px;
+    }
+    .fc-event {
+        border: #736F6E;
+        padding: 3px;
+        background: #4187ae;
+        color: #FFF;
+        font-weight: normal;
+    }
+    &.compact-mode {
+        .fc-header-title h2 {
+            margin-bottom: 0;
+            padding: 5px 0 0 5px;
+        }
+        .selected-day {
+            background: #95bcf2;
+        }
+        .fc-day .fc-day-content {
+            padding: 0;
+        }
+    }
+}
+.calendar-tooltip {
+    z-index: 9999;
+    position: absolute;
+    width: 250px;
+    background: White;
+    border: 1px solid #736f6e;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    background: #F5F5F5;
+    -moz-box-shadow: 3px 3px 8px #736f6e;
+    -webkit-box-shadow: 3px 3px 8px #736f6e;
+    box-shadow: 3px 3px 8px #736f6e;
+    .arrow {
+        position: absolute;
+        top: -10px;
+        left: 70px;
+        height: 10px;
+        width: 30px;
+        overflow: hidden;
+        &:before {
+            content: "";
+            display: block;
+            width: 25px;
+            height: 25px;
+            background: #fff;
+            border: 1px solid #736f6e;
+            position: absolute;
+            top: 6px;
+            z-index: 0;
+            transform: rotate(45deg);
+        }
+    }
+    a {
+        font-size: 12px;
+    }
+    p {
+        margin-top: 0px;
+    }
+    .compact-event {
+        margin-bottom: 10px;
+        border-top: 1px dashed #736f6e;
+        padding-top: 5px;
+        &:first-child {
+            border-top: none;
+            padding: 0;
+        }
+    }
+    .title {
+        display: block;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .description {
+        display: block;
+    }
+    .link {
+        display: block;
+        margin-top: 5px;
+    }
+}

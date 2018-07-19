@@ -1,0 +1,20 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+//AWs
+.container-gradient-background-teal-arrow {
+    background-color: #0e142a; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #067385, #0e142a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #067385, #0e142a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #067385, #0e142a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #067385, #0e142a); /* Standard syntax */
+}
+
+.container-gradient-background-teal-arrow::before {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #FFF;
+    margin: 0 auto;
+} 

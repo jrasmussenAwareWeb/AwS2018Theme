@@ -1,0 +1,155 @@
+&.aws-slide {
+    background-color: #0e142a; /* For browsers that do not support gradients */
+    background: -moz-linear-gradient(-45deg, #067385 0%, #0e142a 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #067385 0%,#0e142a 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #067385 0%,#0e142a 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#067385', endColorstr='#0e142a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    position: relative;
+
+    .container.caption {
+        @include respond-to(all-mobile) {
+            width:100%;
+            padding:30px;
+        }
+    }
+
+    .slide-image {
+        img {
+            width:100%;
+            height:auto;
+        }
+    }
+
+    .caption {
+        color: #fff;
+        text-align: left;
+        padding: 40px 15px;
+        position: static;
+        //background-color: #067385;
+        
+        .field-slidetext {
+            max-width:100%;
+            @include respond-to(desktop) {
+            max-width:50%;
+            }
+            @include respond-to(large) {
+                max-width:30%;
+            }
+            h2 {
+                color: #fff;
+                font-weight: 600;
+
+                &:after {
+                    @include title-underline();
+                    background-color: #fff;
+                    margin-top: 20px;
+                }
+            }
+        }
+        
+        .link-arrow {
+            a {
+                color: #fff;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                &:after {
+                    color: #fff;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    @include respond-to(all-mobile) {
+        .caption {
+            background-color: #0e142a; /* For browsers that do not support gradients */
+            background: -moz-linear-gradient(-45deg, #067385 0%, #0e142a 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #067385 0%,#0e142a 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #067385 0%,#0e142a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#067385', endColorstr='#0e142a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        }
+    }
+    @include respond-to(desktop) {
+        height: 460px;
+        overflow: hidden;
+
+        .slide-image {
+            text-align: left;
+            width: 50%;
+            height: 460px;
+            text-align: left;
+            overflow: hidden;
+            -moz-transform: skewX(-15deg) skewY(0deg);
+            -webkit-transform: skewX(-15deg) skewY(0deg);
+            -o-transform: skewX(-15deg) skewY(0deg);
+            -ms-transform: skewX(-15deg) skewY(0deg);
+            transform: skewX(-15deg) skewY(0deg);
+            margin-right: -65px;
+            position: absolute;
+            right: 0;
+
+            img {
+                -moz-transform: skewX(15deg) skewY(0deg);
+                -webkit-transform: skewX(15deg) skewY(0deg);
+                -o-transform: skewX(15deg) skewY(0deg);
+                -ms-transform: skewX(15deg) skewY(0deg);
+                transform: skewX(15deg) skewY(0deg);
+                height: 100%;
+                width: auto;
+                max-width: initial;
+                position: absolute;
+                bottom: 0;
+                right: 0;    
+            }
+        }
+
+        /*050218 added a container class to the rendering variant to contain the caption content and eliminate need for widths, large paddings */
+        .caption {
+            font-size: 18px;
+            /*padding-top: 80px;
+            padding-bottom: 80px;
+            padding-right: 500px;
+            width: 970px;
+            min-height: 460px;*/
+            margin: 0 auto;
+            position:relative; 
+            z-index:20;
+
+            p {margin-bottom: 15px;}
+        }
+    }
+    @include respond-to(large) {
+        height: 510px;
+
+        .slide-image {
+            width: 66.666666%;
+            height: 510px;
+            margin-right: -75px;
+            bottom: 0;
+            z-index:10;
+
+            img {
+                width: 108%;
+                height: auto;
+                left: -110px;
+                bottom: -18px;                   
+            }
+        }
+        /*.caption {
+            width: 1170px;
+            min-height: 510px;
+            padding-right: 780px;
+        }*/
+    }
+    @include respond-to(xlarge) {
+
+        .slide-image {
+            margin-right: -140px;
+            img {
+                width: 104%;
+                left: -140px;
+                bottom: -40px;                   
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.breadcrumb.triangle-separator {
+    .separator {
+        @include fa-icon();
+        font-size: 0;
+        &:before {
+            content: fa-content($fa-var-caret-right);
+            display: block;
+            font-size: $font-medium;
+        }
+    }
+}

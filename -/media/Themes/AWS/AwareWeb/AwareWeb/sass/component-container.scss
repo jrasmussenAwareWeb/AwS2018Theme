@@ -1,0 +1,30 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.container {
+    @include clearfix();
+    padding: 0;
+
+    .component-content {
+        @include clearfix();
+    }
+
+    &.cover-background {
+        background-size: cover;
+
+        .component-content {
+            background-size: cover;
+        }
+    }
+    &.contain-background {
+        background-size: contain;
+
+        .component-content {
+            background-size: contain;
+        }
+    }
+    &.background-dark-blue {
+        background-color: #0f1b2f;
+    }
+}
+
+@import "styles/container/*";

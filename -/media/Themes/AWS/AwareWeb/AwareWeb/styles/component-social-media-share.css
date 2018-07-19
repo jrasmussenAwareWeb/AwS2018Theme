@@ -1,0 +1,43 @@
+/* breakpoints */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.social-media-share {
+  background: transparent;
+}
+
+.social-media-share ul {
+  overflow: hidden;
+}
+
+.social-media-share li {
+  float: left;
+  margin: 0 10px;
+}
+
+.social-media-share li:first-child {
+  margin-left: 0;
+}
+
+.social-media-share li .fb_iframe_widget {
+  display: block;
+  margin-top: -2px;
+}

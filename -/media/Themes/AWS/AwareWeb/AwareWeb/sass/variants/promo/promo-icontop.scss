@@ -1,0 +1,41 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+.promo-icontop {
+    background-color: $bg-light-gray;
+    border: none;
+    margin: 50px auto 30px auto;
+    overflow: visible;
+
+    .icon-green {
+        font-size: 40px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 auto -20px auto;
+        position: relative;
+        top: -40px;
+
+        .fa {margin-top: -8px;}
+    }
+
+
+    small {font-size:14px}
+    @include respond-to(all-phone) {
+        .field-promoservicestext2 {
+            padding:0 30px;   
+        }
+    }
+
+    h1:after, h2:after, h3:after, h4:after, h5:after {
+        @include title-underline();
+    }
+
+    &.position-center {
+
+        h1:after, h2:after, h3:after, h4:after, h5:after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

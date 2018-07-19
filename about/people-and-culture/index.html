@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head><base href="../../">
+<link href="-/media/Feature/Experience Accelerator/Bootstrap/Bootstrap/Styles/bootstrap.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/mediaelementplayer.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/mediaelementplayer-legacy.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/font-awesomemin.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/fullcalendar.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/jquerymCustomScrollbar.css" rel="stylesheet"><link href="-/media/Base Themes/Core Libraries/styles/jquery-ui.css" rel="stylesheet"><link href="-/media/Base Themes/Main Theme/styles/author.css" rel="stylesheet"><link href="-/media/Base Themes/Main Theme/styles/file-type-icons.css" rel="stylesheet"><link href="-/media/Base Themes/Main Theme/styles/reset.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-accordion.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-archive.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-breadcrumb.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-carousel.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-column-splitter.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-container.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-divider.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-event-list.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-feed.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-field-editor.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-file-list.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-flash.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-flip.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-forms.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-fullcalendar.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-galleria.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-iframe.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-image.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-language-selector.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-link.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-link-list.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-login.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-logout.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-map.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-media-link.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-navigation.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-page-list.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-pagination.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-playlist.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-promo.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-richtext-content.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-search-other.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-search-results.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-social-media-share.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-tabs.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-tag-cloud.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-tag-list.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-title.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-toggle.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-twitter.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/component-video.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/cookie-notification.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/main.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/overlay.css" rel="stylesheet"><link href="-/media/Themes/AWS/AwareWeb/AwareWeb/styles/styles.css" rel="stylesheet">    
+    <title>People &amp; Culture<span> | Aware Web Solutions</span></title>
+<link href="" rel="shortcut icon">
+<meta content="People and Culture" property="og:title"><meta content="https://awareweb-paas-rg-497200-single.azurewebsites.net/about/people-and-culture?sc_site=AwareWeb" property="og:url">
+<meta content="People and Culture" property="twitter:title"><meta content="summary_large_image" property="twitter:card">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>/* Google Analytics Key is missing - component won't render */</script>
+</head>
+<body data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-deviceid="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" data-language="en" class="preview default-device sxa-ce-exported add-your-css-classes-here">
+<!-- #wrapper -->
+<div id="wrapper">
+    <!-- #header -->
+    <header>
+        <div id="header" class="container-fluid">
+            <div class="row">
+<div class="component container add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{4B10F706-51BB-4C86-AC6F-DB275A224033}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component image file-type-icon-media-link col-xs-8 col-sm-3 add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{69D0A00E-FF06-4B17-BE59-BED330577680}" data-uniqueid="{D5CB7DD7-44DF-4F52-AA04-7691359CBB6D}" data-variantid="{24619A93-AFD7-41F8-AC01-B2B10DD03E74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="image">
+    <div class="component-content">
+<a title="Logo - AWS" href="index.html?sc_site=AwareWeb"><img src="-/media/Project/AWS/Images/global/logo-main.png" alt="" width="264" height="120" data-variantitemid="{C68325A8-2598-48D5-9222-7EF0246BCAC7}" data-variantfieldname="Image" style="margin: 0px 0px"></a>    </div>
+</div>
+<div class="component search-box icon-only add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{EECE4E4B-4E5F-42FD-A934-7AFD048AFD03}" data-uniqueid="{10F461B3-AA4D-4574-883A-2DC6F1FA69BA}" data-variantid="{0940AC51-B108-49EC-A17A-FC146E05ED67}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="search-box" data-properties='{"endpoint":"//sxa/search/results/","suggestionEndpoint":"//sxa/search/suggestions/","suggestionsMode":"ShowSearchResults","resultPage":"/search-results?sc_site=AwareWeb","targetSignature":"","v":"{0940AC51-B108-49EC-A17A-FC146E05ED67}","s":"","p":5,"searchResultsSignature":""}'>
+    <div class="component-content">
+                    <button class="search-box-button-with-redirect" type="submit">
+                        Search
+                    </button>
+    </div>
+</div>
+    <div class="component navigation col-xs-12 col-sm-9 hidden-xs navigation-main navigation-main-vertical toggle-mobile  add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{9D3BA81A-EECE-4B5A-9862-0239A9D53EEC}" data-uniqueid="{8F0E69BD-5E9C-45DE-A463-D5B0ED807083}" data-variantid="{B4934F49-C1E9-49C5-851E-0E8948776BEB}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="navigation">
+        <div class="component-content">
+            <nav>
+<ul class="clearfix">
+        <li class=" level1 submenu item0 odd first rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Expertise" href="en/expertise/index.html?sc_site=AwareWeb">Expertise</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Strategy and Planning" href="en/expertise/strategy-and-planning/index.html?sc_site=AwareWeb">Strategy &amp; Planning</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Engagement Marketing" href="en/expertise/engagement-marketing/index.html?sc_site=AwareWeb">Engagement Marketing</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="UX and Design" href="en/expertise/ux-and-design/index.html?sc_site=AwareWeb">UX &amp; Design</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Development" href="en/expertise/development/index.html?sc_site=AwareWeb">Development</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Support" href="en/expertise/support/index.html?sc_site=AwareWeb">Support</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Training" href="en/expertise/training/index.html?sc_site=AwareWeb">Training</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item1 even rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Technologies" href="en/technologies/index.html?sc_site=AwareWeb">Technologies</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Sitecore" href="en/technologies/sitecore/index.html?sc_site=AwareWeb">Sitecore</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Episerver" href="en/technologies/episerver/index.html?sc_site=AwareWeb">Episerver</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="inRiver" href="en/technologies/inriver/index.html?sc_site=AwareWeb">inRiver</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Salesforce" href="en/technologies/salesforce/index.html?sc_site=AwareWeb">Salesforce</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Microsoft" href="en/technologies/microsoft/index.html?sc_site=AwareWeb">Microsoft</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Other Partners" href="en/technologies/other-partners/index.html?sc_site=AwareWeb">Other Partners</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item2 odd rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Work" href="en/work/index.html?sc_site=AwareWeb">Work</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Financial" href="en/work/financial/index.html?sc_site=AwareWeb">Financial</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Healthcare" href="en/work/healthcare/index.html?sc_site=AwareWeb">Healthcare</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Higher Education" href="en/work/higher-education/index.html?sc_site=AwareWeb">Higher Education</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Manufacturing" href="en/work/manufacturing/index.html?sc_site=AwareWeb">Manufacturing</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Non-profit" href="en/work/non-profit/index.html?sc_site=AwareWeb">Non-profit</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Other Industries" href="en/work/other-industries/index.html?sc_site=AwareWeb">Other Industries</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item3 even rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Blog" href="en/blog/index.html?sc_site=AwareWeb">Blog</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Sitecore8DevelopmentWheretoStart" href="en/blog/sitecore8developmentwheretostart/index.html?sc_site=AwareWeb">Sitecore8DevelopmentWheretoStart</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreCustomFieldandItemValidationBasics" href="en/blog/sitecorecustomfieldanditemvalidationbasics/index.html?sc_site=AwareWeb">SitecoreCustomFieldandItemValidationBasics</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreHostingArchitectureConsiderations" href="en/blog/sitecorehostingarchitectureconsiderations/index.html?sc_site=AwareWeb">SitecoreHostingArchitectureConsiderations</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreMultilingualSolutionConsiderations" href="en/blog/sitecoremultilingualsolutionconsiderations/index.html?sc_site=AwareWeb">SitecoreMultilingualSolutionConsiderations</a></div>
+        </li>
+        <li class=" level2 item4 odd last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreUsercomisTurningOne" href="en/blog/sitecoreusercomisturningone/index.html?sc_site=AwareWeb">SitecoreUsercomisTurningOne</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item4 odd active rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="About" href="en/about/index.html?sc_site=AwareWeb">About</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first active rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="People and Culture" href="en/about/people-and-culture/index.html?sc_site=AwareWeb">People &amp; Culture</a></div>
+        </li>
+        <li class=" level2 item1 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Resources" href="en/about/resources/index.html?sc_site=AwareWeb">Resources</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 item5 even last rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Contact" href="en/contact/index.html?sc_site=AwareWeb">Contact</a></div>
+        </li>
+</ul>
+            </nav>
+        </div>
+    </div>
+<div class="component toggle col-xs-12 visible-xs-block toggle-mobile  add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{60A49017-0BB4-4D92-AB59-587E6C618B30}" data-uniqueid="{65B9261F-0B3A-4BCC-AA39-31188BD7F140}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="toggle" data-properties="{&quot;easing&quot;:&quot;swing&quot;,&quot;speed&quot;:500,&quot;expandOnHover&quot;:false,&quot;expandedByDefault&quot;:false}">
+    <div class="component-content">
+        <details class="toggle-content clearfix">
+            <summary class="toggle-header" tabindex="0">
+                <span class="toggle-label">
+                </span>
+            </summary>
+                <div class="component navigation col-xs-12 navigation-mobile add-your-css-classes-here" data-pageid="{67AF622D-666B-49E8-A7D3-221F4D600A8D}" data-renderingid="{9D3BA81A-EECE-4B5A-9862-0239A9D53EEC}" data-uniqueid="{6E461B87-310A-42CC-BAF6-C1F559DAEDE9}" data-variantid="{B4934F49-C1E9-49C5-851E-0E8948776BEB}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="navigation">
+        <div class="component-content">
+            <nav>
+<ul class="clearfix">
+        <li class=" level1 submenu item0 odd first rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Expertise" href="en/expertise/index.html?sc_site=AwareWeb">Expertise</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Strategy and Planning" href="en/expertise/strategy-and-planning/index.html?sc_site=AwareWeb">Strategy &amp; Planning</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Engagement Marketing" href="en/expertise/engagement-marketing/index.html?sc_site=AwareWeb">Engagement Marketing</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="UX and Design" href="en/expertise/ux-and-design/index.html?sc_site=AwareWeb">UX &amp; Design</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Development" href="en/expertise/development/index.html?sc_site=AwareWeb">Development</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Support" href="en/expertise/support/index.html?sc_site=AwareWeb">Support</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Training" href="en/expertise/training/index.html?sc_site=AwareWeb">Training</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item1 even rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Technologies" href="en/technologies/index.html?sc_site=AwareWeb">Technologies</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Sitecore" href="en/technologies/sitecore/index.html?sc_site=AwareWeb">Sitecore</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Episerver" href="en/technologies/episerver/index.html?sc_site=AwareWeb">Episerver</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="inRiver" href="en/technologies/inriver/index.html?sc_site=AwareWeb">inRiver</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Salesforce" href="en/technologies/salesforce/index.html?sc_site=AwareWeb">Salesforce</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Microsoft" href="en/technologies/microsoft/index.html?sc_site=AwareWeb">Microsoft</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Other Partners" href="en/technologies/other-partners/index.html?sc_site=AwareWeb">Other Partners</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item2 odd rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Work" href="en/work/index.html?sc_site=AwareWeb">Work</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Financial" href="en/work/financial/index.html?sc_site=AwareWeb">Financial</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Healthcare" href="en/work/healthcare/index.html?sc_site=AwareWeb">Healthcare</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Higher Education" href="en/work/higher-education/index.html?sc_site=AwareWeb">Higher Education</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Manufacturing" href="en/work/manufacturing/index.html?sc_site=AwareWeb">Manufacturing</a></div>
+        </li>
+        <li class=" level2 item4 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Non-profit" href="en/work/non-profit/index.html?sc_site=AwareWeb">Non-profit</a></div>
+        </li>
+        <li class=" level2 item5 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Other Industries" href="en/work/other-industries/index.html?sc_site=AwareWeb">Other Industries</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item3 even rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Blog" href="en/blog/index.html?sc_site=AwareWeb">Blog</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Sitecore8DevelopmentWheretoStart" href="en/blog/sitecore8developmentwheretostart/index.html?sc_site=AwareWeb">Sitecore8DevelopmentWheretoStart</a></div>
+        </li>
+        <li class=" level2 item1 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreCustomFieldandItemValidationBasics" href="en/blog/sitecorecustomfieldanditemvalidationbasics/index.html?sc_site=AwareWeb">SitecoreCustomFieldandItemValidationBasics</a></div>
+        </li>
+        <li class=" level2 item2 odd rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreHostingArchitectureConsiderations" href="en/blog/sitecorehostingarchitectureconsiderations/index.html?sc_site=AwareWeb">SitecoreHostingArchitectureConsiderations</a></div>
+        </li>
+        <li class=" level2 item3 even rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreMultilingualSolutionConsiderations" href="en/blog/sitecoremultilingualsolutionconsiderations/index.html?sc_site=AwareWeb">SitecoreMultilingualSolutionConsiderations</a></div>
+        </li>
+        <li class=" level2 item4 odd last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="SitecoreUsercomisTurningOne" href="en/blog/sitecoreusercomisturningone/index.html?sc_site=AwareWeb">SitecoreUsercomisTurningOne</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 submenu item4 odd active rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="About" href="en/about/index.html?sc_site=AwareWeb">About</a></div><ul class="clearfix">
+        <li class=" level2 item0 odd first active rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="People and Culture" href="en/about/people-and-culture/index.html?sc_site=AwareWeb">People &amp; Culture</a></div>
+        </li>
+        <li class=" level2 item1 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Resources" href="en/about/resources/index.html?sc_site=AwareWeb">Resources</a></div>
+        </li>
+</ul>
+        </li>
+        <li class=" level1 item5 even last rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="Contact" href="en/contact/index.html?sc_site=AwareWeb">Contact</a></div>
+        </li>
+</ul>
+            </nav>
+        </div>
+    </div>
+        </details>
+    </div>
+</div>
+    </div>
+</div>
+            </div>
+        </div>
+    </header>
+    <!-- /#header -->
+    <!-- #content -->
+    <main>
+        <div id="content" class="container-fluid">
+            <div class="row">
+<div class="component container col-xs-12 container-gradient-background-teal add-your-css-classes-here" data-pageid="{95BF3840-6EBD-4AD6-9646-47F264E94916}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{ECCE06D4-9A89-4023-8A63-90BCD44EB17A}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component content content-page-header col-xs-12 add-your-css-classes-here" data-pageid="{95BF3840-6EBD-4AD6-9646-47F264E94916}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{A71161A2-2F45-4D66-AC97-9872385EA0BD}" data-variantid="{5587C750-A988-418B-ADB4-894CE9A4748C}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div><div class="field-image"><img src="-/media/Project/AWS/Images/headers/header-people.jpg" alt="" width="1600" height="567" data-variantitemid="{C7377665-E8F6-460E-A694-2ED706179271}" data-variantfieldname="Image" style="margin: 0px 0px"></div></div>    </div>
+</div>
+<div class="component breadcrumb navigation-title add-your-css-classes-here" data-pageid="{95BF3840-6EBD-4AD6-9646-47F264E94916}" data-renderingid="{BFBD9DE2-3ABF-4078-BBCB-C95C5B2D863F}" data-uniqueid="{22DC5AD6-E39B-4541-AAAF-8D815FCF79F2}" data-variantid="{233B39B3-EE9A-452D-A65B-FA8745F2815B}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="breadcrumb">
+    <div class="component-content">
+        <nav>
+            <ol>
+                    <li class="breadcrumb-item home">
+<div class="navigation-title field-navigationtitle"><a title="Home" href="en/index.html?sc_site=AwareWeb">Home</a></div>                            <span class="separator">/</span>
+                    </li>
+                    <li class="breadcrumb-item ">
+<div class="navigation-title field-navigationtitle"><a title="About" href="en/about/index.html?sc_site=AwareWeb">About</a></div>                            <span class="separator">/</span>
+                    </li>
+                    <li class="breadcrumb-item last">
+<div class="navigation-title field-navigationtitle"><a title="People and Culture" href="en/about/people-and-culture/index.html?sc_site=AwareWeb">People &amp; Culture</a></div>                            <span class="separator">/</span>
+                    </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<div class="component title title-page-header col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2 add-your-css-classes-here" data-pageid="{95BF3840-6EBD-4AD6-9646-47F264E94916}" data-renderingid="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}" data-uniqueid="{16772344-797F-45E4-A936-C51A930762E0}" data-variantid="{2CF0E41A-C8E1-43FE-B622-B770F38D34BD}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="title">
+    <div class="component-content">
+<h1 class="title-page-header field-title">People &amp; Culture</h1>    </div>
+</div>
+    </div>
+</div>
+<div class="component container col-xs-12 add-your-css-classes-here" data-pageid="{95BF3840-6EBD-4AD6-9646-47F264E94916}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{607C3148-75E2-4005-AD4B-B6AB51D5D4CA}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component container col-xs-12 title-section add-your-css-classes-here" data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{182AB8FB-33B9-4453-B564-F3314C416079}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+    <div class="component rich-text col-xs-12 add-your-css-classes-here" data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-renderingid="{DCEE78E1-1843-4456-A13A-F10A12191630}" data-uniqueid="{1606FA75-D03B-4288-87FD-E34783C24172}" data-variantid="{581F32A8-C349-422E-A3F5-C5999EDD6D96}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="rich-text">
+        <div class="component-content">
+<h2>Smart People are Fun People</h2>        </div>
+    </div>
+    </div>
+</div>
+<div class="component container col-xs-12 cover-background add-your-css-classes-here" data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{A88D70C6-AA96-467C-9C6B-05A5F02509E5}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content" style="background-image: url('/-/media/Project/AWS/Images/about/office.jpg')">
+<div class="component snippet col-xs-12 add-your-css-classes-here" data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-renderingid="{00E2C7CF-2247-4596-B878-E6BB3850A77F}" data-uniqueid="{ED6C6084-F993-4556-9A08-8FC8DF5738D0}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="snippet">
+    <div class="component-content">
+            <div class="snippet-inner">
+                <div class="snippet-container">
+<div class="snippet">
+<div class="component container indent-bottom indent-top add-your-css-classes-here" data-pageid="{2C779EE6-D4C9-4F71-8C0E-ADFD265D87F5}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{4FEB2CB8-4705-41F3-819A-4325BEC5A850}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component flip col-xs-12 col-sm-6 col-md-4 flip-image add-your-css-classes-here" data-pageid="{2C779EE6-D4C9-4F71-8C0E-ADFD265D87F5}" data-renderingid="{00C953FE-D508-4836-96A4-CF60887AE5F1}" data-uniqueid="{36880D54-B233-4F1A-9887-0DF937CE1CDA}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="flip">
+    <div class="component-content">
+            <div class="flipsides">
+                        <div class="Side0">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{937BAA0E-0E24-4F9A-89F4-40EAD7593D19}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{5BF14B72-283E-4DF6-9061-8E3B15CCC296}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{937BAA0E-0E24-4F9A-89F4-40EAD7593D19}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{FC147AFE-042A-415E-B891-F0B5C334198E}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><img alt="Aware Web Solutions Culture" src="-/media/Project/AWS/Images/about/firepit.jpg"></div>    </div>
+</div>
+</div>
+                        </div>
+                        <div class="Side1">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{20E73535-137C-460C-9A79-96BB7C99E3C3}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{3CCFDE14-1853-4D8B-A6E8-1FF83F7C4B94}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{20E73535-137C-460C-9A79-96BB7C99E3C3}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{D6982538-78E6-4B27-8DCC-BA122EAB728D}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><h6>We don't always drink beer, but when we do, it's an Aware Brew.</h6>
+<em>With so many talented brewmeisters on staff, sampling is an annual affair. <a rel="noopener noreferrer" href="http://www.flickr.com/photos/awareweb/collections/72157636431935005/" target="_blank">View more photos</a>.</em></div>    </div>
+</div>
+</div>
+                        </div>
+            </div>
+    </div>
+</div>
+<div class="component flip col-xs-12 col-sm-6 col-md-4 flip-image add-your-css-classes-here" data-pageid="{2C779EE6-D4C9-4F71-8C0E-ADFD265D87F5}" data-renderingid="{00C953FE-D508-4836-96A4-CF60887AE5F1}" data-uniqueid="{DA748D09-34E4-4C26-BD9A-8C7BC12CDDEB}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="flip">
+    <div class="component-content">
+            <div class="flipsides">
+                        <div class="Side0">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{DFFF628F-39D7-445C-822A-32EEF686BD9D}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{5BF14B72-283E-4DF6-9061-8E3B15CCC296}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{DFFF628F-39D7-445C-822A-32EEF686BD9D}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{FC147AFE-042A-415E-B891-F0B5C334198E}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><img alt="Aware Web Solutions Culture" src="-/media/Project/AWS/Images/about/firepit.jpg"></div>    </div>
+</div>
+</div>
+                        </div>
+                        <div class="Side1">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{40B48252-123B-4B18-AD2C-E2F9FB88F9F5}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{3CCFDE14-1853-4D8B-A6E8-1FF83F7C4B94}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{40B48252-123B-4B18-AD2C-E2F9FB88F9F5}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{D6982538-78E6-4B27-8DCC-BA122EAB728D}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><h6>We don't always drink beer, but when we do, it's an Aware Brew.</h6>
+<em>With so many talented brewmeisters on staff, sampling is an annual affair. <a rel="noopener noreferrer" href="http://www.flickr.com/photos/awareweb/collections/72157636431935005/" target="_blank">View more photos</a>.</em></div>    </div>
+</div>
+</div>
+                        </div>
+            </div>
+    </div>
+</div>
+<div class="component flip col-xs-12 col-sm-6 col-md-4 flip-image add-your-css-classes-here" data-pageid="{2C779EE6-D4C9-4F71-8C0E-ADFD265D87F5}" data-renderingid="{00C953FE-D508-4836-96A4-CF60887AE5F1}" data-uniqueid="{ED7E129B-D03D-4354-81E3-9E45D0B3DD45}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="flip">
+    <div class="component-content">
+            <div class="flipsides">
+                        <div class="Side0">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{655BACCD-6AC9-44BE-AB73-FF2F90660833}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{5BF14B72-283E-4DF6-9061-8E3B15CCC296}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{655BACCD-6AC9-44BE-AB73-FF2F90660833}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{FC147AFE-042A-415E-B891-F0B5C334198E}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><img alt="Aware Web Solutions Culture" src="-/media/Project/AWS/Images/about/firepit.jpg"></div>    </div>
+</div>
+</div>
+                        </div>
+                        <div class="Side1">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{DB683EC6-3F6D-462F-B3F6-730136F346AC}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{3CCFDE14-1853-4D8B-A6E8-1FF83F7C4B94}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{DB683EC6-3F6D-462F-B3F6-730136F346AC}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{D6982538-78E6-4B27-8DCC-BA122EAB728D}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><h6>We don't always drink beer, but when we do, it's an Aware Brew.</h6>
+<em>With so many talented brewmeisters on staff, sampling is an annual affair. <a rel="noopener noreferrer" href="http://www.flickr.com/photos/awareweb/collections/72157636431935005/" target="_blank">View more photos</a>.</em></div>    </div>
+</div>
+</div>
+                        </div>
+            </div>
+    </div>
+</div>
+<div class="component flip col-xs-12 col-sm-6 col-md-4 flip-image add-your-css-classes-here" data-pageid="{2C779EE6-D4C9-4F71-8C0E-ADFD265D87F5}" data-renderingid="{00C953FE-D508-4836-96A4-CF60887AE5F1}" data-uniqueid="{5B55C48A-2ACB-4211-87A8-0E6D66627B1D}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="flip">
+    <div class="component-content">
+            <div class="flipsides">
+                        <div class="Side0">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{39F0E72F-B8CD-4294-A6DA-C4D996498AE9}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{5BF14B72-283E-4DF6-9061-8E3B15CCC296}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{39F0E72F-B8CD-4294-A6DA-C4D996498AE9}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{FC147AFE-042A-415E-B891-F0B5C334198E}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><img alt="Aware Web Solutions Culture" src="-/media/Project/AWS/Images/about/firepit.jpg"></div>    </div>
+</div>
+</div>
+                        </div>
+                        <div class="Side1">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{1245F22D-21CB-40E8-92DF-E520549D044F}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{3CCFDE14-1853-4D8B-A6E8-1FF83F7C4B94}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{1245F22D-21CB-40E8-92DF-E520549D044F}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{D6982538-78E6-4B27-8DCC-BA122EAB728D}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><h6>We don't always drink beer, but when we do, it's an Aware Brew.</h6>
+<em>With so many talented brewmeisters on staff, sampling is an annual affair. <a rel="noopener noreferrer" href="http://www.flickr.com/photos/awareweb/collections/72157636431935005/" target="_blank">View more photos</a>.</em></div>    </div>
+</div>
+</div>
+                        </div>
+            </div>
+    </div>
+</div>
+<div class="component flip col-xs-12 col-sm-6 col-md-4 flip-image add-your-css-classes-here" data-pageid="{2C779EE6-D4C9-4F71-8C0E-ADFD265D87F5}" data-renderingid="{00C953FE-D508-4836-96A4-CF60887AE5F1}" data-uniqueid="{3B7C323D-B990-492C-B81B-818C7228D8DB}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="flip">
+    <div class="component-content">
+            <div class="flipsides">
+                        <div class="Side0">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{BA2E51A5-950F-4E65-B276-70C32108D21E}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{5BF14B72-283E-4DF6-9061-8E3B15CCC296}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{BA2E51A5-950F-4E65-B276-70C32108D21E}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{FC147AFE-042A-415E-B891-F0B5C334198E}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><img alt="Aware Web Solutions Culture" src="-/media/Project/AWS/Images/about/firepit.jpg"></div>    </div>
+</div>
+</div>
+                        </div>
+                        <div class="Side1">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{60534A34-1566-4D6D-B7A5-93B8E65A0F64}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{3CCFDE14-1853-4D8B-A6E8-1FF83F7C4B94}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{60534A34-1566-4D6D-B7A5-93B8E65A0F64}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{D6982538-78E6-4B27-8DCC-BA122EAB728D}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><h6>We don't always drink beer, but when we do, it's an Aware Brew.</h6>
+<em>With so many talented brewmeisters on staff, sampling is an annual affair. <a rel="noopener noreferrer" href="http://www.flickr.com/photos/awareweb/collections/72157636431935005/" target="_blank">View more photos</a>.</em></div>    </div>
+</div>
+</div>
+                        </div>
+            </div>
+    </div>
+</div>
+<div class="component flip col-xs-12 col-sm-6 col-md-4 flip-image add-your-css-classes-here" data-pageid="{2C779EE6-D4C9-4F71-8C0E-ADFD265D87F5}" data-renderingid="{00C953FE-D508-4836-96A4-CF60887AE5F1}" data-uniqueid="{550EB041-84E7-4E48-AAEB-38406F19B46D}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="flip">
+    <div class="component-content">
+            <div class="flipsides">
+                        <div class="Side0">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{19C8BBB7-533F-4062-8BDD-E068FD39686F}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{5BF14B72-283E-4DF6-9061-8E3B15CCC296}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{19C8BBB7-533F-4062-8BDD-E068FD39686F}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{FC147AFE-042A-415E-B891-F0B5C334198E}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><img alt="Aware Web Solutions Culture" src="-/media/Project/AWS/Images/about/firepit.jpg"></div>    </div>
+</div>
+</div>
+                        </div>
+                        <div class="Side1">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{ABDD790C-3273-461A-B955-4EADB2E11A1A}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{3CCFDE14-1853-4D8B-A6E8-1FF83F7C4B94}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{ABDD790C-3273-461A-B955-4EADB2E11A1A}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{D6982538-78E6-4B27-8DCC-BA122EAB728D}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><h6>We don't always drink beer, but when we do, it's an Aware Brew.</h6>
+<em>With so many talented brewmeisters on staff, sampling is an annual affair. <a rel="noopener noreferrer" href="http://www.flickr.com/photos/awareweb/collections/72157636431935005/" target="_blank">View more photos</a>.</em></div>    </div>
+</div>
+</div>
+                        </div>
+            </div>
+    </div>
+</div>
+<div class="component flip col-xs-12 col-sm-6 col-md-4 flip-image add-your-css-classes-here" data-pageid="{2C779EE6-D4C9-4F71-8C0E-ADFD265D87F5}" data-renderingid="{00C953FE-D508-4836-96A4-CF60887AE5F1}" data-uniqueid="{D54E00EA-429B-4D09-BD69-A5FDEEC24BD2}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="flip">
+    <div class="component-content">
+            <div class="flipsides">
+                        <div class="Side0">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{A309495D-2D7E-4C6A-98E3-7EF1C4D65052}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{5BF14B72-283E-4DF6-9061-8E3B15CCC296}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{A309495D-2D7E-4C6A-98E3-7EF1C4D65052}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{FC147AFE-042A-415E-B891-F0B5C334198E}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><img alt="Aware Web Solutions Culture" src="-/media/Project/AWS/Images/about/firepit.jpg"></div>    </div>
+</div>
+</div>
+                        </div>
+                        <div class="Side1">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{F0AD4EEF-FE96-41F6-8745-F2E893F2C471}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{3CCFDE14-1853-4D8B-A6E8-1FF83F7C4B94}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{F0AD4EEF-FE96-41F6-8745-F2E893F2C471}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{D6982538-78E6-4B27-8DCC-BA122EAB728D}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><h6>We don't always drink beer, but when we do, it's an Aware Brew.</h6>
+<em>With so many talented brewmeisters on staff, sampling is an annual affair. <a rel="noopener noreferrer" href="http://www.flickr.com/photos/awareweb/collections/72157636431935005/" target="_blank">View more photos</a>.</em></div>    </div>
+</div>
+</div>
+                        </div>
+            </div>
+    </div>
+</div>
+<div class="component flip col-xs-12 col-sm-6 col-md-4 flip-image add-your-css-classes-here" data-pageid="{2C779EE6-D4C9-4F71-8C0E-ADFD265D87F5}" data-renderingid="{00C953FE-D508-4836-96A4-CF60887AE5F1}" data-uniqueid="{4B1080DA-98E2-41C4-BDC2-D05D2B2C1E6D}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="flip">
+    <div class="component-content">
+            <div class="flipsides">
+                        <div class="Side0">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{3C45E422-34C3-414E-ADDC-FB6D433F2E48}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{5BF14B72-283E-4DF6-9061-8E3B15CCC296}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{3C45E422-34C3-414E-ADDC-FB6D433F2E48}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{FC147AFE-042A-415E-B891-F0B5C334198E}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><img alt="Aware Web Solutions Culture" src="-/media/Project/AWS/Images/about/firepit.jpg"></div>    </div>
+</div>
+</div>
+                        </div>
+                        <div class="Side1">
+                            <div class="slide-heading">
+<div class="component content add-your-css-classes-here" data-pageid="{7A936677-2B0B-4271-B592-27FA439275AD}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{3CCFDE14-1853-4D8B-A6E8-1FF83F7C4B94}" data-variantid="{5423143A-760D-4F0E-BA4D-0B02E649A778}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-heading">Brew Bashes</div>    </div>
+</div>
+</div>
+                            <div class="slide-content">
+<div class="component content add-your-css-classes-here" data-pageid="{7A936677-2B0B-4271-B592-27FA439275AD}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{D6982538-78E6-4B27-8DCC-BA122EAB728D}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><h6>We don't always drink beer, but when we do, it's an Aware Brew.</h6>
+<em>With so many talented brewmeisters on staff, sampling is an annual affair. <a rel="noopener noreferrer" href="http://www.flickr.com/photos/awareweb/collections/72157636431935005/" target="_blank">View more photos</a>.</em></div>    </div>
+</div>
+</div>
+                        </div>
+            </div>
+    </div>
+</div>
+    </div>
+</div></div>
+                </div>
+            </div>    
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+﻿<div class="component addthis col-xs-12 position-right add-your-css-classes-here" data-pageid="{96EABF98-F95A-4388-8CBC-407A9AE9B3A3}" data-renderingid="{A4C39F97-D5B8-4BA5-940F-876610268EC8}" data-uniqueid="{19FDAE94-CF75-45F1-9A9C-6F5AC4EE6F11}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="addthis">
+    <div class="component-content">
+            <div class="addthis_sharing_toolbox"></div>
+            <script type="text/javascript">var addthis_config = { "data_track_addressbar": true };</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5808ecb9665899dc"></script>
+            <div class="addthis_inline_share_toolbox"></div>
+    </div>
+</div>
+<div class="component container col-xs-12 add-your-css-classes-here" data-pageid="{0B41B003-3AB9-4C5C-8A4D-B5D75E9B1E5E}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{3C7BBC03-6645-4B74-A5BA-DDBA03626A3E}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component container indent-top indent-bottom add-your-css-classes-here" data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{70D562C7-F246-4EAB-93B8-60C22A75135D}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+    <div class="component rich-text col-xs-12 add-your-css-classes-here" data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-renderingid="{DCEE78E1-1843-4456-A13A-F10A12191630}" data-uniqueid="{01A0B908-01DD-475D-AFBD-FCD9F0D173E7}" data-variantid="{581F32A8-C349-422E-A3F5-C5999EDD6D96}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="rich-text">
+        <div class="component-content">
+<h3><strong>We have a team of smart and talented people in energy-infused culture that enables our employees to do their best work.</strong></h3>        </div>
+    </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="component container indent-top indent-bottom add-your-css-classes-here" data-pageid="{91DD7AFB-DE27-4F6F-900F-78AED787021B}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{10429B6E-93A7-436D-A2F0-184062EDFBDE}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="row component column-splitter">
+        <div class="col-xs-12 col-sm-8 col-md-9 add-your-css-classes-here" data-pageid="{91DD7AFB-DE27-4F6F-900F-78AED787021B}" data-renderingid="{C25766C8-9AFD-4D28-87FE-147774F6806D}" data-uniqueid="{877BDD08-16A1-4662-8D75-E75D1C5D8C72}" data-stylesfield="Styles1" data-gridfield="ColumnWidth1" data-renderingclass="">
+<div class="component content add-your-css-classes-here" data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-renderingid="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" data-uniqueid="{1EA37D2E-B11D-41F0-BFA2-1F54C8E3B8BD}" data-variantid="{2D27F43E-F2E8-4AA5-99A5-6AB0D7CEEB74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="content">
+    <div class="component-content">
+<div class="field-content"><p>Aware provides more than just your average career. Each Awarian is encouraged to expand their energy on what they&rsquo;re passionate about &ndash; not simply scrape the surface of what they&rsquo;re good at.</p>
+<h6><strong>Top Ten Reasons to Work at Aware</strong></h6>
+<p><strong>10.</strong> We are a virtual company which means the only commuting needed is from your bed to your desk. We also have a very snazzy office in Minneapolis so the coffee shop isn&rsquo;t the only place that allows you to switch-up your scenery.</p>
+<p><strong>9.</strong> Employees are given some pretty sweet tech tools to ensure their productivity and happiness from day one - including a laptop, extra monitors, an iPhone and access to additional resources as needed.</p>
+<blockquote class="pull-left col-md-4">
+<p>Awarians tend to be smart, funny and accountable - it&rsquo;s the desirable coworker trifecta.</p>
+</blockquote>
+<p><strong>8.</strong> Every day is &ldquo;Bring Your Pet to Work Day,&rdquo; and some furry friends have even been deemed office assistants.</p>
+<p><strong>7.</strong> Our clients are pretty great and they give us the opportunity to work on some impressive projects, which means we&rsquo;re always putting our talents to good use.</p>
+<p><strong>6.</strong> Maintaining transparent and open communication within the workplace is important to us &ndash; around here we don&rsquo;t close doors.</p>
+<p><strong>5.</strong> Work-life balance is an art form we have mastered &ndash; just check out our photos if you need verification.</p>
+<p><strong>4.</strong> We only hire the best, but we have a way of making the best the greatest. With ongoing training and the opportunity to work alongside some of the industry&rsquo;s brightest, our employees soar to new heights.</p>
+<blockquote class="pull-left col-md-4">
+<p>The best thing about working at Aware is the variety that comes with each client.</p>
+</blockquote>
+<p><strong>3.</strong> No man is an island - we may be a virtual organization (thus saving you moolah in the gas department) but we do a grand job of communicating and collaborating as one giant Awarian team.</p>
+<p><strong>2.</strong> We&rsquo;ve received 5 Sitecore Site of the Year awards, 17 MVP nods, and we're one of the largest Sitecore partners in North America. Who doesn&rsquo;t want to be on the winning team?</p>
+<p style="clear:left;"><strong>1.</strong> Our equation to running a flourishing company is simple: Happy Employees = Beyond Satisfied Clients =&nbsp; A Really Successful Company.</p></div>    </div>
+</div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 add-your-css-classes-here" data-pageid="{91DD7AFB-DE27-4F6F-900F-78AED787021B}" data-renderingid="{C25766C8-9AFD-4D28-87FE-147774F6806D}" data-uniqueid="{877BDD08-16A1-4662-8D75-E75D1C5D8C72}" data-stylesfield="Styles2" data-gridfield="ColumnWidth2" data-renderingclass="">
+<div class="component row-splitter">
+        <div class=" add-your-css-classes-here" data-pageid="{91DD7AFB-DE27-4F6F-900F-78AED787021B}" data-renderingid="{2DA9B139-FB9C-4FD7-BE84-CB066B2D7CC3}" data-uniqueid="{CD8A222E-C736-449D-871D-C1071AA36314}" data-stylesfield="Styles1" data-renderingclass="">
+            <div class="row">
+                    <div class="component navigation col-xs-12 navigation-sidebar add-your-css-classes-here" data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-renderingid="{9D3BA81A-EECE-4B5A-9862-0239A9D53EEC}" data-uniqueid="{33E3C410-C016-4FEA-8FFC-EBD0C8BC6EC5}" data-variantid="{B4934F49-C1E9-49C5-851E-0E8948776BEB}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="navigation">
+        <div class="component-content">
+            <nav>
+<ul class="clearfix">
+        <li class=" level0 submenu item0 odd first last active rel-level1">
+<div class="navigation-title field-navigationtitle"><a title="About" href="en/about/index.html?sc_site=AwareWeb">About</a></div><ul class="clearfix">
+        <li class=" level1 item0 odd first active rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="People and Culture" href="en/about/people-and-culture/index.html?sc_site=AwareWeb">People &amp; Culture</a></div>
+        </li>
+        <li class=" level1 item1 even last rel-level2">
+<div class="navigation-title field-navigationtitle"><a title="Resources" href="en/about/resources/index.html?sc_site=AwareWeb">Resources</a></div>
+        </li>
+</ul>
+        </li>
+</ul>
+            </nav>
+        </div>
+    </div>
+            </div>
+        </div>
+        <div class=" add-your-css-classes-here" data-pageid="{91DD7AFB-DE27-4F6F-900F-78AED787021B}" data-renderingid="{2DA9B139-FB9C-4FD7-BE84-CB066B2D7CC3}" data-uniqueid="{CD8A222E-C736-449D-871D-C1071AA36314}" data-stylesfield="Styles2" data-renderingclass="">
+            <div class="row">
+                    <div class="component promo promo-icontop col-xs-12 add-your-css-classes-here" data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-renderingid="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" data-uniqueid="{B180B826-FDEF-4EF7-92E6-E6C2BCBD35D2}" data-variantid="{5AB53234-3E6A-4524-BDB1-E934E909DD51}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="promo">
+        <div class="component-content">
+<div class="icon-green field-promofonticon"><span class="fa fa-info-circle"></span></div><h5 class="title-underline field-promotext">Work With Us</h5><div class="field-promoservicestext2"><small>Join a team of smart and talented individuals (like yourself). Ask us questions or let us know what kind of role you’re looking for!</small></div>        </div>
+    </div>
+<div class="component sitecore-form col-xs-12 no-labels add-your-css-classes-here" data-pageid="{C7377665-E8F6-460E-A694-2ED706179271}" data-renderingid="{6AB4EE29-CB78-4DCE-A316-3E6C3D5513F5}" data-uniqueid="{E1B880E9-95BD-4CFE-8B75-47A38AD48B9C}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="sitecore-form">
+    <div class="component-content">
+        <form action="/formbuilder?sc_itemid=%7BC7377665-E8F6-460E-A694-2ED706179271%7D&amp;aodisabled=true&amp;overlay=true&amp;sc_mode=preview&amp;CreativeExchangeExport=true&amp;CreativeExchangeMode=AgencyDrop&amp;sc_lang=en&amp;sc_device=%7BFE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3%7D&amp;sc_site=AwareWeb&amp;fxb.FormItemId=c09b398b-e26b-4b94-b8de-bfccacdcc887&amp;fxb.HtmlPrefix=fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113" data-ajax="true" data-ajax-method="Post" data-ajax-mode="replace-with" data-ajax-success="$.validator.unobtrusive.parse(&#39;#fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_c09b398b-e26b-4b94-b8de-bfccacdcc887&#39;);$.fxbFormTracker.parse(&#39;#fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_c09b398b-e26b-4b94-b8de-bfccacdcc887&#39;);" data-ajax-update="#fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_c09b398b-e26b-4b94-b8de-bfccacdcc887" data-sc-fxb="c09b398b-e26b-4b94-b8de-bfccacdcc887" enctype="multipart/form-data" id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_c09b398b-e26b-4b94-b8de-bfccacdcc887" method="post"><input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_FormSessionId" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.FormSessionId" type="hidden" value="5ff14cc2-50c8-4568-9296-de213ca7c490"><input name="__RequestVerificationToken" type="hidden" value="15hCB7N-tNpC6eozwV3P252f9E1mh8CtgJt5_igc2U0aaNNXd9uLMqIF9TqPhxlf6ElcKd28x630tj_LQhqe0KBMz7p6DO7yUNmIB6B8ERt5CIOJiIeF0uke-xTpNexw0"><input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_FormItemId" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.FormItemId" type="hidden" value="c09b398b-e26b-4b94-b8de-bfccacdcc887"><input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_PageItemId" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.PageItemId" type="hidden" value="7e934569-f699-47e7-b8e0-e214e653df31">
+<div class="form-group row">
+    <input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_Index_c09ee835-470e-48a0-81d3-94dc91b67d3d" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields.Index" type="hidden" value="c09ee835-470e-48a0-81d3-94dc91b67d3d"><input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_c09ee835-470e-48a0-81d3-94dc91b67d3d__ItemId" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[c09ee835-470e-48a0-81d3-94dc91b67d3d].ItemId" type="hidden" value="c09ee835-470e-48a0-81d3-94dc91b67d3d"><label for="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_c09ee835-470e-48a0-81d3-94dc91b67d3d__Value" class="">First name</label>
+<input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_c09ee835-470e-48a0-81d3-94dc91b67d3d__Value" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[c09ee835-470e-48a0-81d3-94dc91b67d3d].Value" class="" type="text" value="" maxlength="255" placeholder="First name" data-sc-tracking="True" data-sc-field-name="FirstName" data-val-length="First name must have at least 0 and no more than 255 characters." data-val-length-max="255" data-val-required="First name is required." data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[c09ee835-470e-48a0-81d3-94dc91b67d3d].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_Index_53151dfa-8b23-462e-b39b-bd9c722394bd" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields.Index" type="hidden" value="53151dfa-8b23-462e-b39b-bd9c722394bd"><input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_53151dfa-8b23-462e-b39b-bd9c722394bd__ItemId" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[53151dfa-8b23-462e-b39b-bd9c722394bd].ItemId" type="hidden" value="53151dfa-8b23-462e-b39b-bd9c722394bd"><label for="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_53151dfa-8b23-462e-b39b-bd9c722394bd__Value" class="">Last name</label>
+<input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_53151dfa-8b23-462e-b39b-bd9c722394bd__Value" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[53151dfa-8b23-462e-b39b-bd9c722394bd].Value" class="" type="text" value="" maxlength="255" placeholder="Last name" data-sc-tracking="True" data-sc-field-name="LastName" data-val-length="Last name must have at least 0 and no more than 255 characters." data-val-length-max="255" data-val-required="Last name is required." data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[53151dfa-8b23-462e-b39b-bd9c722394bd].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_Index_e10bdc10-633d-45ba-ae1f-c40a22a6e88e" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields.Index" type="hidden" value="e10bdc10-633d-45ba-ae1f-c40a22a6e88e"><input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_e10bdc10-633d-45ba-ae1f-c40a22a6e88e__ItemId" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[e10bdc10-633d-45ba-ae1f-c40a22a6e88e].ItemId" type="hidden" value="e10bdc10-633d-45ba-ae1f-c40a22a6e88e"><label for="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_e10bdc10-633d-45ba-ae1f-c40a22a6e88e__Value" class="">Phone Number</label>
+<input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_e10bdc10-633d-45ba-ae1f-c40a22a6e88e__Value" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[e10bdc10-633d-45ba-ae1f-c40a22a6e88e].Value" class="" type="text" value="" maxlength="255" placeholder="Phone Number" data-sc-tracking="True" data-sc-field-name="Phone" data-val-regex="Phone Number contains an invalid telephone number." data-val-regex-pattern="^\+?\d{3,}" data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[e10bdc10-633d-45ba-ae1f-c40a22a6e88e].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_Index_601216ce-4eb1-4e5b-811a-5b71125fa237" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields.Index" type="hidden" value="601216ce-4eb1-4e5b-811a-5b71125fa237"><input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_601216ce-4eb1-4e5b-811a-5b71125fa237__ItemId" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[601216ce-4eb1-4e5b-811a-5b71125fa237].ItemId" type="hidden" value="601216ce-4eb1-4e5b-811a-5b71125fa237"><label for="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_601216ce-4eb1-4e5b-811a-5b71125fa237__Value" class="">Email address</label>
+<input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_601216ce-4eb1-4e5b-811a-5b71125fa237__Value" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[601216ce-4eb1-4e5b-811a-5b71125fa237].Value" class="" type="email" value="" maxlength="255" placeholder="Email address" data-sc-tracking="True" data-sc-field-name="EmailAddress" data-val-regex="Email address contains an invalid email address." data-val-regex-pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,17}$" data-val-required="Email address is required." data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[601216ce-4eb1-4e5b-811a-5b71125fa237].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_Index_3052c4ff-541c-4d29-8a0e-f7c16bedc290" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields.Index" type="hidden" value="3052c4ff-541c-4d29-8a0e-f7c16bedc290"><input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_3052c4ff-541c-4d29-8a0e-f7c16bedc290__ItemId" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[3052c4ff-541c-4d29-8a0e-f7c16bedc290].ItemId" type="hidden" value="3052c4ff-541c-4d29-8a0e-f7c16bedc290"><label for="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_3052c4ff-541c-4d29-8a0e-f7c16bedc290__Value" class="">Question/Comment</label>
+<textarea id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_Fields_3052c4ff-541c-4d29-8a0e-f7c16bedc290__Value" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[3052c4ff-541c-4d29-8a0e-f7c16bedc290].Value" class="" rows="4" maxlength="512" placeholder="Question/Comment" data-sc-tracking="True" data-sc-field-name="Message" data-val-length="Question/Comment must have at least 0 and no more than 512 characters." data-val-length-max="512" data-val-required="Question/Comment is required." data-val="true"></textarea>
+<span class="field-validation-valid" data-valmsg-for="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.Fields[3052c4ff-541c-4d29-8a0e-f7c16bedc290].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+<input value="Submit" type="submit" class="btn btn-inverse btn-block" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.c2cbd7c3-b0fa-437d-a738-a4a7c71ad18e">
+<input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_NavigationButtons" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.NavigationButtons" type="hidden" value="c2cbd7c3-b0fa-437d-a738-a4a7c71ad18e">
+<input id="fxb_4fe10e60-6502-43c7-a134-19c0ebe5b113_c2cbd7c3-b0fa-437d-a738-a4a7c71ad18e" name="fxb.4fe10e60-6502-43c7-a134-19c0ebe5b113.c2cbd7c3-b0fa-437d-a738-a4a7c71ad18e" type="hidden" value="0">
+</div>
+</form>
+        <script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery-2.1.3.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery.validate.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/form.validate.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/form.tracking.js"></script>
+    </div>
+</div>
+            </div>
+        </div>
+</div>
+        </div>
+</div>
+    </div>
+</div>
+<div class="component container col-xs-12 container-gradient-background-red-arrow add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{D0441B98-E13E-48AC-97A0-B0A05E91FBE5}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component container add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{8F270013-D764-47F5-8742-8F81B76CA8AC}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component title col-xs-12 position-center add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}" data-uniqueid="{A0010FBD-A270-40D4-9804-25F6EDCBB064}" data-variantid="{60EAA958-2B9A-49EA-8D91-CEEB4B9D867F}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="title">
+    <div class="component-content">
+<h1 class="title-contact">Let's Get Started</h1>    </div>
+</div>
+    </div>
+</div>
+<div class="component container add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{B2AE7350-81FE-46C7-A321-12391AFA5F85}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="row component column-splitter">
+        <div class="col-xs-12 col-sm-6 add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{C25766C8-9AFD-4D28-87FE-147774F6806D}" data-uniqueid="{706CBCC0-E31F-4FB3-A19B-4F25CB695B93}" data-stylesfield="Styles1" data-gridfield="ColumnWidth1" data-renderingclass="">
+    <div class="component rich-text rich-text-contact col-xs-12 add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{87182F78-4399-4896-8D59-9D6A45282F8A}" data-uniqueid="{86ABC85E-A0F8-476C-9EB7-BB2AFB70D94A}" data-variantid="{6185EC0D-565F-4C29-A7D1-1190EA6F803E}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="rich-text">
+        <div class="component-content">
+<p>We'd love to hear from you. We probably have a lot in common. I mean, you like chatting about data-binding, UX patterns, and javascript functions, right?</p>
+<a class="btn btn-inverse btn-block" href="tel:800-783-8919">call us<span class="hidden-xs">: 1.800.783.8919</span></a>
+<a class="btn btn-inverse btn-block" href="mailto:info@awareweb.com">email us<span class="hidden-xs">: info@awareweb.com</span></a>        </div>
+    </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{C25766C8-9AFD-4D28-87FE-147774F6806D}" data-uniqueid="{706CBCC0-E31F-4FB3-A19B-4F25CB695B93}" data-stylesfield="Styles2" data-gridfield="ColumnWidth2" data-renderingclass="">
+<div class="component sitecore-form col-xs-12 labels-left add-your-css-classes-here" data-pageid="{4547AFF7-250A-45EF-8D96-2919CE72976F}" data-renderingid="{6AB4EE29-CB78-4DCE-A316-3E6C3D5513F5}" data-uniqueid="{5DC32978-0B00-45BD-ACD4-4F0035DD8812}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="sitecore-form">
+    <div class="component-content">
+        <form action="/formbuilder?sc_itemid=%7BC7377665-E8F6-460E-A694-2ED706179271%7D&amp;aodisabled=true&amp;overlay=true&amp;sc_mode=preview&amp;CreativeExchangeExport=true&amp;CreativeExchangeMode=AgencyDrop&amp;sc_lang=en&amp;sc_device=%7BFE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3%7D&amp;sc_site=AwareWeb&amp;fxb.FormItemId=6de2319d-f6d4-4333-8694-1a83923efbcf&amp;fxb.HtmlPrefix=fxb.41fb4229-f966-4929-8e4e-0c1f84caf479" data-ajax="true" data-ajax-method="Post" data-ajax-mode="replace-with" data-ajax-success="$.validator.unobtrusive.parse(&#39;#fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_6de2319d-f6d4-4333-8694-1a83923efbcf&#39;);$.fxbFormTracker.parse(&#39;#fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_6de2319d-f6d4-4333-8694-1a83923efbcf&#39;);" data-ajax-update="#fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_6de2319d-f6d4-4333-8694-1a83923efbcf" data-sc-fxb="6de2319d-f6d4-4333-8694-1a83923efbcf" enctype="multipart/form-data" id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_6de2319d-f6d4-4333-8694-1a83923efbcf" method="post"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_FormSessionId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.FormSessionId" type="hidden" value="fe8eedd4-01a2-417e-8542-ab08cd07b418"><input name="__RequestVerificationToken" type="hidden" value="-xKyIMPqCLENGNH_nz-mRfIc50klI4gCW2cKBhErzllIVl6uAMwCkFzPJsRp58yFJekbTl_UHP_5gGgly-IM6791dAz3BbYOOU4Tcs5YdmpGf3OBGfgdXrv8yirgVb6C0"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_FormItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.FormItemId" type="hidden" value="6de2319d-f6d4-4333-8694-1a83923efbcf"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_PageItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.PageItemId" type="hidden" value="5a6ebbae-667c-42e0-ad69-756dc9a7025c">
+<div class="form-group row">
+    <input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_Index_0b494b22-0030-480d-a892-a35a2f3898ff" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields.Index" type="hidden" value="0b494b22-0030-480d-a892-a35a2f3898ff"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_0b494b22-0030-480d-a892-a35a2f3898ff__ItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[0b494b22-0030-480d-a892-a35a2f3898ff].ItemId" type="hidden" value="0b494b22-0030-480d-a892-a35a2f3898ff"><label for="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_0b494b22-0030-480d-a892-a35a2f3898ff__Value" class="">First Name</label>
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_0b494b22-0030-480d-a892-a35a2f3898ff__Value" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[0b494b22-0030-480d-a892-a35a2f3898ff].Value" class="" type="text" value="" maxlength="255" placeholder="" data-sc-tracking="True" data-sc-field-name="FirstName" data-val-length="First Name must have at least 0 and no more than 255 characters." data-val-length-max="255" data-val-required="First Name is required." data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[0b494b22-0030-480d-a892-a35a2f3898ff].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_Index_859b06d2-6747-479a-95de-61f24ce380fb" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields.Index" type="hidden" value="859b06d2-6747-479a-95de-61f24ce380fb"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_859b06d2-6747-479a-95de-61f24ce380fb__ItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[859b06d2-6747-479a-95de-61f24ce380fb].ItemId" type="hidden" value="859b06d2-6747-479a-95de-61f24ce380fb"><label for="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_859b06d2-6747-479a-95de-61f24ce380fb__Value" class="">Last Name</label>
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_859b06d2-6747-479a-95de-61f24ce380fb__Value" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[859b06d2-6747-479a-95de-61f24ce380fb].Value" class="" type="text" value="" maxlength="255" placeholder="" data-sc-tracking="True" data-sc-field-name="LastName" data-val-length="Last Name must have at least 0 and no more than 255 characters." data-val-length-max="255" data-val-required="Last Name is required." data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[859b06d2-6747-479a-95de-61f24ce380fb].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_Index_61903767-6caa-4a30-a91b-162fe966dc71" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields.Index" type="hidden" value="61903767-6caa-4a30-a91b-162fe966dc71"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_61903767-6caa-4a30-a91b-162fe966dc71__ItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[61903767-6caa-4a30-a91b-162fe966dc71].ItemId" type="hidden" value="61903767-6caa-4a30-a91b-162fe966dc71"><label for="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_61903767-6caa-4a30-a91b-162fe966dc71__Value" class="">Email</label>
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_61903767-6caa-4a30-a91b-162fe966dc71__Value" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[61903767-6caa-4a30-a91b-162fe966dc71].Value" class="" type="email" value="" maxlength="255" placeholder="" data-sc-tracking="True" data-sc-field-name="EmailAddress" data-val-regex="Email contains an invalid email address." data-val-regex-pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,17}$" data-val-required="Email is required." data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[61903767-6caa-4a30-a91b-162fe966dc71].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_Index_db9bc4f5-f470-4908-a90d-2b540c600dd3" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields.Index" type="hidden" value="db9bc4f5-f470-4908-a90d-2b540c600dd3"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_db9bc4f5-f470-4908-a90d-2b540c600dd3__ItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[db9bc4f5-f470-4908-a90d-2b540c600dd3].ItemId" type="hidden" value="db9bc4f5-f470-4908-a90d-2b540c600dd3"><label for="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_db9bc4f5-f470-4908-a90d-2b540c600dd3__Value" class="">Phone</label>
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_db9bc4f5-f470-4908-a90d-2b540c600dd3__Value" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[db9bc4f5-f470-4908-a90d-2b540c600dd3].Value" class="" type="text" value="" maxlength="255" placeholder="" data-sc-tracking="True" data-sc-field-name="Phone" data-val-regex="Phone contains an invalid telephone number." data-val-regex-pattern="^\+?\d{3,}" data-val="true">
+<span class="field-validation-valid" data-valmsg-for="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[db9bc4f5-f470-4908-a90d-2b540c600dd3].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+    <input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_Index_a1f550f3-a65a-437e-849f-1d4649b0a9e1" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields.Index" type="hidden" value="a1f550f3-a65a-437e-849f-1d4649b0a9e1"><input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_a1f550f3-a65a-437e-849f-1d4649b0a9e1__ItemId" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[a1f550f3-a65a-437e-849f-1d4649b0a9e1].ItemId" type="hidden" value="a1f550f3-a65a-437e-849f-1d4649b0a9e1"><label for="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_a1f550f3-a65a-437e-849f-1d4649b0a9e1__Value" class="">Message</label>
+<textarea id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_Fields_a1f550f3-a65a-437e-849f-1d4649b0a9e1__Value" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[a1f550f3-a65a-437e-849f-1d4649b0a9e1].Value" class="" rows="4" maxlength="512" placeholder="" data-sc-tracking="True" data-sc-field-name="Message" data-val-length="Message must have at least 0 and no more than 512 characters." data-val-length-max="512" data-val-required="Message is required." data-val="true"></textarea>
+<span class="field-validation-valid" data-valmsg-for="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.Fields[a1f550f3-a65a-437e-849f-1d4649b0a9e1].Value" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group row">
+<input value="Send us a Note" type="submit" class="btn btn-inverse" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.233d1a9c-6264-4470-b81d-1cc2bc911350">
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_NavigationButtons" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.NavigationButtons" type="hidden" value="233d1a9c-6264-4470-b81d-1cc2bc911350">
+<input id="fxb_41fb4229-f966-4929-8e4e-0c1f84caf479_233d1a9c-6264-4470-b81d-1cc2bc911350" name="fxb.41fb4229-f966-4929-8e4e-0c1f84caf479.233d1a9c-6264-4470-b81d-1cc2bc911350" type="hidden" value="0">
+</div>
+</form>
+        <script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery-2.1.3.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery.validate.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/form.validate.js"></script>
+<script src="sitecore%20modules/Web/ExperienceForms/scripts/form.tracking.js"></script>
+    </div>
+</div>
+        </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+            </div>
+        </div>
+    </main>
+    <!-- /#content -->
+    <!-- #footer -->
+    <footer>
+        <div id="footer" class="container-fluid">
+            <div class="row">
+<div class="component container add-your-css-classes-here" data-pageid="{1D52D6F3-8B54-4317-B6EE-8B2630535D48}" data-renderingid="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" data-uniqueid="{09404636-913D-4F1E-8687-24E1FC5202F7}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="container">
+    <div class="component-content">
+<div class="component image file-type-icon-media-link col-xs-12 position-center add-your-css-classes-here" data-pageid="{1D52D6F3-8B54-4317-B6EE-8B2630535D48}" data-renderingid="{4A0D4E0B-BC20-4F2E-BD84-A4BD35834E86}" data-uniqueid="{A19235E0-C05E-4926-9604-5C8E5BFCFB9C}" data-variantid="{24619A93-AFD7-41F8-AC01-B2B10DD03E74}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="image">
+    <div class="component-content">
+<a title="Image 1" href="#"><img src="-/media/Project/AWS/Images/global/logo-footer.png" alt="" width="138" height="138" data-variantitemid="{ACE59CC2-1F07-4D6C-BFF0-3E364A5F0C32}" data-variantfieldname="Image" style="margin: 0px 0px"></a>    </div>
+</div>
+    <div class="component rich-text col-xs-12 indent-top position-center add-your-css-classes-here" data-pageid="{1D52D6F3-8B54-4317-B6EE-8B2630535D48}" data-renderingid="{DCEE78E1-1843-4456-A13A-F10A12191630}" data-uniqueid="{2EDA7A97-1172-4D56-9876-B64096145B46}" data-variantid="{581F32A8-C349-422E-A3F5-C5999EDD6D96}" data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="rich-text">
+        <div class="component-content">
+<p>&copy; 2018 Aware Web Solutions, Inc.<br>
+<a href="privacy-policy/index.html?sc_site=AwareWeb">Privacy Policy</a></p>        </div>
+    </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </footer>
+    <!-- /#footer -->
+</div>
+<!-- /#wrapper -->
+<script src="-/media/Base Themes/Core Libraries/scripts/ie-origin-fix.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/xaquery.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/momentmin.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/lo-dash.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/modernizr.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/galleria-129.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/fullcalendarmin.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/fullcalendargcal.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/jqueryuitouch-punchmin.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/hammer.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/backbone-min.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/typeahead.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/jquerymCustomScrollbar.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/mediaelement-and-player.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/dailymotion.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/facebook.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/soundcloud.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/twitch.js"></script><script src="-/media/Base Themes/Core Libraries/scripts/vimeo.js"></script><script src="-/media/Base Themes/XA API/Scripts/xa.js"></script><script src="-/media/Base Themes/Main Theme/scripts/observer.js"></script><script src="-/media/Base Themes/Main Theme/scripts/partial-design-highlight.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackinginit.js"></script><script src="-/media/Base Themes/Main Theme/scripts/tracking.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmovies.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmoviesmejsplayer.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmoviesplayer.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmoviesplayermanager.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmoviesyoutubeplayer.js"></script><script src="-/media/Base Themes/Main Theme/scripts/trackingmoviesyoutubeplayerhandlers.js"></script><script src="-/media/Base Themes/Google Maps JS Connector/Scripts/google-maps-connector.js"></script><script src="-/media/Base Themes/Maps/Scripts/component-location-service.js"></script><script src="-/media/Base Themes/Maps/Scripts/component-map.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-location-service.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-ajax.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-base-model.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-base-view.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-box.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-data.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-dropdown.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-managed-range.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-range-slider.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-slider.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-load-more.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-location-filter.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-page-selector.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-page-size.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-query.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-radius-filter.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-results.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-results-count.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-results-filter.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-sort.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-url.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-variant-filter.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-service.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-router.js"></script><script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-daterange.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-accordions.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-archive.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-breadcrumb.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-carousel.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-container.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-disqus.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-facebook.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-flash.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-flip.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-fullcalendar.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-galleria.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-google-map.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-language-selector.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-navigation.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-overlay.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-snippet.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-social.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-tabs.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-video.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/component-video-playlist.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/details-polyfill.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/fixheight.js"></script><script src="-/media/Themes/AWS/AwareWeb/AwareWeb/scripts/search-fixheight.js"></script>    <!-- /#wrapper -->
+</body>
+</html>

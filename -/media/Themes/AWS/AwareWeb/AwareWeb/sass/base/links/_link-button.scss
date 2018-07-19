@@ -1,0 +1,102 @@
+.button-default, .default {
+    @include border-basic();
+    @include font-size(1.2);
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    background: #f6f6f6;
+    color: $text-basic;
+    font-weight: bold;
+    &:hover {
+        color: $text-basic;
+        background: $bg-light-gray;
+    }
+}
+.button-success, .success {
+    @include font-size(1.2);
+    @include border-basic();
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    background: $btn-green-light;
+    color: $text-white;
+    font-weight: bold;
+    &:hover {
+        color: $text-white;
+        background: $btn-green;
+    }
+}
+.button-warning, .warning {
+    @include font-size(1.2);
+    @include border-basic();
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    background: $btn-red;
+    color: $text-white;
+    font-weight: bold;
+    &:hover {
+        color: $text-white;
+        background: $btn-red-active;
+    }
+}
+
+//AWS
+.btn {
+    @include raleway-font-stack();
+    font-size: $font-normal;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform:uppercase;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 0;
+    &.btn-lg {
+        font-size: $font-medium;
+        padding: 15px 18px;
+    }
+}
+
+.btn-default {
+    background-color: $bg-white;
+    border: solid 2px $text-red;
+    color: $text-red;
+    &:hover, &:focus {
+        color: $text-white;
+        background-color: $bg-red;
+    }
+}
+
+.btn-inverse {
+    background-color:#700000;
+    border-color: #700000;
+    color: #ff0000;
+    &:hover, &:active, &:focus {
+        background-color: #cc0000;;
+        border-color:  #cc0000;;
+    }
+}
+
+.btn-info {
+    color:#424242;
+    background:transparent;
+    border:2px solid $text-black;
+    font-size:18px;
+    text-transform:uppercase;
+    &:hover, &:active, &:focus {
+        background:#424242;
+        color:$text-white;
+    }
+}

@@ -1,0 +1,45 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+//@import "../../base/fontawesome/fontawesome";
+@import "base/fontawesome/mixins";
+@import "base/fontawesome/variables";
+
+&.toggle-mobile {
+    text-align: right;
+    position: absolute;
+    padding:0;
+    z-index:1;
+
+    .component-content{
+        height: 42px;
+    }
+
+    .toggle-header {
+        text-align: center;
+        padding: 15px;
+        width: 56px;
+        height: 70px;
+        pointer-events: all;
+        background-color: transparent;
+        &:before {
+            font-family: 'Font Awesome 5 Pro', sans-serif;
+            content: "\f0c9";
+            font-size: 30px;
+            text-align: center;
+            padding: 15px;
+            background: none;
+        }	
+    }
+    
+    .toggle-content {
+        display: block;
+        position: relative;
+        z-index: 100;
+        pointer-events: none;
+
+        .navigation-mobile {
+            pointer-events: all;
+            padding: 0;
+        }
+    }
+}

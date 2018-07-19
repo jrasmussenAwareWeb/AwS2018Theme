@@ -1,0 +1,236 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../Images/overlay-bg.png);
+    z-index: 9999;
+    display: none;
+    text-align: center;
+    width: 100%;
+    //AWS
+    background: rgba(255, 255, 255, 0.6);
+
+    &.component {
+        margin: 0;
+    }
+    >.component-content {
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        background: $overlay-bg;
+        padding: 10px 10px 25px;
+        margin: 100px auto auto auto;
+        max-width: 90%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+
+        .component {
+            margin: 0;
+            &.image {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .overlay-inner {
+        min-width: 25px;
+        max-height: inherit;
+        height: inherit;
+        overflow: auto;
+        &.overlay-percent {
+            max-height: 100%;
+            height: auto;
+        }
+        #InnerCenter {
+            width: auto;
+            height: auto;
+        }
+        //AWS
+        .column-splitter {
+            padding-top: 30px;
+        }
+        .rich-text {
+            color: #fff;
+
+            h6 {
+                color: #fff;
+                margin-bottom: 2px;
+            }
+            ul {
+                padding: 0;
+                margin: 0 0 20px 0;
+            }
+            li {
+                padding: 0;
+                margin: 0 0 0 2px;
+            }
+        }
+    }
+    .overlay-inner:focus {
+        border: 1px solid #cccccc;
+    }
+    .overlay-close {
+        //bottom: 8px;
+        //color: #000;
+        color: #fff;
+        cursor: pointer;
+        font-size: 30px;
+        position: absolute;
+        //right: -5px;
+        //bottom: -15px;
+        top: 0;
+        right: 25px;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+    }
+    .overlay-close-link:focus {
+        color: #cccccc;
+        outline: none;
+    }
+    .overlay-close-link:hover {
+        color: #cccccc;
+    }
+    .overlay-close-link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 15px 30px;
+        margin: 0 0 40px 0;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    > .component-content .modal-title {
+        color: #fff;
+        text-align: left;
+        background: rgba(14, 20, 42, 0.7);
+        padding: 15px 30px;
+        margin-bottom: 40px;
+        position: relative;
+    
+        h2, h3, h4 {
+            color: #fff;
+            font-weight: 600;
+            text-align: left;
+            padding: 0;
+            margin-bottom: 0;
+        }
+    }
+    .button {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* this css class is used on overlay page */
+
+.overlay-page {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../Images/overlay-bg.png);
+    z-index: 9999;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    >.component-content {
+        display: inline-block;
+        vertical-align: middle;
+        zoom: 1;
+        *display: inline;
+        background-color: #E6E6E6;
+        border-radius: 5px;
+        position: relative;
+        padding: 10px 10px 25px;
+        margin: 100px 60px 60px;
+        max-width: 90%;
+        background: $overlay-bg;
+        .component {
+            margin: 0;
+            &.image {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .overlay-inner {
+        min-width: 25px;
+        height: inherit;
+        max-height: inherit;
+        min-height: 135px;
+        overflow: auto;
+        &.overlay-percent {
+            max-height: 100%;
+            height: auto;
+            &.edit {
+                max-height: inherit;
+            }
+        }
+    }
+    .overlay-inner:focus {
+        border: 1px solid #cccccc;
+    }
+    .overlay-close {
+        bottom: 8px;
+        color: #000;
+        cursor: pointer;
+        font-size: 30px;
+        position: absolute;
+        right: -5px;
+        bottom: -15px;
+    }
+    .overlay-close-link:focus {
+        //color: #cccccc;
+        color: #fff;
+    }
+    .overlay-close-link:hover {
+        color: #cccccc;
+    }
+    .overlay-close-link {
+        text-decoration: none;
+    }
+}
+#wrapper.overlay-page {
+    margin-bottom: -80px;
+}
+body.preview {
+    .overlay-page {
+        position: fixed;
+    }
+}
+.overlay-page .main {
+    width: 100%;
+}
+
+.on-page-editor {
+    .overlay {
+        .overlay-inner {
+            margin: auto;
+
+            //AWS
+            .rich-text {
+                color: #fff;
+            }
+            .btn-default {
+                color: #fff;
+                border-color: #fff;
+            }
+        }
+    }
+    .overlay-page {
+        z-index: 9000;
+    }
+}

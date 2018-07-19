@@ -1,0 +1,12 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+//AWs
+.container-gray-background {
+    background-color: $bg-light-gray;
+
+    .container {
+        margin-top:160px;
+        margin-bottom:160px;
+    }
+}

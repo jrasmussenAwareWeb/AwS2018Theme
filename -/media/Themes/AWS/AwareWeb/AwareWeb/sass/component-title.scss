@@ -1,0 +1,56 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+
+.title {
+    background: $title-bg;
+
+    &.indent-top {
+        margin-top:30px;
+    }
+
+    h1, .field-title a {
+        //@include border-basic(bottom, $border-basic-color);
+        //font-size: $font-extrabig;
+        margin-bottom: $small-margin;
+        color: $title-color;
+        //line-height: 20px;
+        line-height: 48px;
+        padding-bottom: 10px;
+        display: block;
+        //AWS
+        &.title-contact {
+            color: $text-white;
+            margin-top: 55px;
+            margin-bottom: 45px;
+            padding-bottom: 0;
+            border-bottom: 0;
+            font-weight: 400;
+        }
+    }
+     
+    &.title-page-header {
+        text-align: center;
+        position: absolute;
+        top: 90px;
+        z-index: 9;
+
+        @include respond-to(tablet) {
+            top: 140px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: $text-white;
+            position:relative;
+        }
+    }
+
+    .field-title a {
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            color: $title-color-active;
+        }
+    }
+    @import "variants/title/*";
+
+}

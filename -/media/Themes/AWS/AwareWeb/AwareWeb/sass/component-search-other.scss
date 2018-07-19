@@ -1,0 +1,85 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "base/fontawesome/fontawesome";
+.facet-component {
+    box-sizing: border-box;
+    background: $bg-light-gray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    @import "base/reset/inputs";
+
+    .bottom-filter-button {
+        float: right;
+    }
+    .facet-heading {
+        @include border-basic(bottom, $search-title-border, 3px);
+        padding: 0 0 5px 0;
+        margin: 0 0 5px 0;
+        position: relative;
+
+        .facet-title {
+            display: inline-block;
+            vertical-align: middle;
+            color: $search-title-color;
+            //AwS
+            @include raleway-font-stack();
+            text-transform: uppercase;
+            font-size: $font-big;
+            margin-bottom: 2px;
+        }
+        .clear-filter {
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 15px;
+            //font-size: 14px;
+            text-align: center;
+            width: 20px;
+            line-height: 18px;
+            cursor: pointer;
+            position: absolute;
+            color: $search-filter;
+            right: 3px;
+            top: 50%;
+            padding-bottom: 2px;
+            margin-top: -4px;
+            transform: translateY(-50%);
+            background: $bg-light-gray;
+            &:hover {
+                background: $bg-red;
+                border-color: $search-btn-active-border;
+                text-decoration: none;
+                color: #ffffff;
+            }
+            &.has-active-facet {
+                background: $bg-basic-color-active;
+                color: $search-filter;
+                &:hover {
+                    background: $bg-red;
+                    color: $search-filter;
+                }
+            }
+        }
+    }
+}
+
+//below commented out are not included by default and throw sass errors on compile
+@import "base/search/component-filter-checklist";
+//@import "base/search/component-filter-date";
+@import "base/search/component-filter-dropdown";
+//@import "base/search/component-filter-managed-range";
+@import "base/search/component-filter-radius";
+@import "base/search/component-filter-slider";
+@import "base/search/component-load-more";
+@import "base/search/component-location";
+@import "base/search/component-page-selector";
+@import "base/search/component-page-size";
+@import "base/search/component-results-count";
+//@import "base/search/component-results-filter";
+@import "base/search/component-variant-selector";
+@import "base/search/component-search-box";
+@import "base/search/component-sort-results";
+@import "base/search/component-facet-inputs";
+
+//AWS
+@import "variants/search-box/*";

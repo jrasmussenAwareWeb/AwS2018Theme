@@ -1,0 +1,119 @@
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image a {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.image .image-caption {
+  display: block;
+  font-style: italic;
+  font-size: 14px;
+  color: #333;
+}
+
+/* breakpoints */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.icon, .icon-green, .icon-red {
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+}
+
+.icon-green, .icon-red {
+  color: #fff;
+}
+
+.icon-green {
+  background-color: #50d2c2;
+}
+
+.icon-red {
+  background-color: #cc0000;
+}
+
+.icon-lg {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.image.image-default-size img {
+  max-width: none;
+  width: auto;
+}
+
+.image-full-size img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+.image-left .component-content > div > img {
+  float: left;
+}
+
+.image-right .component-content > div > img {
+  float: right;
+}
+
+.image-default-size img {
+  max-width: none;
+  width: auto;
+}
+
+.image-full-size img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+.image-left .component-content > div > img {
+  float: left;
+}
+
+.image-right .component-content > div > img {
+  float: right;
+}
+
+.img-thumbnail {
+  padding: 0;
+  width: auto;
+  border-radius: 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-thumbnail.position-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-thumbnail.position-center img {
+  margin-right: auto !important;
+  margin-right: auto !important;
+}

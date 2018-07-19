@@ -1,0 +1,54 @@
+//AwS
+&.list-inline {
+    margin-bottom: 20px;
+
+    h1 {
+        color: $text-white;
+        margin-bottom: $middle-margin;
+        text-transform:uppercase;
+    }
+
+    > .component-content {
+
+        ul {
+
+            li {
+                display: inline;
+                //margin-left: $extrasmall-margin;
+                margin-left: 0;
+
+                a {
+                    @include raleway-font-stack();
+                    font-weight: 400;
+                    border: none;
+                    color: $text-white;
+                    font-size: $font-big;
+
+                    &:before {
+                        @include fa-icon();
+                        //content: $fa-var-chevron-right;
+                        content: fa-content($fa-var-circle);
+                        //font-size: 10px;
+                        font-size:5px;
+                        padding: 0 15px 5px 0;
+                        position: relative;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            li:first-child {
+                padding-left: 0;
+                a {
+                    padding-left: 0;
+
+                    &:before {
+                        content:"";
+                    }
+                }
+            }
+        }
+    }
+}

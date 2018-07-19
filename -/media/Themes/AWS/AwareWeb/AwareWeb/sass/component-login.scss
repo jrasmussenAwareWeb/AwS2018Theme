@@ -1,0 +1,12 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.login {
+    @import "base/reset/inputs";
+    background-color: $login-bg;
+    table {
+        width: 100%;
+        td {
+            padding: 5px;
+        }
+    }
+}

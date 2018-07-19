@@ -1,0 +1,108 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/mixins";
+@import "base/fontawesome/variables";
+
+.link {
+    background: $link-bg;
+
+    a {
+        font-size: $font-normal;
+        color: $link-text-color;
+        //border-bottom: 1px solid $link-border;
+        text-decoration: underline;
+
+        &:hover {
+            color: $link-text-color-active;
+        }
+    }
+
+    //AWS
+    .button, &.btn-back, &.btn-next {
+        a {    
+            @include raleway-font-stack();
+            color: $text-red;
+            font-size: $font-normal;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+            background-color: $bg-white;
+            border: solid 2px $text-red;
+            border-radius: 0;
+
+            &:hover, &:focus {
+                color: $text-white;
+                background-color: $bg-red;
+            }
+        }
+        
+        &.btn-inverse {
+            background-color: #700000;
+            border-color: #700000;
+            color: #cc0000;
+    
+            &:hover {
+                background-color: #cc0000;
+                color: $text-white;
+            }
+        }
+    }
+    &.btn-lg {
+        .button {
+            a {
+                font-size: $font-medium;
+                text-transform:uppercase;
+                padding: 15px 18px;
+            }
+        }
+    }
+    &.link-inline {
+        width: auto;
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 15px;
+    }
+    &.btn-back, &.btn-next {
+        a {
+            color: #fff;
+            background-color: $bg-red;
+        }
+    }
+    &.btn-back {
+        float: left;
+        a:before {
+            color: #fff;
+            @include fa-icon();
+            content: "\f177";
+            margin-top: 3px;
+            margin-right: 8px;
+            display: block;
+            float: left;
+            position: relative;
+        }
+    }
+    &.btn-next {
+        float: right;
+        a:after {
+            color: #fff;
+            @include fa-icon();
+            content: "\f178";
+            margin-top: 3px;
+            margin-left: 8px;
+            display: block;
+            float: right;
+            position: relative;
+        }
+    }
+
+}
+.link-arrow {
+    padding-right: 20px;
+}
+.link-arrow:after {
+    font-weight: 600;
+    @include fa-icon();
+    content: "\f061";
+    padding-left: 5px;
+}

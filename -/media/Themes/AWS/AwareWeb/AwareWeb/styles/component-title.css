@@ -1,0 +1,93 @@
+/* breakpoints */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.title {
+  background: transparent;
+}
+
+.title.indent-top {
+  margin-top: 30px;
+}
+
+.title h1, .title .field-title a {
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 48px;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.title h1.title-contact, .title .field-title a.title-contact {
+  color: #FFFFFF;
+  margin-top: 55px;
+  margin-bottom: 45px;
+  padding-bottom: 0;
+  border-bottom: 0;
+  font-weight: 400;
+}
+
+.title.title-page-header {
+  text-align: center;
+  position: absolute;
+  top: 90px;
+  z-index: 9;
+}
+
+@media only screen and (min-width: 768px) {
+  .title.title-page-header {
+    top: 140px;
+  }
+}
+
+.title.title-page-header h1, .title.title-page-header h2, .title.title-page-header h3, .title.title-page-header h4, .title.title-page-header h5, .title.title-page-header h6 {
+  color: #FFFFFF;
+  position: relative;
+}
+
+.title .field-title a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title .field-title a:hover {
+  color: #cc0000;
+}
+
+.title .title-tagline {
+  color: #fff;
+  margin: 40px 0;
+}
+
+.title.title-partners .component-content h2, .title.title-partners .component-content h3 {
+  font-weight: 700;
+  color: #333333;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #333;
+  width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+  .title.title-partners .component-content h2, .title.title-partners .component-content h3 {
+    width: 100%;
+    text-align: center;
+  }
+}

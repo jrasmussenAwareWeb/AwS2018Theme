@@ -1,0 +1,33 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+.file-list {
+    &.file-list-horizontal {
+        .component-content>ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 5px;
+            >li {
+                order: 1;
+            }
+        }
+        li {
+            flex-grow: 1;
+            align-self: flex-end;
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            width: auto;
+            .field-filetypeicon span {
+                width: 100%;
+                &:before {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .list-item>*, .list-item>.scEnabledChrome>* {
+            display: block;
+            text-align: center;
+        }
+    }
+}

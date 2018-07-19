@@ -1,0 +1,84 @@
+@import "../../abstracts/vars";
+@import "../../base/fontawesome/mixins";
+@import "../../base/fontawesome/variables";
+
+.page-selector {
+    text-align: center;
+    padding: 15px 0 0 0;
+    margin-top: 20px;
+    @include border-basic(top);
+
+    .page-selector-list {
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            //margin: 0px 8px;
+
+            &.inactive {
+                a {
+                    color: $text-disabled;
+                    cursor: default;
+                }
+            }
+        }
+        li.page-selector-item-first {
+            a:before {
+                @include fa-icon();
+                content: fa-content($fa-var-angle-double-left);
+                margin-right: 5px;
+            }
+        }
+        li.page-selector-item-previous {
+            a:before {
+                @include fa-icon();
+                content: fa-content($fa-var-angle-left);
+                margin-right: 5px;
+            }
+        }
+        li.page-selector-item-next {
+            a:after {
+                @include fa-icon();
+                content: fa-content($fa-var-angle-right);
+                margin-left: 5px;
+            }
+        }
+        li.page-selector-item-last {
+            a:after {
+                @include fa-icon();
+                content: fa-content($fa-var-angle-double-right);
+                margin-left: 5px;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: $font-normal;
+        padding: 4px;
+    }
+    .page-selector-item-link {
+        @include border-basic();
+        display: block;
+        text-decoration: none;
+        font-weight: normal;
+        height: 28px;
+        line-height: 22px;
+        padding: 2px 9px;
+        margin-left: 5px;
+        &.active {
+            font-weight: bold;
+            color: $search-pagination-hover-color;
+            border: 1px solid $search-pagination-hover-border;
+            background: $search-pagination-hover-bg;
+        }
+        &:hover {
+            // background: $blue;
+            color: $search-pagination-hover-color;
+            border: 1px solid $search-pagination-hover-border;
+            background: $search-pagination-hover-bg;
+        }
+        &.inactive {
+            color: $text-disabled;
+        }
+    }
+}

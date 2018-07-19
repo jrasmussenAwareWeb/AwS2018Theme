@@ -1,0 +1,10 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+&.subnavigation {
+    @include respond-to(tablet) {
+        .item {
+            float: left;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.event-calendar {
+    background: $bg-basic-color;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5px;
+    border-bottom: none !important;
+}

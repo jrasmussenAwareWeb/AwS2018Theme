@@ -1,0 +1,117 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+//AwS
+@import "base/fontawesome/fontawesome";
+
+#header {
+	background-color: rgba(255, 255, 255, 0.9);
+	width: 100%;
+	position: fixed;
+	margin: 0 auto;
+	top: 0;
+    z-index: 100;
+    max-height:70px;
+    @include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 0.3), $inset: false);
+
+    .image {
+        padding:0;
+        //width:auto;
+        z-index:10;
+
+        img {
+            max-height:91px;
+            min-width: 202px;
+            width:auto;
+       
+            @include respond-to(tablet) {
+                max-height:120px;
+            }
+        }
+
+    } 
+    @include respond-to(all-mobile) {
+
+        .container {
+            width:100%;
+        }
+    }
+    
+}
+.preview, .on-page-editor {
+    #header {position: static;}
+}
+
+.navigation {
+    background: $nav-bg;
+    //padding: 10px;
+    margin-top: 4px;
+    padding: 10px 0;
+    //AWS
+    @include raleway-font-stack();
+    font-weight:500;
+    float:right;
+	@include respond-to(phone-large){padding: 10px;}
+	@include respond-to(desktop){margin-top: 3px;}
+	@include respond-to(large){margin-top: 0;}
+
+    .rel-level1 {
+        > .navigation-title > a {
+            color: $nav-color-root;
+            font-size: $navigation-font-basic; 
+            text-decoration: none;
+            border-color: $nav-border-root;
+            border-style: solid;
+            //border-width: 0 0 2px 0;
+            border-width: 0;
+            //padding-right: 3px;
+			padding-right: 0;
+            //margin-right: 5px;
+			margin-right: 0;
+
+            &:hover {
+                text-decoration: none;
+            }
+			@include respond-to(desktop){
+				font-size: 16px; 
+			}
+			@include respond-to(large){
+				font-size: 18px; 
+			}
+        }
+    }
+	
+    a {
+        .lt-ie9 &, .lt-ie9 & span {
+            color: $nav-color-root;
+        }
+
+        &:focus, &:hover {
+            color: $nav-color-root-active;
+        }
+    }
+
+    li {
+        &.submenu {
+            margin-bottom: 0;
+        }
+
+        > .navigation-title {
+            > a {
+                padding: 3px 5px 3px 0;
+                display: block;
+            }
+        }
+
+        > ul a {
+            font-size: $navigation-font-basic-submenu;
+        }
+    }
+
+    .submenu > ul {
+        padding-left: 10px;
+    }
+
+    @import "variants/navigation/*";
+}
+@import "styles/navigation/*";
+

@@ -1,0 +1,41 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+&.label-green, .label-green, &.label-black, .label-black {
+    color:#fff;
+    font-size: $font-small;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    width: auto;
+
+    &:after {
+        content: "";
+        border-right: 10px solid transparent;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: auto;
+        display: inline-block;
+    }
+}
+&.label-green, .label-green {
+    background-color: $bg-green;
+
+    &:after {
+        border-top: 10px solid $bg-green;
+    }
+}
+&.label-black, .label-black {
+    background-color: #000;
+    
+    &:after {
+        border-top: 10px solid #000;
+    }
+}

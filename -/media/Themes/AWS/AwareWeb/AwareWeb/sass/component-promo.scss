@@ -1,0 +1,40 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "base/fontawesome/fontawesome";
+.promo {
+    @include border-basic(all, $promo-border);
+    background: $promo-bg;
+    padding: 15px;
+    overflow: hidden; 
+
+    .zg-height-fix {
+        .field-promoicon {
+            margin-top: 100px;
+        }
+    }
+
+    .field-promoicon {
+        overflow: hidden; 
+        float: left;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .promo-link {
+        margin-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    &.image-full-size {
+        img {
+            margin-bottom: 10px;
+        }
+    }
+    //@import "base/richtext/richtext";
+}
+//AWS
+@import "variants/promo/*";
+@import "styles/promo/*";

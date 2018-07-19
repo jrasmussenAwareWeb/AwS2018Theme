@@ -1,0 +1,142 @@
+.media-link {
+  background: transparent;
+  border-bottom: 1px solid #333;
+  /* breakpoints */
+}
+
+.media-link a:hover {
+  text-decoration: none;
+}
+
+.media-link .component-content > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.media-link.position-right .field-filetypeicon, .media-link.position-right .field-linktext {
+  float: right;
+}
+
+.media-link .field-filetypeicon, .media-link .field-linktext {
+  display: inline-block;
+}
+
+.media-link .field-filetypeicon > a {
+  display: block;
+}
+
+.media-link .field-filetypeicon span {
+  display: block;
+  height: 17px;
+}
+
+.media-link .field-filetypeicon span:before {
+  font-size: 18px;
+}
+
+.media-link .field-linktext a {
+  font-size: 16px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.media-link .link .field-title, .media-link .link .field-linktext, .media-link .media-link .field-title, .media-link .media-link .field-linktext, .media-link .file-list .field-title, .media-link .file-list .field-linktext {
+  display: inline-block;
+  line-height: 21px;
+}
+
+.media-link .link span, .media-link .media-link span, .media-link .file-list span {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.media-link .link a, .media-link .media-link a, .media-link .file-list a {
+  text-decoration: none;
+}
+
+.media-link .pdf, .media-link .xls, .media-link .xslx, .media-link .pptx, .media-link .ppt, .media-link .docx, .media-link .doc, .media-link .bmp, .media-link .png, .media-link .jpg, .media-link .jpeg, .media-link .psd, .media-link .gif, .media-link .avi, .media-link .mp4, .media-link .wmv, .media-link .mov, .media-link .mp3, .media-link .wma, .media-link .txt, .media-link .zip {
+  display: inline-block;
+  box-sizing: border-box;
+  font-weight: normal;
+  width: 15px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.media-link .pdf:before, .media-link .xls:before, .media-link .xslx:before, .media-link .pptx:before, .media-link .ppt:before, .media-link .docx:before, .media-link .doc:before, .media-link .bmp:before, .media-link .png:before, .media-link .jpg:before, .media-link .jpeg:before, .media-link .psd:before, .media-link .gif:before, .media-link .avi:before, .media-link .mp4:before, .media-link .wmv:before, .media-link .mov:before, .media-link .mp3:before, .media-link .wma:before, .media-link .txt:before, .media-link .zip:before {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: 'Font Awesome 5 Pro';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  position: absolute;
+  display: block;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.media-link .pdf:before {
+  content: "\f1c1";
+}
+
+.media-link .xlsx:before, .media-link .xls:before {
+  content: "\f1c3";
+}
+
+.media-link .pptx:before, .media-link .ppt:before {
+  content: "\f1c4";
+}
+
+.media-link .docx:before, .media-link .doc:before {
+  content: "\f1c2";
+}
+
+.media-link .bmp:before, .media-link .png:before, .media-link .jpg:before, .media-link .jpeg:before, .media-link .psd:before, .media-link .gif:before {
+  content: "\f1c5";
+}
+
+.media-link .avi:before, .media-link .mp4:before, .media-link .wmv:before, .media-link .mov:before {
+  content: "\f1c8";
+}
+
+.media-link .mp3:before, .media-link .wma:before {
+  content: "\f1c7";
+}
+
+.media-link .txt:before {
+  content: "\f15c";
+}
+
+.media-link .zip:before {
+  content: "\f1c6";
+}

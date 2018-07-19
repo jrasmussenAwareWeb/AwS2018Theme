@@ -1,0 +1,147 @@
+/* breakpoints */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.link {
+  background: transparent;
+}
+
+.link a {
+  font-size: 16px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.link a:hover {
+  color: #cc0000;
+}
+
+.link .button a, .link.btn-back a, .link.btn-next a {
+  font-family: "Raleway", sans-serif;
+  color: #cc0000;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
+  border-radius: 0;
+}
+
+.link .button a:hover, .link .button a:focus, .link.btn-back a:hover, .link.btn-back a:focus, .link.btn-next a:hover, .link.btn-next a:focus {
+  color: #FFFFFF;
+  background-color: #cc0000;
+}
+
+.link .button.btn-inverse, .link.btn-back.btn-inverse, .link.btn-next.btn-inverse {
+  background-color: #700000;
+  border-color: #700000;
+  color: #cc0000;
+}
+
+.link .button.btn-inverse:hover, .link.btn-back.btn-inverse:hover, .link.btn-next.btn-inverse:hover {
+  background-color: #cc0000;
+  color: #FFFFFF;
+}
+
+.link.btn-lg .button a {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 15px 18px;
+}
+
+.link.link-inline {
+  width: auto;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.link.btn-back a, .link.btn-next a {
+  color: #fff;
+  background-color: #cc0000;
+}
+
+.link.btn-back {
+  float: left;
+}
+
+.link.btn-back a:before {
+  color: #fff;
+  font-family: 'Font Awesome 5 Pro';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  content: "\f177";
+  margin-top: 3px;
+  margin-right: 8px;
+  display: block;
+  float: left;
+  position: relative;
+}
+
+.link.btn-next {
+  float: right;
+}
+
+.link.btn-next a:after {
+  color: #fff;
+  font-family: 'Font Awesome 5 Pro';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  content: "\f178";
+  margin-top: 3px;
+  margin-left: 8px;
+  display: block;
+  float: right;
+  position: relative;
+}
+
+.link-arrow {
+  padding-right: 20px;
+}
+
+.link-arrow:after {
+  font-weight: 600;
+  font-family: 'Font Awesome 5 Pro';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  content: "\f061";
+  padding-left: 5px;
+}

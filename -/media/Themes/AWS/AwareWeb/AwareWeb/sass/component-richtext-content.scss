@@ -1,0 +1,102 @@
+@import "abstracts/vars"; 
+@import "abstracts/mixins";
+@import "base/fontawesome/fontawesome";
+
+.content, .rich-text {
+    background: $rich-content-bg;
+    color: $text-basic;
+    border: $rich-content-border;
+    line-height: 1.5;
+    
+    * {
+        max-width: 100%;
+    }
+    //AWS
+    &.rich-text-contact {
+        color: $text-white;
+        font-size: $font-medium;
+        margin-left: -15px; //is this the best way
+        padding-right: 60px;
+
+        p {
+            margin-top: 0;
+            margin-bottom: $large-margin;
+        }
+
+        .btn:last-of-type {
+            margin-top:15px;
+        }
+        @include respond-to(all-phone) {
+            .btn {margin-top:15px;}
+            .btn:last-of-type {
+                margin-bottom:60px;
+            }
+        }
+        span.hidden-xs {
+            @include opensans-font-stack();
+            vertical-align:baseline;
+        }
+    }
+    &.content-page-header {
+        position: relative;
+        //top: -220px;
+        //margin-bottom: -160px;
+        min-height: 200px;
+        z-index: 1;
+
+        &[class*="col-"] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @include respond-to(large) {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    @include respond-to(all-mobile) {
+        &.content-page-header {
+            max-height: 350px;
+            overflow: hidden;
+
+            img {
+                margin-left:-10% !important;
+                width: 120% !important;
+                max-width: 120%;
+            }
+        }
+    }
+    @include respond-to(all-phone) {
+        &.content-page-header {
+            img {
+                margin-left: -70% !important;
+                width: 240% !important;
+                max-width: 240% !important;
+            }
+        }
+    }
+    @include respond-to(desktop) {
+        &.content-page-header {
+            min-height: 290px;
+        }
+    }
+
+    @import "base/richtext/*";
+
+    //AWS
+    @import "base/links/*";
+    @import "variants/richtext/*";
+    @import "styles/richtext/*";
+    @import "variants/page-content/*";
+}
+
+//AWS
+@media(max-width:1199px) {
+    .content, .rich-text {
+        &.rich-text-contact {
+            margin-left: auto;
+            padding-right:15px;
+        }
+    }
+}

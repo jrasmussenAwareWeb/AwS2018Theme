@@ -1,0 +1,152 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/fontawesome";
+
+.breadcrumb {
+    //overflow: hidden;
+    //margin: 0 0 10px 0;
+    background: $breadcrumb-bg;
+    //AWS
+    color: $text-white;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 40px;
+    z-index: 9;
+    
+    nav {display: inline-block;}
+
+    &.breadcrumb-navigation {
+        overflow: visible;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: $breadcrumb-font;
+        font-weight: 400;
+        //AWS
+        color: $text-white;
+    }
+
+    ol {
+        list-style: none;
+    }
+
+    .field-title {
+        display: inline-block;
+    }
+
+    .separator {
+        margin: 0 5px;
+        display: inline-block;
+        vertical-align: middle
+    }
+
+    li {
+        position: relative;
+        display: block;
+        float: left;
+
+        > .navigation-title {
+            display: inline-block;
+            vertical-align: middle;
+
+            > a:hover {
+                //color: $breadcrumb-active;
+                color: $text-white;
+                text-decoration: underline;
+            }
+        }
+
+        &.last {
+            .separator {
+                display: none;
+            }
+
+            /*> a, a:hover {
+                text-decoration:none;
+                cursor:unset;
+            }*/
+        }
+
+        &:hover {
+            > ol {
+                display: block;
+                position: absolute;
+                top: 20px;
+                left: auto;
+                z-index: 100;
+            }
+        }
+
+        > ol {
+            box-sizing: border-box;
+            display: none;
+            margin: 0;
+            background: $bg-basic-color;
+            @include border-basic();
+
+            li {
+                @include border-basic(bottom);
+                box-sizing: border-box;
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                float: none;
+                margin: 0;
+                padding: 2px 20px;
+                width: 100%;
+                min-width: 140px;
+                cursor: pointer;
+
+                .fa {
+                    float: left;
+                }
+
+                &:hover {
+                    background: $breadcrumb-dropdown-bg-active;
+                    color: $breadcrumb-dropdown-text-active;
+
+                    a {
+                        color: $breadcrumb-dropdown-text-active !important;
+                    }
+                }
+
+                &:before {
+                    @include font-size(1.4);
+                    @include fa-icon();
+                    transform: translateY(-50%);
+                    position: absolute;
+                    content: fa-content($fa-var-globe);
+                    top: 50%;
+                    left: 2px;
+                }
+
+                > a {
+                    display: block;
+                    padding: 2px 0 2px 10px;
+                }
+            }
+        }
+    }
+
+    @include respond-to(all-phone) {
+        //min-height: 260px;
+
+        img {
+            max-width: 300%;
+            min-height: 260px;
+        }
+
+        a {font-size: 14px;}
+    }
+    
+    @include respond-to(tablet) {
+        top: 95px;
+        a {font-size: 16px;}
+    }
+    @import "variants/breadcrumb/*";
+}
+@import "styles/breadcrumb/*";

@@ -1,0 +1,42 @@
+/* breakpoints */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.component.video .mejs-container {
+  overflow: hidden;
+}
+
+.component.video .mejs-controls .mejs-button button {
+  box-shadow: none;
+}
+
+.component.video .video-init {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin: -40px 0 0 -40px;
+  background: url("/-/media/Base-Themes/Core-Libraries/styles/mejs-controls.svg") no-repeat;
+  background-position: 0 -39px;
+  overflow: hidden;
+  z-index: 1;
+}

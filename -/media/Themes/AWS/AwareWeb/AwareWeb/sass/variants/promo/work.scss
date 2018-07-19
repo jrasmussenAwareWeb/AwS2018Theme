@@ -1,0 +1,195 @@
+//AwS
+.promo-work {
+    border: 0;
+    background: none; 
+    padding: 0;
+    text-align: center;
+    position: relative;
+
+    .component-content, .field-promoworkbackground {
+        position: relative;
+    }
+    .promo-body, .promo-hover {
+        width: 100%;
+        position: absolute;
+    }
+    .promo-body {
+        background: rgba(0,0,0,0.7);
+        top: 0;
+        bottom: 0;
+    }
+
+    .promo-body { 
+        text-align: center;
+        padding: 20px;
+        top: 0;
+
+        .promo-icon, .field-promoicon {
+            width: auto;
+            margin: 0 auto 10px;
+            float: none;
+            @include transition(all .3s ease-in-out);
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                @include transition(all .3s ease-in-out);
+            }
+        }
+
+        .field-promotext {
+            padding: 0 30px;
+            @include raleway-font-stack();
+            color: $text-green;
+            font-size: $font-big;
+            opacity: 1;
+            @include transition(all .3s ease-in-out);
+        }
+    }
+    
+    .promo-hover {
+        //display: none;
+        padding: 10px 15px 15px;
+        background-color: $bg-green;
+        //min-height: 165px;
+        bottom: -100%;
+        color: $text-white;
+        @include transition(all .3s ease-in-out);
+
+        .hover-text-large {
+            @include raleway-font-stack();
+            font-size: 44px;
+            line-height: 44px;
+            margin-bottom: 5px;
+            width: 50%;
+            float:left;
+
+            &:before {
+                font-size: 20px;
+                @include fa-icon();
+                content: fa-content($fa-var-arrow-up);
+                position: relative;
+                top: -5px;
+                margin-right: 5px;
+                margin-left: -5px;
+            }
+        }
+
+        .hover-text {
+            padding: 10px 0;
+            line-height: 1;
+            width: 50%;
+            float: left;
+        }
+        .hover-text-new {
+            padding: 10px 0;
+            line-height: 1;
+        }
+
+        .hover-link { 
+            > a {
+                @include raleway-font-stack();
+                color: $text-white;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 15px;
+                border: 2px solid $text-white;
+                display: block;
+                clear: both;
+
+                &::after {
+                    //font-family: Font Awesome 5 Pro;
+                    @include fa-icon();
+                    content: fa-content($fa-var-arrow-right);
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    &:hover, &:focus {
+        .promo-body {
+            .field-promoicon {
+                padding: 0 15px 30px 15px;
+
+                img {
+                    width: 50%;
+                    // max-height: 50px;
+                }
+            }
+
+            .field-promotext {
+                opacity: 0;
+                //display: none;
+            }
+        }
+
+        .promo-hover {
+            bottom: 0;
+        }
+    }
+}
+
+.home {
+    .promo.promo-work {
+        padding: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .promo-body {
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+@include respond-to(all-mobile) {
+    .promo-work {
+        margin-bottom: 30px;
+        .field-promotext {
+            font-size: 18px;
+        }
+        .hover-text, .hover-text-new {
+            > a {
+                font-size: 14px;
+            }
+        }
+    }
+    
+}
+@include respond-to(desktop) {
+    .promo-work {
+        .promo-body { 
+            text-align: center;
+            padding: 30px;
+        }
+        .promo-hover {
+            padding: 20px;
+
+            .hover-text-large {
+                font-size: 64px;
+                line-height: 64px;
+
+                &:before {
+                    font-size: 36px;
+                }
+            }
+            .hover-text, .hover-text-new {
+                font-size: $font-medium;
+            }
+
+            .hover-link {
+                > a {
+                    font-size: $font-medium;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+.col-xs-6 {
+    .promo-work {
+        margin-bottom: 30px;
+    }
+}

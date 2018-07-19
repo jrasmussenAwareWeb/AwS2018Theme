@@ -1,0 +1,17 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+&.title-underline {
+
+    h1:after, h2:after, h3:after, h4:after, h5:after {
+        @include title-underline();
+    }
+
+    &.position-center {
+
+        h1:after, h2:after, h3:after, h4:after, h5:after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

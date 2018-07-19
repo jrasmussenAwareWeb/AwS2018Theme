@@ -1,0 +1,116 @@
+&.flip-image {
+    text-align: center;
+    min-height: 200px;
+    margin-bottom: 50px;
+
+    @include respond-to(desktop) {
+        .flipsides {
+            min-height: 278px;
+        }
+    }
+
+    .field-heading {
+        @include raleway-font-stack();
+        font-weight: 600;
+    }
+    .Side1, .Side0, .Side0_EDIT, .Side1_EDIT {
+        width: 100%;
+        padding: 15px;
+    }
+    .Side0, .Side1 {
+        border: none;
+        overflow: visible;
+        @include box-shadow(0, 3px, 7px, rgba(0, 0, 0, 0.35), $inset: false);
+
+        &:before {
+            @include fa-icon();
+            //font-family:"Font Awesome 5 Pro";
+            width: 46px;
+            height: 22px;
+            padding-top: 14px;
+            margin-left: -23px;
+            top: -22px;
+            position: absolute;
+            @include border-radius(23px 23px 0 0);
+            @include box-shadow(0, -1px, 1px, rgba(0, 0, 0, 0.10), $inset: false);
+        }
+    }
+    .Side0 {
+        background: rgba(255, 255, 255, 0.7);
+
+        &:before {
+            content: fa-content($fa-var-plus);
+            font-weight:900;
+            color: $text-red;
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .slide-heading {
+            color: #fff;
+            font-size: $font-big;
+            line-height: 24px;
+            max-width: 100%;
+            padding: 15px 0;
+            background-color: rgba(0, 0, 0, 0.70);
+            position: absolute;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            z-index: 1;
+
+            .field-heading {
+                color: #fff;
+            }
+        }
+        .slide-content {
+            .component.content.col-xs-12 {
+                padding-left:0 ;
+                padding-right:0;
+            }
+            .field-content {
+                img {
+                    width: 100%;
+                    height: auto;
+                    //max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .Side1 {
+        color: #fff;
+        font-size: $font-small;
+        background-color: $bg-red;
+
+        &:before {
+            content: fa-content($fa-var-reply);
+            color: #fff;
+            background-color: $bg-red;
+        }
+        .field-heading {
+            color: #fff;
+            padding-top: 10px;
+            margin-bottom: 15px;
+            
+            &:after {
+                content: "";
+                background-color: #fff;
+                width: 100px;
+                height: 2px;
+                margin: 10px auto 0;
+                display: block;
+            }
+        }
+        .field-content {
+            color: #fff;
+            vertical-align: baseline;
+
+            a, p, h5, h6 {color: #fff;}
+            a {
+                font-weight: bold;
+                vertical-align: baseline;
+                
+                &:hover {text-decoration: none;}
+            }
+        }
+    }
+}

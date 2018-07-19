@@ -1,0 +1,70 @@
+&.aws-slide-home {
+    padding:0;
+    .component-content {
+        .slide-image {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .container.slide-caption {
+            text-align: left;
+            padding: 0 15px;
+            margin: 0 auto;
+            position: absolute;
+            top: 15%;
+            left: 0;
+            right: 0;
+            @include respond-to(tablet) {
+                top: 30%;
+            }
+            @include respond-to(large) {
+                top: 40%;
+            }
+            @include respond-to(all-phone) {
+                text-align:center;
+            }
+            h1 { 
+                color:$text-red;
+                font-weight:500;
+                margin-bottom:10px;
+                @include respond-to(tablet) {
+                    font-size:34px;
+                }
+                @include respond-to(large) {
+                    font-size:48px;
+                }
+                @include respond-to(all-phone) {
+                    font-size:32px;
+                }
+                @include respond-to(phone) {
+                    font-size:24px;
+                }
+            }
+
+            p {
+                @include raleway-font-stack();
+                font-size:20px;
+                font-weight:500;
+                @include respond-to(tablet) {
+                    width:62%;
+                    font-size:24px;
+                }
+                @include respond-to(large) {
+                    width:52%;
+                    font-size:36px;
+                }
+                @include respond-to(phone-horizontal) {
+                    display:none;
+                }
+            }
+            @include respond-to(all-phone) {
+                .btn {
+                    padding:7px;
+                    font-size:16px;
+                }
+            }
+        }
+    }
+
+}

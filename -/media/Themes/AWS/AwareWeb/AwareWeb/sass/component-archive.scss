@@ -1,0 +1,45 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.sxa-archive {
+    background-color: $bg-light-gray;
+    padding: 10px;
+    margin-bottom: 30px;
+
+    .level-1 {
+        display: block !important;
+        padding: 0 15px 0 20px;
+
+        &>li>.group-header {
+            font-weight: bold;
+        }
+    }
+    .group-header {
+        display: block;
+
+        &:before {
+            @include font-size(1.0);
+            height: 10px;
+            line-height: 10px;
+            position: absolute;
+            content: "+";
+            top: 8px;
+            left: -15px;
+            padding: 0;
+        }
+    }
+    ul {
+        display: none;
+        //margin-left: 10px;
+        cursor: pointer;
+        li {
+            position: relative;
+        }
+    }
+    .archive-items {
+        display: none;
+        .archive-item {
+            cursor: default;
+        }
+    }
+    @import "variants/archive/*";
+}

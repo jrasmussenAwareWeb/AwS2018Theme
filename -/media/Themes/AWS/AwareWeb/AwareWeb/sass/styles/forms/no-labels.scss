@@ -1,0 +1,60 @@
+.no-labels {
+    .scfEmailGeneralPanel, .scfMultipleLineGeneralPanel, .scfSingleLineGeneralPanel, .scfPasswordGeneralPanel, .scfNumberGeneralPanel, 
+    .scfDatePickerGeneralPanel, .scfListBoxGeneralPanel, .scfDropListGeneralPanel, .scfDateGeneralPanel, .scfRadioButtonListGeneralPanel, 
+    .scfCheckBoxListGeneralPanel, .scfFileUploadGeneralPanel, .scfDateSelectorGeneralPanel, .scfCreditCardGeneralPanel, .scfConfirmPasswordGeneralPanel, 
+    .scfCaptchaGeneralPanel, .scfTelephoneGeneralPanel, .scfSmsTelephoneGeneralPanel {
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: middle;
+        width: 93%;
+    }
+    .scfSectionContent {
+        .scfRequired {
+            margin: 0 5px;
+        }
+    }
+    .scfMultipleLineGeneralPanel {
+        width: 95%;
+    }
+    .scfMultipleLineTextBox {
+        margin: 0 0 0 5px;
+    }
+
+    //AwS
+    padding-bottom:15px;
+    @include respond-to(all-phone) {
+        padding:0 30px 30px;
+    }
+    background-color:$bg-light-gray;
+    margin-top:-30px;
+    .form-group {
+        margin-bottom:10px;
+        &.row {
+            margin-left:0;
+            margin-right:0;
+        }
+        label {display:none}
+        input[type="text"], input[type="email"], textarea {
+            border-radius:0;
+            @include opensans-font-stack();
+            color:#777;
+            font-size:16px;
+            border:1px solid #ddd;
+            width:100% !important;
+            padding:6px 12px;
+            &:-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder {
+                color:#777;
+            }
+        }
+        textarea {
+            min-height:80px;
+            font-size:15px;
+        }
+        .field-validation-error {
+            color: $text-red;
+        }
+        .btn-inverse {
+            border:2px solid $text-red;
+        }
+    }
+}
