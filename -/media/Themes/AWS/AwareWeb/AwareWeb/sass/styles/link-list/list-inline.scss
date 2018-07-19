@@ -1,22 +1,17 @@
 //AwS
 &.list-inline {
     margin-bottom: 20px;
-
     h1 {
         color: $text-white;
         margin-bottom: $middle-margin;
         text-transform:uppercase;
     }
-
     > .component-content {
-
         ul {
-
             li {
                 display: inline;
                 //margin-left: $extrasmall-margin;
                 margin-left: 0;
-
                 a {
                     @include raleway-font-stack();
                     font-weight: 400;
@@ -33,7 +28,6 @@
                         padding: 0 15px 5px 0;
                         position: relative;
                     }
-
                     &:hover {
                         text-decoration: underline;
                     }
@@ -43,7 +37,6 @@
                 padding-left: 0;
                 a {
                     padding-left: 0;
-
                     &:before {
                         content:"";
                     }

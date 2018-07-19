@@ -1,0 +1,35 @@
+.trending-wrapper {
+    background:rgba(0,0,0,0.6);
+    position:absolute;
+    top:70px;
+    
+    .list-inline.trending {
+        margin:15px 0;
+        text-align:right;
+
+        > .component-content {
+            float:right;
+            h3 {
+                float:left;
+                color:$text-white; 
+                font-size:$font-normal;
+                font-weight:600;
+                margin:0;
+                padding:10px;
+            }
+            ul {
+                float:right;
+                li {
+                    padding-left:20px;
+                    a {
+                        font-size:$font-normal;
+                        &:before {
+                            content:none;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
