@@ -5960,7 +5960,7 @@ readers do not read off random characters that represent icons */
 
 .column-header-search .search-box {
   margin: 0;
-  padding: 0 13px;
+  padding: 2px 10px 0 10px;
 }
 
 .search-box {
@@ -6170,31 +6170,6 @@ readers do not read off random characters that represent icons */
   display: none;
 }
 
-.search-box input[type="submit"], .search-box input[type="reset"], .search-box input[type="button"], .search-box button {
-  border: 0;
-  padding: 5px;
-}
-
-.search-box input[type="submit"]:hover, .search-box input[type="reset"]:hover, .search-box input[type="button"]:hover, .search-box button:hover {
-  background: transparent !important;
-}
-
-.search-box.icon-only {
-  width: 40px;
-  height: 69px;
-  margin-left: -40px;
-  float: right;
-  z-index: 99;
-}
-
-.search-box.icon-only button, .search-box.icon-only button[type="submit"] {
-  border: none;
-  color: transparent;
-  padding: 5px;
-  margin: 0;
-  box-shadow: none;
-}
-
 .search-box .component-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6209,51 +6184,6 @@ readers do not read off random characters that represent icons */
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-}
-
-.search-box .component-content > button {
-  color: transparent;
-  border: 0;
-  background: transparent !important;
-}
-
-.search-box .component-content > button::after {
-  font-size: 16px;
-  font-family: 'Font Awesome 5 Pro';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: -.125em;
-  content: "\f002";
-  font-weight: 400;
-  color: #000;
-  position: absolute;
-  margin-top: -9px;
-  /*-12px*/
-  top: 50%;
-  left: 0;
-  right: 0;
-}
-
-@media only screen and (max-width: 767px) {
-  .search-box .component-content > button::after {
-    font-size: 28px;
-    margin-top: -22px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .search-box .component-content > button::after {
-    font-size: 18px;
-  }
-}
-
-.search-box .component-content > button:hover::after {
-  color: #cc0000;
 }
 
 .search-box .component-content > input {
@@ -6517,6 +6447,76 @@ button[type="submit"]:hover {
 .bottom-remove-filter button:hover, .bottom-remove-filter button:focus {
   color: #FFFFFF;
   background-color: #cc0000 !important;
+}
+
+.search-box.icon-only {
+  padding: 0 13px;
+  width: 40px;
+  height: 69px;
+  margin-left: -40px;
+  float: right;
+  z-index: 99;
+}
+
+.search-box.icon-only button, .search-box.icon-only button[type="submit"] {
+  border: none;
+  color: transparent;
+  padding: 5px;
+  margin: 0;
+  box-shadow: none;
+}
+
+.search-box.icon-only input[type="submit"], .search-box.icon-only input[type="reset"], .search-box.icon-only input[type="button"], .search-box.icon-only button {
+  border: 0;
+  padding: 5px;
+}
+
+.search-box.icon-only input[type="submit"]:hover, .search-box.icon-only input[type="reset"]:hover, .search-box.icon-only input[type="button"]:hover, .search-box.icon-only button:hover {
+  background: transparent !important;
+}
+
+.search-box.icon-only .component-content > button {
+  color: transparent;
+  border: 0;
+  background: transparent !important;
+}
+
+.search-box.icon-only .component-content > button::after {
+  font-size: 16px;
+  font-family: 'Font Awesome 5 Pro';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  content: "\f002";
+  font-weight: 400;
+  color: #000;
+  position: absolute;
+  margin-top: -9px;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-box.icon-only .component-content > button::after {
+    font-size: 28px;
+    margin-top: -22px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .search-box.icon-only .component-content > button::after {
+    font-size: 18px;
+  }
+}
+
+.search-box.icon-only .component-content > button:hover::after {
+  color: #cc0000;
 }
 
 /*AWS*/

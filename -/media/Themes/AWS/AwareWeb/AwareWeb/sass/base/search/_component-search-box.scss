@@ -1,8 +1,7 @@
 .column-header-search {
     .search-box {
         margin: 0;
-        //padding: 2px 10px 0 10px;
-        padding: 0 13px;
+        padding: 2px 10px 0 10px;
     }
 }
 .search-box {
@@ -30,30 +29,6 @@
             display: none;
         }
     }
-    //AWS
-    input[type="submit"], input[type="reset"], input[type="button"], button {
-        border: 0;
-        padding: 5px;
-
-        &:hover {
-            background:transparent !important;
-        }
-    }
-    &.icon-only {
-        width: 40px;
-        height: 69px;
-        margin-left: -40px;
-        float: right;
-        z-index:99;
-
-        button, button[type="submit"] {
-            border: none;
-            color: transparent;
-            padding: 5px;
-            margin: 0;
-            box-shadow: none;
-        }
-    }
 
     .component-content {
         display: flex;
@@ -65,43 +40,6 @@
         > label, > button {
             flex-grow: 1;
         }
-        //AWS - needs to only apply to the #header
-        > button {
-            color: transparent;
-            border: 0;
-            background: transparent !important;
-        }
-
-        > button::after {
-            //position: relative;
-            //top: -2px;
-            //font-family: Font Awesome 5 Pro;
-            //font-size: 1.2em;
-            font-size: 16px;
-            @include fa-icon();
-            content: fa-content($fa-var-search);
-            font-weight:400;
-            color: #000;
-            ///AWS
-            position: absolute;
-            margin-top: -9px; /*-12px*/
-            top: 50%;
-            left: 0;
-            right: 0;
-
-            @include respond-to(all-phone) {
-                font-size: 28px;
-                margin-top: -22px;
-            }
-            @include respond-to(large) {
-                font-size: 18px;
-            }
-        }
-
-        > button:hover::after {
-            color: #cc0000;
-        }
-        //
         > input {
             width: auto;
             flex-grow: 10;
