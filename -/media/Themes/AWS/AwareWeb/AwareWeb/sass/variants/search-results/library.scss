@@ -51,34 +51,12 @@
                     }
                 }
                 .field-type {
-                    background:rgba(0,0,0,0.7);
+                    background:rgba(11,30,41,0.7);
                     width:100%;
                     height:100%;
                     position:absolute;
                     top:0;
                     left:0;
-
-                    &.Word {
-                        background:rgba(0, 167, 102, 0.7);
-                    }
-
-                    &.Excel {
-                        background:rgba(82,149,53,0.7);
-                    }
-
-                    &.PDF {
-                        background:rgba(0,0,0,0.7);
-                    }
-
-                    &.Video {
-                        background:rgba(0,87,125,0.7);
-                    }
-
-                    &.External {
-                        background:rgba(183,133,0,0.7);
-                    }
-
-
                 }
                 .field-type-icon {
                     height:128px;
@@ -87,7 +65,7 @@
                     top:0;
                     left:0;
                     text-align:center;
-                    margin:13% auto !important;
+                    margin:17% auto !important;
                         @include respond-to(all-phone) {
                             margin:20% auto !important;
                         }
@@ -99,33 +77,28 @@
                         }
                     }*/
 
-                    &.Word {
+                    &.Case.Study {
                         &:after {
-                            content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-word.png');
+                            content:url('/-/media/Project/AWS/Images/resources/icons/icon-case-study.png');
                         }
                     }
 
-                    &.Excel {
+                    &.White.Paper {
                         &:after {
-                            content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-excel.png');
+                            content:url('/-/media/Project/AWS/Images/resources/icons/icon-whitepaper.png');
                         }
                     }
 
-                    &.PDF {
+                    &.eBook {
                         &:after {
-                            content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-pdf.png');
+                            content:url('/-/media/Project/AWS/Images/resources/icons/icon-ebook.png');
                         }
                     }
 
                     &.Video {
                         &:after {
-                            content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-video.png');
-                        }
-                    }
-
-                    &.External {
-                        &:after {
-                            content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-external-link.png');
+                            //content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-video.png');
+                            content:url('/-/media/Project/AWS/Images/resources/icons/icon-video.png');
                         }
                     }
                 }
@@ -135,10 +108,11 @@
                 padding:20px 15px;
                 position:relative;
                 z-index:2;
+                max-height:200px;
             
-
                 .field-publisheddate {
                     font-size:14px;
+                    margin-bottom:10px;
                 }
                 .field-resourcetype {
                     font-size:14px;

@@ -1,16 +1,14 @@
 /*AWS*/
 .search-box-clear {
     padding:0;
-
+    margin:7px 0;
     .facet-heading {
-        padding: 0 0 3px 0;
-        margin: 0 0 5px 0;
         position: relative;
         .facet-title {
-            font-size:16px;
-            vertical-align:middle;
-            //position:relative;
-            //top:3px;
+            color: $search-title-color;
+            @include raleway-font-stack();
+            font-size:$font-big;
+            font-weight:600;
         }
     }
 
@@ -18,44 +16,40 @@
         padding:0;
         a {
             font-size:14px;
-            //color:$text-black; //for testing
-            color:$text-white;
+            color:$text-black; //for testing
+            //color:$text-white;
             //visibility:hidden;
             &::before {
                 //visibility:visible;
                 vertical-align:bottom;
                 color: $text-green;
                 @include fa-icon();
-                content:$fa-var-times;
-                //position:relative;
-                //top:5px;
+                //content:$fa-var-times;
+                content: fa-content($fa-var-times);
             }
         }
     }
     .twitter-typeahead {
         margin:0 5px 0 0 !important;
     }
-
-    input[type="text"], input[type="email"], input[type="password"] {
-        box-shadow:none;
-        color:$text-black;
-    }
     input, button {
         height:34px;
         padding:0 2%;
     }
+    .search-box-button,
     .search-box-button-with-redirect { 
         line-height:1;
         //height:34px;
         width:34px;
-        background-color:$text-green !important;
+        background-color:$text-red !important;
         color:transparent;
         padding:0;
-        border:1px solid $text-green;
-        border-radius:4px !important;
+        border:1px solid $text-red;
+        border-radius:0;
         &:before { 
             @include fa-icon();
-            content:$fa-var-search;
+            //content:$fa-var-search;
+            content: fa-content($fa-var-search);
             color:$text-white;
             padding:7px 0; 
         }

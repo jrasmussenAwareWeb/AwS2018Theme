@@ -121,7 +121,7 @@ h6 {
 .clearfix {
     @include clearfix();
 }
-//search button ? 042618 this shold be taken out and we should use bootstrap classes instead
+/*search button ? 042618 this shold be taken out and we should use bootstrap classes instead
 a.btn, input.btn {
     @include raleway-font-stack();
     color: $text-red;
@@ -145,7 +145,7 @@ a.btn, input.btn {
         padding: 15px 18px;
     }
 }
-//
+*/
 
 #content {
     position:relative;
@@ -161,31 +161,6 @@ a.btn, input.btn {
         top:70px;
     }
 }
-
-/*move*/
-.fade-black-to-bottom {
-    position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-.fade-black-to-bottom  .field-image:before  {
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	/*background-image: linear-gradient(rgba(0,60,96,0.7),rgba(0,60,96,0.7));
-    /*opacity: .6; */
-    background-image:
-    linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.6),
-            rgba(0,0,0,0)
-    );
-} 
-/*move*/
 
 #footer { 
     .container {

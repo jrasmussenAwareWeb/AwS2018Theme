@@ -5350,32 +5350,12 @@ readers do not read off random characters that represent icons */
 }
 
 .search-results.library .search-result-list > li .result-image .field-type {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(11, 30, 41, 0.7);
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.search-results.library .search-result-list > li .result-image .field-type.Word {
-  background: rgba(0, 167, 102, 0.7);
-}
-
-.search-results.library .search-result-list > li .result-image .field-type.Excel {
-  background: rgba(82, 149, 53, 0.7);
-}
-
-.search-results.library .search-result-list > li .result-image .field-type.PDF {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.search-results.library .search-result-list > li .result-image .field-type.Video {
-  background: rgba(0, 87, 125, 0.7);
-}
-
-.search-results.library .search-result-list > li .result-image .field-type.External {
-  background: rgba(183, 133, 0, 0.7);
 }
 
 .search-results.library .search-result-list > li .result-image .field-type-icon {
@@ -5385,7 +5365,7 @@ readers do not read off random characters that represent icons */
   top: 0;
   left: 0;
   text-align: center;
-  margin: 13% auto !important;
+  margin: 17% auto !important;
   /*img {
                         margin:13% auto !important;
                         @include respond-to(all-phone) {
@@ -5400,34 +5380,32 @@ readers do not read off random characters that represent icons */
   }
 }
 
-.search-results.library .search-result-list > li .result-image .field-type-icon.Word:after {
-  content: url("/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-word.png");
+.search-results.library .search-result-list > li .result-image .field-type-icon.Case.Study:after {
+  content: url("/-/media/Project/AWS/Images/resources/icons/icon-case-study.png");
 }
 
-.search-results.library .search-result-list > li .result-image .field-type-icon.Excel:after {
-  content: url("/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-excel.png");
+.search-results.library .search-result-list > li .result-image .field-type-icon.White.Paper:after {
+  content: url("/-/media/Project/AWS/Images/resources/icons/icon-whitepaper.png");
 }
 
-.search-results.library .search-result-list > li .result-image .field-type-icon.PDF:after {
-  content: url("/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-pdf.png");
+.search-results.library .search-result-list > li .result-image .field-type-icon.eBook:after {
+  content: url("/-/media/Project/AWS/Images/resources/icons/icon-ebook.png");
 }
 
 .search-results.library .search-result-list > li .result-image .field-type-icon.Video:after {
-  content: url("/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-video.png");
-}
-
-.search-results.library .search-result-list > li .result-image .field-type-icon.External:after {
-  content: url("/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-external-link.png");
+  content: url("/-/media/Project/AWS/Images/resources/icons/icon-video.png");
 }
 
 .search-results.library .search-result-list > li .result-body {
   padding: 20px 15px;
   position: relative;
   z-index: 2;
+  max-height: 200px;
 }
 
 .search-results.library .search-result-list > li .result-body .field-publisheddate {
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .search-results.library .search-result-list > li .result-body .field-resourcetype {
