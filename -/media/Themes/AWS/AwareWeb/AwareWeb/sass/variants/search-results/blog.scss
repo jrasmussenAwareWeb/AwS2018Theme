@@ -1,0 +1,136 @@
+//AWS
+@import "../../abstracts/mixins";
+
+&.blog {
+    margin-right: -15px;
+    margin-left: -15px;
+    border: none;
+    @include clearfix();
+
+    .search-result-list {
+        width: 100%;
+        border: none;
+        @include clearfix();
+
+        >li {
+            display: block;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            position: relative;
+            height: 100%;
+            padding: 0 15px;
+
+            .blog-item {
+                min-height: 120px;
+                padding: 0 15px 15px;
+                margin-bottom: 30px;
+                border-top: solid 1px #eaeaea;
+                @include box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.3), $inset: false);
+
+                /*&:hover {
+                    @include border-basic(all, $search-item-border-active);
+                }*/
+                .blog-date {
+                    font-size: $font-small;
+                    display: inline;
+                    padding-right: 10px;
+                    border-right:solid 1px $text-gray-light;
+
+                    &:before {
+                        @include fa-icon();
+                        content: fa-content($fa-var-calendar);
+                        color: $text-gray-light;
+                        font-size: $font-medium;
+                        margin-right: 5px;
+                    }
+                }
+                .blog-author {
+                    font-size: $font-small;
+                    display: inline;
+                    padding-left: 10px;
+                }
+                .field-excerpt {
+                    font-size: $font-small;
+                }
+            }
+
+            .field-title {
+                display: block;
+                padding: 5px 0 15px 0;
+                text-align: left;
+                
+                a {
+                    @include raleway-font-stack();
+                    font-size: $font-medium;
+                    color:$text-red;
+                    line-height: 24px;
+                    text-decoration: none;
+                    font-weight: normal;
+
+                    &:hover {
+                        color: $text-basic-active;
+                    }
+                }
+            }
+            &:hover {
+                border: none;
+            }
+            .blog-image {
+                margin: 0 -15px 15px -15px;
+
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        @include respond-to(tablet) {
+            >li {
+                width:50%;
+            }
+        }
+        @include respond-to(large) {
+            >li {
+                column-count: 3;
+            }
+        }
+    }
+}
+
+
+//If browser supports flexbox
+.flexbox & {
+    &.blog {
+        .search-result-list {
+            @include respond-to(tablet) {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+                -webkit-column-gap: 0;
+                -moz-column-gap: 0;
+                column-gap: 0;
+
+                >li {
+                    width: 100%;
+                    display: inline-block;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    word-wrap: break-word;
+                    background-color: #fff;
+                    background-clip: border-box;
+                    float: none;
+                    column-count: 1;
+                }
+            }
+            @include respond-to(large) {
+                -webkit-column-count: 3;
+                -moz-column-count: 3;
+                column-count: 3;
+            }
+        }
+    }
+}
