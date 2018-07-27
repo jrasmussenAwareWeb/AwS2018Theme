@@ -5388,6 +5388,18 @@ readers do not read off random characters that represent icons */
   top: 0;
 }
 
+/* breakpoints */
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
 .load-more {
   /* breakpoints */
 }
@@ -5452,6 +5464,31 @@ readers do not read off random characters that represent icons */
   box-sizing: border-box;
   outline: none;
   cursor: pointer;
+}
+
+.load-more.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+.load-more input[type="button"] {
+  font-family: "Raleway", sans-serif;
+  color: #cc0000;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
+  border-radius: 0;
+}
+
+.load-more input[type="button"]:hover, .load-more input[type="button"]:focus {
+  color: #FFFFFF;
+  background-color: #cc0000;
 }
 
 /* breakpoints */

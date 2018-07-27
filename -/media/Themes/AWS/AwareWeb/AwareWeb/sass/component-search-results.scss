@@ -6,9 +6,6 @@
 
 .search-results {
     @import "base/reset/inputs";
-    .search-result-list {
-        //padding-top: 5px;
-    }
     &.vertical {
         .search-result-list {
             >li {
@@ -43,7 +40,7 @@
         .search-result-list {
             width: 100%;
             >li {
-                display: inline-block;
+                //display: inline-block;
                 float: left;
                 box-sizing: border-box;
                 @include border-basic();
