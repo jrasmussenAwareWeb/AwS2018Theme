@@ -86,19 +86,41 @@
                 }
             }
         }
-        @include respond-to(tablet) {
-            >li {
-                width:50%;
+    }
+}
+//If browser does NOT supports flexbox
+.no-flexbox & {
+    &.blog {
+        .search-result-list {
+            @include respond-to(tablet) {
+                >li {
+                    width: 50%;
+
+                    .blog-item {
+                        height: 336px;
+                        overflow: hidden;
+                    }
+                }
             }
-        }
-        @include respond-to(large) {
-            >li {
-                column-count: 3;
+            @include respond-to(desktop) {
+                >li {
+                    .blog-item {
+                        height: 337px;
+                    }
+                }
+            }
+            @include respond-to(large) {
+                >li {
+                    width: 33.333333%;
+
+                    .blog-item {
+                        height: 316px;
+                    }
+                }
             }
         }
     }
 }
-
 
 //If browser supports flexbox
 .flexbox & {

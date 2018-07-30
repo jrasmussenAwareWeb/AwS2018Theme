@@ -1,7 +1,9 @@
 @import "abstracts/mixins";
 @import "abstracts/vars";
 //AwS
-@import "base/fontawesome/fontawesome";
+//@import "base/fontawesome/fontawesome";
+@import "base/fontawesome/mixins";
+@import "base/fontawesome/variables";
 
 #header {
 	background-color: rgba(255, 255, 255, 0.9);

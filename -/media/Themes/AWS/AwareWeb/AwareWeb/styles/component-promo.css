@@ -5112,6 +5112,7 @@ readers do not read off random characters that represent icons */
 }
 
 .promo-icontop {
+  text-align: center;
   background-color: #f5f5f5;
   border: none;
   margin: 50px auto 30px auto;
