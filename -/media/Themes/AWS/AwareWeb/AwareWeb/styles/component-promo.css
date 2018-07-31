@@ -5385,11 +5385,12 @@ readers do not read off random characters that represent icons */
 }
 
 .promo-work {
-  border: 0;
   background: none;
   padding: 0;
   text-align: center;
   position: relative;
+  border: none;
+  border-top: solid 1px #fff;
 }
 
 .promo-work .component-content, .promo-work .field-promoworkbackground {
@@ -5528,6 +5529,83 @@ readers do not read off random characters that represent icons */
   bottom: 0;
 }
 
+@media only screen and (max-width: 991px) {
+  .promo-work .field-promotext {
+    font-size: 18px;
+  }
+  .promo-work .hover-text > a, .promo-work .hover-text-new > a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .promo-work {
+    border-right: solid 1px #fff;
+  }
+  .promo-work.col-sm-6:nth-child(odd) {
+    border-left: solid 1px #fff;
+  }
+  .promo-work.col-sm-6:nth-last-child(-n+2) {
+    border-bottom: solid 1px #fff;
+  }
+  .col-xs-6 .promo-work {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .promo-work.col-sm-6:nth-child(odd) {
+    border-left: none;
+  }
+  .promo-work.col-md-4:nth-child(3n+1) {
+    border-left: solid 1px #fff;
+  }
+  .promo-work.col-md-4:nth-last-child(-n+3) {
+    border-bottom: solid 1px #fff;
+  }
+  .promo-work .promo-body {
+    text-align: center;
+    padding: 30px;
+  }
+  .promo-work .promo-hover {
+    padding: 15px 20px 20px 20px;
+  }
+  .promo-work .promo-hover .hover-text-large {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .promo-work .promo-hover .hover-text-large:before {
+    font-size: 32px;
+  }
+  .promo-work .promo-hover .hover-text, .promo-work .promo-hover .hover-text-new {
+    font-size: 18px;
+  }
+  .promo-work .promo-hover .hover-link > a {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .col-md-4 .promo-work .promo-hover {
+    padding-top: 15px;
+  }
+  .col-md-4 .promo-work .promo-hover .hover-link > a {
+    padding: 10px 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .promo-work .promo-hover .hover-text-large {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .promo-work .promo-hover .hover-text-large:before {
+    font-size: 36px;
+  }
+  .promo-work .promo-hover .hover-link > a {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
 .home .promo.promo-work {
   padding: 0;
   margin-left: -15px;
@@ -5538,46 +5616,6 @@ readers do not read off random characters that represent icons */
   top: 0;
   left: 0;
   width: 100%;
-}
-
-@media only screen and (max-width: 991px) {
-  .promo-work {
-    margin-bottom: 30px;
-  }
-  .promo-work .field-promotext {
-    font-size: 18px;
-  }
-  .promo-work .hover-text > a, .promo-work .hover-text-new > a {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .promo-work .promo-body {
-    text-align: center;
-    padding: 30px;
-  }
-  .promo-work .promo-hover {
-    padding: 20px;
-  }
-  .promo-work .promo-hover .hover-text-large {
-    font-size: 64px;
-    line-height: 64px;
-  }
-  .promo-work .promo-hover .hover-text-large:before {
-    font-size: 36px;
-  }
-  .promo-work .promo-hover .hover-text, .promo-work .promo-hover .hover-text-new {
-    font-size: 18px;
-  }
-  .promo-work .promo-hover .hover-link > a {
-    font-size: 18px;
-    padding: 20px;
-  }
-}
-
-.col-xs-6 .promo-work {
-  margin-bottom: 30px;
 }
 
 .promo.absolute-bottom-link {

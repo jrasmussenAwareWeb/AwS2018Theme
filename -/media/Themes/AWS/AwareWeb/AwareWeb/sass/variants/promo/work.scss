@@ -1,10 +1,11 @@
 //AwS
 .promo-work {
-    border: 0;
     background: none; 
     padding: 0;
     text-align: center;
     position: relative;
+    border: none;
+    border-top: solid 1px #fff;
 
     .component-content, .field-promoworkbackground {
         position: relative;
@@ -129,24 +130,8 @@
             bottom: 0;
         }
     }
-}
-
-.home {
-    .promo.promo-work {
-        padding: 0;
-        margin-left: -15px;
-        margin-right: -15px;
-
-        .promo-body {
-            top: 0;
-            left: 0;
-            width: 100%;
-        }
-    }
-}
-@include respond-to(all-mobile) {
-    .promo-work {
-        margin-bottom: 30px;
+    @include respond-to(all-mobile) {
+        //margin-bottom: 30px;
         .field-promotext {
             font-size: 18px;
         }
@@ -155,24 +140,50 @@
                 font-size: 14px;
             }
         }
+        
     }
-    
-}
-@include respond-to(desktop) {
-    .promo-work {
+    @include respond-to(tablet) {
+        border-right: solid 1px #fff;
+
+        &.col-sm-6:nth-child(odd){
+            border-left: solid 1px #fff;
+        }
+        // Add bottom border to last 2 children
+        &.col-sm-6:nth-last-child(-n+2){
+            border-bottom: solid 1px #fff;
+        }
+
+        .col-xs-6 & {
+            margin-bottom: 30px;
+        }
+
+    }
+    @include respond-to(desktop) {
+        &.col-sm-6:nth-child(odd){
+            border-left: none;
+        }
+        // Add left border to 1st and every 4th child
+        &.col-md-4:nth-child(3n+1){
+            border-left: solid 1px #fff;
+        }
+        // Add bottom border to last 3 children
+        &.col-md-4:nth-last-child(-n+3){
+            border-bottom: solid 1px #fff;
+        }
+
         .promo-body { 
             text-align: center;
             padding: 30px;
         }
         .promo-hover {
-            padding: 20px;
+            padding: 15px 20px 20px 20px;
 
             .hover-text-large {
-                font-size: 64px;
-                line-height: 64px;
+                font-size: 48px;
+                line-height: 48px;
 
                 &:before {
-                    font-size: 36px;
+                    font-size: 32px;
                 }
             }
             .hover-text, .hover-text-new {
@@ -186,10 +197,46 @@
                 }
             }
         }
+
+        .col-md-4 & {
+            .promo-hover {
+                padding-top: 15px;
+                .hover-link {
+                    > a {padding: 10px 15px;}
+                }
+            }
+        }
+    }
+    @include respond-to(large) {
+        .promo-hover {
+            .hover-text-large {
+                font-size: 64px;
+                line-height: 64px;
+
+                &:before {
+                    font-size: 36px;
+                }
+            }
+            .hover-link {
+                > a {
+                    font-size: $font-medium;
+                    padding: 20px;
+                }
+            }
+        }
     }
 }
-.col-xs-6 {
-    .promo-work {
-        margin-bottom: 30px;
+
+.home {
+    .promo.promo-work {
+        padding: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .promo-body {
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
     }
 }

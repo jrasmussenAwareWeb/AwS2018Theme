@@ -1,6 +1,7 @@
 @import "abstracts/vars";
 @import "abstracts/mixins";
 @import "base/fontawesome/fontawesome";
+
 .promo {
     @include border-basic(all, $promo-border);
     background: $promo-bg;

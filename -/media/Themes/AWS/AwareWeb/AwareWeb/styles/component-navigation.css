@@ -144,6 +144,7 @@
 }
 
 .navigation.subnavigation nav, .navigation.subnavigation-landing nav {
+  text-align: center;
   margin: 15px;
 }
 
@@ -175,6 +176,7 @@
 @media only screen and (max-width: 767px) {
   .navigation.subnavigation nav .level1, .navigation.subnavigation-landing nav .level1 {
     border-bottom: 1px solid #cccccc;
+    text-align: left;
     padding: 10px;
   }
   .navigation.subnavigation nav .level1 .icon-red, .navigation.subnavigation-landing nav .level1 .icon-red {
@@ -265,6 +267,9 @@
 @media only screen and (min-width: 768px) {
   .navigation.subnavigation-landing .nav {
     border-bottom: none;
+  }
+  .navigation.subnavigation-landing .nav .level1 {
+    width: 25%;
   }
 }
 

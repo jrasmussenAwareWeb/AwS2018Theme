@@ -359,7 +359,6 @@
     -ms-flex-direction: column;
     flex-direction: column;
     word-wrap: break-word;
-    background-color: #fff;
     background-clip: border-box;
     float: none;
     -webkit-column-count: 1;
