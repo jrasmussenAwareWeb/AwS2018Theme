@@ -3,6 +3,7 @@
 //@import "base/fontawesome/fontawesome";
 @import "base/fontawesome/mixins";
 @import "base/fontawesome/variables";
+@import "base/links/*";
 
 .carousel {
     //@include border-basic();
@@ -12,7 +13,9 @@
 	padding: 0;
     text-align: center;
     background: $carousel-bg;
-
+    @include respond-to(all-phone) {
+        top:-25px;
+    }
     .slides {
         position: relative;
         &:after {

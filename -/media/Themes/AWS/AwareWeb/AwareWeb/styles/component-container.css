@@ -418,6 +418,10 @@
   }
 }
 
+.search-wrapper {
+  padding: 0;
+}
+
 /* breakpoints */
 @keyframes spin {
   0% {
@@ -547,7 +551,7 @@
 
 .trending-wrapper {
   background: rgba(60, 68, 88, 0.6);
-  position: absolute;
+  position: fixed;
   top: 70px;
 }
 

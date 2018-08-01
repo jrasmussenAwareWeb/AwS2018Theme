@@ -6,6 +6,7 @@
 @import "base/fontawesome/fa-regular";
 @import "base/fontawesome/fa-light";
 @import "base/fontawesome/fontawesome";
+@import "base/links/*";
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -144,14 +145,19 @@ a.btn, input.btn {
         font-size: $font-medium;
         padding: 15px 18px;
     }
-}
-*/
+}*/
 
+
+header {
+    position:relative;
+    z-index:10;
+}
+/*we seem to need this only on home?*/
 #content {
     position:relative;
     top:-25px;
 }
-
+/*we seem to need this only on home?*/
 @include respond-to(all-phone) {
     #wrapper {
         width: 100%;

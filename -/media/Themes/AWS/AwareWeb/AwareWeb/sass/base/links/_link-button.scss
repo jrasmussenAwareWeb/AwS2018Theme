@@ -62,7 +62,10 @@
     text-transform:uppercase;
     padding: 15px;
     display: inline-block;
+    background-color: $bg-white;
+    border: solid 2px $text-red;
     border-radius: 0;
+    color:$text-red;
     &.btn-lg {
         font-size: $font-medium;
         padding: 15px 18px;
@@ -84,8 +87,9 @@
     border-color: #700000;
     color: #ff0000;
     &:hover, &:active, &:focus {
-        background-color: #cc0000;;
-        border-color:  #cc0000;;
+        background-color: #cc0000;
+        border-color:  #cc0000;
+        color:$text-white;
     }
 }
 

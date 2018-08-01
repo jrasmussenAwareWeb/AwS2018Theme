@@ -233,7 +233,10 @@
   text-transform: uppercase;
   padding: 15px;
   display: inline-block;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
   border-radius: 0;
+  color: #cc0000;
 }
 
 .link-button .btn.btn-lg {
@@ -261,6 +264,7 @@
 .link-button .btn-inverse:hover, .link-button .btn-inverse:active, .link-button .btn-inverse:focus {
   background-color: #cc0000;
   border-color: #cc0000;
+  color: #FFFFFF;
 }
 
 .link-button .btn-info {

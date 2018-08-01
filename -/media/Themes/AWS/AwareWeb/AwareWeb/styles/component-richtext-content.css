@@ -5191,6 +5191,7 @@ readers do not read off random characters that represent icons */
   padding-bottom: 5px;
   padding-top: 5px;
   margin-left: 15px;
+  margin-bottom: 20px;
 }
 
 .content li, .rich-text li {
@@ -5337,7 +5338,10 @@ readers do not read off random characters that represent icons */
   text-transform: uppercase;
   padding: 15px;
   display: inline-block;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
   border-radius: 0;
+  color: #cc0000;
 }
 
 .content .btn.btn-lg, .rich-text .btn.btn-lg {
@@ -5365,6 +5369,7 @@ readers do not read off random characters that represent icons */
 .content .btn-inverse:hover, .content .btn-inverse:active, .content .btn-inverse:focus, .rich-text .btn-inverse:hover, .rich-text .btn-inverse:active, .rich-text .btn-inverse:focus {
   background-color: #cc0000;
   border-color: #cc0000;
+  color: #FFFFFF;
 }
 
 .content .btn-info, .rich-text .btn-info {

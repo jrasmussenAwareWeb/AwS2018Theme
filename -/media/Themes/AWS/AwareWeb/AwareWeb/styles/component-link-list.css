@@ -5107,7 +5107,10 @@ readers do not read off random characters that represent icons */
   text-transform: uppercase;
   padding: 15px;
   display: inline-block;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
   border-radius: 0;
+  color: #cc0000;
 }
 
 .link-list .btn.btn-lg {
@@ -5135,6 +5138,7 @@ readers do not read off random characters that represent icons */
 .link-list .btn-inverse:hover, .link-list .btn-inverse:active, .link-list .btn-inverse:focus {
   background-color: #cc0000;
   border-color: #cc0000;
+  color: #FFFFFF;
 }
 
 .link-list .btn-info {
