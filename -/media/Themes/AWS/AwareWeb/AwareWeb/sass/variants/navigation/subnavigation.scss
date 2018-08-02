@@ -31,7 +31,6 @@
         }
         @include respond-to(all-phone) {
             .level1 {
-                @include border-basic(bottom, #cccccc, 1px);
                 text-align: left;
                 padding: 10px;
                 .icon-red {
@@ -49,9 +48,6 @@
         @include respond-to(tablet) {
             nav, ul {
                 text-align: center;
-            }
-            nav {
-                @include border-basic(bottom, #ccc, 1px);
             }
             ul {
                 width: auto;
@@ -83,9 +79,15 @@
                     .icon-red {
                         @include box-shadow(0, 6px, 10px, rgba(0, 0, 0, 0.3), $inset: false);
                     }
+                }
+
+                // Apply hover styles to li.level1
+                &:hover {
+                    .icon-red {
+                        @include box-shadow(0, 6px, 10px, rgba(0, 0, 0, 0.3), $inset: false);
+                    }
                     > .navigation-title > a {
-                        @include border-basic(bottom, #333, 3px);
-                        margin-bottom: -2px;
+                        color: $text-basic-active;
                     }
                 }
             }
@@ -127,8 +129,6 @@
     }
     @include respond-to(tablet) {
         .nav {
-            border-bottom: none;
-
             .level1 {
                 width: 25%;
             }

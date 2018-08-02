@@ -6541,7 +6541,7 @@ button[type="submit"]:hover {
 @media only screen and (max-width: 767px) {
   .search-box.icon-only .component-content > button::after {
     font-size: 28px;
-    margin-top: -22px;
+    margin-top: -16px;
   }
 }
 

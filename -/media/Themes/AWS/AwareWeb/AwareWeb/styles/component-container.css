@@ -56,6 +56,16 @@
   background-color: #0f1b2f;
 }
 
+#content .container:first-child:after {
+  content: "";
+}
+
+#content .container:first-child:after:before, #content .container:first-child:after:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .angle-content-left, .angle-content-right {
   background-repeat: no-repeat;
   background-position: right bottom;

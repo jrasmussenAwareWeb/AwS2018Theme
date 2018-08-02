@@ -5499,7 +5499,7 @@ readers do not read off random characters that represent icons */
   clear: both;
 }
 
-.promo-work .promo-hover .hover-link > a::after {
+.promo-work .promo-hover .hover-link > a:after {
   font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5513,8 +5513,15 @@ readers do not read off random characters that represent icons */
   margin-left: 5px;
 }
 
+.promo-work .promo-hover .hover-link > a:hover {
+  color: #fff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
 .promo-work:hover .promo-body .field-promoicon, .promo-work:focus .promo-body .field-promoicon {
   padding: 0 15px 30px 15px;
+  margin-top: -5px;
 }
 
 .promo-work:hover .promo-body .field-promoicon img, .promo-work:focus .promo-body .field-promoicon img {
@@ -5578,7 +5585,7 @@ readers do not read off random characters that represent icons */
     font-size: 32px;
   }
   .promo-work .promo-hover .hover-text, .promo-work .promo-hover .hover-text-new {
-    font-size: 18px;
+    font-size: 16px;
   }
   .promo-work .promo-hover .hover-link > a {
     font-size: 18px;
@@ -5588,6 +5595,7 @@ readers do not read off random characters that represent icons */
     padding-top: 15px;
   }
   .col-md-4 .promo-work .promo-hover .hover-link > a {
+    font-size: 16px;
     padding: 10px 15px;
   }
 }
@@ -5599,6 +5607,9 @@ readers do not read off random characters that represent icons */
   }
   .promo-work .promo-hover .hover-text-large:before {
     font-size: 36px;
+  }
+  .promo-work .promo-hover .hover-text, .promo-work .promo-hover .hover-text-new {
+    font-size: 18px;
   }
   .promo-work .promo-hover .hover-link > a {
     font-size: 18px;

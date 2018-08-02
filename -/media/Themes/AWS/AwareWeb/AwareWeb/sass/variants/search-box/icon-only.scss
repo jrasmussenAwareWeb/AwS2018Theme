@@ -43,7 +43,7 @@
 
             @include respond-to(all-phone) {
                 font-size: 28px;
-                margin-top: -22px;
+                margin-top: -16px;
             }
             @include respond-to(large) {
                 font-size: 18px;

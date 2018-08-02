@@ -99,11 +99,16 @@
                 display: block;
                 clear: both;
 
-                &::after {
+                &:after {
                     //font-family: Font Awesome 5 Pro;
                     @include fa-icon();
                     content: fa-content($fa-var-arrow-right);
                     margin-left: 5px;
+                }
+                &:hover{
+                    color: #fff;
+                    background-color: $bg-red;
+                    border-color: $bg-red;
                 }
             }
         }
@@ -113,6 +118,7 @@
         .promo-body {
             .field-promoicon {
                 padding: 0 15px 30px 15px;
+                margin-top: -5px;
 
                 img {
                     width: 50%;
@@ -187,7 +193,7 @@
                 }
             }
             .hover-text, .hover-text-new {
-                font-size: $font-medium;
+                font-size: $font-normal;
             }
 
             .hover-link {
@@ -202,7 +208,10 @@
             .promo-hover {
                 padding-top: 15px;
                 .hover-link {
-                    > a {padding: 10px 15px;}
+                    > a {
+                        font-size: $font-normal;
+                        padding: 10px 15px;
+                    }
                 }
             }
         }
@@ -216,6 +225,9 @@
                 &:before {
                     font-size: 36px;
                 }
+            }
+            .hover-text, .hover-text-new {
+                font-size: $font-medium;
             }
             .hover-link {
                 > a {

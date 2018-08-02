@@ -175,7 +175,6 @@
 
 @media only screen and (max-width: 767px) {
   .navigation.subnavigation nav .level1, .navigation.subnavigation-landing nav .level1 {
-    border-bottom: 1px solid #cccccc;
     text-align: left;
     padding: 10px;
   }
@@ -194,9 +193,6 @@
 @media only screen and (min-width: 768px) {
   .navigation.subnavigation nav nav, .navigation.subnavigation-landing nav nav, .navigation.subnavigation nav ul, .navigation.subnavigation-landing nav ul {
     text-align: center;
-  }
-  .navigation.subnavigation nav nav, .navigation.subnavigation-landing nav nav {
-    border-bottom: 1px solid #ccc;
   }
   .navigation.subnavigation nav ul, .navigation.subnavigation-landing nav ul {
     width: auto;
@@ -228,9 +224,11 @@
   .navigation.subnavigation nav .level1.active .icon-red, .navigation.subnavigation-landing nav .level1.active .icon-red {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
   }
-  .navigation.subnavigation nav .level1.active > .navigation-title > a, .navigation.subnavigation-landing nav .level1.active > .navigation-title > a {
-    border-bottom: 3px solid #333;
-    margin-bottom: -2px;
+  .navigation.subnavigation nav .level1:hover .icon-red, .navigation.subnavigation-landing nav .level1:hover .icon-red {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  .navigation.subnavigation nav .level1:hover > .navigation-title > a, .navigation.subnavigation-landing nav .level1:hover > .navigation-title > a {
+    color: #cc0000;
   }
 }
 
@@ -265,9 +263,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .navigation.subnavigation-landing .nav {
-    border-bottom: none;
-  }
   .navigation.subnavigation-landing .nav .level1 {
     width: 25%;
   }

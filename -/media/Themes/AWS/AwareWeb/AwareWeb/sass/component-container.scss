@@ -25,6 +25,13 @@
     &.background-dark-blue {
         background-color: #0f1b2f;
     }
+
+    #content & {
+        &:first-child:after {
+            content: "";
+            @include clearfix();
+        }
+    }
 }
 
 @import "styles/container/*";
