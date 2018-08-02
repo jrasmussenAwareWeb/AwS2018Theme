@@ -158,6 +158,7 @@ header {
     top:-25px;
 }
 /*we seem to need this only on home?*/
+
 @include respond-to(all-phone) {
     #wrapper {
         width: 100%;

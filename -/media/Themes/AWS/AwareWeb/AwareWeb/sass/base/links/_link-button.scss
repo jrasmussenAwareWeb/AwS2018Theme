@@ -1,3 +1,7 @@
+/*AwS 
+- not using the specific classes here (i.e. button-*) but instead the standard bootstrap prefixing (.btn-*) to avoid confusion
+- see .btn below
+*/
 .button-default, .default {
     @include border-basic();
     @include font-size(1.2);

@@ -1,83 +1,125 @@
 @import "../../abstracts/vars";
 @import "../../base/fontawesome/mixins";
 @import "../../base/fontawesome/variables";
-
 .page-selector {
     text-align: center;
-    padding: 15px 0 0 0;
-    margin-top: 20px;
+    padding: 10px 0 0 0;
 
     .page-selector-list {
         li {
             display: inline-block;
             vertical-align: middle;
-            //margin: 0px 8px;
 
             &.inactive {
                 a {
-                    color: $text-disabled;
+                    //color: $text-disabled;
+                    color:transparent;
                     cursor: default;
                 }
-            }
-        }
-        li.page-selector-item-first {
-            a:before {
-                @include fa-icon();
-                content: fa-content($fa-var-angle-double-left);
-                margin-right: 5px;
-            }
-        }
-        li.page-selector-item-previous {
-            a:before {
-                @include fa-icon();
-                content: fa-content($fa-var-angle-left);
-                margin-right: 5px;
-            }
-        }
-        li.page-selector-item-next {
-            a:after {
-                @include fa-icon();
-                content: fa-content($fa-var-angle-right);
-                margin-left: 5px;
-            }
-        }
-        li.page-selector-item-last {
-            a:after {
-                @include fa-icon();
-                content: fa-content($fa-var-angle-double-right);
-                margin-left: 5px;
+            } 
+            &.active {
+                background-color:$text-red;
+                color:$text-white;
             }
         }
     }
+
     a {
         text-decoration: none;
         font-weight: bold;
         font-size: $font-normal;
-        padding: 4px;
     }
-    .page-selector-item-link {
+
+    .page-selector-item-first, .page-selector-item-previous, 
+    .page-selector-item-last, .page-selector-item-next, .page-selector-item-link {
+        margin-left: 5px;
         @include border-basic();
+        border-radius:4px;
         display: block;
         text-decoration: none;
-        font-weight: normal;
         height: 28px;
-        line-height: 22px;
+        line-height: 22px;  
         padding: 2px 9px;
-        margin-left: 5px;
-        &.active {
-            font-weight: bold;
-            color: $search-pagination-hover-color;
-            border: 1px solid $search-pagination-hover-border;
-            background: $search-pagination-hover-bg;
+        color:$text-red;
+        a {color:$text-red}
+    }
+
+    .page-selector-item-first a, .page-selector-item-previous a, 
+    .page-selector-item-last a, .page-selector-item-next a {
+        @include fa-icon();
+        //visibility: hidden;
+        color:transparent;
+        position: relative;
+        &::after {
+            //visibility:visible;
+            position:relative;
+            top:-2px;
+            left:4px;
+            color:$text-red;
         }
-        &:hover {
-            // background: $blue;
-            color: $search-pagination-hover-color;
-            border: 1px solid $search-pagination-hover-border;
+    } 
+
+    .page-selector-item-first, .page-selector-item-previous, 
+    .page-selector-item-last, .page-selector-item-next, .page-selector-item-link {
+        &.active, &:hover, &:focus {
             background: $search-pagination-hover-bg;
+            color: $search-pagination-hover-color;
+            a {
+                //color: $search-pagination-hover-color;
+                color:transparent;
+                &::after {
+                    color:$text-white;
+                }
+            }
         }
         &.inactive {
-            color: $text-disabled;
+            a {
+                color:transparent;
+                &::after {
+                    color:$text-gray;
+                }
+            }
+            &:hover, &:focus {
+                background:transparent;
+                //color: $text-disabled;
+                color:transparent;
+                a {
+                    color:transparent;
+                    &::after {
+                        color:$text-gray;
+                    }
+                }
+            }
+        }
+    }
+    
+    .page-selector-item-first {
+        a {
+            &::after {
+                content: fa-content($fa-var-angle-double-left);
+            }
+        }
+    }
+    .page-selector-item-previous {
+        a {
+            &::after {
+                content: fa-content($fa-var-angle-left);
+                left:0;
+            }
+        }
+    }
+    .page-selector-item-last {
+        a {
+            &::after {
+                content: fa-content($fa-var-angle-double-right);
+            }
+        }
+    }
+    .page-selector-item-next {
+        a {
+            &::after {
+                content: fa-content($fa-var-angle-right);
+            }
         }
     }
 }

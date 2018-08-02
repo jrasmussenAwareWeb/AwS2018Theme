@@ -5728,8 +5728,7 @@ readers do not read off random characters that represent icons */
 
 .page-selector {
   text-align: center;
-  padding: 15px 0 0 0;
-  margin-top: 20px;
+  padding: 10px 0 0 0;
 }
 
 .page-selector .page-selector-list li {
@@ -5738,99 +5737,128 @@ readers do not read off random characters that represent icons */
 }
 
 .page-selector .page-selector-list li.inactive a {
-  color: #aaa;
+  color: transparent;
   cursor: default;
 }
 
-.page-selector .page-selector-list li.page-selector-item-first a:before {
-  font-family: 'Font Awesome 5 Pro';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: -.125em;
-  content: "\f100";
-  margin-right: 5px;
-}
-
-.page-selector .page-selector-list li.page-selector-item-previous a:before {
-  font-family: 'Font Awesome 5 Pro';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: -.125em;
-  content: "\f104";
-  margin-right: 5px;
-}
-
-.page-selector .page-selector-list li.page-selector-item-next a:after {
-  font-family: 'Font Awesome 5 Pro';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: -.125em;
-  content: "\f105";
-  margin-left: 5px;
-}
-
-.page-selector .page-selector-list li.page-selector-item-last a:after {
-  font-family: 'Font Awesome 5 Pro';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: -.125em;
-  content: "\f101";
-  margin-left: 5px;
+.page-selector .page-selector-list li.active {
+  background-color: #cc0000;
+  color: #FFFFFF;
 }
 
 .page-selector a {
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  padding: 4px;
 }
 
-.page-selector .page-selector-item-link {
+.page-selector .page-selector-item-first, .page-selector .page-selector-item-previous,
+.page-selector .page-selector-item-last, .page-selector .page-selector-item-next, .page-selector .page-selector-item-link {
+  margin-left: 5px;
   border: 1px solid #d2d2d2;
+  border-radius: 4px;
   display: block;
   text-decoration: none;
-  font-weight: normal;
   height: 28px;
   line-height: 22px;
   padding: 2px 9px;
-  margin-left: 5px;
+  color: #cc0000;
 }
 
-.page-selector .page-selector-item-link.active {
-  font-weight: bold;
-  color: #89C6CC;
-  border: 1px solid #840000;
-  background: #f6f6f6;
+.page-selector .page-selector-item-first a, .page-selector .page-selector-item-previous a,
+.page-selector .page-selector-item-last a, .page-selector .page-selector-item-next a, .page-selector .page-selector-item-link a {
+  color: #cc0000;
 }
 
-.page-selector .page-selector-item-link:hover {
-  color: #89C6CC;
-  border: 1px solid #840000;
-  background: #f6f6f6;
+.page-selector .page-selector-item-first a, .page-selector .page-selector-item-previous a,
+.page-selector .page-selector-item-last a, .page-selector .page-selector-item-next a {
+  font-family: 'Font Awesome 5 Pro';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  color: transparent;
+  position: relative;
 }
 
-.page-selector .page-selector-item-link.inactive {
-  color: #aaa;
+.page-selector .page-selector-item-first a::after, .page-selector .page-selector-item-previous a::after,
+.page-selector .page-selector-item-last a::after, .page-selector .page-selector-item-next a::after {
+  position: relative;
+  top: -2px;
+  left: 4px;
+  color: #cc0000;
+}
+
+.page-selector .page-selector-item-first.active, .page-selector .page-selector-item-first:hover, .page-selector .page-selector-item-first:focus, .page-selector .page-selector-item-previous.active, .page-selector .page-selector-item-previous:hover, .page-selector .page-selector-item-previous:focus,
+.page-selector .page-selector-item-last.active,
+.page-selector .page-selector-item-last:hover,
+.page-selector .page-selector-item-last:focus, .page-selector .page-selector-item-next.active, .page-selector .page-selector-item-next:hover, .page-selector .page-selector-item-next:focus, .page-selector .page-selector-item-link.active, .page-selector .page-selector-item-link:hover, .page-selector .page-selector-item-link:focus {
+  background: #cc0000;
+  color: #FFFFFF;
+}
+
+.page-selector .page-selector-item-first.active a, .page-selector .page-selector-item-first:hover a, .page-selector .page-selector-item-first:focus a, .page-selector .page-selector-item-previous.active a, .page-selector .page-selector-item-previous:hover a, .page-selector .page-selector-item-previous:focus a,
+.page-selector .page-selector-item-last.active a,
+.page-selector .page-selector-item-last:hover a,
+.page-selector .page-selector-item-last:focus a, .page-selector .page-selector-item-next.active a, .page-selector .page-selector-item-next:hover a, .page-selector .page-selector-item-next:focus a, .page-selector .page-selector-item-link.active a, .page-selector .page-selector-item-link:hover a, .page-selector .page-selector-item-link:focus a {
+  color: transparent;
+}
+
+.page-selector .page-selector-item-first.active a::after, .page-selector .page-selector-item-first:hover a::after, .page-selector .page-selector-item-first:focus a::after, .page-selector .page-selector-item-previous.active a::after, .page-selector .page-selector-item-previous:hover a::after, .page-selector .page-selector-item-previous:focus a::after,
+.page-selector .page-selector-item-last.active a::after,
+.page-selector .page-selector-item-last:hover a::after,
+.page-selector .page-selector-item-last:focus a::after, .page-selector .page-selector-item-next.active a::after, .page-selector .page-selector-item-next:hover a::after, .page-selector .page-selector-item-next:focus a::after, .page-selector .page-selector-item-link.active a::after, .page-selector .page-selector-item-link:hover a::after, .page-selector .page-selector-item-link:focus a::after {
+  color: #FFFFFF;
+}
+
+.page-selector .page-selector-item-first.inactive a, .page-selector .page-selector-item-previous.inactive a,
+.page-selector .page-selector-item-last.inactive a, .page-selector .page-selector-item-next.inactive a, .page-selector .page-selector-item-link.inactive a {
+  color: transparent;
+}
+
+.page-selector .page-selector-item-first.inactive a::after, .page-selector .page-selector-item-previous.inactive a::after,
+.page-selector .page-selector-item-last.inactive a::after, .page-selector .page-selector-item-next.inactive a::after, .page-selector .page-selector-item-link.inactive a::after {
+  color: #555;
+}
+
+.page-selector .page-selector-item-first.inactive:hover, .page-selector .page-selector-item-first.inactive:focus, .page-selector .page-selector-item-previous.inactive:hover, .page-selector .page-selector-item-previous.inactive:focus,
+.page-selector .page-selector-item-last.inactive:hover,
+.page-selector .page-selector-item-last.inactive:focus, .page-selector .page-selector-item-next.inactive:hover, .page-selector .page-selector-item-next.inactive:focus, .page-selector .page-selector-item-link.inactive:hover, .page-selector .page-selector-item-link.inactive:focus {
+  background: transparent;
+  color: transparent;
+}
+
+.page-selector .page-selector-item-first.inactive:hover a, .page-selector .page-selector-item-first.inactive:focus a, .page-selector .page-selector-item-previous.inactive:hover a, .page-selector .page-selector-item-previous.inactive:focus a,
+.page-selector .page-selector-item-last.inactive:hover a,
+.page-selector .page-selector-item-last.inactive:focus a, .page-selector .page-selector-item-next.inactive:hover a, .page-selector .page-selector-item-next.inactive:focus a, .page-selector .page-selector-item-link.inactive:hover a, .page-selector .page-selector-item-link.inactive:focus a {
+  color: transparent;
+}
+
+.page-selector .page-selector-item-first.inactive:hover a::after, .page-selector .page-selector-item-first.inactive:focus a::after, .page-selector .page-selector-item-previous.inactive:hover a::after, .page-selector .page-selector-item-previous.inactive:focus a::after,
+.page-selector .page-selector-item-last.inactive:hover a::after,
+.page-selector .page-selector-item-last.inactive:focus a::after, .page-selector .page-selector-item-next.inactive:hover a::after, .page-selector .page-selector-item-next.inactive:focus a::after, .page-selector .page-selector-item-link.inactive:hover a::after, .page-selector .page-selector-item-link.inactive:focus a::after {
+  color: #555;
+}
+
+.page-selector .page-selector-item-first a::after {
+  content: "\f100";
+}
+
+.page-selector .page-selector-item-previous a::after {
+  content: "\f104";
+  left: 0;
+}
+
+.page-selector .page-selector-item-last a::after {
+  content: "\f101";
+}
+
+.page-selector .page-selector-item-next a::after {
+  content: "\f105";
 }
 
 .page-size {

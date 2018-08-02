@@ -1,3 +1,56 @@
 .search-wrapper {
     padding:0;
+    a {color:$text-red}
+    .highlighted {background-color:yellow} //to show keywords for testing
+    .container {
+            &.col-xs-12 {
+                padding:0;
+            }
+        .divider, 
+        .search-results-count, 
+        .sort-results, 
+        .page-size, 
+        .search-results, 
+        .facet-single-selection-list {
+            padding:0;
+        }
+        .divider {
+            hr {
+                @include border-black(top);
+            }
+        }
+        @include respond-to(all-phone) {
+            .search-results-count {
+                margin-bottom:15px;
+            }
+        }
+        .sort-results {
+            label {
+                position:relative;
+                top:2px;
+            }
+        }
+        .search-results {
+            li {
+                margin-bottom:15px;
+            }
+            .page, .field-title, .field-linkexternal {
+                a {
+                    color:$text-red;
+                    font-weight:700;
+                    font-size:$font-normal;
+                    &:hover, &:active, &:focus {
+                        color:$text-black;
+                    }
+                }
+            }
+            .url, .field-publisheddate {
+                font-size:14px;
+                color:$text-black;
+                a {
+                    color:$text-black;
+                }
+            }
+        }
+    }
 }

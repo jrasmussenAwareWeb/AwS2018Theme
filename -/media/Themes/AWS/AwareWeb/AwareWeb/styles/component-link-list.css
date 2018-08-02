@@ -4988,6 +4988,10 @@ readers do not read off random characters that represent icons */
 
 .link-list {
   background: transparent;
+  /*AwS 
+- not using the specific classes here (i.e. button-*) but instead the standard bootstrap prefixing (.btn-*) to avoid confusion
+- see .btn below
+*/
   /* breakpoints */
   /* breakpoints */
 }

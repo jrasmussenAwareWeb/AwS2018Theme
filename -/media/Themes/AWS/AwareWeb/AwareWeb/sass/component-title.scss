@@ -36,6 +36,7 @@
 
         @include respond-to(tablet) {
             top: 140px;
+            //top:170px;
         }
         h1, h2, h3, h4, h5, h6 {
             color: $text-white;

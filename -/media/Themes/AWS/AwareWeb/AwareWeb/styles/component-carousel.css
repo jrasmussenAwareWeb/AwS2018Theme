@@ -20,6 +20,10 @@
   }
 }
 
+/*AwS 
+- not using the specific classes here (i.e. button-*) but instead the standard bootstrap prefixing (.btn-*) to avoid confusion
+- see .btn below
+*/
 .button-default, .default {
   border: 1px solid #d2d2d2;
   font-size: 12px;

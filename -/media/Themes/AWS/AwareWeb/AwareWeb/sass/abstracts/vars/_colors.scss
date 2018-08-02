@@ -235,11 +235,11 @@ $search-filter-slider-btn-bg:$bg-light-gray;
 $search-filter-slider-btn-bg-active:$bg-light-gray-active;
 //Serach Pagination
 $search-pagination-bg:transparent;
-$search-pagination-active-bg:$bg-blue;
+$search-pagination-active-bg:$text-red;
 $search-pagination-active-color:$text-white;
-$search-pagination-hover-color:$text-blue;
-$search-pagination-hover-bg:$bg-submenu-active;
-$search-pagination-hover-border:$border-basic-active;
+$search-pagination-hover-color:$text-white;
+$search-pagination-hover-bg:$text-red;
+$search-pagination-hover-border:$text-red;
 //Search selector
 $serach-selector-variant-color-active: $text-blue-active;
 //Typehead
