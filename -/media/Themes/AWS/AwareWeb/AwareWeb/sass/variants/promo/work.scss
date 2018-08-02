@@ -50,21 +50,30 @@
     }
     
     .promo-hover {
-        //display: none;
-        padding: 10px 15px 15px;
+        padding: 15px;
         background-color: $bg-green;
         //min-height: 165px;
         bottom: -100%;
         color: $text-white;
         @include transition(all .3s ease-in-out);
+        
+        .hover-left, .hover-right {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .hover-left {text-align: right;}
+        .hover-right {text-align: left; padding-left: 20px;}
+        .hover-text {
+            padding-bottom: 10px;
+            line-height: 1;
+        }
 
-        .hover-text-large {
+        .text-large {
             @include raleway-font-stack();
             font-size: 44px;
             line-height: 44px;
             margin-bottom: 5px;
-            width: 50%;
-            float:left;
+            white-space: nowrap;
 
             &:before {
                 font-size: 20px;
@@ -75,17 +84,6 @@
                 margin-right: 5px;
                 margin-left: -5px;
             }
-        }
-
-        .hover-text {
-            padding: 10px 0;
-            line-height: 1;
-            width: 50%;
-            float: left;
-        }
-        .hover-text-new {
-            padding: 10px 0;
-            line-height: 1;
         }
 
         .hover-link { 
@@ -141,7 +139,7 @@
         .field-promotext {
             font-size: 18px;
         }
-        .hover-text, .hover-text-new {
+        .hover-text {
             > a {
                 font-size: 14px;
             }
@@ -163,6 +161,9 @@
             margin-bottom: 30px;
         }
 
+        .col-sm-6 & {
+            margin-bottom: 30px;
+        }
     }
     @include respond-to(desktop) {
         &.col-sm-6:nth-child(odd){
@@ -182,9 +183,9 @@
             padding: 30px;
         }
         .promo-hover {
-            padding: 15px 20px 20px 20px;
+            padding:20px;
 
-            .hover-text-large {
+            .text-large {
                 font-size: 48px;
                 line-height: 48px;
 
@@ -192,7 +193,7 @@
                     font-size: 32px;
                 }
             }
-            .hover-text, .hover-text-new {
+            .hover-text {
                 font-size: $font-normal;
             }
 
@@ -203,22 +204,10 @@
                 }
             }
         }
-
-        .col-md-4 & {
-            .promo-hover {
-                padding-top: 15px;
-                .hover-link {
-                    > a {
-                        font-size: $font-normal;
-                        padding: 10px 15px;
-                    }
-                }
-            }
-        }
     }
     @include respond-to(large) {
         .promo-hover {
-            .hover-text-large {
+            .text-large {
                 font-size: 64px;
                 line-height: 64px;
 
@@ -226,13 +215,20 @@
                     font-size: 36px;
                 }
             }
-            .hover-text, .hover-text-new {
+            .hover-text {
                 font-size: $font-medium;
             }
             .hover-link {
                 > a {
                     font-size: $font-medium;
                     padding: 20px;
+                }
+            }
+        }
+        .col-sm-6 & {
+            .promo-hover {
+                .hover-text {
+                    font-size: $font-normal;
                 }
             }
         }
