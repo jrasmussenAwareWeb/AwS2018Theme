@@ -48,6 +48,7 @@
         position: relative;
         display: block;
         float: left;
+        text-shadow:0 0 10px rgba(0,0,0,.6);
 
         > .navigation-title {
             display: inline-block;
@@ -144,8 +145,8 @@
     }
     
     @include respond-to(tablet) {
-        top: 95px;
-        //top:120px;
+        //top: 95px;
+        top:125px; //offset the content -25px for the page header / billboard
         a {font-size: 16px;}
     }
     @import "variants/breadcrumb/*";

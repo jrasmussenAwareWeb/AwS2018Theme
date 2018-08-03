@@ -54,13 +54,14 @@
 
 @media only screen and (min-width: 768px) {
   .title.title-page-header {
-    top: 140px;
+    top: 165px;
   }
 }
 
 .title.title-page-header h1, .title.title-page-header h2, .title.title-page-header h3, .title.title-page-header h4, .title.title-page-header h5, .title.title-page-header h6 {
-  color: #FFFFFF;
   position: relative;
+  color: #FFFFFF;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .title .field-title a {

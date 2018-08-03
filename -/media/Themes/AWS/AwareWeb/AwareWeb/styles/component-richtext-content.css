@@ -4991,6 +4991,11 @@ readers do not read off random characters that represent icons */
   color: #333;
   border: none;
   line-height: 1.5;
+  /*@include respond-to(desktop) {
+        &.content-page-header {
+            min-height: 290px;
+        }
+    }*/
   /* breakpoints */
   /*AwS 
 - not using the specific classes here (i.e. button-*) but instead the standard bootstrap prefixing (.btn-*) to avoid confusion
@@ -5038,7 +5043,7 @@ readers do not read off random characters that represent icons */
 
 .content.content-page-header, .rich-text.content-page-header {
   position: relative;
-  min-height: 200px;
+  min-height: 300px;
   z-index: 1;
 }
 
@@ -5067,16 +5072,13 @@ readers do not read off random characters that represent icons */
 }
 
 @media only screen and (max-width: 767px) {
+  .content.content-page-header, .rich-text.content-page-header {
+    min-height: 200px;
+  }
   .content.content-page-header img, .rich-text.content-page-header img {
     margin-left: -70% !important;
     width: 240% !important;
     max-width: 240% !important;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .content.content-page-header, .rich-text.content-page-header {
-    min-height: 290px;
   }
 }
 

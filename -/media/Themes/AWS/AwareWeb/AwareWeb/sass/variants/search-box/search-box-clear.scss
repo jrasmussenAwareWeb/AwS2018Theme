@@ -39,7 +39,6 @@
     .search-box-button,
     .search-box-button-with-redirect { 
         line-height:1;
-        //height:34px;
         width:34px;
         background-color:$text-red !important;
         color:transparent;
@@ -48,7 +47,6 @@
         border-radius:0;
         &:before { 
             @include fa-icon();
-            //content:$fa-var-search;
             content: fa-content($fa-var-search);
             color:$text-white;
             padding:7px 0; 

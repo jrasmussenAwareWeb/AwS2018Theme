@@ -5789,7 +5789,6 @@ readers do not read off random characters that represent icons */
 .page-selector .page-selector-item-last a::after, .page-selector .page-selector-item-next a::after {
   position: relative;
   top: -2px;
-  left: 4px;
   color: #cc0000;
 }
 
@@ -5850,7 +5849,6 @@ readers do not read off random characters that represent icons */
 
 .page-selector .page-selector-item-previous a::after {
   content: "\f104";
-  left: 0;
 }
 
 .page-selector .page-selector-item-last a::after {

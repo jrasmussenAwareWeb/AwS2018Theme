@@ -428,8 +428,10 @@
   }
 }
 
-.search-wrapper {
-  padding: 0;
+@media only screen and (min-width: 992px) {
+  .search-wrapper {
+    padding: 0;
+  }
 }
 
 .search-wrapper a {
@@ -440,54 +442,58 @@
   background-color: yellow;
 }
 
-.search-wrapper .container.col-xs-12 {
+.search-wrapper.col-xs-12 {
   padding: 0;
 }
 
-.search-wrapper .container .divider,
-.search-wrapper .container .search-results-count,
-.search-wrapper .container .sort-results,
-.search-wrapper .container .page-size,
-.search-wrapper .container .search-results,
-.search-wrapper .container .facet-single-selection-list {
+.search-wrapper .divider,
+.search-wrapper .search-results-count,
+.search-wrapper .sort-results,
+.search-wrapper .page-size,
+.search-wrapper .search-results,
+.search-wrapper .facet-single-selection-list {
   padding: 0;
 }
 
-.search-wrapper .container .divider hr {
+.search-wrapper .divider hr {
   border-top: 1px solid #000000;
 }
 
+.search-wrapper .search-results-count {
+  line-height: 34px;
+}
+
 @media only screen and (max-width: 767px) {
-  .search-wrapper .container .search-results-count {
+  .search-wrapper .search-results-count {
     margin-bottom: 15px;
   }
 }
 
-.search-wrapper .container .sort-results label {
+.search-wrapper .sort-results label {
   position: relative;
   top: 2px;
 }
 
-.search-wrapper .container .search-results li {
+.search-wrapper .search-results li {
   margin-bottom: 15px;
 }
 
-.search-wrapper .container .search-results .page a, .search-wrapper .container .search-results .field-title a, .search-wrapper .container .search-results .field-linkexternal a {
+.search-wrapper .search-results .page a, .search-wrapper .search-results .field-title a, .search-wrapper .search-results .field-linkexternal a {
   color: #cc0000;
   font-weight: 700;
   font-size: 16px;
 }
 
-.search-wrapper .container .search-results .page a:hover, .search-wrapper .container .search-results .page a:active, .search-wrapper .container .search-results .page a:focus, .search-wrapper .container .search-results .field-title a:hover, .search-wrapper .container .search-results .field-title a:active, .search-wrapper .container .search-results .field-title a:focus, .search-wrapper .container .search-results .field-linkexternal a:hover, .search-wrapper .container .search-results .field-linkexternal a:active, .search-wrapper .container .search-results .field-linkexternal a:focus {
+.search-wrapper .search-results .page a:hover, .search-wrapper .search-results .page a:active, .search-wrapper .search-results .page a:focus, .search-wrapper .search-results .field-title a:hover, .search-wrapper .search-results .field-title a:active, .search-wrapper .search-results .field-title a:focus, .search-wrapper .search-results .field-linkexternal a:hover, .search-wrapper .search-results .field-linkexternal a:active, .search-wrapper .search-results .field-linkexternal a:focus {
   color: #000;
 }
 
-.search-wrapper .container .search-results .url, .search-wrapper .container .search-results .field-publisheddate {
+.search-wrapper .search-results .url, .search-wrapper .search-results .field-publisheddate {
   font-size: 14px;
   color: #000;
 }
 
-.search-wrapper .container .search-results .url a, .search-wrapper .container .search-results .field-publisheddate a {
+.search-wrapper .search-results .url a, .search-wrapper .search-results .field-publisheddate a {
   color: #000;
 }
 

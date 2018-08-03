@@ -54,7 +54,6 @@
             //visibility:visible;
             position:relative;
             top:-2px;
-            left:4px;
             color:$text-red;
         }
     } 
@@ -104,7 +103,6 @@
         a {
             &::after {
                 content: fa-content($fa-var-angle-left);
-                left:0;
             }
         }
     }

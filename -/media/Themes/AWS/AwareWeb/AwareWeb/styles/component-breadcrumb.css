@@ -5031,6 +5031,7 @@ readers do not read off random characters that represent icons */
   position: relative;
   display: block;
   float: left;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .breadcrumb li > .navigation-title {
@@ -5135,7 +5136,7 @@ readers do not read off random characters that represent icons */
 
 @media only screen and (min-width: 768px) {
   .breadcrumb {
-    top: 95px;
+    top: 125px;
   }
   .breadcrumb a {
     font-size: 16px;
