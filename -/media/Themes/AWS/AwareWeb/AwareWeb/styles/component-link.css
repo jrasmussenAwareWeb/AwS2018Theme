@@ -127,6 +127,10 @@
   position: relative;
 }
 
+.link.indent-top {
+  margin-top: 30px;
+}
+
 .link-arrow {
   padding-right: 20px;
 }

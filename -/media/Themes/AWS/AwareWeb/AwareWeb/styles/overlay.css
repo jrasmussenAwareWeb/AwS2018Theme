@@ -44,7 +44,7 @@
   vertical-align: middle;
   position: absolute;
   background: rgba(14, 20, 42, 0.86);
-  padding: 10px 10px 25px;
+  padding: 0 0 25px;
   margin: 100px auto auto auto;
   max-width: 90%;
   left: 0;
@@ -128,7 +128,7 @@
 .overlay .overlay-close-link {
   text-decoration: none;
   color: #fff;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
   padding: 15px 30px;
   margin: 0 0 40px 0;
@@ -142,7 +142,7 @@
   text-align: left;
   background: rgba(14, 20, 42, 0.7);
   padding: 15px 30px;
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   position: relative;
 }
 
