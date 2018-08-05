@@ -5922,7 +5922,7 @@ readers do not read off random characters that represent icons */
             min-height: 460px;*/
     margin: 0 auto;
     position: relative;
-    z-index: 20;
+    z-index: 9;
   }
   .content.aws-slide .caption p, .rich-text.aws-slide .caption p {
     margin-bottom: 15px;

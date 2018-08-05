@@ -5039,7 +5039,6 @@ readers do not read off random characters that represent icons */
   height: 100px;
   position: relative;
   top: -50px;
-  z-index: 10;
   margin: 0 auto -35px auto;
   box-shadow: 0 34px 30px rgba(0, 0, 0, 0.2);
   float: none;

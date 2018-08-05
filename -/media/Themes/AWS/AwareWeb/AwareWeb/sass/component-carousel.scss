@@ -16,6 +16,11 @@
     @include respond-to(all-phone) {
         top:-25px;
     }
+    @include respond-to(tablet) {
+        .carousel-inner {
+            top:25px;
+        }
+    }
     .slides {
         position: relative;
         &:after {

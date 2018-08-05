@@ -28,6 +28,10 @@
   margin-top: 30px;
 }
 
+.title.indent-bottom {
+  margin-bottom: 30px;
+}
+
 .title h1, .title .field-title a {
   margin-bottom: 15px;
   color: #333;
