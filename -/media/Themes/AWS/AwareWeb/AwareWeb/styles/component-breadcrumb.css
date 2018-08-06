@@ -4994,8 +4994,14 @@ readers do not read off random characters that represent icons */
   width: 100%;
   margin: 0 auto;
   position: absolute;
-  top: 40px;
+  top: 10px;
   z-index: 9;
+}
+
+@media only screen and (min-width: 768px) {
+  .breadcrumb {
+    top: 40px;
+  }
 }
 
 .breadcrumb nav {

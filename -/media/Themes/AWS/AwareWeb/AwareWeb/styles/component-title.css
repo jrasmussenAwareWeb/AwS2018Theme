@@ -28,8 +28,16 @@
   margin-top: 30px;
 }
 
+.title.indent-top h1, .title.indent-top h2, .title.indent-top h3, .title.indent-top h4, .title.indent-top h5, .title.indent-top h6 {
+  margin-top: 0;
+}
+
 .title.indent-bottom {
   margin-bottom: 30px;
+}
+
+.title.indent-bottom h1, .title.indent-bottom h2, .title.indent-bottom h3, .title.indent-bottom h4, .title.indent-bottom h5, .title.indent-bottom h6 {
+  margin-bottom: 0;
 }
 
 .title h1, .title .field-title a {
@@ -52,7 +60,7 @@
 .title.title-page-header {
   text-align: center;
   position: absolute;
-  top: 90px;
+  top: 40px;
   z-index: 9;
 }
 

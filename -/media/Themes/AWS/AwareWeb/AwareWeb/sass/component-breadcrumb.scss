@@ -13,9 +13,11 @@
     width: 100%;
     margin: 0 auto;
     position: absolute;
-    top: 40px;
+    top: 10px;
     z-index: 9;
-    
+    @include respond-to(tablet) {
+        top:40px;
+    }
     nav {display: inline-block;}
 
     &.breadcrumb-navigation {

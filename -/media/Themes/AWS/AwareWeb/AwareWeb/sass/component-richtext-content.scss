@@ -41,41 +41,44 @@
         position: relative;
         //top: -220px;
         //margin-bottom: -160px;
-        min-height: 300px;
+        //min-height:300px;
         z-index: 1;
 
         &[class*="col-"] {
             padding-left: 0;
             padding-right: 0;
         }
-        @include respond-to(large) {
+        img {
+            width: 100%;
+            height: auto;
+        }   
+        @include respond-to(tablet) {
             img {
-                width: 100%;
-                height: auto;
+                min-height:300px;
             }
         }
     }
     @include respond-to(all-mobile) {
         &.content-page-header {
             //min-height: 200px;
-            max-height: 350px;
+            //max-height: 350px;
             overflow: hidden;
 
-            img {
+            /*img {
                 margin-left:-10% !important;
                 width: 120% !important;
                 max-width: 120%;
-            }
+            }*/
         }
     }
     @include respond-to(all-phone) {
         &.content-page-header {
-            min-height: 200px;
-            img {
+            //min-height: 200px;
+            /*img {
                 margin-left: -70% !important;
                 width: 240% !important;
                 max-width: 240% !important;
-            }
+            }*/
         }
     }
     /*@include respond-to(desktop) {

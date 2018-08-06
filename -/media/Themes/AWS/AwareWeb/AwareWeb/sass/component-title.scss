@@ -6,9 +6,15 @@
 
     &.indent-top {
         margin-top:30px;
+        h1, h2, h3, h4, h5, h6 {
+            margin-top:0;
+        }
     }
     &.indent-bottom {
         margin-bottom:30px;
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom:0;
+        }
     }
 
     h1, .field-title a {
@@ -34,7 +40,7 @@
     &.title-page-header {
         text-align: center;
         position: absolute;
-        top: 90px;
+        top: 40px;
         z-index: 9;
         @include respond-to(tablet) {
             //top: 140px;
