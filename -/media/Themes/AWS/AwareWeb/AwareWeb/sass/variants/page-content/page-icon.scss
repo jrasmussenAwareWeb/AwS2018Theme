@@ -1,4 +1,7 @@
 &.content-page-icon {
+    @include respond-to(all-mobile) {
+        display:none;
+    }
     .title-icon {
     color:#fff;
     text-align: center;
@@ -13,7 +16,7 @@
     display:table;
     vertical-align: middle;
 
-        .fa, .fal {
+        .fa, .fal { 
             vertical-align: middle;
         }
 

@@ -262,6 +262,10 @@
   vertical-align: middle;
   box-sizing: border-box;
   border-bottom: 1px solid #d2d2d2;
+  border-radius: 0;
+  -webkit-transition: none;
+  transition: none;
+  box-shadow: none;
 }
 
 .form input[type="text"] + span, .form input[type="password"] + span, .form textarea + span, .form input[type="file"] + span, .sitecore-form input[type="text"] + span, .sitecore-form input[type="password"] + span, .sitecore-form textarea + span, .sitecore-form input[type="file"] + span {

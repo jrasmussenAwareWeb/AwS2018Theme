@@ -5043,6 +5043,9 @@ readers do not read off random characters that represent icons */
 
 .content.content-page-header, .rich-text.content-page-header {
   position: relative;
+  /*top: -220px;
+        margin-bottom: -160px;
+        min-height:300px;*/
   z-index: 1;
 }
 
@@ -5064,6 +5067,8 @@ readers do not read off random characters that represent icons */
 
 @media only screen and (max-width: 991px) {
   .content.content-page-header, .rich-text.content-page-header {
+    /*min-height: 200px;
+            max-height: 350px;*/
     overflow: hidden;
     /*img {
                 margin-left:-10% !important;
@@ -5075,7 +5080,8 @@ readers do not read off random characters that represent icons */
 
 @media only screen and (max-width: 767px) {
   .content.content-page-header, .rich-text.content-page-header {
-    /*img {
+    /*min-height: 200px;
+            img {
                 margin-left: -70% !important;
                 width: 240% !important;
                 max-width: 240% !important;
@@ -6068,6 +6074,12 @@ readers do not read off random characters that represent icons */
 
 .content.blog-article .tag-list span.field-title:first-child > a:before, .rich-text.blog-article .tag-list span.field-title:first-child > a:before {
   content: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .content.content-page-icon, .rich-text.content-page-icon {
+    display: none;
+  }
 }
 
 .content.content-page-icon .title-icon, .rich-text.content-page-icon .title-icon {

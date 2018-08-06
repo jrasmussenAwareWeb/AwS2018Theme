@@ -80,6 +80,7 @@
         @include border-basic();
         //padding: 2px 4px;
         //max-width: 98%;
+
     }
     .scfCaptcha {
         input[type="text"] {
@@ -112,6 +113,9 @@
         @include border-basic(bottom);
         //width: 95%;
         //padding:2px;
+        border-radius:0;
+        transition:none;
+        box-shadow:none;
         &+span {
             //display: inline-block;
             vertical-align: middle;
