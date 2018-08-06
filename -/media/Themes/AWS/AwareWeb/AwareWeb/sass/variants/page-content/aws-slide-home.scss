@@ -5,6 +5,12 @@
             img {
                 width: 100%;
                 height: auto;
+
+                @include respond-to(phone) {
+                    width: 140%;
+                    max-width: 140%;
+                    margin-left: -20% !important;
+                }
             }
         }
         .container.slide-caption {
@@ -15,14 +21,28 @@
             top: 15%;
             left: 0;
             right: 0;
+            
+            @include respond-to(all-phone) {
+                .field-slidetext {
+                    text-align:center;
+                }
+            }
             @include respond-to(tablet) {
                 top: 30%;
+                .field-slidetext {
+                    width:60%;
+                }
             }
             @include respond-to(large) {
-                top: 40%;
+                top: 35%;
+                .field-slidetext {
+                    width:50%;
+                }
             }
-            @include respond-to(all-phone) {
-                text-align:center;
+            @include respond-to(xlarge) {
+                .field-slidetext {
+                    width:40%;
+                }
             }
             h1 { 
                 color:$text-red;
@@ -47,11 +67,9 @@
                 font-size:20px;
                 font-weight:500;
                 @include respond-to(tablet) {
-                    width:62%;
                     font-size:24px;
                 }
                 @include respond-to(large) {
-                    width:52%;
                     font-size:36px;
                 }
                 @include respond-to(phone-horizontal) {
@@ -66,5 +84,48 @@
             }
         }
     }
-
+    &.position-right {
+        @include respond-to(all-phone) {
+            .container.slide-caption {
+                margin: 0 auto;
+            }
+            .container.slide-caption, .container.slide-caption * {
+                text-align: center !important;
+            }
+        }
+        @include respond-to(tablet) {
+            .container.slide-caption * {
+                text-align: left !important;
+                .position-right{
+                    text-align: right !important;
+                }
+            }
+            .container.slide-caption {
+                .field-slidetext, .field-slidelink {
+                    margin-left: 40%;
+                }
+            }
+        }
+        @include respond-to(large) {
+            .container.slide-caption {
+                .field-slidetext, .field-slidelink {
+                    margin-left: 50%;
+                }
+            }
+        }
+        @include respond-to(xlarge) {
+            .container.slide-caption {
+                .field-slidetext, .field-slidelink {
+                    margin-left: 60%;
+                }
+            }
+        }
+    }
+    &.position-center {
+        .container.slide-caption {
+            .field-slidetext {
+                margin: 0 auto;
+            }
+        }
+    }
 }

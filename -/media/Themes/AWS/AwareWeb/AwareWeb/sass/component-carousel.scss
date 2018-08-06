@@ -13,14 +13,6 @@
 	padding: 0;
     text-align: center;
     background: $carousel-bg;
-    @include respond-to(all-phone) {
-        top:-25px;
-    }
-    @include respond-to(tablet) {
-        .carousel-inner {
-            top:-45px;
-        }
-    }
     .slides {
         position: relative;
         &:after {
@@ -29,9 +21,16 @@
             clear: both;
         }
         //042618 moved .aws-slide to /variants/page-content/aws-slide.scss
+        .slide {
+            width: 100%;
+            display: block;
+        }
     }
     .nav {
-        //margin-top: 10px;
+        //AwS
+        position: relative;
+        top: -40px;
+        
         //AwS
         @include respond-to(desktop) {       
             position:relative;
@@ -40,59 +39,25 @@
         .nav-items {
             display: inline-block;
             position: relative;
-            height: 32px;
+            height: 20px;
             min-width: 20px;
-            //margin: 0 15px;
-			margin: -60px 15px 0 15px;
+			margin: 0 15px;
             vertical-align: middle;
             cursor: pointer;
 
-            @include respond-to(all-phone) {
-                margin-top:-40px;
-            }
-            /* &:before, &:after {
-                background-image: url(../Images/player.png);
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                width: 9px;
-            }
-            &:before {
-                //left: -9px;
-                //background-position: -154px -152px;
-            }
-            &:after {
-                right: -9px;
-                background-position: -225px -152px;
-            }
-			*/
             //For Bullets styles start
             .sxa-bullets, .sxa-numbers {
                 position: relative;
-                //height: 32px;
                 float: left;
-                //width: 20px;
-				//AWS
 				width: 18px;
 				height: 18px;
 				margin: 0 5px;
             }
             .sxa-bullets {
                 &:before {
-                    //background-image: url(../Images/player.png);
-                    //background-position: 0 -152px;
-                    left: -10px;
                     content: '';
-                    //width: 20px;
-                    //height: 32px;
                     display: block;
                     position: absolute;
-                    //top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-					//AWS
 					width: 18px;
                     height: 18px;
 					border: solid 3px #fff;
@@ -101,7 +66,6 @@
                 }
                 &.active {
                     &:before {
-                        //background-position: -75px -152px;
 						//AWS
 						background-color: #cc0000;
 						border-color: #cc0000;
@@ -203,6 +167,19 @@
                 right: 51px;
             }
         }
+        
+        @include respond-to(all-phone) {
+            top:0;
+            margin-top: 10px;
+
+            .nav-items {
+                .sxa-bullets {
+                    &:before {
+                        border: solid 3px #999;
+                    }
+                }
+            }
+        }
     }
     &.image-full-size {
         .carousel-body {
@@ -215,6 +192,18 @@
             right: 1%;
             bottom: 2%;
             opacity: 0.8;
+        }
+    }
+
+    //Home Carousel
+    .home & {
+        @include respond-to(tablet) {
+            .carousel-inner {top:-68px;}
+        }
+    }
+    @include respond-to(all-phone) {
+        .content {
+            h6 {font-size:16px; margin-bottom:5px;}
         }
     }
 }

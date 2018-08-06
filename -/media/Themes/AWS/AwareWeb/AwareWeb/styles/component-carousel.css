@@ -150,18 +150,6 @@
   background: #FFFFFF;
 }
 
-@media only screen and (max-width: 767px) {
-  .carousel {
-    top: -25px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .carousel .carousel-inner {
-    top: -45px;
-  }
-}
-
 .carousel .slides {
   position: relative;
 }
@@ -170,6 +158,16 @@
   content: "";
   display: block;
   clear: both;
+}
+
+.carousel .slides .slide {
+  width: 100%;
+  display: block;
+}
+
+.carousel .nav {
+  position: relative;
+  top: -40px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -182,35 +180,11 @@
 .carousel .nav .nav-items {
   display: inline-block;
   position: relative;
-  height: 32px;
+  height: 20px;
   min-width: 20px;
-  margin: -60px 15px 0 15px;
+  margin: 0 15px;
   vertical-align: middle;
   cursor: pointer;
-  /* &:before, &:after {
-                background-image: url(../Images/player.png);
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                width: 9px;
-            }
-            &:before {
-                //left: -9px;
-                //background-position: -154px -152px;
-            }
-            &:after {
-                right: -9px;
-                background-position: -225px -152px;
-            }
-			*/
-}
-
-@media only screen and (max-width: 767px) {
-  .carousel .nav .nav-items {
-    margin-top: -40px;
-  }
 }
 
 .carousel .nav .nav-items .sxa-bullets, .carousel .nav .nav-items .sxa-numbers {
@@ -222,14 +196,9 @@
 }
 
 .carousel .nav .nav-items .sxa-bullets:before {
-  left: -10px;
   content: '';
   display: block;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
   border: solid 3px #fff;
@@ -353,6 +322,16 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .carousel .nav {
+    top: 0;
+    margin-top: 10px;
+  }
+  .carousel .nav .nav-items .sxa-bullets:before {
+    border: solid 3px #999;
+  }
+}
+
 .carousel.image-full-size .carousel-body {
   height: auto;
   top: 2%;
@@ -364,4 +343,17 @@
   right: 1%;
   bottom: 2%;
   opacity: 0.8;
+}
+
+@media only screen and (min-width: 768px) {
+  .home .carousel .carousel-inner {
+    top: -68px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel .content h6 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
 }
