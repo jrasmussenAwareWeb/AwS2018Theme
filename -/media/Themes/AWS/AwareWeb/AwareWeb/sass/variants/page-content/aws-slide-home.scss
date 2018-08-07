@@ -123,8 +123,24 @@
     }
     &.position-center {
         .container.slide-caption {
-            .field-slidetext {
+            .field-slidetext, .field-slidelink {
                 margin: 0 auto;
+            }
+        }
+    }
+    &.text-reverse {
+        .component-content {
+            .container.slide-caption *{
+                color: #ffffff;
+                h1 { 
+                    color: #ffffff;
+                }
+                .btn-info {
+                    border-color: #ffffff;
+                }
+                .btn-default {
+                    color:$text-red;
+                }
             }
         }
     }

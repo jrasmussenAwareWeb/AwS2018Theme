@@ -5005,6 +5005,7 @@ readers do not read off random characters that represent icons */
   /* breakpoints */
   /* breakpoints */
   /* breakpoints */
+  /* breakpoints */
 }
 
 .content *, .rich-text * {
@@ -5683,6 +5684,22 @@ readers do not read off random characters that represent icons */
   }
 }
 
+.content .text-reverse, .content .text-reverse *, .rich-text .text-reverse, .rich-text .text-reverse * {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
 .content.title-underline h1:after, .content.title-underline h2:after, .content.title-underline h3:after, .content.title-underline h4:after, .content.title-underline h5:after, .rich-text.title-underline h1:after, .rich-text.title-underline h2:after, .rich-text.title-underline h3:after, .rich-text.title-underline h4:after, .rich-text.title-underline h5:after {
   content: "";
   font-weight: 600;
@@ -5849,8 +5866,24 @@ readers do not read off random characters that represent icons */
   }
 }
 
-.content.aws-slide-home.position-center .container.slide-caption .field-slidetext, .rich-text.aws-slide-home.position-center .container.slide-caption .field-slidetext {
+.content.aws-slide-home.position-center .container.slide-caption .field-slidetext, .content.aws-slide-home.position-center .container.slide-caption .field-slidelink, .rich-text.aws-slide-home.position-center .container.slide-caption .field-slidetext, .rich-text.aws-slide-home.position-center .container.slide-caption .field-slidelink {
   margin: 0 auto;
+}
+
+.content.aws-slide-home.text-reverse .component-content .container.slide-caption *, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * {
+  color: #ffffff;
+}
+
+.content.aws-slide-home.text-reverse .component-content .container.slide-caption * h1, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * h1 {
+  color: #ffffff;
+}
+
+.content.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-info, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-info {
+  border-color: #ffffff;
+}
+
+.content.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-default, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-default {
+  color: #cc0000;
 }
 
 .content.aws-slide, .rich-text.aws-slide {

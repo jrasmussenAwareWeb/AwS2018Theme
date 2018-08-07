@@ -1,0 +1,7 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+.text-reverse, .text-reverse * {
+    color: #ffffff;
+    border-color: #ffffff;
+}
