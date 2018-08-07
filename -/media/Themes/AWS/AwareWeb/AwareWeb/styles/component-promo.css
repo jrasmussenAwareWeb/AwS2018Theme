@@ -5554,7 +5554,7 @@ readers do not read off random characters that represent icons */
   .promo-work {
     border-right: solid 1px #fff;
   }
-  .promo-work.col-sm-6:nth-child(odd) {
+  .promo-work.col-sm-6.col-md-4:nth-child(odd) {
     border-left: solid 1px #fff;
   }
   .promo-work.col-sm-6:nth-last-child(-n+2) {

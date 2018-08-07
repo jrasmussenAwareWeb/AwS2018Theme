@@ -149,7 +149,7 @@
     @include respond-to(tablet) {
         border-right: solid 1px #fff;
 
-        &.col-sm-6:nth-child(odd){
+        &.col-sm-6.col-md-4:nth-child(odd){
             border-left: solid 1px #fff;
         }
         // Add bottom border to last 2 children
