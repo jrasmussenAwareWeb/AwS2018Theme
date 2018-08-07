@@ -11,15 +11,15 @@
     .search-results-count, 
     .sort-results, 
     .page-size, 
-    .search-results, 
-    .facet-single-selection-list {
+    .search-results {
         padding:0;
     }
-    .divider {
+    .page-size select {border-radius:0}
+    /*.divider {
         hr {
-            @include border-black(top);
+            @include border-basic(top);
         }
-    }
+    }*/
     .search-results-count {line-height:34px}
     @include respond-to(all-phone) {
         .search-results-count {
@@ -40,7 +40,7 @@
             a {
                 color:$text-red;
                 font-weight:700;
-                font-size:$font-normal;
+                font-size:$font-medium;
                 &:hover, &:active, &:focus {
                     color:$text-black;
                 }
