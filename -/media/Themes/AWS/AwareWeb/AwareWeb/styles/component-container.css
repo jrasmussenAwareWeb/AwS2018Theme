@@ -428,6 +428,14 @@
   }
 }
 
+.search-wrapper {
+  /*.divider {
+        hr {
+            @include border-basic(top);
+        }
+    }*/
+}
+
 @media only screen and (min-width: 992px) {
   .search-wrapper {
     padding: 0;
@@ -450,13 +458,12 @@
 .search-wrapper .search-results-count,
 .search-wrapper .sort-results,
 .search-wrapper .page-size,
-.search-wrapper .search-results,
-.search-wrapper .facet-single-selection-list {
+.search-wrapper .search-results {
   padding: 0;
 }
 
-.search-wrapper .divider hr {
-  border-top: 1px solid #000000;
+.search-wrapper .page-size select {
+  border-radius: 0;
 }
 
 .search-wrapper .search-results-count {
@@ -481,7 +488,7 @@
 .search-wrapper .search-results .page a, .search-wrapper .search-results .field-title a, .search-wrapper .search-results .field-linkexternal a {
   color: #cc0000;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .search-wrapper .search-results .page a:hover, .search-wrapper .search-results .page a:active, .search-wrapper .search-results .page a:focus, .search-wrapper .search-results .field-title a:hover, .search-wrapper .search-results .field-title a:active, .search-wrapper .search-results .field-title a:focus, .search-wrapper .search-results .field-linkexternal a:hover, .search-wrapper .search-results .field-linkexternal a:active, .search-wrapper .search-results .field-linkexternal a:focus {

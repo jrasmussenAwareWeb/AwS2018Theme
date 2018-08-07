@@ -2,6 +2,14 @@
 .search-box-clear {
     padding:0;
     margin:7px 0;
+    //overwrite the styles added to the base search-box
+    @include respond-to(all-phone) {
+        width:100%;
+        height:auto;
+        position:relative;
+        right:auto;
+    }
+    
     .facet-heading {
         position: relative;
         .facet-title {
@@ -16,13 +24,13 @@
         padding:0;
         a {
             font-size:14px;
-            color:$text-black; //for testing
-            //color:$text-white;
+            //color:$text-black; //for testing
+            color:$text-white;
             //visibility:hidden;
             &::before {
                 //visibility:visible;
                 vertical-align:bottom;
-                color: $text-green;
+                color: $text-black;
                 @include fa-icon();
                 //content:$fa-var-times;
                 content: fa-content($fa-var-times);
@@ -45,14 +53,16 @@
         padding:0;
         border:1px solid $text-red;
         border-radius:0;
+        margin-top:4px;
         &:before { 
             @include fa-icon();
             content: fa-content($fa-var-search);
             color:$text-white;
-            padding:7px 0; 
+            padding:7px 10px; 
         }
         &:hover, &:focus, &:active {
             background-color:$text-black !important;
+            //border:1px solid $text-black;
         }
     }
 }
