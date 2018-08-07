@@ -1,9 +1,10 @@
 //AwS
 &.list-inline {
-    margin-bottom: 20px;
-    h1 {
+    margin-bottom: 10px;
+    h1, h2 {
         color: $text-white;
-        margin-bottom: $middle-margin;
+        margin-top: $small-margin;
+        margin-bottom: $extrasmall-margin;
         text-transform:uppercase;
     }
     > .component-content {
@@ -16,7 +17,7 @@
                     @include raleway-font-stack();
                     font-weight: 400;
                     border: none;
-                    color: $text-white;
+                    color: #c5cedc;
                     font-size: $font-big;
 
                     &:before {
@@ -29,6 +30,7 @@
                         position: relative;
                     }
                     &:hover {
+                        color: $text-white;
                         text-decoration: underline;
                     }
                 }

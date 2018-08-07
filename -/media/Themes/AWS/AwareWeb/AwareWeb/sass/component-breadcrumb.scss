@@ -1,6 +1,8 @@
 @import "abstracts/mixins";
 @import "abstracts/vars";
-@import "base/fontawesome/fontawesome";
+//@import "base/fontawesome/fontawesome";
+@import "base/fontawesome/mixins";
+@import "base/fontawesome/variables";
 
 .breadcrumb {
     //overflow: hidden;
@@ -147,9 +149,11 @@
     }
     
     @include respond-to(tablet) {
-        //top: 95px;
-        top:125px; //offset the content -25px for the page header / billboard
+        top: 95px;
         a {font-size: 16px;}
+    }
+    @include respond-to(desktop) {
+        top: 115px;
     }
     @import "variants/breadcrumb/*";
 }

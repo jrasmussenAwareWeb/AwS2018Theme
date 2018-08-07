@@ -1,6 +1,8 @@
 @import "abstracts/vars"; 
 @import "abstracts/mixins";
-@import "base/fontawesome/fontawesome";
+//@import "base/fontawesome/fontawesome";
+@import "base/fontawesome/mixins";
+@import "base/fontawesome/variables";
 
 .content, .rich-text {
     background: $rich-content-bg;
@@ -32,16 +34,17 @@
                 margin-bottom:60px;
             }
         }
+        //AWS
+        @include respond-to(all-mobile) {
+            margin-left: auto;
+            padding-right: 15px;
+        }
         span.hidden-xs {
             @include opensans-font-stack();
             vertical-align:baseline;
         }
     }
     &.content-page-header {
-        /*position: relative;
-        top: -220px;
-        margin-bottom: -160px;*/
-        min-height:300px;
         z-index: 1;
 
         &[class*="col-"] {
@@ -51,42 +54,35 @@
         img {
             width: 100%;
             height: auto;
-        }   
+        }
         @include respond-to(tablet) {
             img {
-                min-height:300px;
+                min-height: 230px;
             }
         }
-    }
-    @include respond-to(all-mobile) {
-        &.content-page-header {
-            min-height: 200px;
-            max-height: 350px;
-            overflow: hidden;
-
-            /*img {
-                margin-left:-10% !important;
-                width: 120% !important;
-                max-width: 120%;
-            }*/
-        }
-    }
-    @include respond-to(all-phone) {
-        &.content-page-header {
-            min-height: 200px;
-            /*img {
-                margin-left: -70% !important;
-                width: 240% !important;
-                max-width: 240% !important;
-            }*/
-        }
-    }
-    @include respond-to(desktop) {
-        &.content-page-header {
+        @include respond-to(desktop) {
             min-height: 290px;
         }
+        @include respond-to(all-phone) {
+            img {
+                width: 120%;
+                max-width: 120%;
+                height: auto;
+                margin-left: -10% !important;
+            }
+        }
+        @include respond-to(phone) {
+            height: 200px;
+            img {
+                width: auto;
+                max-width: initial;
+                height: 200px;
+                margin:0 -50% !important;
+            }
+        }
+        
     }
-
+    
     @import "base/richtext/*";
 
     //AWS
@@ -94,14 +90,4 @@
     @import "variants/richtext/*";
     @import "styles/richtext/*";
     @import "variants/page-content/*";
-}
-
-//AWS
-@media(max-width:1199px) {
-    .content, .rich-text {
-        &.rich-text-contact {
-            margin-left: auto;
-            padding-right:15px;
-        }
-    }
 }

@@ -5186,12 +5186,13 @@ readers do not read off random characters that represent icons */
 }
 
 .link-list.list-inline {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.link-list.list-inline h1 {
+.link-list.list-inline h1, .link-list.list-inline h2 {
   color: #FFFFFF;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   text-transform: uppercase;
 }
 
@@ -5204,7 +5205,7 @@ readers do not read off random characters that represent icons */
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   border: none;
-  color: #FFFFFF;
+  color: #c5cedc;
   font-size: 20px;
 }
 
@@ -5225,6 +5226,7 @@ readers do not read off random characters that represent icons */
 }
 
 .link-list.list-inline > .component-content ul li a:hover {
+  color: #FFFFFF;
   text-decoration: underline;
 }
 

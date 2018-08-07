@@ -634,7 +634,7 @@
 .trending-wrapper {
   background: rgba(60, 68, 88, 0.6);
   position: relative;
-  top: 70px;
+  top: 69px;
   z-index: 9;
 }
 
@@ -658,6 +658,8 @@
 
 .trending-wrapper .list-inline.trending > .component-content ul {
   float: right;
+  position: relative;
+  z-index: 10;
 }
 
 .trending-wrapper .list-inline.trending > .component-content ul li {

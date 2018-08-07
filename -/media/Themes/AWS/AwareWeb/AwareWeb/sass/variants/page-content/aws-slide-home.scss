@@ -23,8 +23,9 @@
             right: 0;
             
             @include respond-to(all-phone) {
-                .field-slidetext {
+                .field-slidetext, .field-slidelink {
                     text-align:center;
+                    margin: 0 auto;
                 }
             }
             @include respond-to(tablet) {
@@ -86,10 +87,10 @@
     }
     &.position-right {
         @include respond-to(all-phone) {
-            .container.slide-caption {
+            .container.slide-caption, .container.field-slidelink {
                 margin: 0 auto;
             }
-            .container.slide-caption, .container.slide-caption * {
+            .container.slide-caption, .container.slide-caption *, .container.field-slidelink {
                 text-align: center !important;
             }
         }
@@ -128,6 +129,7 @@
             }
         }
     }
+
     &.text-reverse {
         .component-content {
             .container.slide-caption *{

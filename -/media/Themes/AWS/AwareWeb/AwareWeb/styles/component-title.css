@@ -66,7 +66,13 @@
 
 @media only screen and (min-width: 768px) {
   .title.title-page-header {
-    top: 165px;
+    top: 140px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .title.title-page-header {
+    top: 160px;
   }
 }
 
@@ -74,6 +80,21 @@
   position: relative;
   color: #FFFFFF;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.title.title-page-header h1 {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 639px) {
+  .title.title-page-header {
+    max-height: 140px;
+    overflow: hidden;
+  }
+  .title.title-page-header h1 {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 
 .title .field-title a {
