@@ -1,12 +1,19 @@
 .search-wrapper {
     @include respond-to(desktop) {
         padding:0;
+        &.col-xs-12 {
+            padding:0;
+        }
+    }
+    @include respond-to(all-phone) {
+          &.col-lg-3 {
+            //margin-top:$extra-large-margin;
+            margin-top:60px;
+        }
     }
     a {color:$text-red}
     .highlighted {background-color:yellow} //to show keywords for testing
-    &.col-xs-12 {
-        padding:0;
-    }
+
     .divider, 
     .search-results-count, 
     .sort-results, 
@@ -15,11 +22,7 @@
         padding:0;
     }
     .page-size select {border-radius:0}
-    /*.divider {
-        hr {
-            @include border-basic(top);
-        }
-    }*/
+
     .search-results-count {line-height:34px}
     @include respond-to(all-phone) {
         .search-results-count {

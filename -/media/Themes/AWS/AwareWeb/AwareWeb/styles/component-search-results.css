@@ -530,15 +530,13 @@
 .search-results.library .search-result-list > li .result-body .field-description, .search-results.library .search-result-list > li .result-body .field-excerpt {
   margin-top: 10px;
   overflow: hidden;
-  /*@include respond-to(tablet) {
-                        min-height:120px;
-                         max-height:120px;
-                    }
+}
 
-                    @include respond-to(large) {
-                        min-height:70px;
-                        max-height:70px;
-                    }*/
+@media only screen and (min-width: 768px) {
+  .search-results.library .search-result-list > li .result-body .field-description, .search-results.library .search-result-list > li .result-body .field-excerpt {
+    min-height: 120px;
+    max-height: 120px;
+  }
 }
 
 .search-results.library .search-result-list :nth-child(4n) {

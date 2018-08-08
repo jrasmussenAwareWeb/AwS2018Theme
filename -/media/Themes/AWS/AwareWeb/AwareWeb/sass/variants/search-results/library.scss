@@ -142,15 +142,10 @@
                     margin-top:10px;
                     overflow:hidden;
 
-                    /*@include respond-to(tablet) {
+                    @include respond-to(tablet) {
                         min-height:120px;
                          max-height:120px;
                     }
-
-                    @include respond-to(large) {
-                        min-height:70px;
-                        max-height:70px;
-                    }*/
                 }
             }
 
