@@ -89,7 +89,6 @@
 .media-link .pdf:before, .media-link .xls:before, .media-link .xslx:before, .media-link .pptx:before, .media-link .ppt:before, .media-link .docx:before, .media-link .doc:before, .media-link .bmp:before, .media-link .png:before, .media-link .jpg:before, .media-link .jpeg:before, .media-link .psd:before, .media-link .gif:before, .media-link .avi:before, .media-link .mp4:before, .media-link .wmv:before, .media-link .mov:before, .media-link .mp3:before, .media-link .wma:before, .media-link .txt:before, .media-link .zip:before {
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -98,6 +97,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   position: absolute;
   display: block;
   top: 0;

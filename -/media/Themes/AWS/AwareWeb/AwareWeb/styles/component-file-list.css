@@ -109,7 +109,6 @@
 .file-list .pdf:before, .file-list .xls:before, .file-list .xslx:before, .file-list .pptx:before, .file-list .ppt:before, .file-list .docx:before, .file-list .doc:before, .file-list .bmp:before, .file-list .png:before, .file-list .jpg:before, .file-list .jpeg:before, .file-list .psd:before, .file-list .gif:before, .file-list .avi:before, .file-list .mp4:before, .file-list .wmv:before, .file-list .mov:before, .file-list .mp3:before, .file-list .wma:before, .file-list .txt:before, .file-list .zip:before {
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -118,6 +117,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   position: absolute;
   display: block;
   top: 0;

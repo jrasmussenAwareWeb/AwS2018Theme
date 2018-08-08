@@ -87,7 +87,6 @@
 
 .link.btn-back a:before {
   color: #fff;
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -96,6 +95,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   content: "\f177";
   margin-top: 3px;
   margin-right: 8px;
@@ -110,7 +110,6 @@
 
 .link.btn-next a:after {
   color: #fff;
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -119,6 +118,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   content: "\f178";
   margin-top: 3px;
   margin-left: 8px;
@@ -137,7 +137,6 @@
 
 .link-arrow:after {
   font-weight: 600;
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -146,6 +145,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   content: "\f061";
   padding-left: 5px;
 }

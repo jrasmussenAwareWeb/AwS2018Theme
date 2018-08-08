@@ -67,7 +67,6 @@
 }
 
 .gallery .galleria-info-close:before {
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -76,6 +75,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   content: "\f410";
   display: block;
   width: 100%;
@@ -83,7 +83,6 @@
 
 .gallery .galleria-info-link {
   background: none;
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -92,6 +91,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   font-size: 18px;
 }
 
@@ -115,7 +115,6 @@
   transform: translateY(-50%);
   height: 30px;
   width: 14px;
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -124,6 +123,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   font-size: 28px;
   color: #333;
 }
@@ -155,7 +155,6 @@
 }
 
 .gallery .galleria-thumb-nav-right {
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -164,6 +163,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   right: 10px;
 }
 
@@ -175,7 +175,6 @@
 }
 
 .gallery .galleria-thumb-nav-left {
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -184,6 +183,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   right: auto;
   left: 10px;
 }

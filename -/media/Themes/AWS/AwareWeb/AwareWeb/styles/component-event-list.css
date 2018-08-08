@@ -87,7 +87,6 @@
 }
 
 .event-list .event-list-place:before, .event-list .event-list-link:before {
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -96,6 +95,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);

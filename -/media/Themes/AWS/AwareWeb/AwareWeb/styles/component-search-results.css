@@ -261,7 +261,6 @@
 }
 
 .search-results.blog .search-result-list > li .blog-item .blog-date:before {
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -270,6 +269,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   content: "\f133";
   color: #777;
   font-size: 18px;

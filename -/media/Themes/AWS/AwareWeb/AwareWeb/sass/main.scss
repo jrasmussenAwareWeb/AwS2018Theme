@@ -2,9 +2,10 @@
 @import "abstracts/mixins";
 @import "base/fonts/fonts";
 //we need these here for specifying inline within sitecore
-@import "base/fontawesome/fa-solid";
-@import "base/fontawesome/fa-regular";
-@import "base/fontawesome/fa-light";
+@import "base/fontawesome/brands";
+//@import "base/fontawesome/solid";
+//@import "base/fontawesome/regular";
+@import "base/fontawesome/light";
 @import "base/fontawesome/fontawesome";
 @import "base/links/*";
 

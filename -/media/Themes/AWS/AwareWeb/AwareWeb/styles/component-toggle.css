@@ -42,7 +42,6 @@
 }
 
 .toggle .toggle-header:before {
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -51,6 +50,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   content: "\f0fe";
   position: absolute;
   font-size: 17px;
@@ -80,7 +80,8 @@
 }
 
 .toggle .navigation.navigation-mobile nav {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .toggle .navigation.navigation-mobile nav > ul {
@@ -104,7 +105,6 @@
 }
 
 .toggle .navigation.navigation-mobile .rel-level1 > ul li a:before {
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -113,6 +113,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   content: "\f054";
   display: block;
   position: absolute;
@@ -144,7 +145,6 @@
 }
 
 .toggle .navigation.navigation-mobile .rel-level1.submenu > .navigation-title:before {
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -153,6 +153,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   content: "\f078";
   display: block;
   position: absolute;
@@ -237,6 +238,7 @@
   font-family: 'Font Awesome 5 Pro', sans-serif;
   content: "\f0c9";
   font-size: 30px;
+  font-weight: 300;
   text-align: center;
   padding: 15px;
   background: none;
@@ -247,9 +249,13 @@
   position: relative;
   z-index: 100;
   pointer-events: none;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .toggle.toggle-mobile .toggle-content .navigation-mobile {
   pointer-events: all;
   padding: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }

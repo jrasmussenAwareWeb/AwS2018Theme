@@ -164,7 +164,6 @@
 .content .pdf:before, .content .xls:before, .content .xslx:before, .content .pptx:before, .content .ppt:before, .content .docx:before, .content .doc:before, .content .bmp:before, .content .png:before, .content .jpg:before, .content .jpeg:before, .content .psd:before, .content .gif:before, .content .avi:before, .content .mp4:before, .content .wmv:before, .content .mov:before, .content .mp3:before, .content .wma:before, .content .txt:before, .content .zip:before, .rich-text .pdf:before, .rich-text .xls:before, .rich-text .xslx:before, .rich-text .pptx:before, .rich-text .ppt:before, .rich-text .docx:before, .rich-text .doc:before, .rich-text .bmp:before, .rich-text .png:before, .rich-text .jpg:before, .rich-text .jpeg:before, .rich-text .psd:before, .rich-text .gif:before, .rich-text .avi:before, .rich-text .mp4:before, .rich-text .wmv:before, .rich-text .mov:before, .rich-text .mp3:before, .rich-text .wma:before, .rich-text .txt:before, .rich-text .zip:before {
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -173,6 +172,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   position: absolute;
   display: block;
   top: 0;
@@ -1121,7 +1121,6 @@
 }
 
 .content.blog-article .article-date:before, .rich-text.blog-article .article-date:before {
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -1130,6 +1129,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   color: #555;
   content: "\f073";
   font-size: 24px;
@@ -1154,7 +1154,6 @@
 }
 
 .content.blog-article .tag-list .component-content:before, .rich-text.blog-article .tag-list .component-content:before {
-  font-family: 'Font Awesome 5 Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -1163,6 +1162,7 @@
   font-weight: normal;
   line-height: 1;
   vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
   color: #555;
   content: "\f02c";
   font-size: 24px;

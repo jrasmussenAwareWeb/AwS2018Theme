@@ -1,8 +1,9 @@
 .navigation.navigation-mobile {
     nav{
-    	@include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 0.3), $inset: false);
-    	>ul {
-        	border: none;
+        //@include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 0.3), $inset: false);
+        @include transition(all .6s ease-in-out);
+    	> ul {
+            border: none;
         }
     }
     .rel-level1 {

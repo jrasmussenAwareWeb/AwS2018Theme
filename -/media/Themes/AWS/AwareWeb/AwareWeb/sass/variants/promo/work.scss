@@ -166,6 +166,9 @@
         }
     }
     @include respond-to(desktop) {
+        &.col-sm-6.col-md-4:nth-child(odd){
+            border-left: none;
+        }
         &.col-sm-6:nth-child(odd){
             border-left: none;
         }
