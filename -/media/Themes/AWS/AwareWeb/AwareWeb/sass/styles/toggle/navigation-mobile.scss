@@ -1,7 +1,24 @@
+/*
+details {
+    .navigation.navigation-mobile {
+        nav {
+            opacity: 0;
+            @include transition(all .6s ease);
+        }
+    }
+}
+details[open] {
+    .navigation.navigation-mobile {
+        nav {
+            opacity: 1;
+            @include transition(all .6s ease);
+        }
+    }
+}
+*/
 .navigation.navigation-mobile {
     nav{
         //@include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 0.3), $inset: false);
-        @include transition(all .6s ease-in-out);
     	> ul {
             border: none;
         }

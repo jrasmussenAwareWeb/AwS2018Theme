@@ -3,8 +3,8 @@
     margin-bottom: 10px;
     h1, h2 {
         color: $text-white;
-        margin-top: $small-margin;
-        margin-bottom: $extrasmall-margin;
+        margin-top: $middle-margin;
+        margin-bottom: $small-margin;
         text-transform:uppercase;
     }
     > .component-content {
@@ -18,8 +18,8 @@
                     font-weight: 400;
                     border: none;
                     color: #c5cedc;
-                    font-size: $font-big;
-
+                    font-size: $font-normal;
+                    
                     &:before {
                         @include fa-icon();
                         //content: $fa-var-chevron-right;
@@ -33,6 +33,10 @@
                         color: $text-white;
                         text-decoration: underline;
                     }
+
+                    @include respond-to(desktop) {
+                        font-size: $font-big;
+                    }
                 }
             }
             li:first-child {
@@ -43,6 +47,9 @@
                         content:"";
                     }
                 }
+            }
+            @include respond-to(all-phone) {
+                margin-bottom: $large-margin;
             }
         }
     }

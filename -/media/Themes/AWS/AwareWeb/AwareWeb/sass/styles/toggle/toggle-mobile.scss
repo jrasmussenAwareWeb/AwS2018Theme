@@ -37,12 +37,10 @@
         position: relative;
         z-index: 100;
         pointer-events: none;
-        @include transition(all .6s ease-in-out);
 
         .navigation-mobile {
             pointer-events: all;
             padding: 0;
-            @include transition(all .6s ease-in-out);
         }
     }
 }

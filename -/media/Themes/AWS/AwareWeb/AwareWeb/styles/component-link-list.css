@@ -225,8 +225,8 @@
 
 .link-list.list-inline h1, .link-list.list-inline h2 {
   color: #FFFFFF;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
@@ -240,7 +240,7 @@
   font-weight: 400;
   border: none;
   color: #c5cedc;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .link-list.list-inline > .component-content ul li a:before {
@@ -264,6 +264,12 @@
   text-decoration: underline;
 }
 
+@media only screen and (min-width: 992px) {
+  .link-list.list-inline > .component-content ul li a {
+    font-size: 20px;
+  }
+}
+
 .link-list.list-inline > .component-content ul li:first-child {
   padding-left: 0;
 }
@@ -274,6 +280,12 @@
 
 .link-list.list-inline > .component-content ul li:first-child a:before {
   content: "";
+}
+
+@media only screen and (max-width: 767px) {
+  .link-list.list-inline > .component-content ul {
+    margin-bottom: 30px;
+  }
 }
 
 @keyframes spin {

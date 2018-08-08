@@ -169,16 +169,8 @@
         }
         
         @include respond-to(all-phone) {
-            top:0;
-            margin-top: 10px;
-
-            .nav-items {
-                .sxa-bullets {
-                    &:before {
-                        border: solid 3px #999;
-                    }
-                }
-            }
+            top:-30px;
+            margin-top: 0;
         }
     }
     &.image-full-size {

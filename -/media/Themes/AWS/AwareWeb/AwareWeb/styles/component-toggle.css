@@ -79,9 +79,14 @@
   margin-top: -1px;
 }
 
-.toggle .navigation.navigation-mobile nav {
+.toggle details .navigation.navigation-mobile nav {
+  opacity: 0;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+}
+
+.toggle details[open] .navigation.navigation-mobile nav {
+  opacity: 1;
 }
 
 .toggle .navigation.navigation-mobile nav > ul {
@@ -249,13 +254,9 @@
   position: relative;
   z-index: 100;
   pointer-events: none;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
 }
 
 .toggle.toggle-mobile .toggle-content .navigation-mobile {
   pointer-events: all;
   padding: 0;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
 }
