@@ -61,20 +61,23 @@
             width: 100%;
             height: 150px;
             position: absolute;
-            background: -moz-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
-            background: -webkit-linear-gradient(top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
-            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+            top: 0;
+            background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
         }
         @include respond-to(tablet) {
             img {
                 min-height: 230px;
             }
+            &:after {height: 210px;}
         }
         @include respond-to(desktop) {
             min-height: 290px;
+            &:after {height: 240px;}
         }
         @include respond-to(large) {
-            &:after {height: 200px;}
+            &:after {height: 260px;}
         }
         @include respond-to(all-phone) {
             img {

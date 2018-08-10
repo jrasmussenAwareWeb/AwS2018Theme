@@ -141,13 +141,13 @@ a.btn, input.btn {
         color: $text-white;
         background-color: $bg-red;
     }
-
+}*/
+a.btn {
     &.btn-lg {
         font-size: $font-medium;
         padding: 15px 18px;
     }
-}*/
-
+}
 
 header {
     position:relative;

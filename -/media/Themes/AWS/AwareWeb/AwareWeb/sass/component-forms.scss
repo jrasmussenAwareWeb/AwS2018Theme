@@ -101,12 +101,13 @@
         border: none;
     }
     input[type="submit"], button {
-        @include border-basic();
+        //@include border-basic();
+        border: solid 2px $text-red;
         background: $bg-basic-color;
         cursor: pointer;
         margin-left: 0;
     }
-    input[type="text"], input[type="password"], textarea, input[type="file"] {
+    input[type="text"], input[type="password"], input[type="email"], textarea, input[type="file"] {
         //display: inline-block;
         vertical-align: middle;
         box-sizing: border-box;

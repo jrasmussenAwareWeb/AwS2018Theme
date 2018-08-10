@@ -252,13 +252,13 @@
 }
 
 .form input[type="submit"], .form button, .sitecore-form input[type="submit"], .sitecore-form button {
-  border: 1px solid #d2d2d2;
+  border: solid 2px #cc0000;
   background: #FFFFFF;
   cursor: pointer;
   margin-left: 0;
 }
 
-.form input[type="text"], .form input[type="password"], .form textarea, .form input[type="file"], .sitecore-form input[type="text"], .sitecore-form input[type="password"], .sitecore-form textarea, .sitecore-form input[type="file"] {
+.form input[type="text"], .form input[type="password"], .form input[type="email"], .form textarea, .form input[type="file"], .sitecore-form input[type="text"], .sitecore-form input[type="password"], .sitecore-form input[type="email"], .sitecore-form textarea, .sitecore-form input[type="file"] {
   vertical-align: middle;
   box-sizing: border-box;
   border-bottom: 1px solid #d2d2d2;
@@ -268,7 +268,7 @@
   box-shadow: none;
 }
 
-.form input[type="text"] + span, .form input[type="password"] + span, .form textarea + span, .form input[type="file"] + span, .sitecore-form input[type="text"] + span, .sitecore-form input[type="password"] + span, .sitecore-form textarea + span, .sitecore-form input[type="file"] + span {
+.form input[type="text"] + span, .form input[type="password"] + span, .form input[type="email"] + span, .form textarea + span, .form input[type="file"] + span, .sitecore-form input[type="text"] + span, .sitecore-form input[type="password"] + span, .sitecore-form input[type="email"] + span, .sitecore-form textarea + span, .sitecore-form input[type="file"] + span {
   vertical-align: middle;
 }
 

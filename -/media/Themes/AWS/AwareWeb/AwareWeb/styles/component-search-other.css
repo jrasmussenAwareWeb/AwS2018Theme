@@ -57,12 +57,15 @@
 }
 
 .facet-component input[type="submit"], .facet-component input[type="reset"], .facet-component input[type="button"], .facet-component button {
-  border: 1px solid #333;
-  padding: 5px 20px;
+  color: #cc0000;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
+  padding: 10px 15px;
 }
 
 .facet-component input[type="submit"]:hover, .facet-component input[type="reset"]:hover, .facet-component input[type="button"]:hover, .facet-component button:hover {
-  background: #f5f5f5 !important;
+  color: #FFFFFF;
+  background-color: #cc0000;
 }
 
 .facet-component input::-moz-focus-inner, .facet-component button::-moz-focus-inner {
@@ -78,6 +81,7 @@
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
   color: #333;
   width: 100%;
+  display: block;
 }
 
 .facet-component select {
@@ -251,12 +255,15 @@
 }
 
 .radius-filter input[type="submit"], .radius-filter input[type="reset"], .radius-filter input[type="button"], .radius-filter button {
-  border: 1px solid #333;
-  padding: 5px 20px;
+  color: #cc0000;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
+  padding: 10px 15px;
 }
 
 .radius-filter input[type="submit"]:hover, .radius-filter input[type="reset"]:hover, .radius-filter input[type="button"]:hover, .radius-filter button:hover {
-  background: #f5f5f5 !important;
+  color: #FFFFFF;
+  background-color: #cc0000;
 }
 
 .radius-filter input::-moz-focus-inner, .radius-filter button::-moz-focus-inner {
@@ -272,6 +279,7 @@
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
   color: #333;
   width: 100%;
+  display: block;
 }
 
 .radius-filter select {
@@ -486,12 +494,15 @@
 }
 
 .load-more input[type="submit"], .load-more input[type="reset"], .load-more input[type="button"], .load-more button {
-  border: 1px solid #333;
-  padding: 5px 20px;
+  color: #cc0000;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
+  padding: 10px 15px;
 }
 
 .load-more input[type="submit"]:hover, .load-more input[type="reset"]:hover, .load-more input[type="button"]:hover, .load-more button:hover {
-  background: #f5f5f5 !important;
+  color: #FFFFFF;
+  background-color: #cc0000;
 }
 
 .load-more input::-moz-focus-inner, .load-more button::-moz-focus-inner {
@@ -507,6 +518,7 @@
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
   color: #333;
   width: 100%;
+  display: block;
 }
 
 .load-more select {
@@ -593,12 +605,15 @@
 }
 
 .location-filter input[type="submit"], .location-filter input[type="reset"], .location-filter input[type="button"], .location-filter button {
-  border: 1px solid #333;
-  padding: 5px 20px;
+  color: #cc0000;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
+  padding: 10px 15px;
 }
 
 .location-filter input[type="submit"]:hover, .location-filter input[type="reset"]:hover, .location-filter input[type="button"]:hover, .location-filter button:hover {
-  background: #f5f5f5 !important;
+  color: #FFFFFF;
+  background-color: #cc0000;
 }
 
 .location-filter input::-moz-focus-inner, .location-filter button::-moz-focus-inner {
@@ -614,6 +629,7 @@
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
   color: #333;
   width: 100%;
+  display: block;
 }
 
 .location-filter select {
@@ -945,12 +961,15 @@
 }
 
 .page-size input[type="submit"], .page-size input[type="reset"], .page-size input[type="button"], .page-size button {
-  border: 1px solid #333;
-  padding: 5px 20px;
+  color: #cc0000;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
+  padding: 10px 15px;
 }
 
 .page-size input[type="submit"]:hover, .page-size input[type="reset"]:hover, .page-size input[type="button"]:hover, .page-size button:hover {
-  background: #f5f5f5 !important;
+  color: #FFFFFF;
+  background-color: #cc0000;
 }
 
 .page-size input::-moz-focus-inner, .page-size button::-moz-focus-inner {
@@ -966,6 +985,7 @@
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
   color: #333;
   width: 100%;
+  display: block;
 }
 
 .page-size select {
@@ -1115,12 +1135,15 @@
 }
 
 .search-box input[type="submit"], .search-box input[type="reset"], .search-box input[type="button"], .search-box button {
-  border: 1px solid #333;
-  padding: 5px 20px;
+  color: #cc0000;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
+  padding: 10px 15px;
 }
 
 .search-box input[type="submit"]:hover, .search-box input[type="reset"]:hover, .search-box input[type="button"]:hover, .search-box button:hover {
-  background: #f5f5f5 !important;
+  color: #FFFFFF;
+  background-color: #cc0000;
 }
 
 .search-box input::-moz-focus-inner, .search-box button::-moz-focus-inner {
@@ -1136,6 +1159,7 @@
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
   color: #333;
   width: 100%;
+  display: block;
 }
 
 .search-box select {
@@ -1363,12 +1387,15 @@
 }
 
 .sort-results input[type="submit"], .sort-results input[type="reset"], .sort-results input[type="button"], .sort-results button {
-  border: 1px solid #333;
-  padding: 5px 20px;
+  color: #cc0000;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
+  padding: 10px 15px;
 }
 
 .sort-results input[type="submit"]:hover, .sort-results input[type="reset"]:hover, .sort-results input[type="button"]:hover, .sort-results button:hover {
-  background: #f5f5f5 !important;
+  color: #FFFFFF;
+  background-color: #cc0000;
 }
 
 .sort-results input::-moz-focus-inner, .sort-results button::-moz-focus-inner {
@@ -1384,6 +1411,7 @@
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
   color: #333;
   width: 100%;
+  display: block;
 }
 
 .sort-results select {
@@ -1420,7 +1448,7 @@
   }
 }
 
-input[type="text"], input[type="password"], textarea, input[type="file"] {
+input[type="text"], input[type="password"], input[type="email"], textarea, input[type="file"] {
   box-sizing: border-box;
   border: 1px solid #d2d2d2;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1439,16 +1467,13 @@ input[type="text"], input[type="password"], textarea, input[type="file"] {
   line-height: 1.42857143;
   background-color: #fff;
   background-image: none;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 input[type="submit"], button, input[type="button"] {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 10px 15px;
   margin-bottom: 0;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -1465,16 +1490,14 @@ input[type="submit"], button, input[type="button"] {
   background: linear-gradient(to bottom, #fff 0, #e0e0e0 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   background-repeat: repeat-x;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: solid 2px #cc0000;
+  border-radius: 0;
 }
 
 input[type="submit"]:hover, button:hover, input[type="button"]:hover {
-  background-color: #e0e0e0;
-  background-position: 0 -15px;
-  border-color: #adadad;
+  color: #FFFFFF;
+  background-color: #cc0000;
   text-decoration: none;
-  color: #333;
 }
 
 input[type="file"] {

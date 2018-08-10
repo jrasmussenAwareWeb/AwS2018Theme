@@ -1,5 +1,6 @@
 //AWS
 @import "../../abstracts/mixins";
+
 &.library {
     padding:0 !important; 
 
@@ -21,6 +22,10 @@
             height: auto;
             padding: 15px;
             float: left;
+            
+            &:nth-child(odd) {
+                clear: left;
+            }
 
             > div {
                 width: 100%;
@@ -28,13 +33,17 @@
                 border-bottom: none;
                 float: left;
             }
+            .result-image * {
+                @include transition(all .3s ease-in-out);
+            }
             .result-image {
                 position:relative;
-                z-index:1;
-                @include transition(all .3s ease-in-out);
-
+                overflow: hidden;
+                
                 .field-customimage {
                     line-height:1;
+                    position:relative;
+                    overflow: hidden;
                     img {
                         width:100%;
                         height:auto;
@@ -47,6 +56,7 @@
                     position:absolute;
                     top:0;
                     left:0;
+                    z-index:1;
                 }
                 .field-type-icon {
                     height:128px;
@@ -56,16 +66,12 @@
                     left:0;
                     text-align:center;
                     margin:17% auto !important;
-                        @include respond-to(all-phone) {
-                            margin:20% auto !important;
-                        }
-                    //we cant make this linkable (we have to point to a specific field (file/linkexternal) so no hover
-                    /*img {
-                        margin:13% auto !important;
-                        @include respond-to(all-phone) {
-                            margin:20% auto !important;
-                        }
-                    }*/
+                    opacity: 1;
+                    z-index:1;
+
+                    @include respond-to(all-phone) {
+                        margin:20% auto !important;
+                    }
 
                     &.Case.Study {
                         &:after {
@@ -99,19 +105,25 @@
                             transform: scale(1.2);
                         }
                     }
+                    .field-type {
+                        background:rgba(255,255,255,0.0);
+                    }
                     .field-type-icon {
                         transform: scale(.8);
+                        opacity: 0;
                     }
                 }
             }
 
             .result-body {
+                width: 100%;
                 padding:20px 15px;
                 position:relative;
                 z-index:2;
                 @include border-basic(bottom);
                 border-top: none;
-            
+                min-height: 245px;
+                
                 .field-publisheddate {
                     font-size:14px;
                     margin-bottom:10px;
@@ -143,27 +155,29 @@
                 .field-description, .field-excerpt {
                     margin-top:10px;
                     overflow:hidden;
-
-                    @include respond-to(tablet) {
-                        min-height:120px;
-                         max-height:120px;
-                    }
                 }
             }
-            @include respond-to(phone-horizontal) {
+            @include respond-to(phone) {
                 width: 100%;
-                &:nth-child(odd) {
-                    clear: left;
+                .result-body {
+                    min-height: 160px;
                 }
             }
             @include respond-to(tablet) {
                 width: 50%;
                 .result-body {
-                    min-height: 280px;
+                    height: 245px;
+                    overflow: hidden;
                 }
             }
             @include respond-to(desktop) {
                 width: 33.3333%;
+                &:nth-child(odd) {
+                    clear: none;
+                }
+                .result-body {
+                    height: 285px;
+                }
             }
             @include respond-to(large) {
                 width: 25%;

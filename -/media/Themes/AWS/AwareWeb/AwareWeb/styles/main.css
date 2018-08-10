@@ -6469,12 +6469,12 @@ a.btn, input.btn {
         color: $text-white;
         background-color: $bg-red;
     }
-
-    &.btn-lg {
-        font-size: $font-medium;
-        padding: 15px 18px;
-    }
 }*/
+a.btn.btn-lg {
+  font-size: 18px;
+  padding: 15px 18px;
+}
+
 header {
   position: relative;
   z-index: 10;
