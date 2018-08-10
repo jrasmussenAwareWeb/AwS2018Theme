@@ -38,7 +38,8 @@
         }
     }
     .twitter-typeahead {
-        margin:0 5px 0 0 !important;
+        //margin:0 5px 0 0 !important;
+        margin: 0;
     }
     input, button {
         height:34px;
@@ -53,7 +54,8 @@
         padding:0;
         border:1px solid $text-red;
         border-radius:0;
-        margin-top:4px;
+        margin-top:5px;
+        margin-left: 0; //AWS
         &:before { 
             @include fa-icon();
             content: fa-content($fa-var-search);

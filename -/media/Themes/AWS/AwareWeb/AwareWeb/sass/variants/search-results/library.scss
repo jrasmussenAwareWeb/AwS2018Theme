@@ -15,33 +15,23 @@
     .search-result-list {
         width: 100%;
         >li {
-            //display: inline-block;
-            float: left;
             box-sizing: border-box;
-            @include border-basic();
-            border-width: 1px;
             position: relative;
-            height: 100%;
-            margin: 0 2% 30px 0;
-            width: 23.2%;
+            width: 50%;
+            height: auto;
+            padding: 15px;
+            float: left;
 
-            @include respond-to(all-phone) {
-                min-height:100%;
-                margin-right:0;
+            > div {
                 width: 100%;
+                @include border-basic();
+                border-bottom: none;
+                float: left;
             }
-            
-            @include respond-to(tablet) {
-                min-height: 420px;
-            }
-
-            /*@include respond-to(large) {
-                min-height: 280px;
-            }*/
-
             .result-image {
                 position:relative;
                 z-index:1;
+                @include transition(all .3s ease-in-out);
 
                 .field-customimage {
                     line-height:1;
@@ -102,13 +92,25 @@
                         }
                     }
                 }
+                &:hover {
+                    overflow: hidden;
+                    .field-customimage {
+                        img {
+                            transform: scale(1.2);
+                        }
+                    }
+                    .field-type-icon {
+                        transform: scale(.8);
+                    }
+                }
             }
 
             .result-body {
                 padding:20px 15px;
                 position:relative;
                 z-index:2;
-                max-height:200px;
+                @include border-basic(bottom);
+                border-top: none;
             
                 .field-publisheddate {
                     font-size:14px;
@@ -148,7 +150,24 @@
                     }
                 }
             }
-
+            @include respond-to(phone-horizontal) {
+                width: 100%;
+                &:nth-child(odd) {
+                    clear: left;
+                }
+            }
+            @include respond-to(tablet) {
+                width: 50%;
+                .result-body {
+                    min-height: 280px;
+                }
+            }
+            @include respond-to(desktop) {
+                width: 33.3333%;
+            }
+            @include respond-to(large) {
+                width: 25%;
+            }
         }
         :nth-child(4n) {
             margin-right:0;

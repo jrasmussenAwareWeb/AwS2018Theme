@@ -40,6 +40,9 @@
             }
         }
     }
+    @include respond-to(large) {
+        float: none;
+    }
 }
 @include respond-to(desktop) {
     .angle-content-left {

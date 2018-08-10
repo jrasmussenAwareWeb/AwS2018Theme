@@ -1,32 +1,18 @@
 &.landing {
-    @include respond-to(large) {
-        padding:0;
-    }
+    padding:0;
+    margin-top: 20px;
+
     .item {
         border:0;
         width:100%;
         float:none;
-
-        @include respond-to(all-phone) {
-            padding:30px 15px;
-        }
-
-        @include respond-to(tablet) {
-            width:50%;
-            float:left;
-        }
-        @include respond-to(desktop) {
-            width:33%;
-        }
-        @include respond-to(large) {
-            width:25%;
-        }
+        
         .column {
             @include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 0.3), $inset: false);
         }
         .body {
             padding:15px;
-            a {
+            .read-more a {
                 text-transform:uppercase;
                 color:$text-red;
                 font-weight:bold;
@@ -43,9 +29,36 @@
 
             }
         }
+        @include respond-to(all-phone) {
+            padding:30px 15px;
+        }
+        @include respond-to(tablet) {
+            width:50%;
+            float:left;
+            .body {
+                height: 275px;
+                overflow: hidden;
+            }
+            .field-listingdescription {
+                height: 160px;
+                overflow: hidden;
+            }
+        }
+        @include respond-to(desktop) {
+            width:33.3333%;
+            .body {height: 297px;}
+            .field-listingdescription {height: 180px;}
+        }
+        @include respond-to(large) {
+            width:25%;
+            &:nth-child(4n+1) {clear:left;}
+            .body {height: 325px;}
+            .field-listingdescription {height: 210px;}
+        }
     }
+
     img {width:100%;height:auto}
-    .field-title {
+    .field-title, .field-title a {
         color:#777;
         font-weight:normal;
         text-align:center;

@@ -21,6 +21,24 @@
 }
 
 .toggle {
+  /*
+details {
+    .navigation.navigation-mobile {
+        nav {
+            opacity: 0;
+            @include transition(all .6s ease);
+        }
+    }
+}
+details[open] {
+    .navigation.navigation-mobile {
+        nav {
+            opacity: 1;
+            @include transition(all .6s ease);
+        }
+    }
+}
+*/
   /* breakpoints */
 }
 
@@ -77,16 +95,6 @@
 
 .toggle .toggle-content {
   margin-top: -1px;
-}
-
-.toggle details .navigation.navigation-mobile nav {
-  opacity: 0;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-}
-
-.toggle details[open] .navigation.navigation-mobile nav {
-  opacity: 1;
 }
 
 .toggle .navigation.navigation-mobile nav > ul {

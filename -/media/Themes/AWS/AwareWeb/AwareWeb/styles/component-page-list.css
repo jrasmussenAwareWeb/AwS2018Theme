@@ -61,41 +61,15 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .page-list.landing {
-    padding: 0;
-  }
+.page-list.landing {
+  padding: 0;
+  margin-top: 20px;
 }
 
 .page-list.landing .item {
   border: 0;
   width: 100%;
   float: none;
-}
-
-@media only screen and (max-width: 767px) {
-  .page-list.landing .item {
-    padding: 30px 15px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .page-list.landing .item {
-    width: 50%;
-    float: left;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .page-list.landing .item {
-    width: 33%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .page-list.landing .item {
-    width: 25%;
-  }
 }
 
 .page-list.landing .item .column {
@@ -106,13 +80,13 @@
   padding: 15px;
 }
 
-.page-list.landing .item .body a {
+.page-list.landing .item .body .read-more a {
   text-transform: uppercase;
   color: #cc0000;
   font-weight: bold;
 }
 
-.page-list.landing .item .body a:after {
+.page-list.landing .item .body .read-more a:after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -129,12 +103,60 @@
   top: -2px;
 }
 
+@media only screen and (max-width: 767px) {
+  .page-list.landing .item {
+    padding: 30px 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-list.landing .item {
+    width: 50%;
+    float: left;
+  }
+  .page-list.landing .item .body {
+    height: 275px;
+    overflow: hidden;
+  }
+  .page-list.landing .item .field-listingdescription {
+    height: 160px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-list.landing .item {
+    width: 33.3333%;
+  }
+  .page-list.landing .item .body {
+    height: 297px;
+  }
+  .page-list.landing .item .field-listingdescription {
+    height: 180px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .page-list.landing .item {
+    width: 25%;
+  }
+  .page-list.landing .item:nth-child(4n+1) {
+    clear: left;
+  }
+  .page-list.landing .item .body {
+    height: 325px;
+  }
+  .page-list.landing .item .field-listingdescription {
+    height: 210px;
+  }
+}
+
 .page-list.landing img {
   width: 100%;
   height: auto;
 }
 
-.page-list.landing .field-title {
+.page-list.landing .field-title, .page-list.landing .field-title a {
   color: #777;
   font-weight: normal;
   text-align: center;
