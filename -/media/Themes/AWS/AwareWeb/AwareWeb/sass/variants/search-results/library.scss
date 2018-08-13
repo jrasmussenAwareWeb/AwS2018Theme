@@ -181,6 +181,12 @@
             }
             @include respond-to(large) {
                 width: 25%;
+                &:nth-child(4n+1){
+                    clear: left;
+                }
+                .result-image {
+                    max-height: 170px;
+                }
             }
         }
         :nth-child(4n) {

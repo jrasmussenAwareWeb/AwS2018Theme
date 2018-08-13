@@ -591,6 +591,12 @@
   .search-results.library .search-result-list > li {
     width: 25%;
   }
+  .search-results.library .search-result-list > li:nth-child(4n+1) {
+    clear: left;
+  }
+  .search-results.library .search-result-list > li .result-image {
+    max-height: 170px;
+  }
 }
 
 .search-results.library .search-result-list :nth-child(4n) {
