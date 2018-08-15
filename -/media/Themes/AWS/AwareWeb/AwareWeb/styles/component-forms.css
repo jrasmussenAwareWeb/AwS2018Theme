@@ -230,6 +230,10 @@
   border: 1px solid #d2d2d2;
 }
 
+.form input[type="text"], .form input[type="password"], .form input[type="email"], .form textarea, .form input[type="file"], .sitecore-form input[type="text"], .sitecore-form input[type="password"], .sitecore-form input[type="email"], .sitecore-form textarea, .sitecore-form input[type="file"] {
+  margin-bottom: 10px;
+}
+
 .form .scfCaptcha input[type="text"], .sitecore-form .scfCaptcha input[type="text"] {
   margin: 0;
 }

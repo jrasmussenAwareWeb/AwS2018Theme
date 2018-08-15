@@ -80,7 +80,9 @@
         @include border-basic();
         //padding: 2px 4px;
         //max-width: 98%;
-
+    }
+    input[type="text"], input[type="password"], input[type="email"], textarea, input[type="file"] {
+        margin-bottom:10px;
     }
     .scfCaptcha {
         input[type="text"] {
