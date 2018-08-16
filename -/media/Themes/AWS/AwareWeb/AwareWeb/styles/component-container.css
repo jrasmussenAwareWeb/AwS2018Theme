@@ -235,6 +235,8 @@
   background: -webkit-linear-gradient(top left, #cc0000, #840000);
   background: linear-gradient(to bottom right, #cc0000, #840000);
   /* Standard syntax */
+  min-height: 100px;
+  /*for the pages with no form*/
 }
 
 .container-gradient-background-red-arrow::before {

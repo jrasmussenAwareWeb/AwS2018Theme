@@ -8,6 +8,7 @@
     background: -o-linear-gradient(bottom right, #cc0000, #840000); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, #cc0000, #840000); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom right, #cc0000, #840000); /* Standard syntax */
+    min-height:100px; /*for the pages with no form*/
 }
 
 .container-gradient-background-red-arrow::before { 
