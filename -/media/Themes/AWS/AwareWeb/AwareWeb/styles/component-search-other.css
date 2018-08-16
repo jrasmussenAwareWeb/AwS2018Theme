@@ -1105,20 +1105,6 @@
   position: relative;
   padding: 14px 0;
   box-sizing: border-box;
-  /*this is for icon only and we dont need it
-    @include respond-to(all-phone) {
-        width: 54px;
-        height: 70px;
-        position: absolute;
-        right: 56px;
-    }
-
-    @include respond-to(desktop) {
-        padding: 16px 0;
-    }
-    @include respond-to(large) {
-        padding: 18px 0;
-    }*/
 }
 
 @keyframes spin {
@@ -1660,16 +1646,9 @@ button[type="submit"]:hover {
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .search-box.icon-only .component-content > button::after {
-    top: -1px;
-  }
-}
-
 @media only screen and (min-width: 1400px) {
   .search-box.icon-only .component-content > button::after {
     font-size: 18px;
-    top: -3px;
   }
 }
 

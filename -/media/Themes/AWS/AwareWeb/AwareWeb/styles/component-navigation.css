@@ -28,12 +28,7 @@
   top: 0;
   z-index: 100;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-@media only screen and (max-width: 991px) {
-  #header {
-    height: 69px;
-  }
+  height: 69px;
 }
 
 #header .image {
@@ -73,14 +68,11 @@
   float: right;
   /*
     @include respond-to(desktop){margin-top: 3px;}
-    @include respond-to(large){margin-top: -1px;}*/
+    @include respond-to(large){margin-top: -1px;}
+    @include respond-to(tablet) {
+        margin-top:-1px;
+    }*/
   /* breakpoints */
-}
-
-@media only screen and (min-width: 768px) {
-  .navigation {
-    margin-top: -1px;
-  }
 }
 
 .navigation .rel-level1 > .navigation-title > a {
@@ -503,19 +495,19 @@
 
 @media only screen and (min-width: 768px) {
   .navigation.navigation-main.navigation-main-vertical .rel-level1 {
-    padding: 11px 8px;
+    padding: 10.5px 8px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .navigation.navigation-main.navigation-main-vertical .rel-level1 {
-    padding: 11px 15px;
+    padding: 9px 15px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .navigation.navigation-main.navigation-main-vertical .rel-level1 {
-    padding: 11px 18px;
+    padding: 7.5px 18px;
   }
 }
 
@@ -568,18 +560,6 @@
 .navigation.navigation-main.navigation-main-vertical .rel-level2 div > a:hover, .navigation.navigation-main.navigation-main-vertical .rel-level2 div > a:focus {
   color: #cc0000;
   text-decoration: none;
-}
-
-@media only screen and (min-width: 992px) {
-  .home .navigation.navigation-main.navigation-main-vertical .rel-level1 {
-    padding: 9.5px 15px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .home .navigation.navigation-main.navigation-main-vertical .rel-level1 {
-    padding: 8px 18px;
-  }
 }
 
 /* breakpoints */

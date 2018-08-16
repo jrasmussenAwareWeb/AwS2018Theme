@@ -13,10 +13,8 @@
 	top: 0;
     z-index: 100;
     @include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 0.3), $inset: false);
-    
-    @include respond-to(all-mobile) {
-        height: 69px;
-    }
+    height:69px;
+
     .image {
         padding:0;
         z-index:10;
@@ -58,10 +56,10 @@
     @include respond-to(phone-large){padding: 10px;}
     /*
     @include respond-to(desktop){margin-top: 3px;}
-    @include respond-to(large){margin-top: -1px;}*/
+    @include respond-to(large){margin-top: -1px;}
     @include respond-to(tablet) {
         margin-top:-1px;
-    }
+    }*/
 
     .rel-level1 {
         > .navigation-title > a {

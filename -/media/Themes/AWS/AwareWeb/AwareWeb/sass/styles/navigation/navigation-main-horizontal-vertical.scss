@@ -165,14 +165,14 @@
             text-transform:uppercase;
             font-size:18px;
             @include respond-to(tablet) {
-                padding: 11px 8px;
+                padding: 10.5px 8px;
             }
 
             @include respond-to(desktop) {
-                padding: 11px 15px; //11px vs 9.5 home
+                padding: 9px 15px;
             }
             @include respond-to(large) {
-                padding: 11px 18px; //11px vs. 8 home
+                padding: 7.5px 18px; 
             }
             @include respond-to(all-phone) {
                 font-size:18px;
@@ -215,20 +215,6 @@
                 &:hover, &:focus {
                     color:$text-red;
                     text-decoration:none;
-                }
-            }
-        }
-    }
-}
-.home {
-    .navigation.navigation-main {
-        &.navigation-main-vertical {
-            .rel-level1 {
-                @include respond-to(desktop) {
-                    padding: 9.5px 15px; //9.5px vs 11 regular
-                }
-                @include respond-to(large) {
-                    padding: 8px 18px; //8px vs. 11 regular
                 }
             }
         }
