@@ -273,12 +273,12 @@
 
 .content ul li, .rich-text ul li {
   list-style: disc;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 .content ol li, .rich-text ol li {
   list-style: decimal;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 .content a, .rich-text a {
@@ -435,7 +435,7 @@
 .content .btn-inverse, .rich-text .btn-inverse {
   background-color: #700000;
   border-color: #700000;
-  color: #ff0000;
+  color: #cc0000;
 }
 
 .content .btn-inverse:hover, .content .btn-inverse:active, .content .btn-inverse:focus, .rich-text .btn-inverse:hover, .rich-text .btn-inverse:active, .rich-text .btn-inverse:focus {
