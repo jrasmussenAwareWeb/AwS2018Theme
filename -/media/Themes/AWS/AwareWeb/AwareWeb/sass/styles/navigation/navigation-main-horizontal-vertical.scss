@@ -164,8 +164,15 @@
             padding: 8px 11px;
             text-transform:uppercase;
             font-size:18px;
+            @include respond-to(tablet) {
+                padding: 11px 8px;
+            }
+
             @include respond-to(desktop) {
-                padding: 8px 18px;
+                padding: 11px 15px; //11px vs 9.5 home
+            }
+            @include respond-to(large) {
+                padding: 11px 18px; //11px vs. 8 home
             }
             @include respond-to(all-phone) {
                 font-size:18px;
@@ -184,13 +191,10 @@
             }
             > ul {
                 padding-left: 0;
+                margin-left:-15px;
                 width: auto;
                 left: auto;
                 border-right: 1px solid $nav-submenu-item-border;
-    
-                /*> li { //this is .rel-level2
-                    padding: 5px 10px;
-                }*/
             }
         }
         .rel-level2 {
@@ -211,6 +215,20 @@
                 &:hover, &:focus {
                     color:$text-red;
                     text-decoration:none;
+                }
+            }
+        }
+    }
+}
+.home {
+    .navigation.navigation-main {
+        &.navigation-main-vertical {
+            .rel-level1 {
+                @include respond-to(desktop) {
+                    padding: 9.5px 15px; //9.5px vs 11 regular
+                }
+                @include respond-to(large) {
+                    padding: 8px 18px; //8px vs. 11 regular
                 }
             }
         }

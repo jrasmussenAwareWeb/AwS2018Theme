@@ -23,13 +23,17 @@
 #header {
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
-  height: 69px;
   position: fixed;
   margin: 0 auto;
   top: 0;
   z-index: 100;
-  max-height: 70px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 991px) {
+  #header {
+    height: 69px;
+  }
 }
 
 #header .image {
@@ -39,7 +43,7 @@
 }
 
 #header .image img {
-  max-height: 91px;
+  max-height: 89px;
   min-width: 202px;
   width: auto;
   position: relative;
@@ -67,18 +71,15 @@
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   float: right;
+  /*
+    @include respond-to(desktop){margin-top: 3px;}
+    @include respond-to(large){margin-top: -1px;}*/
   /* breakpoints */
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .navigation {
-    margin-top: 3px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .navigation {
-    margin-top: 0;
+    margin-top: -1px;
   }
 }
 
@@ -500,9 +501,21 @@
   font-size: 18px;
 }
 
+@media only screen and (min-width: 768px) {
+  .navigation.navigation-main.navigation-main-vertical .rel-level1 {
+    padding: 11px 8px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .navigation.navigation-main.navigation-main-vertical .rel-level1 {
-    padding: 8px 18px;
+    padding: 11px 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navigation.navigation-main.navigation-main-vertical .rel-level1 {
+    padding: 11px 18px;
   }
 }
 
@@ -527,12 +540,10 @@
 
 .navigation.navigation-main.navigation-main-vertical .rel-level1 > ul {
   padding-left: 0;
+  margin-left: -15px;
   width: auto;
   left: auto;
   border-right: 1px solid #d2d2d2;
-  /*> li { //this is .rel-level2
-                    padding: 5px 10px;
-                }*/
 }
 
 .navigation.navigation-main.navigation-main-vertical .rel-level2 {
@@ -557,6 +568,18 @@
 .navigation.navigation-main.navigation-main-vertical .rel-level2 div > a:hover, .navigation.navigation-main.navigation-main-vertical .rel-level2 div > a:focus {
   color: #cc0000;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .home .navigation.navigation-main.navigation-main-vertical .rel-level1 {
+    padding: 9.5px 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home .navigation.navigation-main.navigation-main-vertical .rel-level1 {
+    padding: 8px 18px;
+  }
 }
 
 /* breakpoints */

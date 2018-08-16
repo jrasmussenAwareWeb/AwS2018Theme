@@ -11,6 +11,7 @@
     padding: 14px 0;
     box-sizing: border-box;
 
+    /*this is for icon only and we dont need it
     @include respond-to(all-phone) {
         width: 54px;
         height: 70px;
@@ -23,7 +24,7 @@
     }
     @include respond-to(large) {
         padding: 18px 0;
-    }
+    }*/
     &.hide-button {
         .search-box-button {
             display: none;

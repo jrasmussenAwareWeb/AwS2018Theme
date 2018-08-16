@@ -93,10 +93,6 @@ details[open] {
   color: #cc0000;
 }
 
-.toggle .toggle-content {
-  margin-top: -1px;
-}
-
 .toggle .navigation.navigation-mobile nav > ul {
   border: none;
 }
@@ -232,6 +228,7 @@ details[open] {
   position: absolute;
   padding: 0;
   z-index: 1;
+  height: 70px;
 }
 
 .toggle.toggle-mobile .component-content {
@@ -242,7 +239,7 @@ details[open] {
   text-align: center;
   padding: 15px;
   width: 56px;
-  height: 70px;
+  height: 69px;
   pointer-events: all;
   background-color: transparent;
 }
@@ -255,6 +252,14 @@ details[open] {
   text-align: center;
   padding: 15px;
   background: none;
+}
+
+.toggle.toggle-mobile .toggle-header:hover:before {
+  color: #cc0000;
+}
+
+.toggle.toggle-mobile details[open] .toggle-header:before {
+  color: #cc0000;
 }
 
 .toggle.toggle-mobile .toggle-content {

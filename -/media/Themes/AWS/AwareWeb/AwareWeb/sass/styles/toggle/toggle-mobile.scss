@@ -9,6 +9,7 @@
     position: absolute;
     padding:0;
     z-index:1;
+    height:70px;
 
     .component-content{
         height: 42px;
@@ -18,7 +19,7 @@
         text-align: center;
         padding: 15px;
         width: 56px;
-        height: 70px;
+        height: 69px;
         pointer-events: all;
         background-color: transparent;
         &:before {
@@ -29,7 +30,19 @@
             text-align: center;
             padding: 15px;
             background: none;
-        }	
+        }
+        &:hover {
+            &:before {
+                color:$text-red;
+            }
+        }
+    }
+    details[open] {
+        .toggle-header {
+            &:before {
+                color:$text-red;
+            }
+        }
     }
     
     .toggle-content {

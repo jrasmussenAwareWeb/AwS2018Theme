@@ -40,9 +40,6 @@
     }
     
     .show {color: $toggle-show-color;}
-    .toggle-content {
-        margin-top: -1px;
-    }
 
     @import "styles/toggle/*";
 }

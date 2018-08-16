@@ -60,7 +60,7 @@
             @include fa-icon();
             content: fa-content($fa-var-search);
             color:$text-white;
-            padding:7px 10px; 
+            padding:7px; 
         }
         &:hover, &:focus, &:active {
             background-color:$text-black !important;

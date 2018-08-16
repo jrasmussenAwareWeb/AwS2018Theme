@@ -1,10 +1,17 @@
 .search-box.icon-only {
-    padding: 0 13px;
-    width: 40px;
+    padding:0;
+    width: auto;
     height: 69px;
     margin-left: -40px;
     float: right;
     z-index:99;
+    @include respond-to(all-phone) {
+        /*padding:0;
+        width:auto;*/
+        height:auto;
+        margin-left:0;
+        right:40px;
+    }
 
     button, button[type="submit"] {
         border: none;
@@ -34,19 +41,30 @@
             content: fa-content($fa-var-search);
             font-weight:400;
             color: #000;
-            ///AWS
-            position: absolute;
-            margin-top: -9px;
-            top: 50%;
+            //AwS
+            display:block;
+            position: relative;
+            margin-top:0;
+            top:0;
             left: 0;
             right: 0;
 
             @include respond-to(all-phone) {
                 font-size: 28px;
-                margin-top: -16px;
+                margin-top:0;
+                display:block;
+                position:relative;
+                top:-8px;
             }
-            @include respond-to(large) {
+            @include respond-to(tablet) {
+                top:-3px;
+            }
+            @include respond-to(desktop) {
+                top:-1px;
+            }
+            @include respond-to(xlarge) {
                 font-size: 18px;
+                top:-3px;
             }
         }
 

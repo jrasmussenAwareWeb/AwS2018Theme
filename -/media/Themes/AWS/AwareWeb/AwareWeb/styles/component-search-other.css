@@ -1105,6 +1105,20 @@
   position: relative;
   padding: 14px 0;
   box-sizing: border-box;
+  /*this is for icon only and we dont need it
+    @include respond-to(all-phone) {
+        width: 54px;
+        height: 70px;
+        position: absolute;
+        right: 56px;
+    }
+
+    @include respond-to(desktop) {
+        padding: 16px 0;
+    }
+    @include respond-to(large) {
+        padding: 18px 0;
+    }*/
 }
 
 @keyframes spin {
@@ -1283,27 +1297,6 @@
   background-color: #f5f5f5;
   opacity: 0.8;
   z-index: 10;
-}
-
-@media only screen and (max-width: 767px) {
-  .search-box {
-    width: 54px;
-    height: 70px;
-    position: absolute;
-    right: 56px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .search-box {
-    padding: 16px 0;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .search-box {
-    padding: 18px 0;
-  }
 }
 
 .search-box.hide-button .search-box-button {
@@ -1588,12 +1581,22 @@ button[type="submit"]:hover {
 }
 
 .search-box.icon-only {
-  padding: 0 13px;
-  width: 40px;
+  padding: 0;
+  width: auto;
   height: 69px;
   margin-left: -40px;
   float: right;
   z-index: 99;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-box.icon-only {
+    /*padding:0;
+        width:auto;*/
+    height: auto;
+    margin-left: 0;
+    right: 40px;
+  }
 }
 
 .search-box.icon-only button, .search-box.icon-only button[type="submit"] {
@@ -1633,9 +1636,10 @@ button[type="submit"]:hover {
   content: "\f002";
   font-weight: 400;
   color: #000;
-  position: absolute;
-  margin-top: -9px;
-  top: 50%;
+  display: block;
+  position: relative;
+  margin-top: 0;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -1643,13 +1647,29 @@ button[type="submit"]:hover {
 @media only screen and (max-width: 767px) {
   .search-box.icon-only .component-content > button::after {
     font-size: 28px;
-    margin-top: -16px;
+    margin-top: 0;
+    display: block;
+    position: relative;
+    top: -8px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
+  .search-box.icon-only .component-content > button::after {
+    top: -3px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .search-box.icon-only .component-content > button::after {
+    top: -1px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
   .search-box.icon-only .component-content > button::after {
     font-size: 18px;
+    top: -3px;
   }
 }
 
@@ -1742,7 +1762,7 @@ button[type="submit"]:hover {
   font-family: 'Font Awesome 5 Pro';
   content: "\f002";
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 7px;
 }
 
 .search-box-clear .search-box-button:hover, .search-box-clear .search-box-button:focus, .search-box-clear .search-box-button:active,
