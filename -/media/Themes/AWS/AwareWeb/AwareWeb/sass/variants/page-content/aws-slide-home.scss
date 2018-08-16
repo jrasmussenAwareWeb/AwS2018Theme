@@ -86,14 +86,6 @@
         }
     }
     &.position-right {
-        @include respond-to(all-phone) {
-            .container.slide-caption, .container.field-slidelink {
-                margin: 0 auto;
-            }
-            .container.slide-caption, .container.slide-caption *, .container.field-slidelink {
-                text-align: center !important;
-            }
-        }
         @include respond-to(tablet) {
             .container.slide-caption * {
                 text-align: left !important;
@@ -119,6 +111,16 @@
                 .field-slidetext, .field-slidelink {
                     margin-left: 60%;
                 }
+            }
+        }
+    }
+    &.position-right, &.position-left {
+        @include respond-to(all-phone) {
+            .container.slide-caption, .container.field-slidelink {
+                margin: 0 auto;
+            }
+            .container.slide-caption, .container.slide-caption *, .container.field-slidelink {
+                text-align: center !important;
             }
         }
     }
