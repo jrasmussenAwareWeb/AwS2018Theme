@@ -11,7 +11,7 @@
         width: 54px;
         height: 54px;
         margin-right: 10px;
-        margin-bottom: 15px;
+        /*margin-bottom: 15px;*/
         -webkit-border-radius: 50%;
         border-radius: 50%;
     
@@ -42,6 +42,16 @@
         display: block;
         clear: both;
         @include border-basic(bottom);
+
+        a {
+            color:$text-red;
+            vertical-align:baseline;
+            text-decoration:none;
+            &:hover, &:active, &:focus {
+                color:$text-red;
+                text-decoration:underline;
+            }
+        }
     }
     .tag-list {
         float: left;

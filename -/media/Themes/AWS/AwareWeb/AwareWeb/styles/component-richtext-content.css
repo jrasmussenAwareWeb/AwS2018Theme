@@ -32,6 +32,10 @@
 */
   /* breakpoints */
   /* breakpoints */
+  /*i dont think we need this were using variants/page-content/blog.scss
+.author-image, .author, .article-date {
+    float: left;
+}*/
   /* breakpoints */
   /* breakpoints */
   /* breakpoints */
@@ -573,10 +577,6 @@
   .content blockquote.pull-left, .rich-text blockquote.pull-left {
     margin-left: -5%;
   }
-}
-
-.content .author-image, .content .author, .content .article-date, .rich-text .author-image, .rich-text .author, .rich-text .article-date {
-  float: left;
 }
 
 @keyframes spin {
@@ -1130,7 +1130,7 @@
   width: 54px;
   height: 54px;
   margin-right: 10px;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   border-radius: 50%;
 }
 
@@ -1170,6 +1170,17 @@
   display: block;
   clear: both;
   border-bottom: 1px solid #d2d2d2;
+}
+
+.content.blog-article .blog-content a, .rich-text.blog-article .blog-content a {
+  color: #cc0000;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+.content.blog-article .blog-content a:hover, .content.blog-article .blog-content a:active, .content.blog-article .blog-content a:focus, .rich-text.blog-article .blog-content a:hover, .rich-text.blog-article .blog-content a:active, .rich-text.blog-article .blog-content a:focus {
+  color: #cc0000;
+  text-decoration: underline;
 }
 
 .content.blog-article .tag-list, .rich-text.blog-article .tag-list {
