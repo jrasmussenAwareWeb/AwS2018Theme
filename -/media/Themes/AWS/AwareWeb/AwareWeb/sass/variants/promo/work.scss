@@ -1,7 +1,10 @@
 //AwS
 .promo-work {
     background: none; 
-    padding: 0;
+    padding:15px;
+    @include respond-to(tablet) {
+    padding: 15px 15px 0 0;
+    }
     text-align: center;
     position: relative;
     border: none;

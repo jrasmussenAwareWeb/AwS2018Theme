@@ -170,10 +170,22 @@ header {
     }
 }
 
+//for the logo placement
+.container.offset-contact-form {
+    margin-bottom:0;
+    @include respond-to(all-phone) {
+        margin-bottom:-50px;
+    }
+}
+
 #footer { 
+    //for the logo placement
     .container {
         position: relative;
         top: -50px;
+        @include respond-to(all-phone) {
+            top:0;
+        }
     }
 
     .rich-text {

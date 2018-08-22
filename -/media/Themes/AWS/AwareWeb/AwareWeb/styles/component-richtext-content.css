@@ -816,10 +816,13 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   .content.aws-slide-home .component-content .container.slide-caption, .rich-text.aws-slide-home .component-content .container.slide-caption {
     top: 35%;
   }
+}
+
+@media only screen and (min-width: 1200px) {
   .content.aws-slide-home .component-content .container.slide-caption .field-slidetext, .rich-text.aws-slide-home .component-content .container.slide-caption .field-slidetext {
     width: 50%;
   }

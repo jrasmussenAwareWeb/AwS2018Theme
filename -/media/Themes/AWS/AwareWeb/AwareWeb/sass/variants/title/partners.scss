@@ -1,4 +1,7 @@
 &.title-partners {
+    @include respond-to(desktop) {
+        margin:60px auto;
+    }
     .component-content {
         h2, h3 {
             font-weight: 700;

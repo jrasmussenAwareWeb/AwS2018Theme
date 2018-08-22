@@ -6496,9 +6496,25 @@ header {
   }
 }
 
+.container.offset-contact-form {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .container.offset-contact-form {
+    margin-bottom: -50px;
+  }
+}
+
 #footer .container {
   position: relative;
   top: -50px;
+}
+
+@media only screen and (max-width: 767px) {
+  #footer .container {
+    top: 0;
+  }
 }
 
 #footer .rich-text {

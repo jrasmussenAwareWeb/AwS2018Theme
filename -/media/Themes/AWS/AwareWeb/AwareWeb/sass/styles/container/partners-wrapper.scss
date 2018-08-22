@@ -1,0 +1,8 @@
+.partners-wrapper {
+    margin-bottom:-2px;
+    @include respond-to(all-phone) {
+        .image {
+            text-align:center;
+        }
+    }
+}

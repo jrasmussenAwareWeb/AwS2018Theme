@@ -11,7 +11,7 @@
     min-height:100px; /*for the pages with no form*/
 }
 
-.container-gradient-background-red-arrow::before { 
+.container-gradient-background-red-arrow:before { 
     width: 0;
     height: 0;
     border-left: 30px solid transparent;
@@ -21,10 +21,10 @@
 }
 
 .home  {
-    .container-gradient-background-red-arrow::before {
-        border-top: 30px solid #f5f5f5;
+    .container-gradient-background-red-arrow:before {
+        border-top: 30px solid #e1f0f2;
     }
 }
-.background-gray + .container-gradient-background-red-arrow::before {
+.background-gray + .container-gradient-background-red-arrow:before {
     border-top: 30px solid #f5f5f5;
 }

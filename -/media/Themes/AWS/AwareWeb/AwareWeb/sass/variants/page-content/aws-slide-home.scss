@@ -34,8 +34,10 @@
                     width:60%;
                 }
             }
-            @include respond-to(large) {
+            @include respond-to(desktop) {
                 top: 35%;
+            }
+            @include respond-to(large) {
                 .field-slidetext {
                     width:50%;
                 }

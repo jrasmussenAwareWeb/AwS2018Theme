@@ -1,0 +1,5 @@
+&.title-solutions {
+    @include respond-to(all-mobile) {
+        margin-top:60px;
+    }
+}

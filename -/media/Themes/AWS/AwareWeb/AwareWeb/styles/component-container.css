@@ -239,7 +239,7 @@
   /*for the pages with no form*/
 }
 
-.container-gradient-background-red-arrow::before {
+.container-gradient-background-red-arrow:before {
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
@@ -248,11 +248,11 @@
   margin: 0 auto;
 }
 
-.home .container-gradient-background-red-arrow::before {
-  border-top: 30px solid #f5f5f5;
+.home .container-gradient-background-red-arrow:before {
+  border-top: 30px solid #e1f0f2;
 }
 
-.background-gray + .container-gradient-background-red-arrow::before {
+.background-gray + .container-gradient-background-red-arrow:before {
   border-top: 30px solid #f5f5f5;
 }
 
@@ -416,6 +416,16 @@
 @media only screen and (max-width: 767px) {
   .library-wrapper .facet-title {
     font-size: 14px !important;
+  }
+}
+
+.partners-wrapper {
+  margin-bottom: -2px;
+}
+
+@media only screen and (max-width: 767px) {
+  .partners-wrapper .image {
+    text-align: center;
   }
 }
 
@@ -651,7 +661,17 @@
 }
 
 .trending-wrapper .list-inline.trending > .component-content ul li {
-  padding-left: 20px;
+  padding-left: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .trending-wrapper .list-inline.trending > .component-content ul li {
+    padding-left: 20px;
+  }
+}
+
+.trending-wrapper .list-inline.trending > .component-content ul li:before {
+  content: none;
 }
 
 .trending-wrapper .list-inline.trending > .component-content ul li a {

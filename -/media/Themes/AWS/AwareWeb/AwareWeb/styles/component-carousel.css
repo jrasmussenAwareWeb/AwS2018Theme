@@ -342,7 +342,7 @@
   opacity: 0.8;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .home .carousel .carousel-inner {
     top: -68px;
   }

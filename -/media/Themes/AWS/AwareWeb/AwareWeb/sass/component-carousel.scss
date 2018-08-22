@@ -189,7 +189,7 @@
 
     //Home Carousel
     .home & {
-        @include respond-to(tablet) {
+        @include respond-to(desktop) {
             .carousel-inner {top:-68px;}
         }
     }

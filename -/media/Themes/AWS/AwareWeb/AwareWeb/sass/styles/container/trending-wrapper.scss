@@ -24,7 +24,14 @@
                 position: relative;
                 z-index: 10;
                 li {
-                    padding-left:20px;
+                    padding-left:10px;
+                    @include respond-to(desktop) {
+                        padding-left:20px;
+                    }
+                    &:before {
+                        content:none;
+
+                    }
                     a {
                         font-size:$font-normal;
                         &:before {

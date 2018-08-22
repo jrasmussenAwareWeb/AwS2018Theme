@@ -373,6 +373,10 @@
   margin: 0 0 0 5px;
 }
 
+.labels-above .field-validation-error {
+  color: #cc0000;
+}
+
 .labels-left {
   margin-top: 0;
   margin-bottom: 100px;
