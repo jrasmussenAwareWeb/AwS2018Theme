@@ -5,6 +5,15 @@
     @include clearfix();
     padding: 0;
 
+    //for the Related Work top border
+    &.border-top {
+        .title {
+            &.indent-top {
+                margin-top:60px;
+            }
+        }
+    }
+
     .component-content {
         @include clearfix();
     }

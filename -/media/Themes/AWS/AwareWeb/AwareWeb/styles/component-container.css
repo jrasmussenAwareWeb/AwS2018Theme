@@ -30,6 +30,10 @@
   clear: both;
 }
 
+.container.border-top .title.indent-top {
+  margin-top: 60px;
+}
+
 .container .component-content:before, .container .component-content:after {
   content: "";
   display: table;
