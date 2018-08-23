@@ -6351,15 +6351,14 @@ body.on-page-editor {
   background: none !important;
 }
 
-/*.component {
-    margin-top: 10px;
-}*/
 a {
   color: #333;
+  vertical-align: baseline;
+  text-decoration: underline;
   cursor: pointer;
 }
 
-a:hover {
+a:hover, a:active, a:focus {
   color: #cc0000;
 }
 
