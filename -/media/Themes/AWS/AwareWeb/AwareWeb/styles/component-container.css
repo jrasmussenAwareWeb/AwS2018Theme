@@ -668,7 +668,7 @@
   padding-left: 10px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .trending-wrapper .list-inline.trending > .component-content ul li {
     padding-left: 20px;
   }
