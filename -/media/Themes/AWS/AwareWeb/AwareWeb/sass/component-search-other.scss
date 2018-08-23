@@ -35,45 +35,49 @@
             display: inline-block;
             vertical-align: middle;
             border-radius: 15px;
-            //font-size: 14px;
             text-align: center;
             width: 20px;
             line-height: 20px;
             cursor: pointer;
             position: absolute;
-            //color: $search-filter;
             right: 3px;
             top: 50%;
             padding-bottom: 2px;
             margin-top: -4px;
             transform: translateY(-50%);
-            background: $bg-light-gray;
+            background: $bg-red;
             color:transparent;
             &::before {
-                color: $text-black;
+                vertical-align:middle;
+                color: $text-white;
                 @include fa-icon();
                 content: fa-content($fa-var-times);
                 font-size:$font-small;
                 position:relative;
                 left:4px;
-                &:hover {
-                    color:$text-black;
-                }
+                top:-1px;
             }
             &:hover {
-                background: $bg-red;
-                //border-color: $search-btn-active-border;
+                background: $text-red;
                 text-decoration: none;
                 color:transparent;
+                &::before {
+                    color: $text-black;
+                    left:4px;
+                    top:0;
+                }
             }
             &.has-active-facet {
-                background: $bg-basic-color-active;
-                //color: $search-filter;
+                background:$text-red;
                 color:transparent;
                 &:hover {
                     background: $bg-red;
-                    //color: $search-filter;
                     color:transparent;
+                }
+                &::before {
+                    color: $text-black;
+                    left:4px;
+                    top:0;
                 }
             }
         }

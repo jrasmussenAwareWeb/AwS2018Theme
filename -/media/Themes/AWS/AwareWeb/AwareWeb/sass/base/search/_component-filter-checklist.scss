@@ -15,8 +15,11 @@
         &.active-facet {
             .facet-count {}
             label, .facet-count.highlighted, span {
-                color: $text-blue;
+                color: $text-red;
             }
+        }
+        &:hover, &:active, &:focus {
+            color: $text-red;
         }
     }
     .bottom-remove-filter {
