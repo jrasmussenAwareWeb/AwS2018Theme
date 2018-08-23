@@ -24,9 +24,11 @@
         }
         > .navigation-title > a {
             border-width: 2px 0 0 0;
+            text-decoration:none;
             &:hover {
                 border-color: $nav-border-root;
                 color: $nav-color-root-active;
+                text-decoration:none;
             }
         }
         &.submenu {
@@ -107,6 +109,7 @@
             font-weight: normal;
             font-size: $navigation-font-basic-submenu;
             text-align: center;
+            text-decoration:none;
 
             &:hover, &:focus {
                 color: $nav-color-submenu;
@@ -185,6 +188,7 @@
             > .navigation-title > a {
                 border-width: 0;
                 border-color: transparent;
+                text-decoration:none;
                 &:hover {
                     color:$text-red;
                 }
@@ -212,6 +216,7 @@
             div > a { 
                 text-align: left;
                 font-weight:500;
+                text-decoration:none;
                 &:hover, &:focus {
                     color:$text-red;
                     text-decoration:none;

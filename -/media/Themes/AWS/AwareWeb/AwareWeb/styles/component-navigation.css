@@ -365,11 +365,13 @@
 
 .navigation.navigation-main .rel-level1 > .navigation-title > a {
   border-width: 2px 0 0 0;
+  text-decoration: none;
 }
 
 .navigation.navigation-main .rel-level1 > .navigation-title > a:hover {
   border-color: #333;
   color: #000;
+  text-decoration: none;
 }
 
 .navigation.navigation-main .rel-level1.submenu > .navigation-title a {
@@ -434,6 +436,7 @@
   font-weight: normal;
   font-size: 14px;
   text-align: center;
+  text-decoration: none;
 }
 
 .navigation.navigation-main .rel-level2 div > a:hover, .navigation.navigation-main .rel-level2 div > a:focus {
@@ -524,6 +527,7 @@
 .navigation.navigation-main.navigation-main-vertical .rel-level1 > .navigation-title > a {
   border-width: 0;
   border-color: transparent;
+  text-decoration: none;
 }
 
 .navigation.navigation-main.navigation-main-vertical .rel-level1 > .navigation-title > a:hover {
@@ -555,6 +559,7 @@
 .navigation.navigation-main.navigation-main-vertical .rel-level2 div > a {
   text-align: left;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .navigation.navigation-main.navigation-main-vertical .rel-level2 div > a:hover, .navigation.navigation-main.navigation-main-vertical .rel-level2 div > a:focus {
