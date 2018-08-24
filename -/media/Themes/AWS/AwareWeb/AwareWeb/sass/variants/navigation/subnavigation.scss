@@ -4,7 +4,8 @@
 &.subnavigation {
     nav {
         text-align: center;
-        margin: 15px;
+        margin: 0;
+        padding:0;
 
         .level1 {
             .icon-red {
@@ -60,12 +61,13 @@
                     padding: 0 15px 10px;
                 }
                 .icon-red {
-                    padding: 13px;
+                    padding: 0;
                     margin: 0 auto 10px auto;
                     a {
                         color: #ffffff;
                         line-height: 26px;
                         display: inline-block;
+                        padding: 16px;
                     }
                     &:hover{
                         @include box-shadow(0, 6px, 10px, rgba(0, 0, 0, 0.3), $inset: false);
@@ -91,14 +93,21 @@
                     }
                 }
             }
+            @include respond-to(desktop) {
+                .level1 {
+                    > .navigation-title > a {
+                        padding: 5px 28px;
+                    }
+                }
+            }
         }
-        @include respond-to(desktop) {
+        /*@include respond-to(desktop) {
             .level1 {
                 > .navigation-title > a {
                     padding: 5px 28px;
                 }
             }
-        }
+        }*/
     }
 }
 

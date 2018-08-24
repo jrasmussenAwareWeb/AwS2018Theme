@@ -220,6 +220,19 @@
   border-bottom: 3px solid #333;
 }
 
+.link-list.nav-side > .component-content li a {
+  text-decoration: none;
+  padding-left: 0;
+}
+
+.link-list.nav-side > .component-content li a::before {
+  content: none;
+}
+
+.link-list.nav-side > .component-content li a:hover, .link-list.nav-side > .component-content li a:active, .link-list.nav-side > .component-content li a:focus {
+  border-bottom: 0;
+}
+
 .link-list.list-inline {
   margin-bottom: 10px;
 }

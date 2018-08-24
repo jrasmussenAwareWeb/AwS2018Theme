@@ -4,8 +4,7 @@
 @import "base/fontawesome/mixins";
 @import "base/fontawesome/variables";
 
-
-.link-list {
+ .link-list {
     background: $link-list-bg;
     >.component-content {
         ul {
