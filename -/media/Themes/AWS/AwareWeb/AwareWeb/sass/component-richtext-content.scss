@@ -13,7 +13,15 @@
     * {
         max-width: 100%;
     }
-    //AWS
+    //AwS
+    a {
+        color:$text-red;
+        text-decoration:underline;
+        &:hover, &:active, &:focus {
+            color:$text-red;
+            text-decoration:none;
+        }
+    }
     &.rich-text-contact {
         color: $text-white;
         font-size: $font-medium;

@@ -306,6 +306,16 @@
   }
 }
 
+.promo-service .promo-body a {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+.promo-service .promo-body a:hover, .promo-service .promo-body a:active, .promo-service .promo-body a:focus {
+  color: #cc0000;
+  text-decoration: none;
+}
+
 .promo-service .promo-body table, .promo-service .promo-body .table-stacked {
   background: transparent;
   border: none;

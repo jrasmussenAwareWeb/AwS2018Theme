@@ -45,13 +45,9 @@ body {
 }
 
 a {
-    color: $text-basic;
-    vertical-align:baseline;
-    text-decoration:underline;
+    color:$text-basic;
+    vertical-align:baseline; 
     cursor: pointer;
-    &:hover, &:active, &:focus {
-        color: $text-basic-active;
-    }
 }
 
 h1, h2, h3, h4, h5, h6 {

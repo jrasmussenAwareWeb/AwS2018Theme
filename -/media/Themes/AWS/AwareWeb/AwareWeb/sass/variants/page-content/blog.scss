@@ -46,10 +46,10 @@
         a {
             color:$text-red;
             vertical-align:baseline;
-            text-decoration:none;
+            text-decoration:underline;
             &:hover, &:active, &:focus {
                 color:$text-red;
-                text-decoration:underline;
+                text-decoration:none;
             }
         }
         > img {

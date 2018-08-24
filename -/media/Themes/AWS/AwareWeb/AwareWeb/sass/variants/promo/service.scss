@@ -93,6 +93,14 @@
         }
     }
     .promo-body {
+        a {
+            color:$text-red;
+            text-decoration:underline;
+            &:hover, &:active, &:focus {
+                color:$text-red;
+                text-decoration:none;
+            }
+        }
         table, .table-stacked {
             background: transparent;
             border: none;

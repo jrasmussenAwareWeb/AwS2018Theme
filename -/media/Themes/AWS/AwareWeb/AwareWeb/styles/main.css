@@ -6354,12 +6354,7 @@ body.on-page-editor {
 a {
   color: #333;
   vertical-align: baseline;
-  text-decoration: underline;
   cursor: pointer;
-}
-
-a:hover, a:active, a:focus {
-  color: #cc0000;
 }
 
 h1, h2, h3, h4, h5, h6 {

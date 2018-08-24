@@ -45,6 +45,16 @@
   max-width: 100%;
 }
 
+.content a, .rich-text a {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+.content a:hover, .content a:active, .content a:focus, .rich-text a:hover, .rich-text a:active, .rich-text a:focus {
+  color: #cc0000;
+  text-decoration: none;
+}
+
 .content.rich-text-contact, .rich-text.rich-text-contact {
   color: #FFFFFF;
   font-size: 18px;
@@ -286,13 +296,14 @@
 }
 
 .content a, .rich-text a {
-  color: #333;
+  color: #cc0000;
   text-decoration: underline;
   font-size: 1em;
 }
 
 .content a:hover, .rich-text a:hover {
   color: #cc0000;
+  text-decoration: none;
 }
 
 .content table, .rich-text table {
@@ -1175,12 +1186,12 @@
 .content.blog-article .blog-content a, .rich-text.blog-article .blog-content a {
   color: #cc0000;
   vertical-align: baseline;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .content.blog-article .blog-content a:hover, .content.blog-article .blog-content a:active, .content.blog-article .blog-content a:focus, .rich-text.blog-article .blog-content a:hover, .rich-text.blog-article .blog-content a:active, .rich-text.blog-article .blog-content a:focus {
   color: #cc0000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .content.blog-article .blog-content > img, .rich-text.blog-article .blog-content > img {

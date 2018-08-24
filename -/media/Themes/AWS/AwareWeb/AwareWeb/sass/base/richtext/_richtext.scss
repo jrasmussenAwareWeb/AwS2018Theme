@@ -39,11 +39,12 @@ ol {
     }
 }
 a {
-    color: $text-basic;
+    color: $text-red;
     text-decoration: underline;
     font-size: 1em;
     &:hover {
         color: $text-basic-active;
+        text-decoration:none;
     }
 }
 table {
