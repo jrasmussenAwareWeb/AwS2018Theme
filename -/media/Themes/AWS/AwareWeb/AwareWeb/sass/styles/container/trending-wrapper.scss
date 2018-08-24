@@ -25,6 +25,7 @@
                 z-index: 10;
                 li {
                     padding-left:10px;
+
                     @include respond-to(large) {
                         padding-left:20px;
                     }
@@ -34,6 +35,8 @@
                     }
                     a {
                         font-size:$font-normal;
+                        color:$text-white;
+                        text-decoration:none;
                         &:before {
                             content:none;
 

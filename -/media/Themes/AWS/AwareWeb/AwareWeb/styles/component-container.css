@@ -700,6 +700,8 @@
 
 .trending-wrapper .list-inline.trending > .component-content ul li a {
   font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .trending-wrapper .list-inline.trending > .component-content ul li a:before {
