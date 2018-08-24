@@ -1183,6 +1183,10 @@
   text-decoration: underline;
 }
 
+.content.blog-article .blog-content > img, .rich-text.blog-article .blog-content > img {
+  margin-bottom: 20px;
+}
+
 .content.blog-article .tag-list, .rich-text.blog-article .tag-list {
   float: left;
   display: block;
