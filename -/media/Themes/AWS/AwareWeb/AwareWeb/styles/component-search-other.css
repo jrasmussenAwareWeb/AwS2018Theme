@@ -137,8 +137,7 @@
 }
 
 .facet-component .facet-heading .clear-filter::before {
-  vertical-align: middle;
-  color: #FFFFFF;
+  color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -152,7 +151,7 @@
   font-size: 14px;
   position: relative;
   left: 4px;
-  top: -1px;
+  vertical-align: middle;
 }
 
 .facet-component .facet-heading .clear-filter:hover {
@@ -162,9 +161,9 @@
 }
 
 .facet-component .facet-heading .clear-filter:hover::before {
-  color: #000;
+  color: #FFFFFF;
   left: 4px;
-  top: 0;
+  vertical-align: middle;
 }
 
 .facet-component .facet-heading .clear-filter.has-active-facet {
@@ -178,9 +177,13 @@
 }
 
 .facet-component .facet-heading .clear-filter.has-active-facet::before {
-  color: #000;
+  color: #FFFFFF;
   left: 4px;
-  top: 0;
+  vertical-align: middle;
+}
+
+.facet-component.facet-single-selection-list .facet-heading .clear-filter:hover::before {
+  top: -1px;
 }
 
 .facet-single-selection-list .facet-dropdown {
@@ -1696,17 +1699,27 @@ button[type="submit"]:hover {
   font-weight: 600;
 }
 
-.search-box-clear .clear-filter {
-  padding: 0;
+.search-box-clear .facet-heading .clear-filter {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 15px;
+  text-align: center;
+  width: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  padding-bottom: 2px;
+  margin-top: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: transparent;
+  color: transparent;
 }
 
-.search-box-clear .clear-filter a {
-  font-size: 14px;
-  color: #FFFFFF;
-}
-
-.search-box-clear .clear-filter a::before {
-  vertical-align: bottom;
+.search-box-clear .facet-heading .clear-filter::before {
   color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1718,6 +1731,29 @@ button[type="submit"]:hover {
   vertical-align: -.125em;
   font-family: 'Font Awesome 5 Pro';
   content: "\f00d";
+  font-size: 14px;
+  position: relative;
+  left: 0;
+  top: -1px;
+  vertical-align: middle;
+}
+
+.search-box-clear .facet-heading .clear-filter:hover {
+  background: #cc0000;
+  text-decoration: none;
+  color: transparent;
+}
+
+.search-box-clear .facet-heading .clear-filter:hover::before {
+  color: #FFFFFF;
+  left: 0;
+  vertical-align: middle;
+}
+
+.search-box-clear .facet-heading .clear-filter .pull-right {
+  color: transparent;
+  position: absolute;
+  left: 0;
 }
 
 .search-box-clear .twitter-typeahead {
@@ -1736,7 +1772,7 @@ button[type="submit"]:hover {
   background-color: #cc0000 !important;
   color: transparent;
   padding: 0;
-  border: 1px solid #cc0000;
+  border: 0;
   border-radius: 0;
   margin-top: 5px;
   margin-left: 0;
@@ -1755,7 +1791,7 @@ button[type="submit"]:hover {
   font-family: 'Font Awesome 5 Pro';
   content: "\f002";
   color: #FFFFFF;
-  padding: 7px;
+  padding: 10px;
 }
 
 .search-box-clear .search-box-button:hover, .search-box-clear .search-box-button:focus, .search-box-clear .search-box-button:active,
@@ -1763,4 +1799,5 @@ button[type="submit"]:hover {
 .search-box-clear .search-box-button-with-redirect:focus,
 .search-box-clear .search-box-button-with-redirect:active {
   background-color: #000 !important;
+  border: 0;
 }

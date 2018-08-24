@@ -26,6 +26,14 @@
         background:transparent;
         padding:0;
         margin:10px 0;
+
+        
+        &.facet-dropdown {
+            select {
+                border-radius:0;
+            }
+        }
+
         .facet-heading {
             border-bottom:0;
             padding: 0;
@@ -34,10 +42,20 @@
                 text-transform:none;
                 margin-bottom:10px;
             }
-        }
-        &.facet-dropdown {
-            select {
-                border-radius:0;
+            .clear-filter {
+                background:transparent !important;
+                &::before {
+                    top:-1px;
+                }
+                &:hover {
+                    background: $text-red !important;
+                }
+                &.has-active-facet {
+                    background:$text-red !important;
+                    &:hover {
+                        background: $bg-red !important;
+                    }
+                }
             }
         }
     }

@@ -48,23 +48,22 @@
             background: $bg-red;
             color:transparent;
             &::before {
-                vertical-align:middle;
-                color: $text-white;
+                color: $text-black;
                 @include fa-icon();
                 content: fa-content($fa-var-times);
                 font-size:$font-small;
                 position:relative;
                 left:4px;
-                top:-1px;
+                vertical-align: middle;
             }
             &:hover {
                 background: $text-red;
                 text-decoration: none;
                 color:transparent;
                 &::before {
-                    color: $text-black;
+                    color: $text-white;
                     left:4px;
-                    top:0;
+                    vertical-align: middle;
                 }
             }
             &.has-active-facet {
@@ -75,9 +74,20 @@
                     color:transparent;
                 }
                 &::before {
-                    color: $text-black;
+                    color: $text-white;
                     left:4px;
-                    top:0;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    &.facet-single-selection-list {
+        .facet-heading {
+            .clear-filter {
+                &:hover {
+                    &::before {
+                        top:-1px;
+                    }
                 }
             }
         }

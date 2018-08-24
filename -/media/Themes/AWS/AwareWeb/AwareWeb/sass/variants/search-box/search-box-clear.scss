@@ -18,22 +18,47 @@
             font-size:$font-big;
             font-weight:600;
         }
-    }
 
-    .clear-filter {
-        padding:0;
-        a {
-            font-size:14px;
-            //color:$text-black; //for testing
-            color:$text-white;
-            //visibility:hidden;
+        .clear-filter {
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 15px;
+            text-align: center;
+            width: 20px;
+            line-height: 20px;
+            cursor: pointer;
+            position: absolute;
+            right: 3px;
+            top: 50%;
+            padding-bottom: 2px;
+            margin-top: 0;
+            transform: translateY(-50%);
+            background: transparent;
+            color:transparent;
             &::before {
-                //visibility:visible;
-                vertical-align:bottom;
                 color: $text-black;
                 @include fa-icon();
-                //content:$fa-var-times;
                 content: fa-content($fa-var-times);
+                font-size:$font-small;
+                position:relative;
+                left:0;
+                top:-1px;
+                vertical-align: middle;
+            }
+            &:hover {
+                background: $text-red;
+                text-decoration: none;
+                color:transparent;
+                &::before {
+                    color: $text-white;
+                    left:0;
+                    vertical-align: middle;
+                }
+            }
+            .pull-right {
+                color:transparent;
+                position:absolute;
+                left:0;
             }
         }
     }
@@ -52,7 +77,7 @@
         background-color:$text-red !important;
         color:transparent;
         padding:0;
-        border:1px solid $text-red;
+        border:0;
         border-radius:0;
         margin-top:5px;
         margin-left: 0; //AWS
@@ -60,11 +85,11 @@
             @include fa-icon();
             content: fa-content($fa-var-search);
             color:$text-white;
-            padding:7px; 
+            padding:10px;
         }
         &:hover, &:focus, &:active {
             background-color:$text-black !important;
-            //border:1px solid $text-black;
+            border:0;
         }
     }
 }

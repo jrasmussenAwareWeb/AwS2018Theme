@@ -394,6 +394,10 @@
   margin: 10px 0;
 }
 
+.library-wrapper .facet-component.facet-dropdown select {
+  border-radius: 0;
+}
+
 .library-wrapper .facet-component .facet-heading {
   border-bottom: 0;
   padding: 0;
@@ -405,8 +409,24 @@
   margin-bottom: 10px;
 }
 
-.library-wrapper .facet-component.facet-dropdown select {
-  border-radius: 0;
+.library-wrapper .facet-component .facet-heading .clear-filter {
+  background: transparent !important;
+}
+
+.library-wrapper .facet-component .facet-heading .clear-filter::before {
+  top: -1px;
+}
+
+.library-wrapper .facet-component .facet-heading .clear-filter:hover {
+  background: #cc0000 !important;
+}
+
+.library-wrapper .facet-component .facet-heading .clear-filter.has-active-facet {
+  background: #cc0000 !important;
+}
+
+.library-wrapper .facet-component .facet-heading .clear-filter.has-active-facet:hover {
+  background: #cc0000 !important;
 }
 
 .library-wrapper .search-results-count {
