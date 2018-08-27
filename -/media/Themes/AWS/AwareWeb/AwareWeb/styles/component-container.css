@@ -707,3 +707,9 @@
 .trending-wrapper .list-inline.trending > .component-content ul li a:before {
   content: none;
 }
+
+@media only screen and (min-width: 768px) {
+  .work-wrapper {
+    padding-left: 15px;
+  }
+}

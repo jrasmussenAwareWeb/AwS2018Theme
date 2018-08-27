@@ -1,0 +1,5 @@
+.work-wrapper {
+    @include respond-to(tablet) {
+        padding-left:15px;
+    }
+}
