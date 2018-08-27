@@ -13,7 +13,7 @@
     text-align: center;
     width: 100%;
     //AWS
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
 
     &.component {
         margin: 0;
@@ -67,11 +67,15 @@
             }
             ul {
                 padding: 0;
-                margin: 0 0 20px 0;
+                margin: 0 0 20px 0.9em;
             }
             li {
                 padding: 0;
                 margin: 0 0 0 2px;
+            }
+            @include respond-to(all-mobile) {
+                margin-top: 30px;
+                padding: 0 15px 15px;
             }
         }
     }
@@ -105,8 +109,8 @@
         color: #fff;
         font-size: 50px;
         font-weight: 700;
-        padding: 15px 30px;
-        margin: 0 0 40px 0;
+        //padding: 15px 30px;
+        //margin: 0 0 40px 0;
         position: relative;
         top: 0;
         left: 0;

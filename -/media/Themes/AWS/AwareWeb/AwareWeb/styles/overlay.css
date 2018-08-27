@@ -31,7 +31,7 @@
   display: none;
   text-align: center;
   width: 100%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .overlay.component {
@@ -92,12 +92,19 @@
 
 .overlay .overlay-inner .rich-text ul {
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px 0.9em;
 }
 
 .overlay .overlay-inner .rich-text li {
   padding: 0;
   margin: 0 0 0 2px;
+}
+
+@media only screen and (max-width: 991px) {
+  .overlay .overlay-inner .rich-text {
+    margin-top: 30px;
+    padding: 0 15px 15px;
+  }
 }
 
 .overlay .overlay-inner:focus {
@@ -130,8 +137,6 @@
   color: #fff;
   font-size: 50px;
   font-weight: 700;
-  padding: 15px 30px;
-  margin: 0 0 40px 0;
   position: relative;
   top: 0;
   left: 0;
