@@ -1198,6 +1198,54 @@
   margin-bottom: 20px;
 }
 
+.content.blog-article .blog-content h2, .content.blog-article .blog-content h3, .content.blog-article .blog-content h4, .content.blog-article .blog-content h5, .content.blog-article .blog-content h6, .rich-text.blog-article .blog-content h2, .rich-text.blog-article .blog-content h3, .rich-text.blog-article .blog-content h4, .rich-text.blog-article .blog-content h5, .rich-text.blog-article .blog-content h6 {
+  font-weight: 700;
+}
+
+.content.blog-article .blog-content h2, .rich-text.blog-article .blog-content h2 {
+  font-size: 36px;
+}
+
+.content.blog-article .blog-content h3, .rich-text.blog-article .blog-content h3 {
+  font-size: 30px;
+}
+
+.content.blog-article .blog-content h4, .rich-text.blog-article .blog-content h4 {
+  font-size: 24px;
+}
+
+.content.blog-article .blog-content h5, .rich-text.blog-article .blog-content h5 {
+  font-size: 20px;
+}
+
+.content.blog-article .blog-content h6, .rich-text.blog-article .blog-content h6 {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 991px) {
+  .content.blog-article .blog-content h2, .rich-text.blog-article .blog-content h2 {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .content.blog-article .blog-content h2, .rich-text.blog-article .blog-content h2 {
+    font-size: 34px;
+  }
+  .content.blog-article .blog-content h3, .rich-text.blog-article .blog-content h3 {
+    font-size: 28px;
+  }
+  .content.blog-article .blog-content h4, .rich-text.blog-article .blog-content h4 {
+    font-size: 22px;
+  }
+  .content.blog-article .blog-content h5, .rich-text.blog-article .blog-content h5 {
+    font-size: 20px;
+  }
+  .content.blog-article .blog-content h6, .rich-text.blog-article .blog-content h6 {
+    font-size: 16px;
+  }
+}
+
 .content.blog-article .tag-list, .rich-text.blog-article .tag-list {
   float: left;
   display: block;
