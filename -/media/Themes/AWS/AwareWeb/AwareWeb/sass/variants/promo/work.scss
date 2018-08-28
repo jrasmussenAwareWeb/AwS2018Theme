@@ -30,6 +30,7 @@
 
         .promo-icon, .field-promoicon {
             width: auto;
+            max-width: 510px;
             margin: 0 auto 10px;
             float: none;
             @include transition(all .3s ease-in-out);
@@ -147,7 +148,11 @@
                 font-size: 14px;
             }
         }
-        
+        .hover-link {
+            > a {
+                padding: 15px 10px;
+            }
+        }
     }
     @include respond-to(tablet) {
         border-right: solid 1px #fff;

@@ -466,6 +466,7 @@
 
 .promo-work .promo-body .promo-icon, .promo-work .promo-body .field-promoicon {
   width: auto;
+  max-width: 510px;
   margin: 0 auto 10px;
   float: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -598,6 +599,9 @@
   }
   .promo-work .hover-text > a {
     font-size: 14px;
+  }
+  .promo-work .hover-link > a {
+    padding: 15px 10px;
   }
 }
 
