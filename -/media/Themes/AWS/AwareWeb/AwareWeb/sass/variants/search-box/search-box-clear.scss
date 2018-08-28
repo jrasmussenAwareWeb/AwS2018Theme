@@ -1,7 +1,13 @@
 /*AWS*/
 .search-box-clear {
     padding:0;
-    margin:7px 0;
+    /*margin:7px 0;*/
+    margin:-7px 0 0;
+
+    &.indent-bottom {
+        margin-bottom:30px;
+    }
+
     //overwrite the styles added to the base search-box
     @include respond-to(all-phone) {
         width:100%;

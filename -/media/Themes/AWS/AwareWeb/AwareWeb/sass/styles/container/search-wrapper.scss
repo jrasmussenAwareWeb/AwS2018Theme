@@ -14,6 +14,19 @@
     a {color:$text-red}
     .highlighted {background-color:yellow} //to show keywords for testing
 
+    //override the 1px offset thats coming from somewhere?
+    .facet-component {
+        .facet-heading {
+            .clear-filter {
+                &.has-active-facet {
+                    &::before {
+                        top:-1px;
+                    }
+                }
+            }
+        }
+    }
+
     .divider, 
     .search-results-count, 
     .sort-results, 

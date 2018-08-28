@@ -132,7 +132,7 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: #cc0000;
+  background: transparent;
   color: transparent;
 }
 
@@ -1676,7 +1676,12 @@ button[type="submit"]:hover {
 /*AWS*/
 .search-box-clear {
   padding: 0;
-  margin: 7px 0;
+  /*margin:7px 0;*/
+  margin: -7px 0 0;
+}
+
+.search-box-clear.indent-bottom {
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 767px) {

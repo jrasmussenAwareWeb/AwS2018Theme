@@ -476,6 +476,10 @@
   background-color: yellow;
 }
 
+.search-wrapper .facet-component .facet-heading .clear-filter.has-active-facet::before {
+  top: -1px;
+}
+
 .search-wrapper .divider,
 .search-wrapper .search-results-count,
 .search-wrapper .sort-results,
