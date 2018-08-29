@@ -137,12 +137,18 @@
     &.text-reverse {
         .component-content {
             .container.slide-caption *{
-                color: #ffffff;
+                color:$text-white;
                 h1 { 
-                    color: #ffffff;
+                    color: $text-white;
                 }
                 .btn-info {
-                    border-color: #ffffff;
+                    border-color:$text-white;
+                    background:transparent;
+                    color:$text-white;
+                    &:hover, &:active, &:focus {
+                        background:$text-white;
+                        color:#424242;
+                    }
                 }
                 .btn-default {
                     color:$text-red;

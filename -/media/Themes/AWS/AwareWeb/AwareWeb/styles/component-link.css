@@ -76,9 +76,24 @@
   margin-bottom: 15px;
 }
 
-.link.btn-back a, .link.btn-next a {
-  color: #fff;
-  background-color: #cc0000;
+.link.btn-block.col-xs-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.link.btn-back a:before, .link.btn-back a:after, .link.btn-next a:before, .link.btn-next a:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
+  margin-top: 3px;
+  display: block;
+  position: relative;
 }
 
 .link.btn-back {
@@ -86,22 +101,9 @@
 }
 
 .link.btn-back a:before {
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: -.125em;
-  font-family: 'Font Awesome 5 Pro';
   content: "\f177";
-  margin-top: 3px;
-  margin-right: 8px;
-  display: block;
   float: left;
-  position: relative;
+  margin-right: 8px;
 }
 
 .link.btn-next {
@@ -109,22 +111,9 @@
 }
 
 .link.btn-next a:after {
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: -.125em;
-  font-family: 'Font Awesome 5 Pro';
   content: "\f178";
-  margin-top: 3px;
-  margin-left: 8px;
-  display: block;
   float: right;
-  position: relative;
+  margin-left: 8px;
 }
 
 .link.indent-top {

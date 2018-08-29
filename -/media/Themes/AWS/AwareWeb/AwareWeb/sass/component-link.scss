@@ -63,36 +63,40 @@
         margin-right: 5px;
         margin-bottom: 15px;
     }
+    &.btn-block {
+        &.col-xs-12 {
+            padding-left:0;
+            padding-right:0;
+        }
+    }
     &.btn-back, &.btn-next {
         a {
-            color: #fff;
-            background-color: $bg-red;
+            &:before, &:after {
+                @include fa-icon();
+                margin-top: 3px;
+                display: block;
+                position: relative;
+            }
         }
     }
     &.btn-back {
         float: left;
-        a:before {
-            color: #fff;
-            @include fa-icon();
-            content: "\f177";
-            margin-top: 3px;
-            margin-right: 8px;
-            display: block;
+        a {
+            &:before {
+            content: fa-content($fa-var-long-arrow-left);
             float: left;
-            position: relative;
+            margin-right: 8px;
+            }
         }
     }
     &.btn-next {
         float: right;
-        a:after {
-            color: #fff;
-            @include fa-icon();
-            content: "\f178";
-            margin-top: 3px;
-            margin-left: 8px;
-            display: block;
+        a {
+            &:after {
+            content: fa-content($fa-var-long-arrow-right);
             float: right;
-            position: relative;
+            margin-left: 8px;
+            }
         }
     }
     &.indent-top {

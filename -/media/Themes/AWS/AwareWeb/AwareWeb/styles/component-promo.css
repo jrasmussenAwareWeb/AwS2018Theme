@@ -571,9 +571,8 @@
 }
 
 .promo-work .promo-hover .hover-link > a:hover {
-  color: #cc0000;
+  color: #50d2c2;
   background-color: #fff;
-  border-color: #cc0000;
 }
 
 .promo-work:hover .promo-body .field-promoicon, .promo-work:focus .promo-body .field-promoicon {

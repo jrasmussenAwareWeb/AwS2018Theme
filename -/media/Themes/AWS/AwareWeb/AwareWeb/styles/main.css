@@ -6308,7 +6308,7 @@ readers do not read off random characters that represent icons */
 .btn-info {
   color: #424242;
   background: transparent;
-  border: 2px solid #000;
+  border: 2px solid #424242;
   font-size: 18px;
   text-transform: uppercase;
 }

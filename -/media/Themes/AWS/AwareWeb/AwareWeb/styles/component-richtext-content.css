@@ -462,7 +462,7 @@
 .content .btn-info, .rich-text .btn-info {
   color: #424242;
   background: transparent;
-  border: 2px solid #000;
+  border: 2px solid #424242;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -944,15 +944,22 @@
 }
 
 .content.aws-slide-home.text-reverse .component-content .container.slide-caption *, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .content.aws-slide-home.text-reverse .component-content .container.slide-caption * h1, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * h1 {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .content.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-info, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-info {
-  border-color: #ffffff;
+  border-color: #FFFFFF;
+  background: transparent;
+  color: #FFFFFF;
+}
+
+.content.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-info:hover, .content.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-info:active, .content.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-info:focus, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-info:hover, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-info:active, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-info:focus {
+  background: #FFFFFF;
+  color: #424242;
 }
 
 .content.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-default, .rich-text.aws-slide-home.text-reverse .component-content .container.slide-caption * .btn-default {
