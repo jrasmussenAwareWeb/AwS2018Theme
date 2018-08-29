@@ -74,7 +74,7 @@
             }
         }
         &.info {
-            width:72%;
+            width:75%;
             margin-right:2%;
             margin-bottom:15px;
             &:before {
@@ -82,7 +82,7 @@
                 content: fa-content($fa-var-cookie-bite);
                 font-size:42px;
                 float:left;
-                margin-right:5%;
+                margin-right:3%;
             }
         }
         &.submit {

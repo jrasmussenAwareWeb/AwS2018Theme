@@ -6409,7 +6409,7 @@ readers do not read off random characters that represent icons */
 }
 
 .cookie-notification > div.info, .privacy-warning > div.info {
-  width: 72%;
+  width: 75%;
   margin-right: 2%;
   margin-bottom: 15px;
 }
@@ -6427,7 +6427,7 @@ readers do not read off random characters that represent icons */
   content: "\f564";
   font-size: 42px;
   float: left;
-  margin-right: 5%;
+  margin-right: 3%;
 }
 
 .cookie-notification > div.submit a, .privacy-warning > div.submit a {
