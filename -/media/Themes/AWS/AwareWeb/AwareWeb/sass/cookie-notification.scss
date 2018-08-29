@@ -1,60 +1,142 @@
 @import "abstracts/vars";
 @import "abstracts/mixins";
-.cookie-notification, .privacy-warning {
-    @include font-size(1.4);
-    opacity: 0.8;
+@import "base/fonts/fonts";
+@import "base/fontawesome/brands";
+@import "base/fontawesome/light";
+@import "base/fontawesome/fontawesome";
+@import "base/links/*";
+
+.cookie-notification, .privacy-warning { //class changed from cookie-notification to privacy-warning in v1.6
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
     height: auto;
     margin: 0;
-    padding: 20px 0 0;
-    color: $bg-basic-color;
-    text-align: center;
     z-index: 1000;
-    //background: url(../Images/overlay-bg.png);
-    background-color: rgba($color: #000000, $alpha: .7);
+    //AwS
+    opacity:1;
+    padding: 0 15px 30px 15px;
+    color: $text-white;
+    text-align:left;
+    background: rgba(60, 68, 88, 0.6);
+    width: 100%;
+    @include respond-to (desktop) {
+        width: 60%;
+    }
+    @include respond-to (xlarge) {
+        width: 40%;
+    }
+    @include respond-to (all-mobile) {
+        bottom:45px;
+    }
 
-    .component-content {
+    //AwS
+    h1, h2, h3, h4, h5, h6 {
+        text-transform:uppercase;
+        color:$text-white;
+        margin-top:25px;
+    }    
+    > div {
         position: relative;
         height: auto;
-        width: 90%;
-        padding: 15px;
         margin: 0 auto;
-    }
-    a {
-        color: $bg-basic-color;
-        &:hover, &:focus {
-            color: $bg-basic-color;
-        }
-    }
-    .close {
-        transform: scale(1.3, 0.95);
-        @include font-size(3.5);
-        position: absolute;
-        top: -10px;
-        right: 8px;
-        font-weight: bold;
-    }
-    .learnMore {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 10px;
-    }
-    .submit {
-        display: inline-block;
-        vertical-align: middle;
-        padding: 20px 0;
+    
         a {
-            @include font-size(1.3);
-            @include border-basic();
-            text-decoration: none;
-            font-weight: bold;
-            background: $bg-basic-color;
-            padding: 5px 10px;
-            cursor: pointer;
-            color: $text-black;
+            color: $text-white;
+            font-size:1em;
+            text-decoration:underline;
+
+            &:hover, &:focus {
+                color: $text-white;
+                text-decoration:none;
+            }
+        }
+        &.info, &.submit {
+            float:left;
+            position:relative;
+            top:30px;
+        }
+        &.close {
+            //AwS
+            width:10%;
+            opacity:1;
+            text-shadow:none;
+            float:right;
+            text-align:right;
+            position:relative;
+            top:10px;
+            right:0;
+
+            a {
+                color:transparent;
+                &:after {
+                    display:inline;
+                    @include fa-icon();
+                    font-size:24px;
+                    line-height:1;
+                    content: fa-content($fa-var-times);
+                    color:$text-basic;
+                }
+            }
+        }
+        &.info {
+            width:72%;
+            margin-right:2%;
+            .pull-left:first-child {
+                width:15%;
+            }
+            .pull-left:last-child {
+                width:80%;
+                margin-bottom:30px;
+            }
+            @include respond-to (xlarge) {
+            }
+        }
+        &.submit {
+            a {
+                border:1px solid $text-white;
+                text-transform:uppercase;
+                text-decoration: none;
+                font-weight:700;
+                background: transparent;
+                padding: 5px 10px;
+                cursor: pointer;
+                color: $text-white;
+                &:hover, &:focus {
+                    background:$text-white;
+                    color:#0e142a;
+                }
+                //AwS
+                float:left;
+            }
+        }
+
+
+        @include respond-to (phone-horizontal) {
+            &.close {
+                width:100%;
+                position:absolute;
+                right:10px;
+            }
+            &.info, &.submit {
+                float:none;
+                text-align:center;
+                width:auto;
+                margin-right:auto;
+                .pull-left:first-child, .pull-left:last-child, a {
+                    width:100%;
+                    float:none !important;
+                    text-align:center;
+                    margin-left:auto;
+                    margin-right:auto;
+                }
+                .pull-left:first-child {
+                    margin-bottom:10px;
+                }
+            }
+            &.submit {
+                margin-bottom:30px;
+            }
         }
     }
 }
