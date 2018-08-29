@@ -6308,7 +6308,7 @@ readers do not read off random characters that represent icons */
 .btn-info {
   color: #424242;
   background: transparent;
-  border: 2px solid #000;
+  border: 2px solid #424242;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -6327,7 +6327,9 @@ readers do not read off random characters that represent icons */
   z-index: 1000;
   opacity: 1;
   padding: 0 15px 30px 15px;
+  font-size: 14px;
   color: #FFFFFF;
+  line-height: 16px;
   text-align: left;
   background: rgba(60, 68, 88, 0.6);
   width: 100%;
@@ -6335,7 +6337,7 @@ readers do not read off random characters that represent icons */
 
 @media only screen and (min-width: 992px) {
   .cookie-notification, .privacy-warning {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -6349,12 +6351,6 @@ readers do not read off random characters that represent icons */
   .cookie-notification, .privacy-warning {
     bottom: 45px;
   }
-}
-
-.cookie-notification h1, .cookie-notification h2, .cookie-notification h3, .cookie-notification h4, .cookie-notification h5, .cookie-notification h6, .privacy-warning h1, .privacy-warning h2, .privacy-warning h3, .privacy-warning h4, .privacy-warning h5, .privacy-warning h6 {
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-top: 25px;
 }
 
 .cookie-notification > div, .privacy-warning > div {
@@ -6381,14 +6377,14 @@ readers do not read off random characters that represent icons */
 }
 
 .cookie-notification > div.close, .privacy-warning > div.close {
-  width: 10%;
   opacity: 1;
   text-shadow: none;
   float: right;
   text-align: right;
-  position: relative;
+  width: 100%;
+  position: absolute;
   top: 10px;
-  right: 0;
+  right: 10px;
 }
 
 .cookie-notification > div.close a, .privacy-warning > div.close a {
@@ -6415,15 +6411,23 @@ readers do not read off random characters that represent icons */
 .cookie-notification > div.info, .privacy-warning > div.info {
   width: 72%;
   margin-right: 2%;
+  margin-bottom: 15px;
 }
 
-.cookie-notification > div.info .pull-left:first-child, .privacy-warning > div.info .pull-left:first-child {
-  width: 15%;
-}
-
-.cookie-notification > div.info .pull-left:last-child, .privacy-warning > div.info .pull-left:last-child {
-  width: 80%;
-  margin-bottom: 30px;
+.cookie-notification > div.info:before, .privacy-warning > div.info:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f564";
+  font-size: 42px;
+  float: left;
+  margin-right: 5%;
 }
 
 .cookie-notification > div.submit a, .privacy-warning > div.submit a {
@@ -6444,25 +6448,25 @@ readers do not read off random characters that represent icons */
 }
 
 @media only screen and (max-width: 639px) {
-  .cookie-notification > div.close, .privacy-warning > div.close {
-    width: 100%;
-    position: absolute;
-    right: 10px;
-  }
   .cookie-notification > div.info, .cookie-notification > div.submit, .privacy-warning > div.info, .privacy-warning > div.submit {
     float: none;
     text-align: center;
     width: auto;
     margin-right: auto;
   }
-  .cookie-notification > div.info .pull-left:first-child, .cookie-notification > div.info .pull-left:last-child, .cookie-notification > div.info a, .cookie-notification > div.submit .pull-left:first-child, .cookie-notification > div.submit .pull-left:last-child, .cookie-notification > div.submit a, .privacy-warning > div.info .pull-left:first-child, .privacy-warning > div.info .pull-left:last-child, .privacy-warning > div.info a, .privacy-warning > div.submit .pull-left:first-child, .privacy-warning > div.submit .pull-left:last-child, .privacy-warning > div.submit a {
+  .cookie-notification > div.info a, .cookie-notification > div.submit a, .privacy-warning > div.info a, .privacy-warning > div.submit a {
     width: 100%;
-    float: none !important;
+    float: none;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  .cookie-notification > div.info .pull-left:first-child, .cookie-notification > div.submit .pull-left:first-child, .privacy-warning > div.info .pull-left:first-child, .privacy-warning > div.submit .pull-left:first-child {
+  .cookie-notification > div.info, .privacy-warning > div.info {
+    padding-bottom: 10px;
+  }
+  .cookie-notification > div.info:before, .privacy-warning > div.info:before {
+    float: none;
+    width: 100%;
     margin-bottom: 10px;
   }
   .cookie-notification > div.submit, .privacy-warning > div.submit {

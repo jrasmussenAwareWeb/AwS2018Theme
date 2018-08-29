@@ -13,15 +13,16 @@
     height: auto;
     margin: 0;
     z-index: 1000;
-    //AwS
     opacity:1;
     padding: 0 15px 30px 15px;
+    font-size:$font-small;
     color: $text-white;
+    line-height:$font-normal;
     text-align:left;
     background: rgba(60, 68, 88, 0.6);
     width: 100%;
     @include respond-to (desktop) {
-        width: 60%;
+        width: 50%;
     }
     @include respond-to (xlarge) {
         width: 40%;
@@ -30,12 +31,6 @@
         bottom:45px;
     }
 
-    //AwS
-    h1, h2, h3, h4, h5, h6 {
-        text-transform:uppercase;
-        color:$text-white;
-        margin-top:25px;
-    }    
     > div {
         position: relative;
         height: auto;
@@ -57,15 +52,14 @@
             top:30px;
         }
         &.close {
-            //AwS
-            width:10%;
             opacity:1;
             text-shadow:none;
             float:right;
             text-align:right;
-            position:relative;
+            width:100%;
+            position:absolute;
             top:10px;
-            right:0;
+            right:10px;
 
             a {
                 color:transparent;
@@ -82,14 +76,13 @@
         &.info {
             width:72%;
             margin-right:2%;
-            .pull-left:first-child {
-                width:15%;
-            }
-            .pull-left:last-child {
-                width:80%;
-                margin-bottom:30px;
-            }
-            @include respond-to (xlarge) {
+            margin-bottom:15px;
+            &:before {
+                @include fa-icon();
+                content: fa-content($fa-var-cookie-bite);
+                font-size:42px;
+                float:left;
+                margin-right:5%;
             }
         }
         &.submit {
@@ -102,35 +95,33 @@
                 padding: 5px 10px;
                 cursor: pointer;
                 color: $text-white;
+                float:left;
                 &:hover, &:focus {
                     background:$text-white;
                     color:#0e142a;
                 }
-                //AwS
-                float:left;
             }
         }
 
-
         @include respond-to (phone-horizontal) {
-            &.close {
-                width:100%;
-                position:absolute;
-                right:10px;
-            }
             &.info, &.submit {
                 float:none;
                 text-align:center;
                 width:auto;
                 margin-right:auto;
-                .pull-left:first-child, .pull-left:last-child, a {
+                a {
                     width:100%;
-                    float:none !important;
+                    float:none;
                     text-align:center;
                     margin-left:auto;
                     margin-right:auto;
                 }
-                .pull-left:first-child {
+            }
+            &.info {
+                padding-bottom:10px;
+                &:before {
+                    float:none;
+                    width:100%;
                     margin-bottom:10px;
                 }
             }
