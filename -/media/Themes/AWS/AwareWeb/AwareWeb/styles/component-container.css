@@ -388,6 +388,10 @@
   }
 }
 
+.library-wrapper .search-box-clear {
+  margin: 7px 0;
+}
+
 .library-wrapper .facet-component {
   background: transparent;
   padding: 0;
