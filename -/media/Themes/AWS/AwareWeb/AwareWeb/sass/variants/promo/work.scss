@@ -30,7 +30,7 @@
 
         .promo-icon, .field-promoicon {
             width: auto;
-            max-width: 510px;
+            max-width: 320px;
             margin: 0 auto 10px;
             float: none;
             @include transition(all .3s ease-in-out);
@@ -44,12 +44,21 @@
         }
 
         .field-promotext {
-            padding: 0 30px;
             @include raleway-font-stack();
             color: $text-green;
             font-size: $font-big;
             opacity: 1;
             @include transition(all .3s ease-in-out);
+            padding: 0 30px;
+            line-height:1.5;
+            @include respond-to(desktop) {
+                padding:0 15px;
+                line-height:1.2;
+            }
+            @include respond-to(large) {
+                padding: 0 30px;
+                line-height:1.5;
+            }
         }
     }
     
@@ -78,15 +87,24 @@
             line-height: 44px;
             margin-bottom: 5px;
             white-space: nowrap;
-
-            &:before {
-                font-size: 20px;
-                @include fa-icon();
-                content: fa-content($fa-var-arrow-up);
-                position: relative;
-                top: -5px;
-                margin-right: 5px;
-                margin-left: -5px;
+            &.arrow-up, &.arrow-down {
+                &:before {
+                    @include fa-icon();
+                    position: relative;
+                    top: -5px;
+                    margin-right: 5px;
+                    margin-left: -5px;
+                }
+            }
+            &.arrow-up {
+                &:before {
+                    content: fa-content($fa-var-arrow-up);
+                }
+            }
+            &.arrow-down {
+                &:before {
+                    content: fa-content($fa-var-arrow-down);
+                }
             }
         }
 
@@ -152,6 +170,9 @@
                 padding: 15px 10px;
             }
         }
+        .promo-hover {
+            padding:20px;
+        }
     }
     @include respond-to(tablet) {
         border-right: solid 1px #fff;
@@ -164,12 +185,15 @@
             border-bottom: solid 1px #fff;
         }
 
-        .col-xs-6 & {
+        /*.col-xs-6 & {
             margin-bottom: 30px;
         }
 
         .col-sm-6 & {
             margin-bottom: 30px;
+        }*/
+        .promo-hover {
+            padding:15px;
         }
     }
     @include respond-to(desktop) {
@@ -193,8 +217,6 @@
             padding: 30px;
         }
         .promo-hover {
-            padding:20px;
-
             .text-large {
                 font-size: 48px;
                 line-height: 48px;
@@ -217,6 +239,7 @@
     }
     @include respond-to(large) {
         .promo-hover {
+            padding:20px;
             .text-large {
                 font-size: 64px;
                 line-height: 64px;
@@ -235,7 +258,7 @@
                 }
             }
         }
-        .col-sm-6 & {
+        /*.col-sm-6 & {
             .promo-hover {
                 .hover-text {
                     font-size: $font-normal;
@@ -249,6 +272,6 @@
                     }
                 }
             }
-        }
+        }*/
     }
 }

@@ -1,0 +1,24 @@
+.work-related-wrapper {
+    @include respond-to(tablet) {
+        padding-left:15px;
+    }
+    .column-splitter {
+        .col-xs-12.col-sm-4, 
+        .col-xs-12.col-sm-6.col-md-4,
+        .col-xs-12.col-sm-12.col-md-4 {
+            padding:0;
+        }
+    }
+    @include respond-to(tablet) {
+        width:100%;
+    }
+    @include respond-to(large) {
+        width:1200px;
+    }
+    .container {
+        width:100%;
+        @include respond-to(large) {
+            width:1200px;
+        }
+    }
+}
