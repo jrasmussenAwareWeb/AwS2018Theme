@@ -106,6 +106,16 @@
   margin-right: 8px;
 }
 
+.link.btn-back.btn-block a {
+  width: 100%;
+  text-align: center;
+}
+
+.link.btn-back.btn-block a:before {
+  float: none;
+  display: inline-block;
+}
+
 .link.btn-next {
   float: right;
 }

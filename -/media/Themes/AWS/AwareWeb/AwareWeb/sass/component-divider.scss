@@ -2,6 +2,17 @@
 .divider {
     max-height: 20px;
     min-height: 20px !important;
+
+    &.col-xs-12 {
+        padding-left:0;
+        padding-right:0;
+    }
+    &.indent-top {
+        margin-top:30px;
+    }
+    &.indent-bottom {
+        margin-bottom:30px;
+    }
     hr {
         margin: 10px 0;
         border: 0;

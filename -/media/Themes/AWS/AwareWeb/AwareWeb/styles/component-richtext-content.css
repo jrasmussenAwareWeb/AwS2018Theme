@@ -1211,6 +1211,11 @@
 
 .content.blog-article .blog-content h2, .rich-text.blog-article .blog-content h2 {
   font-size: 36px;
+  margin-top: 30px;
+  /*target the parent p
+            p & {
+                margin-bottom:0;
+            }*/
 }
 
 .content.blog-article .blog-content h3, .rich-text.blog-article .blog-content h3 {

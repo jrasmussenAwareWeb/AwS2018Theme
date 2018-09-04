@@ -2,8 +2,9 @@
 @import "../../abstracts/mixins";
 
 &.blog {
-    margin-right: -15px;
-    margin-left: -15px;
+    /*margin-right: -15px;
+    margin-left: -15px;*/
+    padding:0;
     border: none;
     @include clearfix();
 
@@ -19,7 +20,14 @@
             border: none;
             position: relative;
             height: 100%;
-            padding: 0 15px;
+            /*padding: 0 15px;*/
+            padding:0;
+            @include respond-to(tablet) {
+                padding: 0 15px;
+            }
+            @include respond-to(all-phone) {
+                width:100%;
+            }
 
             .blog-item {
                 min-height: 120px;

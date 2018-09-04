@@ -16,6 +16,7 @@ $break-phone: 380px;
     margin: 0 auto !important;
 }
 @mixin clearfix() {
+    clear:both;
     &:before, &:after {
         content: "";
         display: table;

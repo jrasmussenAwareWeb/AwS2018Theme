@@ -34,6 +34,7 @@
   background: #FFFFFF;
   width: 96%;
   padding: 2%;
+  clear: both;
 }
 
 .flip .Side1:before, .flip .Side1:after, .flip .Side0:before, .flip .Side0:after, .flip .Side0_EDIT:before, .flip .Side0_EDIT:after, .flip .Side1_EDIT:before, .flip .Side1_EDIT:after {

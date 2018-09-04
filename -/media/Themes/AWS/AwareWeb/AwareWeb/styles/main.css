@@ -6439,6 +6439,10 @@ h6 {
   box-sizing: initial;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;

@@ -22,6 +22,7 @@
 
 .event-list li, .event-list li > .scLooseFrameZone {
   border: 1px solid #d2d2d2;
+  clear: both;
   background: #FFFFFF;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

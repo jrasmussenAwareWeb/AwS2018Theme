@@ -88,6 +88,16 @@
             margin-right: 8px;
             }
         }
+        &.btn-block {
+            a {
+                width:100%;
+                text-align:center;
+                &:before {
+                    float:none;
+                    display:inline-block;
+                }
+            }
+        }
     }
     &.btn-next {
         float: right;

@@ -6,7 +6,7 @@
         }
     }
     @include respond-to(all-phone) {
-          &.col-lg-3 {
+        &.col-lg-3 {
             //margin-top:$extra-large-margin;
             margin-top:60px;
         }
@@ -23,6 +23,11 @@
                         top:-1px;
                     }
                 }
+            }
+        }
+        @include respond-to(all-phone) {
+            &.facet-single-selection-list {
+                margin-top:60px;
             }
         }
     }

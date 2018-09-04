@@ -58,7 +58,15 @@
 
         //overwriting just for blog entry
         h2, h3, h4, h5, h6 {font-weight:700}
-        h2 {font-size: 36px}
+        h2 {
+            font-size: 36px;
+            margin-top:30px;
+            /*target the parent p
+            p & {
+                margin-bottom:0;
+            }*/
+
+        }
         h3 {font-size: 30px}
         h4 {font-size: 24px}
         h5 {font-size: 20px}

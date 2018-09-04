@@ -25,6 +25,19 @@
   min-height: 20px !important;
 }
 
+.divider.col-xs-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.divider.indent-top {
+  margin-top: 30px;
+}
+
+.divider.indent-bottom {
+  margin-bottom: 30px;
+}
+
 .divider hr {
   margin: 10px 0;
   border: 0;

@@ -357,6 +357,10 @@
   right: 50px;
 }
 
+.navigation.navigation-main .component-content > nav ul {
+  clear: both;
+}
+
 .navigation.navigation-main .component-content > nav ul:before, .navigation.navigation-main .component-content > nav ul:after {
   content: "";
   display: table;
