@@ -5,10 +5,8 @@
 @import "base/fontawesome/variables";
 
 .breadcrumb {
-    //overflow: hidden;
-    //margin: 0 0 10px 0;
     background: $breadcrumb-bg;
-    //AWS
+    //AwS
     color: $text-white;
     text-align: center;
     display: block;
@@ -17,6 +15,9 @@
     position: absolute;
     top: 10px;
     z-index: 9;
+    @include respond-to(phone) {
+        display:none;
+    }
     @include respond-to(tablet) {
         top:40px;
     }
