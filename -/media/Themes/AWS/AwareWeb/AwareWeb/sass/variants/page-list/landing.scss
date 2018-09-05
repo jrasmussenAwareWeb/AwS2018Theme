@@ -1,7 +1,10 @@
 &.landing {
     padding:0;
-    margin-top: 20px;
-
+    margin-top:15px; //offset -15px for the list items padding
+    margin-bottom:60px;
+    @include respond-to(all-phone) {
+        margin-top:30px; 
+    }
     .item {
         border:0;
         width:100%;
@@ -31,6 +34,9 @@
         }
         @include respond-to(all-phone) {
             padding:30px 15px;
+            &:first-child {
+                padding-top:0;
+            }
         }
         @include respond-to(tablet) {
             width:50%;

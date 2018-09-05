@@ -60,55 +60,30 @@
             padding-right: 0;
         }
         img {
-            //width: 100%;
-            //height: auto;
-            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            min-height:300px;
+            object-fit:cover;
+            @include respond-to(all-phone) {
+                min-height:240px;
+            }
         }
         &:after {
             content: "";
             display:block;
             width: 100%;
-            height: 150px;
+            min-height:300px;
             position: absolute;
             top: 0;
             background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
             background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
             background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
-        }
-        @include respond-to(tablet) {
-            img {
-                min-height: 230px;
+            @include respond-to(all-phone) {
+                min-height:180px;
             }
-            &:after {height: 210px;}
-        }
-        @include respond-to(desktop) {
-            img {
-                min-height: 290px;
-            }
-            &:after {height: 240px;}
-        }
-        @include respond-to(large) {
-            &:after {height: 260px;}
-        }
-        @include respond-to(all-phone) {
-            img {
-                width: 120%;
-                max-width: 120%;
-                height: auto;
-                margin-left: -10% !important;
-            }
-        }
-        @include respond-to(phone) {
-            height: 200px;
-            img {
-                width: auto;
-                max-width: initial;
-                height: 200px;
-                margin:0 -50% !important;
-            }
-        }
-        
+        }        
     }
+    
     @import "base/richtext/*";
 
     //AWS

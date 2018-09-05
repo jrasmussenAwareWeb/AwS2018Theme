@@ -52,8 +52,12 @@
                 text-decoration:none;
             }
         }
-        > img {
+        img {
             margin-bottom:20px;
+            @include respond-to(all-mobile) {
+                width:100%;
+                height:auto;
+            }
         }
 
         //overwriting just for blog entry

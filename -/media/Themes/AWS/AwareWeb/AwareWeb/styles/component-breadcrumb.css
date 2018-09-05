@@ -32,12 +32,6 @@
   z-index: 9;
 }
 
-@media only screen and (max-width: 380px) {
-  .breadcrumb {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .breadcrumb {
     top: 40px;
@@ -87,6 +81,12 @@
 .breadcrumb li > .navigation-title > a:hover {
   color: #FFFFFF;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 380px) {
+  .breadcrumb li.home {
+    display: none;
+  }
 }
 
 .breadcrumb li.last {

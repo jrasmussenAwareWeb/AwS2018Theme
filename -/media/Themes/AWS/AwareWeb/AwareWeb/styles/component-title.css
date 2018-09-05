@@ -96,6 +96,15 @@
   }
 }
 
+.title.title-introduction {
+  margin-top: 30px;
+}
+
+.title.title-introduction h1, .title.title-introduction h2, .title.title-introduction h3, .title.title-introduction h4, .title.title-introduction h5, .title.title-introduction h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .title .field-title a {
   text-decoration: none;
   cursor: pointer;

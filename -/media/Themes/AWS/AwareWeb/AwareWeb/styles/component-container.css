@@ -235,6 +235,23 @@
   }
 }
 
+.blog-wrapper {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+/* breakpoints */
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
 .container-gradient-background-red-arrow {
   background: #cc0000;
   /* For browsers that do not support gradients */
@@ -461,6 +478,11 @@
   .partners-wrapper .image {
     text-align: center;
   }
+}
+
+.search-wrapper {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 @media only screen and (min-width: 992px) {

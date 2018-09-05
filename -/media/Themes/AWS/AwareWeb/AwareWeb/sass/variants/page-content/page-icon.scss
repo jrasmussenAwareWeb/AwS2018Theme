@@ -1,7 +1,4 @@
 &.content-page-icon {
-    @include respond-to(all-mobile) {
-        display:none;
-    }
     .title-icon {
     color:#fff;
     text-align: center;
@@ -9,7 +6,7 @@
     width: 80px;
     height: 80px;
     font-size: 50px;
-    margin: -50px auto 25px;
+    margin: -40px auto 15px;
     position: relative;
     @include border-radius(50%);
     z-index: 1;
@@ -36,8 +33,7 @@
             width: 100px;
             height: 100px;
             font-size: 60px;
-            //margin: -50px auto 25px;
-            margin: -50px auto 0;
+            margin: -50px auto 15px;
         }
     }
     @include respond-to(desktop) {     
@@ -45,8 +41,7 @@
             width: 120px;
             height: 120px;
             font-size: 80px;
-            //margin: -60px auto 30px;
-            margin: -60px auto 10px;
+            margin: -60px auto 15px;
         }
     }
 }

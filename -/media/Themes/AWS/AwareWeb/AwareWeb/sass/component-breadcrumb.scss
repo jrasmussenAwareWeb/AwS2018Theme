@@ -15,9 +15,6 @@
     position: absolute;
     top: 10px;
     z-index: 9;
-    @include respond-to(phone) {
-        display:none;
-    }
     @include respond-to(tablet) {
         top:40px;
     }
@@ -62,6 +59,11 @@
                 //color: $breadcrumb-active;
                 color: $text-white;
                 text-decoration: underline;
+            }
+        }
+        @include respond-to(phone) {
+            &.home {
+                display:none;
             }
         }
 
