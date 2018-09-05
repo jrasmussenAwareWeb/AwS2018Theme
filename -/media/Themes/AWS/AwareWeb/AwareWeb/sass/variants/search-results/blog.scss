@@ -89,7 +89,7 @@
 
                 img {
                     width: 100%;
-                    max-width: 100%;
+                    //max-width: 100%;
                     height: auto;
                 }
             }
@@ -134,13 +134,22 @@
 .flexbox & {
     &.blog {
         .search-result-list {
-            @include respond-to(tablet) {
+            @media only screen and (max-width: 575px) {
+                >li {
+                    max-width: 345px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    float: none;
+                }
+            }
+            //@include respond-to(tablet) {
+            @media only screen and (min-width: 576px) {
                 -webkit-column-count: 2;
                 -moz-column-count: 2;
                 column-count: 2;
                 -webkit-column-gap: 0;
                 -moz-column-gap: 0;
-                column-gap: 0;
+                column-gap: 30px;
 
                 >li {
                     width: 100%;
@@ -153,6 +162,7 @@
                     background-clip: border-box;
                     float: none;
                     column-count: 1;
+                    padding: 0;
                 }
             }
             @include respond-to(large) {

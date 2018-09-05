@@ -102,8 +102,8 @@
 }
 
 .content.content-page-header img, .rich-text.content-page-header img {
-  width: 100%;
-  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .content.content-page-header:after, .rich-text.content-page-header:after {
@@ -127,7 +127,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .content.content-page-header, .rich-text.content-page-header {
+  .content.content-page-header img, .rich-text.content-page-header img {
     min-height: 290px;
   }
   .content.content-page-header:after, .rich-text.content-page-header:after {
