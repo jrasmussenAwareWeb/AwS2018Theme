@@ -249,7 +249,9 @@
 }
 
 .link-list.list-inline > .component-content ul li {
-  display: inline;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 10px;
 }
 
@@ -273,12 +275,6 @@
   font-size: 1.2em;
   vertical-align: middle;
   left: -5px;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .link-list.list-inline > .component-content ul li a:before {
-    top: 15px;
-  }
 }
 
 .link-list.list-inline > .component-content ul li a:hover {
