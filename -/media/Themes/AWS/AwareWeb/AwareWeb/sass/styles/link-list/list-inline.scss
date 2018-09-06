@@ -22,16 +22,25 @@
                     color: #c5cedc;
                     font-size: $font-normal;
                     text-decoration:underline;
+                    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                        text-decoration: none;
+                     }
                     
                     &:before {
                         content:"•";
                         font-size:1.2em;
                         vertical-align:middle;
                         left:-5px;
+                        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                            top:15px;
+                         }
                     }
                     &:hover {
                         color: $text-white;
-                        text-decoration: underline;
+                        text-decoration:underline;
+                        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                            text-decoration: none;
+                        }
                     }
 
                     @include respond-to(desktop) {
