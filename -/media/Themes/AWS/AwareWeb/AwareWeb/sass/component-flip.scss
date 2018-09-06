@@ -41,13 +41,22 @@
     }
     .Side1 {
         transform: rotateY(180deg);
+        -ms-transform: translateY(-180deg);
+        -webkit-transform:translateY(180deg);
+        -moz-transform:translateY(180deg);
     }
     &.active {
         .Side0 {
             transform: rotateY(180deg);
+            -ms-transform: translateY(-180deg);
+            -webkit-transform:translateY(180deg);
+            -moz-transform:translateY(180deg);
         }
         .Side1 {
             transform: rotateY(360deg);
+            -ms-transform: translateY(-360deg);
+            -webkit-transform:translateY(360deg);
+            -moz-transform:translateY(360deg);
         }
     }
     
