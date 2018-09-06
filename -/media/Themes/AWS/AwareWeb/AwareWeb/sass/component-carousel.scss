@@ -34,7 +34,7 @@
         //AwS
         @include respond-to(desktop) {       
             position:relative;
-            z-index:20;
+            z-index:1;
         }
         .nav-items {
             display: inline-block;
