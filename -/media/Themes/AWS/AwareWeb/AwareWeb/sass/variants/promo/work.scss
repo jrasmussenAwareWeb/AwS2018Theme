@@ -59,6 +59,10 @@
                 padding: 0 30px;
                 line-height:1.5;
             }
+            @include respond-to(phone) {
+                padding: 0 10px;
+                line-height:1;
+            }
         }
     }
     
@@ -69,7 +73,9 @@
         bottom: -100%;
         color: $text-white;
         @include transition(all .3s ease-in-out);
-        
+        @include respond-to(phone) {
+            padding: 10px 15px;
+        }
         .hover-left, .hover-right {
             display: table-cell;
             vertical-align: middle;

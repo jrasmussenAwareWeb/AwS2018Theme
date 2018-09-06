@@ -506,6 +506,13 @@
   }
 }
 
+@media only screen and (max-width: 380px) {
+  .promo-work .promo-body .field-promotext {
+    padding: 0 10px;
+    line-height: 1;
+  }
+}
+
 .promo-work .promo-hover {
   padding: 15px;
   background-color: #50d2c2;
@@ -513,6 +520,12 @@
   color: #FFFFFF;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 380px) {
+  .promo-work .promo-hover {
+    padding: 10px 15px;
+  }
 }
 
 .promo-work .promo-hover .hover-left, .promo-work .promo-hover .hover-right {
