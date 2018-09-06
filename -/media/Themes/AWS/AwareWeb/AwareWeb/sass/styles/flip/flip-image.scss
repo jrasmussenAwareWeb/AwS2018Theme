@@ -40,10 +40,23 @@
             @include border-radius(23px 23px 0 0);
             @include box-shadow(0, -1px, 1px, rgba(0, 0, 0, 0.10), $inset: false);
             @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-                margin-left:39%;
                 @include respond-to(all-mobile) {
-                    margin-left:43%;
                     top:-21.5px;
+                }
+                @include respond-to(tablet) {
+                    margin-left:38%;
+                }
+                @include respond-to(desktop) {
+                    margin-left:39%;
+                }
+                @include respond-to(all-phone) {
+                    margin-left:43%;
+                }
+                @include respond-to(phone-horizontal) {
+                    margin-left:40%;
+                }
+                @include respond-to(phone) {
+                    margin-left:33%;
                 }
             }
         }

@@ -147,16 +147,39 @@
   box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media only screen and (-ms-high-contrast: active) and (max-width: 991px), only screen and (-ms-high-contrast: none) and (max-width: 991px) {
+  .flip.flip-expertise .Side0:before, .flip.flip-expertise .Side1:before {
+    top: -21.5px;
+  }
+}
+
+@media only screen and (-ms-high-contrast: active) and (min-width: 768px), only screen and (-ms-high-contrast: none) and (min-width: 768px) {
+  .flip.flip-expertise .Side0:before, .flip.flip-expertise .Side1:before {
+    margin-left: 38%;
+  }
+}
+
+@media only screen and (-ms-high-contrast: active) and (min-width: 992px), only screen and (-ms-high-contrast: none) and (min-width: 992px) {
   .flip.flip-expertise .Side0:before, .flip.flip-expertise .Side1:before {
     margin-left: 39%;
   }
 }
 
-@media only screen and (-ms-high-contrast: active) and (max-width: 991px), only screen and (-ms-high-contrast: none) and (max-width: 991px) {
+@media only screen and (-ms-high-contrast: active) and (max-width: 767px), only screen and (-ms-high-contrast: none) and (max-width: 767px) {
   .flip.flip-expertise .Side0:before, .flip.flip-expertise .Side1:before {
     margin-left: 43%;
-    top: -21.5px;
+  }
+}
+
+@media only screen and (-ms-high-contrast: active) and (max-width: 639px), only screen and (-ms-high-contrast: none) and (max-width: 639px) {
+  .flip.flip-expertise .Side0:before, .flip.flip-expertise .Side1:before {
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (-ms-high-contrast: active) and (max-width: 380px), only screen and (-ms-high-contrast: none) and (max-width: 380px) {
+  .flip.flip-expertise .Side0:before, .flip.flip-expertise .Side1:before {
+    margin-left: 33%;
   }
 }
 
@@ -327,16 +350,39 @@
   box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media only screen and (-ms-high-contrast: active) and (max-width: 991px), only screen and (-ms-high-contrast: none) and (max-width: 991px) {
+  .flip.flip-image .Side0:before, .flip.flip-image .Side1:before {
+    top: -21.5px;
+  }
+}
+
+@media only screen and (-ms-high-contrast: active) and (min-width: 768px), only screen and (-ms-high-contrast: none) and (min-width: 768px) {
+  .flip.flip-image .Side0:before, .flip.flip-image .Side1:before {
+    margin-left: 38%;
+  }
+}
+
+@media only screen and (-ms-high-contrast: active) and (min-width: 992px), only screen and (-ms-high-contrast: none) and (min-width: 992px) {
   .flip.flip-image .Side0:before, .flip.flip-image .Side1:before {
     margin-left: 39%;
   }
 }
 
-@media only screen and (-ms-high-contrast: active) and (max-width: 991px), only screen and (-ms-high-contrast: none) and (max-width: 991px) {
+@media only screen and (-ms-high-contrast: active) and (max-width: 767px), only screen and (-ms-high-contrast: none) and (max-width: 767px) {
   .flip.flip-image .Side0:before, .flip.flip-image .Side1:before {
     margin-left: 43%;
-    top: -21.5px;
+  }
+}
+
+@media only screen and (-ms-high-contrast: active) and (max-width: 639px), only screen and (-ms-high-contrast: none) and (max-width: 639px) {
+  .flip.flip-image .Side0:before, .flip.flip-image .Side1:before {
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (-ms-high-contrast: active) and (max-width: 380px), only screen and (-ms-high-contrast: none) and (max-width: 380px) {
+  .flip.flip-image .Side0:before, .flip.flip-image .Side1:before {
+    margin-left: 33%;
   }
 }
 
