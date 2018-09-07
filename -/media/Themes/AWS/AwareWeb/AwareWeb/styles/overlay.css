@@ -54,6 +54,7 @@
 
 .overlay > .component-content .component {
   margin: 0;
+  margin-top: -10px;
 }
 
 .overlay > .component-content .component.image img {
@@ -75,10 +76,6 @@
 .overlay .overlay-inner #InnerCenter {
   width: auto;
   height: auto;
-}
-
-.overlay .overlay-inner .column-splitter {
-  padding-top: 30px;
 }
 
 .overlay .overlay-inner .rich-text {

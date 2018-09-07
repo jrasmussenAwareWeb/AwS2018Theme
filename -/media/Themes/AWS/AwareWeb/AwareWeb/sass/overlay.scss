@@ -34,6 +34,7 @@
 
         .component {
             margin: 0;
+            margin-top:-10px;
             &.image {
                 img {
                     width: 100%;
@@ -55,9 +56,6 @@
             height: auto;
         }
         //AWS
-        .column-splitter {
-            padding-top: 30px;
-        }
         .rich-text {
             color: #fff;
 
