@@ -78,6 +78,11 @@
                             content:url('/-/media/Project/AWS/Images/resources/icons/icon-case-study.png');
                         }
                     }
+                    &.Program { 
+                        &:after {
+                            content:url('/-/media/Project/AWS/Images/resources/icons/icon-program.png');
+                        }
+                    }
 
                     &.White.Paper {
                         &:after {
@@ -93,7 +98,6 @@
 
                     &.Video {
                         &:after {
-                            //content:url('/greenstonefcs/-/media/Project/Greenstone/GreenstoneFCS/resource-library/icons/icon-video.png');
                             content:url('/-/media/Project/AWS/Images/resources/icons/icon-video.png');
                         }
                     }

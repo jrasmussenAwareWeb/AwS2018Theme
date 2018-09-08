@@ -503,6 +503,10 @@
   content: url("/-/media/Project/AWS/Images/resources/icons/icon-case-study.png");
 }
 
+.search-results.library .search-result-list > li .result-image .field-type-icon.Program:after {
+  content: url("/-/media/Project/AWS/Images/resources/icons/icon-program.png");
+}
+
 .search-results.library .search-result-list > li .result-image .field-type-icon.White.Paper:after {
   content: url("/-/media/Project/AWS/Images/resources/icons/icon-whitepaper.png");
 }
