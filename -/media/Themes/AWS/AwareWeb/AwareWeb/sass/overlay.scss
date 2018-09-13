@@ -7,7 +7,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../Images/overlay-bg.png);
     z-index: 9999;
     display: none;
     text-align: center;
@@ -38,6 +37,8 @@
             &.image {
                 img {
                     width: 100%;
+                    height:auto;
+                    margin-bottom:20px;
                 }
             }
         }
@@ -81,18 +82,12 @@
         border: 1px solid #cccccc;
     }
     .overlay-close {
-        //bottom: 8px;
-        //color: #000;
         color: #fff;
         cursor: pointer;
         font-size: 30px;
         position: absolute;
-        //right: -5px;
-        //bottom: -15px;
         top: -10px;
         right: 25px;
-        //width: 40px;
-        //height: 40px;
         z-index: 1;
     }
     .overlay-close-link:focus {
@@ -107,8 +102,6 @@
         color: #fff;
         font-size: 50px;
         font-weight: 700;
-        //padding: 15px 30px;
-        //margin: 0 0 40px 0;
         position: relative;
         top: 0;
         left: 0;
@@ -137,7 +130,6 @@
 
 
 /* this css class is used on overlay page */
-
 .overlay-page {
     top: 0;
     left: 0;
