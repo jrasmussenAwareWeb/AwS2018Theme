@@ -1302,10 +1302,9 @@
   z-index: 1;
   display: table;
   vertical-align: middle;
-}
-
-.content.content-page-icon .title-icon .fa, .content.content-page-icon .title-icon .fal, .rich-text.content-page-icon .title-icon .fa, .rich-text.content-page-icon .title-icon .fal {
-  vertical-align: middle;
+  /*.fa, .fal { 
+            vertical-align: middle;
+        }*/
 }
 
 .content.content-page-icon .title-icon a, .rich-text.content-page-icon .title-icon a {
