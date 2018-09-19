@@ -4,7 +4,7 @@ export default {
     sassSourceMap: false,
 
     serverOptions: {
-        server: 'https://awareweb-paas-single.azurewebsites.net', //need to be changed
+        server: 'https://awareweb-paas-rg-497200-single.azurewebsites.net', //need to be changed
         projectPath: '', //need to be changed
         themePath: '/Themes/AWS/AwareWeb/AwareWeb', //need to be changed
         removeScriptPath: '/-/script/v2/master/RemoveMedia',
