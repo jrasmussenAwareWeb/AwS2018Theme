@@ -21,6 +21,7 @@
         background: rgba(0,0,0,0.7);
         top: 0;
         bottom: 0;
+        pointer-events: none;
     }
 
     .promo-body { 
@@ -139,7 +140,7 @@
         }
     }
 
-    &:hover, &:focus {
+    &:hover, &:focus, &:focus-within {
         .promo-body {
             .field-promoicon {
                 padding: 0 15px 30px 15px;
