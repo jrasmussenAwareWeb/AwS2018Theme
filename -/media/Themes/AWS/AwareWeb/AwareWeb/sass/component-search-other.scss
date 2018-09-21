@@ -15,6 +15,10 @@
     .bottom-filter-button {
         float: right;
     }
+
+    span:hover, span:active, span:focus {
+        cursor:pointer;
+    }
     .facet-heading {
         @include border-basic(bottom, $search-title-border, 3px);
         padding: 0 0 5px 0;
