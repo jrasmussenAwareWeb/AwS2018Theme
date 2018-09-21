@@ -229,3 +229,19 @@ body.preview {
         z-index: 9000;
     }
 }
+//AWS
+.search-wrap{
+    .overlay {
+        >.component-content {
+            border-radius: 0;
+            background: $overlay-bg;
+            padding: 0 0 25px;
+            margin: auto auto auto auto;
+            max-width: 100%;
+    
+            .component {
+                margin-top:-10px;
+            }
+        }
+    }
+}

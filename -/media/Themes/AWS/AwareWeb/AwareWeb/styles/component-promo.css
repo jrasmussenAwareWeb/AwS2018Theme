@@ -609,20 +609,20 @@
   background-color: #fff;
 }
 
-.promo-work:hover .promo-body .field-promoicon, .promo-work:focus .promo-body .field-promoicon {
+.promo-work:hover .promo-body .field-promoicon, .promo-work:focus .promo-body .field-promoicon, .promo-work:focus-within .promo-body .field-promoicon, .promo-work.focus .promo-body .field-promoicon {
   padding: 0 15px 30px 15px;
   margin-top: -5px;
 }
 
-.promo-work:hover .promo-body .field-promoicon img, .promo-work:focus .promo-body .field-promoicon img {
+.promo-work:hover .promo-body .field-promoicon img, .promo-work:focus .promo-body .field-promoicon img, .promo-work:focus-within .promo-body .field-promoicon img, .promo-work.focus .promo-body .field-promoicon img {
   width: 50%;
 }
 
-.promo-work:hover .promo-body .field-promotext, .promo-work:focus .promo-body .field-promotext {
+.promo-work:hover .promo-body .field-promotext, .promo-work:focus .promo-body .field-promotext, .promo-work:focus-within .promo-body .field-promotext, .promo-work.focus .promo-body .field-promotext {
   opacity: 0;
 }
 
-.promo-work:hover .promo-hover, .promo-work:focus .promo-hover {
+.promo-work:hover .promo-hover, .promo-work:focus .promo-hover, .promo-work:focus-within .promo-hover, .promo-work.focus .promo-hover {
   bottom: 0;
 }
 
