@@ -265,3 +265,15 @@ body.preview .overlay-page {
 .on-page-editor .overlay-page {
   z-index: 9000;
 }
+
+.search-wrap .overlay > .component-content {
+  border-radius: 0;
+  background: rgba(14, 20, 42, 0.86);
+  padding: 0 0 25px;
+  margin: auto auto auto auto;
+  max-width: 100%;
+}
+
+.search-wrap .overlay > .component-content .component {
+  margin-top: -10px;
+}
