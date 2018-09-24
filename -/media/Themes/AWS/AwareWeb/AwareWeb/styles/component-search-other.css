@@ -99,6 +99,10 @@
   float: right;
 }
 
+.facet-component span:hover, .facet-component span:active, .facet-component span:focus {
+  cursor: pointer;
+}
+
 .facet-component .facet-heading {
   border-bottom: 3px solid #333;
   padding: 0 0 5px 0;
