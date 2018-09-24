@@ -5,8 +5,8 @@ XA.component.searchOverlay = function($) {
         href = window.location.href,
         host = location.host,
         label,
-        overlayPlaceholder = false,
-        marginTop = 100;
+        overlayPlaceholder = false;
+        //marginTop = 100;
 
     function isPreviewMode() {
         if (href.indexOf("sc_mode=preview") > -1) {
@@ -21,21 +21,17 @@ XA.component.searchOverlay = function($) {
         if (href.indexOf("sc_mode=edit") > -1) {
             return true;
         }
-
-
         var $hdPageMode = $('#hdPageMode');
-
         return $hdPageMode.length > 0 && $hdPageMode.attr('value') == 'edit';
     }
 
     function isOverlayPage() {
         return $('#wrapper').hasClass('overlay-page');
     }
-
     function hasOverlayContent() {
         return $(".searchOverlay").length;
     }
-
+    /*
     function resizeOverlay(inner, content, options) {
         var unit = "px";
         var css = {
@@ -56,24 +52,22 @@ XA.component.searchOverlay = function($) {
                 inner.removeClass("edit")
             }
         }
-
+        
         if (options.width) {
             css["width"] = options.width + unit;
         }
         if (options.height) {
             css["height"] = options.height + unit;
         }
-
         css["max-height"] = (wh - marginTop - 0.1 * wh) + "px";
-
+        
         content.css(css);
     }
-
+    */
     function getUrlVariables(url) {
         var q = url.split('?')[1],
             vars = [],
             hash;
-
         if (q != undefined) {
             q = q.split('&');
             for (var i = 0; i < q.length; i++) {
@@ -82,21 +76,17 @@ XA.component.searchOverlay = function($) {
                 vars[hash[0]] = hash[1];
             }
         }
-
         return vars;
     }
 
     function getSize(vars) {
         var obj = {};
-
         if (vars["width"] !== null) {
             obj["width"] = vars["width"];
         }
-
         if (vars["height"] !== null) {
             obj["height"] = vars["height"];
         }
-
         return obj;
     }
 
@@ -112,19 +102,16 @@ XA.component.searchOverlay = function($) {
         if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) > -1) {
             return true;
         }
-
         return false;
     }
 
-
     function loadOverlay(url, overlay) {
         var content = overlay.find(".overlay-inner"),
-            overlayContent = overlay.find(".component-content"),
+            //overlayContent = overlay.find(".component-content"),
             vars = getUrlVariables(url),
             internalLink = checkInternal(url),
             overlaySize = getSize(vars),
             suffix;
-
         content.removeAttr('style');
 
         if (internalLink) {
@@ -142,16 +129,14 @@ XA.component.searchOverlay = function($) {
                     url = url.replace("sitecore/shell/");
                     url += (url.indexOf("?") == -1 ? "?" : "&") + suffix;
                 }
-
                 $.get(url, function(data) {
-                    var overlayData = $(data).before().first();
-
+                    /*var overlayData = $(data).before().first();
                     resizeOverlay(content, overlayContent, {
                         width: overlayData.attr("data-width"),
                         height: overlayData.data("height"),
                         percent: overlayData.data("percent")
                     });
-
+                    */
                     content.empty().append(data);
                     XA.init();
                     showOverlay(overlay);
@@ -170,16 +155,14 @@ XA.component.searchOverlay = function($) {
     }
 
     function preShowOverlay(overlay) {
-        overlay.css({
-            "opacity": 1
-        }).show();
+        //overlay.css({"opacity": 1}).show();
+        overlay.addClass('open').show();
     }
 
     function showOverlay(overlay) {
         var i, q, links, close, content;
-        overlay.show().animate({
-            opacity: 1
-        });
+        //overlay.show().animate({opacity: 1});
+        overlay.addClass('open').show();
 
         close = overlay.find(".overlay-close-link");
         setTimeout(function() { close.focus(); }, 0);
@@ -210,23 +193,19 @@ XA.component.searchOverlay = function($) {
 
     function hideOverlay(overlay) {
         var content = overlay.find(".overlay-inner");
+        overlay.removeClass('open').hide();
+        content.empty();
 
-        overlay.animate({ opacity: 0 },
-            function() {
-                overlay.hide();
-                content.empty();
-
-                if (mejs) {
-                    for (var p in mejs.players) {
-                        if ($("#" + mejs.players[p].id).parents(".overlay").length == 1) {
-                            $("#" + mejs.players[p].id + ' video').attr('src', '');
-                            mejs.players[p].remove();
-                            mejs.players.splice(p, 1);
-                        }
-                    }
+        if (mejs) {
+            for (var p in mejs.players) {
+                if ($("#" + mejs.players[p].id).parents(".overlay").length == 1) {
+                    $("#" + mejs.players[p].id + ' video').attr('src', '');
+                    mejs.players[p].remove();
+                    mejs.players.splice(p, 1);
                 }
             }
-        );
+        }
+        
 
         XAContext.Tracking.track(
             XAContext.Domain.TrackingTypes().event, {
@@ -241,7 +220,7 @@ XA.component.searchOverlay = function($) {
     }
 
     function createOverlay() {
-        var overlay = "<div class='overlay-wrapper search-wrap'>" +
+        var overlay = "<div class='search-wrap'>" +
             "<div class='overlay component'>" +
             "<div class='component-content'>" +
             "<div class='overlay-close'><a tabIndex='1' class='overlay-close-link' href='#'>×</a></div>" +
@@ -266,25 +245,26 @@ XA.component.searchOverlay = function($) {
 
         if (isOverlayPage()) {
             var page = $(".overlay-page"),
-                overlay = $("#spnOverlay"),
-                content = overlayContent.children(".overlay-inner");
+                overlay = $("#spnOverlay");
+                //content = overlayContent.children(".overlay-inner");
             overlayContent = page.children(".component-content");
-
+            /*
             resizeOverlay(content, overlayContent, {
                 width: overlay.data("width"),
                 height: overlay.data("height"),
                 percent: overlay.data("percent")
             });
+            */
             overlayContent.on("click", function(event) {
                 event.stopPropagation();
             });
             page.on("click", function() {
                 if (isPreviewMode()) {
                     location.href = location.href.replace("sc_mode=preview", "sc_mode=edit")
-                }zzz
+                }
             });
         }
-        overlay = $(".overlay-wrapper > .overlay");
+        overlay = $(".search-wrap > .overlay");
         overlayContent = overlay.find(".component-content");
         overlaySource = $(".searchOverlay a:not(.initialized), a.searchOverlay:not(.initialized)");
         overlayInner = $(".overlay-inner");
@@ -322,13 +302,13 @@ XA.component.searchOverlay = function($) {
                 args.preventDefault();
                 closeAction();
             });
-
+            /*
             $(window).on("resize", function() {
                 var height = $(window).height();
                 height = height - marginTop - 0.1 * height;
-                overlayContent.css("max-height", height + "px");
+                //overlayContent.css("max-height", height + "px");
             });
-
+            */
             overlayPlaceholder = true;
         }
 
