@@ -31,39 +31,6 @@ XA.component.searchOverlay = function($) {
     function hasOverlayContent() {
         return $(".searchOverlay").length;
     }
-    /*
-    function resizeOverlay(inner, content, options) {
-        var unit = "px";
-        var css = {
-            "width": "",
-            "height": ""
-        };
-        var wh = $(window).height();
-
-        if (options.percent) {
-            unit = "%";
-            inner.addClass("overlay-percent");
-            if (isEditMode()) {
-                inner.addClass("edit")
-            }
-        } else {
-            inner.removeClass("overlay-percent");
-            if (isEditMode()) {
-                inner.removeClass("edit")
-            }
-        }
-        
-        if (options.width) {
-            css["width"] = options.width + unit;
-        }
-        if (options.height) {
-            css["height"] = options.height + unit;
-        }
-        css["max-height"] = (wh - marginTop - 0.1 * wh) + "px";
-        
-        content.css(css);
-    }
-    */
     function getUrlVariables(url) {
         var q = url.split('?')[1],
             vars = [],
@@ -130,13 +97,6 @@ XA.component.searchOverlay = function($) {
                     url += (url.indexOf("?") == -1 ? "?" : "&") + suffix;
                 }
                 $.get(url, function(data) {
-                    /*var overlayData = $(data).before().first();
-                    resizeOverlay(content, overlayContent, {
-                        width: overlayData.attr("data-width"),
-                        height: overlayData.data("height"),
-                        percent: overlayData.data("percent")
-                    });
-                    */
                     content.empty().append(data);
                     XA.init();
                     showOverlay(overlay);
@@ -153,17 +113,16 @@ XA.component.searchOverlay = function($) {
         }
 
     }
-
-    function preShowOverlay(overlay) {
-        //overlay.css({"opacity": 1}).show();
-        overlay.addClass('open').show();
-    }
-
     function showOverlay(overlay) {
         var i, q, links, close, content;
-        //overlay.show().animate({opacity: 1});
-        overlay.addClass('open').show();
-
+        content = overlay.find(".overlay-inner");
+        overlay.addClass('open');
+        $('#wrapper').addClass('wrap-hide');
+        content.animate({opacity:1},100,
+            function() {
+                content.addClass('active');
+            }
+        );
         close = overlay.find(".overlay-close-link");
         setTimeout(function() { close.focus(); }, 0);
         links = overlay.find("a:not(.overlay-close-link)");
@@ -171,7 +130,7 @@ XA.component.searchOverlay = function($) {
         for (q = 0; q < links.length; q++) {
             $(links[q]).attr("tabIndex", i++);
         }
-        content = overlay.find(".overlay-inner");
+        
         content.attr("tabIndex", i);
         content.blur(function(args) {
             args.preventDefault();
@@ -193,20 +152,24 @@ XA.component.searchOverlay = function($) {
 
     function hideOverlay(overlay) {
         var content = overlay.find(".overlay-inner");
-        overlay.removeClass('open').hide();
-        content.empty();
-
-        if (mejs) {
-            for (var p in mejs.players) {
-                if ($("#" + mejs.players[p].id).parents(".overlay").length == 1) {
-                    $("#" + mejs.players[p].id + ' video').attr('src', '');
-                    mejs.players[p].remove();
-                    mejs.players.splice(p, 1);
+        content.removeClass('active');
+        $('#wrapper').removeClass('wrap-hide');
+        content.animate({opacity: 0},200,
+            function() {
+                overlay.removeClass('open');
+                content.empty();
+                if (mejs) {
+                    for (var p in mejs.players) {
+                        if ($("#" + mejs.players[p].id).parents(".overlay").length == 1) {
+                            $("#" + mejs.players[p].id + ' video').attr('src', '');
+                            mejs.players[p].remove();
+                            mejs.players.splice(p, 1);
+                        }
+                    }
                 }
             }
-        }
+        );
         
-
         XAContext.Tracking.track(
             XAContext.Domain.TrackingTypes().event, {
                 category: "Overlay",
@@ -221,7 +184,7 @@ XA.component.searchOverlay = function($) {
 
     function createOverlay() {
         var overlay = "<div class='search-wrap'>" +
-            "<div class='overlay component'>" +
+            "<div class='search-overlay component'>" +
             "<div class='component-content'>" +
             "<div class='overlay-close'><a tabIndex='1' class='overlay-close-link' href='#'>×</a></div>" +
             "<div class='overlay-inner' tabIndex='2'></div>" +
@@ -264,7 +227,7 @@ XA.component.searchOverlay = function($) {
                 }
             });
         }
-        overlay = $(".search-wrap > .overlay");
+        overlay = $(".search-wrap > .search-overlay");
         overlayContent = overlay.find(".component-content");
         overlaySource = $(".searchOverlay a:not(.initialized), a.searchOverlay:not(.initialized)");
         overlayInner = $(".overlay-inner");
@@ -275,11 +238,6 @@ XA.component.searchOverlay = function($) {
         closeAction = function() {
             hideOverlay(overlay);
             overlayInner.off("blur");
-            setTimeout(function() {
-                if (overlayClickSource != null) {
-                    //overlayClickSource.focus();
-                }
-            }, 0);
         };
 
         if (!overlayPlaceholder) {
@@ -302,13 +260,6 @@ XA.component.searchOverlay = function($) {
                 args.preventDefault();
                 closeAction();
             });
-            /*
-            $(window).on("resize", function() {
-                var height = $(window).height();
-                height = height - marginTop - 0.1 * height;
-                //overlayContent.css("max-height", height + "px");
-            });
-            */
             overlayPlaceholder = true;
         }
 
@@ -323,7 +274,6 @@ XA.component.searchOverlay = function($) {
                 if (!isEditMode()) {
                     event.preventDefault();
                     event.stopPropagation();
-                    preShowOverlay(overlay, overlayContent);
 
                     var uri = this.href;
                     loadOverlay(uri, overlay);
@@ -339,13 +289,6 @@ XA.component.searchOverlay = function($) {
                 }
             });
 
-            // $(this).on('focus', function(args) {
-            //     args.preventDefault();
-            //     if (args.currentTarget === overlayClickSource) {
-            //         overlayClickSource = null;
-            //     }
-            // });
-
             $(this).addClass("initialized");
         });
 
@@ -357,49 +300,3 @@ XA.component.searchOverlay = function($) {
 }(jQuery);
 
 XA.register("searchOverlay", XA.component.searchOverlay);
-
-/*
-;(function(window) {
-
-	'use strict';
-
-	var mainContainer = document.querySelector('.main-wrap'),
-		openCtrl = document.getElementById('btn-search'),
-		closeCtrl = document.getElementById('btn-search-close'),
-		searchContainer = document.querySelector('.search'),
-		inputSearch = searchContainer.querySelector('.search__input');
-
-	function init() {
-		initEvents();	
-	}
-
-	function initEvents() {
-		openCtrl.addEventListener('click', openSearch);
-		closeCtrl.addEventListener('click', closeSearch);
-		document.addEventListener('keyup', function(ev) {
-			// escape key.
-			if( ev.keyCode == 27 ) {
-				closeSearch();
-			}
-		});
-	}
-
-	function openSearch() {
-		mainContainer.classList.add('main-wrap--hide');
-		searchContainer.classList.add('search--open');
-		setTimeout(function() {
-			inputSearch.focus();
-		}, 500);
-	}
-
-	function closeSearch() {
-		mainContainer.classList.remove('main-wrap--hide');
-		searchContainer.classList.remove('search--open');
-		inputSearch.blur();
-		inputSearch.value = '';
-	}
-
-	init();
-
-})(window);
-*/

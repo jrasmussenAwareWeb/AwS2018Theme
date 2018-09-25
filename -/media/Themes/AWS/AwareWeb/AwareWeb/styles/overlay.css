@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* breakpoints */
 @-webkit-keyframes spin {
   0% {
@@ -20,7 +21,7 @@
   }
 }
 
-.overlay {
+.overlay, .search-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -33,11 +34,11 @@
   background: rgba(255, 255, 255, 0.8);
 }
 
-.overlay.component {
+.overlay.component, .search-overlay.component {
   margin: 0;
 }
 
-.overlay > .component-content {
+.overlay > .component-content, .search-overlay > .component-content {
   border-radius: 5px;
   display: inline-block;
   vertical-align: middle;
@@ -51,65 +52,65 @@
   overflow: hidden;
 }
 
-.overlay > .component-content .component {
+.overlay > .component-content .component, .search-overlay > .component-content .component {
   margin: 0;
   margin-top: -10px;
 }
 
-.overlay > .component-content .component.image img {
+.overlay > .component-content .component.image img, .search-overlay > .component-content .component.image img {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 
-.overlay .overlay-inner {
+.overlay .overlay-inner, .search-overlay .overlay-inner {
   min-width: 25px;
   max-height: inherit;
   height: inherit;
   overflow: auto;
 }
 
-.overlay .overlay-inner.overlay-percent {
+.overlay .overlay-inner.overlay-percent, .search-overlay .overlay-inner.overlay-percent {
   max-height: 100%;
   height: auto;
 }
 
-.overlay .overlay-inner #InnerCenter {
+.overlay .overlay-inner #InnerCenter, .search-overlay .overlay-inner #InnerCenter {
   width: auto;
   height: auto;
 }
 
-.overlay .overlay-inner .rich-text {
+.overlay .overlay-inner .rich-text, .search-overlay .overlay-inner .rich-text {
   color: #fff;
 }
 
-.overlay .overlay-inner .rich-text h6 {
+.overlay .overlay-inner .rich-text h6, .search-overlay .overlay-inner .rich-text h6 {
   color: #fff;
   margin-bottom: 2px;
 }
 
-.overlay .overlay-inner .rich-text ul {
+.overlay .overlay-inner .rich-text ul, .search-overlay .overlay-inner .rich-text ul {
   padding: 0;
   margin: 0 0 20px 0.9em;
 }
 
-.overlay .overlay-inner .rich-text li {
+.overlay .overlay-inner .rich-text li, .search-overlay .overlay-inner .rich-text li {
   padding: 0;
   margin: 0 0 0 2px;
 }
 
 @media only screen and (max-width: 991px) {
-  .overlay .overlay-inner .rich-text {
+  .overlay .overlay-inner .rich-text, .search-overlay .overlay-inner .rich-text {
     margin-top: 30px;
     padding: 0 15px 15px;
   }
 }
 
-.overlay .overlay-inner:focus {
+.overlay .overlay-inner:focus, .search-overlay .overlay-inner:focus {
   border: 1px solid #cccccc;
 }
 
-.overlay .overlay-close {
+.overlay .overlay-close, .search-overlay .overlay-close {
   color: #fff;
   cursor: pointer;
   font-size: 30px;
@@ -119,16 +120,16 @@
   z-index: 1;
 }
 
-.overlay .overlay-close-link:focus {
+.overlay .overlay-close-link:focus, .search-overlay .overlay-close-link:focus {
   color: #cccccc;
   outline: none;
 }
 
-.overlay .overlay-close-link:hover {
+.overlay .overlay-close-link:hover, .search-overlay .overlay-close-link:hover {
   color: #cccccc;
 }
 
-.overlay .overlay-close-link {
+.overlay .overlay-close-link, .search-overlay .overlay-close-link {
   text-decoration: none;
   color: #fff;
   font-size: 50px;
@@ -138,7 +139,7 @@
   left: 0;
 }
 
-.overlay > .component-content .modal-title {
+.overlay > .component-content .modal-title, .search-overlay > .component-content .modal-title {
   color: #fff;
   text-align: left;
   background: rgba(14, 20, 42, 0.7);
@@ -147,7 +148,7 @@
   position: relative;
 }
 
-.overlay > .component-content .modal-title h2, .overlay > .component-content .modal-title h3, .overlay > .component-content .modal-title h4 {
+.overlay > .component-content .modal-title h2, .overlay > .component-content .modal-title h3, .overlay > .component-content .modal-title h4, .search-overlay > .component-content .modal-title h2, .search-overlay > .component-content .modal-title h3, .search-overlay > .component-content .modal-title h4 {
   color: #fff;
   font-weight: 600;
   text-align: left;
@@ -155,7 +156,7 @@
   margin-bottom: 0;
 }
 
-.overlay .button {
+.overlay .button, .search-overlay .button {
   margin-bottom: 30px;
 }
 
@@ -266,13 +267,38 @@ body.preview .overlay-page {
   z-index: 9000;
 }
 
-.search-wrap .overlay {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+#wrapper {
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
-.search-wrap .overlay > .component-content {
+#wrapper.wrap-hide {
+  opacity: 0;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+}
+
+.search-wrap .search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  background: transparent;
+}
+
+.search-wrap .search-overlay > .component-content {
   border-radius: 0;
+  background: transparent;
   width: 100%;
   height: 100%;
   height: 100vh;
@@ -281,33 +307,23 @@ body.preview .overlay-page {
   max-width: 100%;
 }
 
-.search-wrap .overlay > .component-content .component {
-  margin-top: -10px;
+.search-wrap .search-overlay > .component-content .overlay-close {
+  display: none;
+  opacity: 0;
+  -webkit-transform: scale3d(0, 0, 0);
+  transform: scale3d(0, 0, 0);
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 1, 0.4, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.4, 1);
 }
 
-.search-wrap .overlay > .component-content .overlay-inner .search-box {
+.search-wrap .search-overlay > .component-content .component {
+  margin: 0;
+}
+
+.search-wrap .search-overlay > .component-content .overlay-inner .search-box {
   color: #dce6e6;
-  background: #2d3535;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 50%;
-  height: 50vh;
-  background: #f0f0f0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
   background-color: #0e142a;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #067385, #0e142a);
@@ -317,40 +333,58 @@ body.preview .overlay-page {
   background: -webkit-linear-gradient(top left, #067385, #0e142a);
   background: linear-gradient(to bottom right, #067385, #0e142a);
   /* Standard syntax */
+  width: 100%;
+  height: 50%;
+  height: 50vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+  -webkit-transition-timing-function: cubic-bezier(0.6, 1, 0.4, 1);
+  transition-timing-function: cubic-bezier(0.6, 1, 0.4, 1);
 }
 
-.search-wrap .overlay > .component-content .overlay-inner .search-box .component-content {
+.search-wrap .search-overlay > .component-content .overlay-inner .search-box .component-content {
   width: 75%;
   max-width: 900px;
   margin: 0 auto;
+  border-bottom: solid 4px #c5cedc;
 }
 
-.search-wrap .overlay > .component-content .overlay-inner .search-box .component-content > label {
+.search-wrap .search-overlay > .component-content .overlay-inner .search-box .component-content > label {
   display: none;
 }
 
-.search-wrap .overlay > .component-content .overlay-inner .search-box .component-content > input {
+.search-wrap .search-overlay > .component-content .overlay-inner .search-box .component-content > input {
   color: #fff;
   font-size: 24px;
   background-color: transparent !important;
   border: none;
-  border-bottom: solid 4px #c5cedc;
   box-shadow: none;
   padding: 10px 0;
   height: auto;
+  width: inherit;
 }
 
-.search-wrap .overlay > .component-content .overlay-inner .search-box .component-content .search-box-button-with-redirect {
+.search-wrap .search-overlay > .component-content .overlay-inner .search-box .component-content .search-box-button-with-redirect {
   color: #c5cedc;
   font-size: 0;
   background: transparent !important;
   border: none;
-  padding: 5px 20px;
+  padding: 0 5px;
   margin: 0 1px 0 5px;
   box-shadow: none;
 }
 
-.search-wrap .overlay > .component-content .overlay-inner .search-box .component-content .search-box-button-with-redirect:before {
+.search-wrap .search-overlay > .component-content .overlay-inner .search-box .component-content .search-box-button-with-redirect:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -365,30 +399,119 @@ body.preview .overlay-page {
   display: block;
 }
 
-.search-wrap .overlay > .component-content .overlay-inner .search-box .component-content .search-box-button-with-redirect:hover {
+.search-wrap .search-overlay > .component-content .overlay-inner .search-box .component-content .search-box-button-with-redirect:hover {
   color: #fff;
 }
 
-.search-wrap .overlay.open {
+.search-wrap .search-overlay > .component-content .overlay-inner .rich-text {
+  color: #c5cedc;
+  background-color: #0e142a;
+  width: 100%;
+  height: 50%;
+  height: 50vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+  -webkit-transition-timing-function: cubic-bezier(0.6, 1, 0.4, 1);
+  transition-timing-function: cubic-bezier(0.6, 1, 0.4, 1);
+}
+
+.search-wrap .search-overlay > .component-content .overlay-inner .rich-text .component-content {
+  width: 75%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.search-wrap .search-overlay > .component-content .overlay-inner .rich-text .component-content a {
+  color: #c5cedc;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.search-wrap .search-overlay > .component-content .overlay-inner .rich-text .component-content a:hover {
+  color: #fff;
+}
+
+.search-wrap .search-overlay > .component-content .overlay-inner .rich-text .component-content a:before {
+  content: "•";
+  font-size: 1.2em;
+  vertical-align: middle;
+  left: -7px;
+  position: relative;
+}
+
+.search-wrap .search-overlay > .component-content .overlay-inner .rich-text .component-content li:first-child {
+  padding-left: 0;
+}
+
+.search-wrap .search-overlay > .component-content .overlay-inner .rich-text .component-content li:first-child a:before {
+  content: none;
+}
+
+.search-wrap .search-overlay > .component-content .overlay-inner .rich-text .component-content h3 {
+  color: #fff;
+  color: #c5cedc;
+}
+
+.search-wrap .search-overlay.open {
   opacity: 1;
   height: 100%;
   height: 100vh;
+  visibility: visible;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
-.search-wrap .overlay.open > .component-content .overlay-inner .search-box {
+.search-wrap .search-overlay.open > .component-content .overlay-close {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.search-wrap .search-overlay.open > .component-content .overlay-inner {
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+}
+
+.search-wrap .search-overlay.open > .component-content .overlay-inner .search-box {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.search-wrap .search-overlay.open > .component-content .overlay-inner .rich-text {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.search-wrap .search-overlay.open > .component-content .overlay-inner.active {
+  opacity: 1;
+}
+
+.search-wrap .search-overlay.open > .component-content .overlay-inner.active .search-box, .search-wrap .search-overlay.open > .component-content .overlay-inner.active .rich-text {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 @media only screen and (min-width: 768px) {
-  .search-wrap .overlay {
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  .search-wrap .overlay > .component-content .overlay-inner .search-box .component-content > input {
+  .search-wrap .search-overlay > .component-content .overlay-inner .search-box .component-content > input {
     font-size: 36px;
   }
-  .search-wrap .overlay > .component-content .overlay-inner .search-box .component-content .search-box-button-with-redirect:before {
+  .search-wrap .search-overlay > .component-content .overlay-inner .search-box .component-content .search-box-button-with-redirect:before {
     font-size: 36px;
+  }
+  .search-wrap .search-overlay > .component-content .overlay-inner .search-box .component-content .rich-text li {
+    font-size: 18px;
   }
 }
