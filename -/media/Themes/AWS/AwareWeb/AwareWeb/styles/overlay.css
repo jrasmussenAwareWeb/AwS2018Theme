@@ -95,7 +95,11 @@
 }
 
 .overlay .overlay-inner .rich-text ul.list-inline, .search-overlay .overlay-inner .rich-text ul.list-inline {
-  margin-right: 0;
+  margin-left: 0;
+}
+
+.overlay .overlay-inner .rich-text ul.list-inline li, .search-overlay .overlay-inner .rich-text ul.list-inline li {
+  margin: 0;
 }
 
 .overlay .overlay-inner .rich-text li, .search-overlay .overlay-inner .rich-text li {
@@ -469,17 +473,17 @@ body.preview .overlay-page {
   margin: 0 auto;
 }
 
-.search-overlay > .component-content .overlay-inner .rich-text .component-content a {
+.search-overlay > .component-content .overlay-inner .rich-text .component-content ul.list-inline li a {
   color: #c5cedc;
   text-decoration: none;
   padding-left: 10px;
 }
 
-.search-overlay > .component-content .overlay-inner .rich-text .component-content a:hover {
+.search-overlay > .component-content .overlay-inner .rich-text .component-content ul.list-inline li a:hover {
   color: #fff;
 }
 
-.search-overlay > .component-content .overlay-inner .rich-text .component-content a:before {
+.search-overlay > .component-content .overlay-inner .rich-text .component-content ul.list-inline li a:before {
   content: "•";
   font-size: 1.2em;
   vertical-align: middle;
@@ -487,11 +491,15 @@ body.preview .overlay-page {
   position: relative;
 }
 
-.search-overlay > .component-content .overlay-inner .rich-text .component-content li:first-child {
+.search-overlay > .component-content .overlay-inner .rich-text .component-content ul.list-inline li:first-child {
   padding-left: 0;
 }
 
-.search-overlay > .component-content .overlay-inner .rich-text .component-content li:first-child a:before {
+.search-overlay > .component-content .overlay-inner .rich-text .component-content ul.list-inline li:first-child a {
+  padding-left: 0;
+}
+
+.search-overlay > .component-content .overlay-inner .rich-text .component-content ul.list-inline li:first-child a:before {
   content: none;
 }
 
@@ -533,17 +541,17 @@ body.preview .overlay-page {
     right: 10px;
   }
   .search-overlay > .component-content .overlay-inner .search-box {
-    height: 25%;
-    height: 25vh;
+    height: 30%;
+    height: 30vh;
   }
   .search-overlay > .component-content .overlay-inner .search-box .component-content {
     width: 85%;
     margin-top: 15px;
   }
   .search-overlay > .component-content .overlay-inner .rich-text {
-    height: 75%;
-    height: 75vh;
-    top: 75%;
+    height: 70%;
+    height: 70vh;
+    top: 30%;
   }
   .search-overlay > .component-content .overlay-inner .rich-text .component-content {
     width: 100%;
