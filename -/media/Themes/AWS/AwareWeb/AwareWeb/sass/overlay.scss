@@ -69,7 +69,11 @@
             ul {
                 padding: 0;
                 margin: 0 0 20px 0.9em;
+                &.list-inline {
+                    margin-right: 0;
+                }
             }
+            
             li {
                 padding: 0;
                 margin: 0 0 0 2px;
@@ -432,6 +436,31 @@ body.preview {
                 }
                 .rich-text{
                     opacity: 1;
+                }
+            }
+        }
+    }
+    @include respond-to(all-phone) {
+        >.component-content {
+            .overlay-close {
+                right: 10px;
+            }
+            .overlay-inner{
+                .search-box{
+                    height: 25%;
+                    height: 25vh;
+                    .component-content {
+                        width: 85%;
+                        margin-top: 15px;
+                    }
+                }       
+                .rich-text{
+                    height: 75%;
+                    height: 75vh;
+                    top: 75%;
+                    .component-content {
+                        width: 100%;
+                    }
                 }
             }
         }
