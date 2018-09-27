@@ -297,7 +297,7 @@ XA.component.overlay = function($) {
             overlayInner.off("blur");
             setTimeout(function() {
                 if (overlayClickSource != null) {
-                    //overlayClickSource.focus();
+                    overlayClickSource.focus();
                 }
             }, 0);
         };
@@ -360,7 +360,7 @@ XA.component.overlay = function($) {
             });
 
             // $(this).on('focus', function(args) {
-            //     args.preventDefault();
+            //     //args.preventDefault();
             //     if (args.currentTarget === overlayClickSource) {
             //         overlayClickSource = null;
             //     }

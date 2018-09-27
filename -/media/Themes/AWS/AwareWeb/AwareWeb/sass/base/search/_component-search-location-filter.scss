@@ -44,6 +44,8 @@
         overflow-y: auto;
     }
     .tt-suggestion {
+        color: $text-black;
+        font-size: 15px;
         padding: 4px 10px;
         overflow: hidden;
         &:last-child {
