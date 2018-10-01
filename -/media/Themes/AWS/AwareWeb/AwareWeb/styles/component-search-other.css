@@ -1126,6 +1126,8 @@
   position: relative;
   padding: 14px 0;
   box-sizing: border-box;
+  /*Ticket#173*/
+  /*Ticket#173*/
 }
 
 @keyframes spin {
@@ -1304,6 +1306,10 @@
   background-color: #f5f5f5;
   opacity: 0.8;
   z-index: 10;
+}
+
+.search-box.loading-in-progress .tt-dropdown-menu {
+  display: none !important;
 }
 
 .search-box.hide-button .search-box-button {

@@ -11,6 +11,12 @@
     padding: 14px 0;
     box-sizing: border-box;
 
+    /*Ticket#173*/
+    &.loading-in-progress {
+        .tt-dropdown-menu {display:none !important}
+    }
+    /*Ticket#173*/
+
     &.hide-button {
         .search-box-button {
             display: none;
