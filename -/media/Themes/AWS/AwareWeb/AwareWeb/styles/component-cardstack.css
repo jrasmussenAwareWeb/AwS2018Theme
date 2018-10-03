@@ -65,7 +65,7 @@
   padding-left: 40px;
   position: relative;
   float: right;
-  z-index: 10;
+  z-index: 9;
 }
 
 .cardStack .headings > ul {
