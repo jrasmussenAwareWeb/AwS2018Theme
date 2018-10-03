@@ -1,0 +1,187 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/mixins";
+@import "base/fontawesome/variables";
+
+@keyframes fadeInDropShadow{
+    0%{
+        -webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,0);
+        box-shadow: 0 0 10px 3px rgba(0,0,0,0);
+    }
+    100%{
+        -webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,.5);
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.5);
+    }
+}
+.cardStack {
+    margin-top: 30px;
+    position:relative;
+
+    .clearfix:after {
+	    content: ".";
+	    display: block;
+	    clear: both;
+	    visibility: hidden;
+	    line-height: 0;
+	    height: 0;
+    } 
+    .clearfix{display: block;}
+    * html .clearfix {height: 1%;}
+
+    .headings {
+        width:28%;
+        padding-left: 40px;
+        position: relative;
+        float:right;
+        z-index:10;
+        > ul{
+            list-style: none;
+            > li {
+                > a {
+                    font-size: 24px;
+                    color: #222;
+                    text-decoration: none;
+                    position: relative;
+                    padding: 0 0 0 25px;
+                    span {
+                        font-size:24px;
+                        position:absolute;
+                        left: 0;
+                        bottom: -1px;
+                        transition: all .3s ease-in;
+                        width:0;
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            height: 1px;
+                            left:1px;
+                            right: 0;
+                            bottom:16px;
+                            background: #222;
+                        }
+                    }
+                }
+                &.active > a {
+                    color:#50d2c2;
+                    span {
+                        left: -100px;
+                        width: 100px;
+                        &:after {
+                            background: #50d2c2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pager {
+        display: none;
+        ul{
+            text-align:center;
+            > li{
+                display: inline-block;
+                margin:0 3px;
+                cursor:pointer;
+                > span{
+                    display: block;
+                    /*width: 8px;
+                    height: 8px;*/
+                    width:32px;
+                    height:20px;
+                    border-radius: 4px;
+                    background: #666;
+                }
+                &.active {
+                    > span {
+                        background: #0b8592;
+                    }
+                }
+            }
+        }
+    }
+    .images {
+        position:relative;
+        float: left;
+        width:71%;
+        > ul{
+            position:relative;
+            z-index:0;
+            height: 575px; /* Max height of image */
+            list-style: none;
+            > li{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 65%;
+                max-width: 525px; /* max width of image to maintain max height above */
+                
+                &:first-child{z-index:10000;} /* keep 1st item on top during initialization */
+                img{
+                    border:1px solid #ccc;
+                    transform-origin: 0 50%;
+                    opacity: .9;
+                    width: 100%;
+                    display: block;
+                }
+                &.active img {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &.awsInitialized .images > ul > li img{
+		animation: fadeInDropShadow .3s ease-in;
+		-webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,.5);
+		box-shadow: 0 0 10px 3px rgba(0,0,0,.5);
+    }
+
+    @include respond-to(phone-horizontal) {
+        .headings, .images {
+            float:none;width: 100%;
+        }
+        .headings {
+            padding: 0;
+            margin:0 0 20px;
+            > ul {
+                > li {
+                    display: none;
+                    > a {
+                        padding:0;
+                        span {
+                            display: none;
+                        }
+                    }
+                    &.active {
+                        display: block;
+                        text-align:center;
+                    }
+                }
+            }
+        }
+        .pager {
+            display:block;
+        }
+        .images {
+            padding: 0 15px;
+            ul {
+                li {
+                    right:inherit !important;
+                    width: 100%;
+                    opacity: 0;
+                    transition: opacity 300ms ease-in;
+                    position: absolute;
+                    margin: 0 auto;
+                    img {
+                        transform: scale(1) !important;
+                        opacity: 1;
+                        margin: 0 auto;
+                    }
+                    &.active {
+                        opacity: 1;
+                        position:relative;
+                    }
+                }
+            }
+        }
+    }
+}
