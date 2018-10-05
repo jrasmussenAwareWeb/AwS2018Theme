@@ -726,27 +726,28 @@
   z-index: 10;
 }
 
-.trending-wrapper .list-inline.trending > .component-content ul li {
+.trending-wrapper .list-inline.trending > .component-content ul li, .trending-wrapper .list-inline.trending > .component-content ul li:first-child {
   padding-left: 10px;
 }
 
 @media only screen and (min-width: 1200px) {
-  .trending-wrapper .list-inline.trending > .component-content ul li {
+  .trending-wrapper .list-inline.trending > .component-content ul li, .trending-wrapper .list-inline.trending > .component-content ul li:first-child {
     padding-left: 20px;
   }
 }
 
-.trending-wrapper .list-inline.trending > .component-content ul li:before {
+.trending-wrapper .list-inline.trending > .component-content ul li:before, .trending-wrapper .list-inline.trending > .component-content ul li:first-child:before {
   content: none;
 }
 
-.trending-wrapper .list-inline.trending > .component-content ul li a {
+.trending-wrapper .list-inline.trending > .component-content ul li a, .trending-wrapper .list-inline.trending > .component-content ul li:first-child a {
   font-size: 16px;
   color: #FFFFFF;
   text-decoration: none;
+  padding-left: 10px;
 }
 
-.trending-wrapper .list-inline.trending > .component-content ul li a:before {
+.trending-wrapper .list-inline.trending > .component-content ul li a:before, .trending-wrapper .list-inline.trending > .component-content ul li:first-child a:before {
   content: none;
 }
 

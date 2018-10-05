@@ -266,6 +266,7 @@ body.preview {
     width: 100%;
     opacity: 0;
     background: transparent;
+    display: -ms-flexbox;
     display: flex;
     @include transition(all .2s ease-in);
     >.component-content {
@@ -310,6 +311,7 @@ body.preview {
                 height: 50vh;
                 justify-content: center;
                 align-items: center;
+                display: -ms-flexbox;
                 display: flex;
                 position: absolute;
                 opacity: 0;
@@ -327,7 +329,7 @@ body.preview {
                 .component-content{
                     width: 75%;
                     max-width: 900px;
-                    margin: 0 auto;
+                    //margin: 0 auto;
                     border-bottom: solid 4px $bg-light-blue;
                 }
                 
@@ -371,6 +373,7 @@ body.preview {
                 height: 50vh;
                 justify-content: center;
                 align-items: center;
+                display: -ms-flexbox;
                 display: flex;
                 position: absolute;
                 top: 50%;
@@ -384,7 +387,7 @@ body.preview {
                 .component-content{
                     width: 75%;
                     max-width: 900px;
-                    margin: 0 auto;
+                    //margin: 0 auto;
                     
                     ul.list-inline{
                         li {
@@ -435,6 +438,7 @@ body.preview {
         opacity: 1;
         height: 100%;
         height: 100vh;
+        display: -ms-flexbox;
         display: flex;
         visibility: visible;
         @include transition(all .4s ease-in);

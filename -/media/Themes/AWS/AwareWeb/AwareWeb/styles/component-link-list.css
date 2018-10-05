@@ -294,6 +294,14 @@
   }
 }
 
+.link-list.list-inline > .component-content ul li:first-child {
+  margin-left: 0;
+}
+
+.link-list.list-inline > .component-content ul li:first-child a {
+  padding-left: 0;
+}
+
 .link-list.list-inline > .component-content ul li:first-child a:before {
   content: none;
 }

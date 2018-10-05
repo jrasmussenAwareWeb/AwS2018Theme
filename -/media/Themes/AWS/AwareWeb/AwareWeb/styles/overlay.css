@@ -303,8 +303,8 @@ body.preview .overlay-page {
   width: 100%;
   opacity: 0;
   background: transparent;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -368,8 +368,8 @@ body.preview .overlay-page {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   position: absolute;
   opacity: 0;
@@ -393,7 +393,6 @@ body.preview .overlay-page {
 .search-overlay > .component-content .overlay-inner .search-box .component-content {
   width: 75%;
   max-width: 900px;
-  margin: 0 auto;
   border-bottom: solid 4px #c5cedc;
 }
 
@@ -452,8 +451,8 @@ body.preview .overlay-page {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   position: absolute;
   top: 50%;
@@ -470,7 +469,6 @@ body.preview .overlay-page {
 .search-overlay > .component-content .overlay-inner .rich-text .component-content {
   width: 75%;
   max-width: 900px;
-  margin: 0 auto;
 }
 
 .search-overlay > .component-content .overlay-inner .rich-text .component-content ul.list-inline li a {
@@ -520,8 +518,8 @@ body.preview .overlay-page {
   opacity: 1;
   height: 100%;
   height: 100vh;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   visibility: visible;
   -webkit-transition: all 0.4s ease-in;
