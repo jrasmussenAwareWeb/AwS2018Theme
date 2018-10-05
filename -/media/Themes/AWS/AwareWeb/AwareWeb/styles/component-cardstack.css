@@ -43,7 +43,7 @@
   position: relative;
 }
 
-.cardStack .clearfix:after {
+.cardStack.clearfix:after {
   content: ".";
   display: block;
   clear: both;
@@ -52,11 +52,11 @@
   height: 0;
 }
 
-.cardStack .clearfix {
+.cardStack.clearfix {
   display: block;
 }
 
-.cardStack * html .clearfix {
+* html .cardStack.clearfix {
   height: 1%;
 }
 
@@ -128,13 +128,16 @@
 }
 
 .cardStack .pager ul > li > span {
-  display: block;
-  /*width: 8px;
-                    height: 8px;*/
-  width: 32px;
-  height: 20px;
-  border-radius: 4px;
+  /*display:block;
+                    /*width: 8px;
+                    height: 8px;
+                    border-radius:4px;*/
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
   background: #666;
+  padding: 0;
 }
 
 .cardStack .pager ul > li.active > span {
@@ -150,8 +153,6 @@
 .cardStack .images > ul {
   position: relative;
   z-index: 0;
-  height: 575px;
-  /* Max height of image */
   list-style: none;
 }
 
@@ -160,8 +161,6 @@
   top: 0;
   right: 0;
   width: 65%;
-  max-width: 525px;
-  /* max width of image to maintain max height above */
   /* keep 1st item on top during initialization */
 }
 
@@ -189,7 +188,36 @@
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (min-width: 992px) {
+  .cardStack .images > ul {
+    height: 575px;
+    /*Max height of image */
+  }
+  .cardStack .images > ul > li {
+    max-width: 525px;
+    /* max width of image to maintain max height above */
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .cardStack .headings {
+    width: 32%;
+  }
+  .cardStack .headings > ul > li > a {
+    font-size: 18px;
+  }
+  .cardStack .headings > ul > li > a span {
+    font-size: 18px;
+  }
+  .cardStack .headings > ul > li > a span:after {
+    bottom: 12px;
+  }
+  .cardStack .images {
+    width: 67%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .cardStack .headings, .cardStack .images {
     float: none;
     width: 100%;
@@ -202,6 +230,7 @@
     display: none;
   }
   .cardStack .headings > ul > li > a {
+    font-size: 24px;
     padding: 0;
   }
   .cardStack .headings > ul > li > a span {
