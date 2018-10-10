@@ -6,9 +6,17 @@
     margin-left: 0;
     margin-right: 0;
     max-width: none;
-    
-    /*> div {
-        padding-left: 0;
-        padding-right: 0
-    }*/
+}
+
+.sitemap {
+    .row.column-splitter {
+        @include respond-to(all-phone){
+            margin-left:15px;
+        }
+        .col-xs-6 {
+            @include respond-to(phone){
+                width:100%;
+            }
+        }
+    }
 }

@@ -127,6 +127,20 @@
   padding-left: 10px;
 }
 
+@media only screen and (max-width: 767px) {
+  .navigation.navigation-sitemap.indent-top {
+    margin-top: 15px;
+  }
+}
+
+.navigation.navigation-sitemap .submenu > ul {
+  padding-left: 0;
+}
+
+.navigation.navigation-sitemap .rel-level1 > .navigation-title > a {
+  font-size: 18px;
+}
+
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -777,28 +791,19 @@
   color: #cc0000;
 }
 
-.navigation.sitemap-navigation .level2 a {
-  position: relative;
-  padding-left: 10px;
-}
-
-.navigation.sitemap-navigation .level2 a:before {
-  font-size: 14px;
-  font-size: 1.4rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: -.125em;
-  font-family: 'Font Awesome 5 Pro';
-  -webkit-transform: translateY(-50%) scale(1, -1);
-  -ms-transform: translateY(-50%) scale(1, -1);
-  transform: translateY(-50%) scale(1, -1);
-  position: absolute;
-  content: "\f064";
-  top: 50%;
-  left: -8px;
-}
+/*100918 setting this via a style doesnt work for some reason (doesnt output class) -see variants - Jen
+.navigation.sitemap-navigation {
+    .level2 a {
+        position: relative;
+        padding-left: 10px;
+        &:before {
+            @include font-size(1.4);
+            @include fa-icon();
+            transform: translateY(-50%) scale(1, -1);
+            position: absolute;
+            content: fa-content($fa-var-share);
+            top: 50%;
+            left: -8px;
+        }
+    }
+}*/

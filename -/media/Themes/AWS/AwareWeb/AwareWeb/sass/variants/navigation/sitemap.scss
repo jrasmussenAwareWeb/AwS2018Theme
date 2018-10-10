@@ -1,0 +1,13 @@
+&.navigation-sitemap {
+    &.indent-top {
+        @include respond-to(all-phone){
+            margin-top:15px;
+        }
+    }
+    .submenu > ul {
+        padding-left: 0;
+    }
+    .rel-level1 > .navigation-title > a {
+        font-size:18px;
+    }
+}

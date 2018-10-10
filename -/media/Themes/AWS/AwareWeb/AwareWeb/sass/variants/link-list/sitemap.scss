@@ -1,0 +1,27 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+&.sitemap {
+    @include respond-to(all-phone){
+        margin-left:15px;
+    }
+    >.component-content {
+        li {
+            a {
+                text-decoration:none;
+                padding-left:0;
+                @include raleway-font-stack();
+                font-weight:500;
+                font-size:18px;
+                color:$text-black;
+                padding:3px 5px 3px 0;
+                &::before {
+                    content:none;
+                }
+                &:hover, &:active, &:focus {
+                    border-bottom:0;
+                }
+            }
+        }
+    }
+}

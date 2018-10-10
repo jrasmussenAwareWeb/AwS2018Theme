@@ -25,14 +25,22 @@
   margin-left: 0;
   margin-right: 0;
   max-width: none;
-  /*> div {
-        padding-left: 0;
-        padding-right: 0
-    }*/
 }
 
 .row.column-splitter:before, .row.column-splitter:after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media only screen and (max-width: 767px) {
+  .sitemap .row.column-splitter {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .sitemap .row.column-splitter .col-xs-6 {
+    width: 100%;
+  }
 }
