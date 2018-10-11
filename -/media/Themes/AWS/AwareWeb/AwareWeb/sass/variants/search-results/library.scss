@@ -65,40 +65,77 @@
                     top:0;
                     left:0;
                     text-align:center;
-                    margin:17% auto !important;
+                    margin:20% auto 0 !important;
                     opacity: 1;
                     z-index:1;
 
-                    @include respond-to(all-phone) {
+                    /*@include respond-to(all-phone) {
                         margin:20% auto !important;
-                    }
+                    }*/
 
-                    &.Case.Study {
+                    &.Case.Study, &.Program, &.White.Paper, &.eBook, &.Video {
+                        &:before, &:after {
+                            display:block;
+                            color:$text-white;
+                            text-transform:uppercase;
+                            font-weight:bold;
+                            font-size:14px;
+                            @include opensans-font-stack();
+                            line-height:1;
+                        }
+                        &:before {
+                            @include fa-icon();
+                            content: fa-content($fa-var-file-alt);
+                            font-size:3.75em;
+                        }
                         &:after {
-                            content:url('/-/media/Project/AWS/Images/resources/icons/icon-case-study.png');
+                            margin-top:5px;
+                        }
+                    }
+                    &.Case.Study {
+                        &:before {
+                            content: fa-content($fa-var-file-alt);
+                            //content:url('/-/media/Project/AWS/Images/resources/icons/icon-case-study.png');
+                        }
+                        &:after {
+                            content:"Case Study";
                         }
                     }
                     &.Program { 
+                        &:before {
+                            content: fa-content($fa-var-file-contract);
+                            //content:url('/-/media/Project/AWS/Images/resources/icons/icon-program.png');
+                        }
                         &:after {
-                            content:url('/-/media/Project/AWS/Images/resources/icons/icon-program.png');
+                            content:"Program";
                         }
                     }
 
                     &.White.Paper {
+                        &:before {
+                            content: fa-content($fa-var-file);
+                            //content:url('/-/media/Project/AWS/Images/resources/icons/icon-whitepaper.png');
+                        }
                         &:after {
-                            content:url('/-/media/Project/AWS/Images/resources/icons/icon-whitepaper.png');
+                            content:"White Paper";
                         }
                     }
-
                     &.eBook {
+                        &:before {
+                            content: fa-content($fa-var-book);
+                            //content:url('/-/media/Project/AWS/Images/resources/icons/icon-ebook.png');
+                        }
                         &:after {
-                            content:url('/-/media/Project/AWS/Images/resources/icons/icon-ebook.png');
+                            content:"eBook";
                         }
                     }
-
                     &.Video {
+                        &:before {
+                            content: fa-content($fa-var-play-circle);
+                            //content:url('/-/media/Project/AWS/Images/resources/icons/icon-video.png');
+                        }
                         &:after {
-                            content:url('/-/media/Project/AWS/Images/resources/icons/icon-video.png');
+                            content:"Video";
                         }
                     }
                 }

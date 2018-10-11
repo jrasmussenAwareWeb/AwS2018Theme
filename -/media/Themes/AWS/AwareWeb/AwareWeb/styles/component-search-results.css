@@ -488,35 +488,80 @@
   top: 0;
   left: 0;
   text-align: center;
-  margin: 17% auto !important;
+  margin: 20% auto 0 !important;
   opacity: 1;
   z-index: 1;
+  /*@include respond-to(all-phone) {
+                        margin:20% auto !important;
+                    }*/
 }
 
-@media only screen and (max-width: 767px) {
-  .search-results.library .search-result-list > li .result-image .field-type-icon {
-    margin: 20% auto !important;
-  }
+.search-results.library .search-result-list > li .result-image .field-type-icon.Case.Study:before, .search-results.library .search-result-list > li .result-image .field-type-icon.Case.Study:after, .search-results.library .search-result-list > li .result-image .field-type-icon.Program:before, .search-results.library .search-result-list > li .result-image .field-type-icon.Program:after, .search-results.library .search-result-list > li .result-image .field-type-icon.White.Paper:before, .search-results.library .search-result-list > li .result-image .field-type-icon.White.Paper:after, .search-results.library .search-result-list > li .result-image .field-type-icon.eBook:before, .search-results.library .search-result-list > li .result-image .field-type-icon.eBook:after, .search-results.library .search-result-list > li .result-image .field-type-icon.Video:before, .search-results.library .search-result-list > li .result-image .field-type-icon.Video:after {
+  display: block;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+  line-height: 1;
+}
+
+.search-results.library .search-result-list > li .result-image .field-type-icon.Case.Study:before, .search-results.library .search-result-list > li .result-image .field-type-icon.Program:before, .search-results.library .search-result-list > li .result-image .field-type-icon.White.Paper:before, .search-results.library .search-result-list > li .result-image .field-type-icon.eBook:before, .search-results.library .search-result-list > li .result-image .field-type-icon.Video:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f15c";
+  font-size: 3.75em;
+}
+
+.search-results.library .search-result-list > li .result-image .field-type-icon.Case.Study:after, .search-results.library .search-result-list > li .result-image .field-type-icon.Program:after, .search-results.library .search-result-list > li .result-image .field-type-icon.White.Paper:after, .search-results.library .search-result-list > li .result-image .field-type-icon.eBook:after, .search-results.library .search-result-list > li .result-image .field-type-icon.Video:after {
+  margin-top: 5px;
+}
+
+.search-results.library .search-result-list > li .result-image .field-type-icon.Case.Study:before {
+  content: "\f15c";
 }
 
 .search-results.library .search-result-list > li .result-image .field-type-icon.Case.Study:after {
-  content: url("/-/media/Project/AWS/Images/resources/icons/icon-case-study.png");
+  content: "Case Study";
+}
+
+.search-results.library .search-result-list > li .result-image .field-type-icon.Program:before {
+  content: "\f56c";
 }
 
 .search-results.library .search-result-list > li .result-image .field-type-icon.Program:after {
-  content: url("/-/media/Project/AWS/Images/resources/icons/icon-program.png");
+  content: "Program";
+}
+
+.search-results.library .search-result-list > li .result-image .field-type-icon.White.Paper:before {
+  content: "\f15b";
 }
 
 .search-results.library .search-result-list > li .result-image .field-type-icon.White.Paper:after {
-  content: url("/-/media/Project/AWS/Images/resources/icons/icon-whitepaper.png");
+  content: "White Paper";
+}
+
+.search-results.library .search-result-list > li .result-image .field-type-icon.eBook:before {
+  content: "\f02d";
 }
 
 .search-results.library .search-result-list > li .result-image .field-type-icon.eBook:after {
-  content: url("/-/media/Project/AWS/Images/resources/icons/icon-ebook.png");
+  content: "eBook";
+}
+
+.search-results.library .search-result-list > li .result-image .field-type-icon.Video:before {
+  content: "\f144";
 }
 
 .search-results.library .search-result-list > li .result-image .field-type-icon.Video:after {
-  content: url("/-/media/Project/AWS/Images/resources/icons/icon-video.png");
+  content: "Video";
 }
 
 .search-results.library .search-result-list > li .result-image:hover {
