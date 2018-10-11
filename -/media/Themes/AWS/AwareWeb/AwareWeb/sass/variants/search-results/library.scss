@@ -40,14 +40,12 @@
                 position:relative;
                 overflow: hidden;
                 
-                .field-customimage {
+                img {
                     line-height:1;
                     position:relative;
                     overflow: hidden;
-                    img {
-                        width:100%;
-                        height:auto;
-                    }
+                    width:100%;
+                    height:auto;
                 }
                 .field-type {
                     background:rgba(11,30,41,0.7);
@@ -69,9 +67,9 @@
                     opacity: 1;
                     z-index:1;
 
-                    /*@include respond-to(all-phone) {
+                    @include respond-to(all-phone) {
                         margin:20% auto !important;
-                    }*/
+                    }
 
                     &.Case.Study, &.Program, &.White.Paper, &.eBook, &.Video {
                         &:before, &:after {
@@ -85,7 +83,6 @@
                         }
                         &:before {
                             @include fa-icon();
-                            content: fa-content($fa-var-file-alt);
                             font-size:3.75em;
                         }
                         &:after {
@@ -141,10 +138,8 @@
                 }
                 &:hover {
                     overflow: hidden;
-                    .field-customimage {
-                        img {
-                            transform: scale(1.2);
-                        }
+                    img {
+                        transform: scale(1.2);
                     }
                     .field-type {
                         background:rgba(255,255,255,0.0);
@@ -152,6 +147,9 @@
                     .field-type-icon {
                         transform: scale(.8);
                         opacity: 0;
+                    }
+                    .field-type, .field-type-icon {
+                        z-index:-1; /*so the link will show for files*/
                     }
                 }
             }
@@ -204,7 +202,7 @@
                 .result-body {
                     min-height: 160px;
                 }
-            }
+            } 
             @include respond-to(tablet) {
                 width: 50%;
                 .result-body {

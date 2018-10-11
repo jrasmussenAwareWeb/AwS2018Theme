@@ -460,13 +460,10 @@
   overflow: hidden;
 }
 
-.search-results.library .search-result-list > li .result-image .field-customimage {
+.search-results.library .search-result-list > li .result-image img {
   line-height: 1;
   position: relative;
   overflow: hidden;
-}
-
-.search-results.library .search-result-list > li .result-image .field-customimage img {
   width: 100%;
   height: auto;
 }
@@ -491,9 +488,12 @@
   margin: 20% auto 0 !important;
   opacity: 1;
   z-index: 1;
-  /*@include respond-to(all-phone) {
-                        margin:20% auto !important;
-                    }*/
+}
+
+@media only screen and (max-width: 767px) {
+  .search-results.library .search-result-list > li .result-image .field-type-icon {
+    margin: 20% auto !important;
+  }
 }
 
 .search-results.library .search-result-list > li .result-image .field-type-icon.Case.Study:before, .search-results.library .search-result-list > li .result-image .field-type-icon.Case.Study:after, .search-results.library .search-result-list > li .result-image .field-type-icon.Program:before, .search-results.library .search-result-list > li .result-image .field-type-icon.Program:after, .search-results.library .search-result-list > li .result-image .field-type-icon.White.Paper:before, .search-results.library .search-result-list > li .result-image .field-type-icon.White.Paper:after, .search-results.library .search-result-list > li .result-image .field-type-icon.eBook:before, .search-results.library .search-result-list > li .result-image .field-type-icon.eBook:after, .search-results.library .search-result-list > li .result-image .field-type-icon.Video:before, .search-results.library .search-result-list > li .result-image .field-type-icon.Video:after {
@@ -516,7 +516,6 @@
   line-height: 1;
   vertical-align: -.125em;
   font-family: 'Font Awesome 5 Pro';
-  content: "\f15c";
   font-size: 3.75em;
 }
 
@@ -568,7 +567,7 @@
   overflow: hidden;
 }
 
-.search-results.library .search-result-list > li .result-image:hover .field-customimage img {
+.search-results.library .search-result-list > li .result-image:hover img {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -583,6 +582,11 @@
   -ms-transform: scale(0.8);
   transform: scale(0.8);
   opacity: 0;
+}
+
+.search-results.library .search-result-list > li .result-image:hover .field-type, .search-results.library .search-result-list > li .result-image:hover .field-type-icon {
+  z-index: -1;
+  /*so the link will show for files*/
 }
 
 .search-results.library .search-result-list > li .result-body {
