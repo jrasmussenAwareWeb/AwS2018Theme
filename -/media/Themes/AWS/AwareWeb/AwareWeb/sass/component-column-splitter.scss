@@ -14,7 +14,8 @@
             margin-left:15px;
         }
         .col-xs-6 {
-            @include respond-to(phone){
+            //@include respond-to(phone){
+                @media only screen and (max-width: 479px) {
                 width:100%;
             }
         }

@@ -39,7 +39,7 @@
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 479px) {
   .sitemap .row.column-splitter .col-xs-6 {
     width: 100%;
   }
