@@ -1,0 +1,146 @@
+//AwS - same as variants/search-results/blog with minimal adjustments [ li width/margin]
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/mixins";
+@import "base/fontawesome/variables";
+
+.related-resources {
+    padding:0;
+    @include respond-to(all-phone) {
+        padding:0 15px !important;
+    }
+    .title {
+
+        h1, h2, h3, h4, h5, h6 {
+            @include raleway-font-stack();
+            font-weight:400;
+        }
+    }
+    .search-result-list {
+        width: 100%;
+        border: none;
+        @include clearfix();
+
+        li {
+            display: block;
+            float: left;
+            width:23%;
+            margin-right:2%;
+            box-sizing: border-box;
+            border: none;
+            position: relative;
+            height: 100%;
+            /*padding: 0 15px;*/
+            padding:0;
+            /*@include respond-to(tablet) {
+                padding: 0 15px;
+            }*/
+            @include respond-to(all-phone) {
+                width:100%;
+            }
+            .blog-item {
+                min-height: 120px;
+                padding: 0 15px 15px;
+                margin-bottom: 30px;
+                border-top: solid 1px #eaeaea;
+                @include box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.3), $inset: false);
+                .blog-date {
+                    font-size: $font-small;
+                    display: inline;
+                    padding-right: 10px;
+                    border-right:solid 1px $text-gray-light;
+        
+                    &:before {
+                        @include fa-icon();
+                        content: fa-content($fa-var-calendar);
+                        color: $text-gray-light;
+                        font-size: $font-medium;
+                        margin-right: 5px;
+                    }
+                }
+                .blog-author {
+                    font-size: $font-small;
+                    display: inline;
+                    padding-left: 10px;
+                }
+                .field-excerpt {
+                    font-size: $font-small;
+                }
+            }
+            .field-title {
+                display: block;
+                padding: 5px 0 15px 0;
+                text-align: left;
+                
+                a {
+                    @include raleway-font-stack();
+                    font-size: $font-medium;
+                    color:$text-red;
+                    line-height: 24px;
+                    text-decoration: none;
+                    font-weight: normal;
+        
+                    &:hover {
+                        color: $text-basic-active;
+                    }
+                }
+            }
+            &:hover {
+                border: none;
+            }
+            .blog-image {
+                margin: 0 -15px 15px -15px;
+        
+                img {
+                    width: 100%;
+                    //max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+}
+//If browser supports flexbox
+.flexbox {
+    &.related-resources {
+        .search-result-list {
+            @media only screen and (max-width: 575px) {
+                >li {
+                    max-width: 345px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    float: none;
+                }
+            }
+            //@include respond-to(tablet) {
+            @media only screen and (min-width: 576px) {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+                -webkit-column-gap: 0;
+                -moz-column-gap: 0;
+                column-gap: 30px;
+
+                >li {
+                    width: 100%;
+                    display: inline-block;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    word-wrap: break-word;
+                    background-clip: border-box;
+                    float: none;
+                    column-count: 1;
+                    padding: 0;
+                }
+            }
+            @include respond-to(large) {
+                -webkit-column-count: 3;
+                -moz-column-count: 3;
+                column-count: 3;
+            }
+        }
+    }
+}
