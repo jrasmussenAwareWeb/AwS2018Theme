@@ -47,7 +47,7 @@
   clear: both;
 }
 
-.related-resources .search-result-list li {
+.related-resources .search-result-list > li {
   display: block;
   float: left;
   width: 23%;
@@ -64,12 +64,12 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .related-resources .search-result-list li {
+  .related-resources .search-result-list > li {
     width: 100%;
   }
 }
 
-.related-resources .search-result-list li .blog-item {
+.related-resources .search-result-list > li .blog-item {
   min-height: 120px;
   padding: 0 15px 15px;
   margin-bottom: 30px;
@@ -77,14 +77,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.related-resources .search-result-list li .blog-item .blog-date {
+.related-resources .search-result-list > li .blog-item .blog-date {
   font-size: 14px;
   display: inline;
   padding-right: 10px;
   border-right: solid 1px #777;
 }
 
-.related-resources .search-result-list li .blog-item .blog-date:before {
+.related-resources .search-result-list > li .blog-item .blog-date:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -100,23 +100,23 @@
   margin-right: 5px;
 }
 
-.related-resources .search-result-list li .blog-item .blog-author {
+.related-resources .search-result-list > li .blog-item .blog-author {
   font-size: 14px;
   display: inline;
   padding-left: 10px;
 }
 
-.related-resources .search-result-list li .blog-item .field-excerpt {
+.related-resources .search-result-list > li .blog-item .field-excerpt {
   font-size: 14px;
 }
 
-.related-resources .search-result-list li .field-title {
+.related-resources .search-result-list > li .field-title {
   display: block;
   padding: 5px 0 15px 0;
   text-align: left;
 }
 
-.related-resources .search-result-list li .field-title a {
+.related-resources .search-result-list > li .field-title a {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   color: #cc0000;
@@ -125,25 +125,50 @@
   font-weight: normal;
 }
 
-.related-resources .search-result-list li .field-title a:hover {
+.related-resources .search-result-list > li .field-title a:hover {
   color: #cc0000;
 }
 
-.related-resources .search-result-list li:hover {
+.related-resources .search-result-list > li:hover {
   border: none;
 }
 
-.related-resources .search-result-list li .blog-image {
+.related-resources .search-result-list > li .blog-image {
   margin: 0 -15px 15px -15px;
 }
 
-.related-resources .search-result-list li .blog-image img {
+.related-resources .search-result-list > li .blog-image img {
   width: 100%;
   height: auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .no-flexbox .related-resources .search-result-list > li {
+    width: 50%;
+  }
+  .no-flexbox .related-resources .search-result-list > li .blog-item {
+    height: 336px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .no-flexbox .related-resources .search-result-list > li .blog-item {
+    height: 337px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .no-flexbox .related-resources .search-result-list > li {
+    width: 33.333333%;
+  }
+  .no-flexbox .related-resources .search-result-list > li .blog-item {
+    height: 316px;
+  }
+}
+
 @media only screen and (max-width: 575px) {
-  .flexbox.related-resources .search-result-list > li {
+  .flexbox .related-resources .search-result-list > li {
     max-width: 345px;
     margin-left: auto;
     margin-right: auto;
@@ -152,13 +177,13 @@
 }
 
 @media only screen and (min-width: 576px) {
-  .flexbox.related-resources .search-result-list {
+  .flexbox .related-resources .search-result-list {
     -webkit-column-count: 2;
     column-count: 2;
     -webkit-column-gap: 0;
     column-gap: 30px;
   }
-  .flexbox.related-resources .search-result-list > li {
+  .flexbox .related-resources .search-result-list > li {
     width: 100%;
     display: inline-block;
     -webkit-box-orient: vertical;
@@ -174,9 +199,9 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .flexbox.related-resources .search-result-list {
-    -webkit-column-count: 3;
-    column-count: 3;
+@media only screen and (min-width: 992px) {
+  .flexbox .related-resources .search-result-list {
+    -webkit-column-count: 4;
+    column-count: 4;
   }
 }

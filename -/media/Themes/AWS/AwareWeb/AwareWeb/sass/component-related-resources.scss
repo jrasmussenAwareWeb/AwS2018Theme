@@ -21,7 +21,7 @@
         border: none;
         @include clearfix();
 
-        li {
+        > li {
             display: block;
             float: left;
             width:23%;
@@ -101,9 +101,44 @@
     }
     
 }
+
+//If browser does NOT supports flexbox
+.no-flexbox {
+    .related-resources {
+        .search-result-list {
+            @include respond-to(tablet) {
+                >li {
+                    width: 50%;
+
+                    .blog-item {
+                        height: 336px;
+                        overflow: hidden;
+                    }
+                }
+            }
+            @include respond-to(desktop) {
+                >li {
+                    .blog-item {
+                        height: 337px;
+                    }
+                }
+            }
+            @include respond-to(large) {
+                >li {
+                    width: 33.333333%;
+
+                    .blog-item {
+                        height: 316px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 //If browser supports flexbox
 .flexbox {
-    &.related-resources {
+    .related-resources {
         .search-result-list {
             @media only screen and (max-width: 575px) {
                 >li {
@@ -133,13 +168,13 @@
                     background-clip: border-box;
                     float: none;
                     column-count: 1;
-                    padding: 0;
+                    padding: 0; 
                 }
             }
-            @include respond-to(large) {
-                -webkit-column-count: 3;
-                -moz-column-count: 3;
-                column-count: 3;
+            @include respond-to(desktop) {
+                -webkit-column-count: 4;
+                -moz-column-count: 4;
+                column-count: 4;
             }
         }
     }
