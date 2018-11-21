@@ -37,6 +37,9 @@
     float: left;
 }*/
   /* breakpoints */
+  /* Component: Services */
+  /* Animations */
+  /* breakpoints */
   /* breakpoints */
   /* breakpoints */
 }
@@ -557,6 +560,364 @@
 @media only screen and (min-width: 1400px) {
   .content blockquote.pull-left, .rich-text blockquote.pull-left {
     margin-left: -5%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.content .comp-services, .rich-text .comp-services {
+  overflow: hidden;
+  /* Background Circle */
+  /* Services */
+  /* Make sure Arrow stays on top of bg-circle */
+  /* Responsive */
+}
+
+.content .comp-services .bg-circle, .rich-text .comp-services .bg-circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: opacity ease-out 350ms, -webkit-transform ease-out 350ms;
+  transition: opacity ease-out 350ms, -webkit-transform ease-out 350ms;
+  transition: transform ease-out 350ms, opacity ease-out 350ms;
+  transition: transform ease-out 350ms, opacity ease-out 350ms, -webkit-transform ease-out 350ms;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.content .comp-services .bg-circle.enlarge, .rich-text .comp-services .bg-circle.enlarge {
+  opacity: 1;
+  -webkit-transform: scale(30);
+  -ms-transform: scale(30);
+  transform: scale(30);
+}
+
+.content .comp-services .services, .rich-text .comp-services .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 60px 0 20px 0;
+  min-height: 510px;
+}
+
+.content .comp-services .services .service, .rich-text .comp-services .services .service {
+  width: 30%;
+  color: #fff;
+  margin: 15px auto 0;
+  position: relative;
+  top: -60px;
+  opacity: 0;
+  z-index: 2;
+  /* Image */
+  /* Circle Button (i.e. trigger) */
+  /* Content */
+  /* States */
+  /* Active i.e. expanded*/
+  /* Not-Active i.e. not currently expanded */
+}
+
+.content .comp-services .services .service.enableTransitions, .rich-text .comp-services .services .service.enableTransitions {
+  -webkit-transition: width ease-out 350ms, padding ease-out 350ms, height ease-out 350ms, margin ease-out 250ms, opacity ease-out 250ms;
+  transition: width ease-out 350ms, padding ease-out 350ms, height ease-out 350ms, margin ease-out 250ms, opacity ease-out 250ms;
+}
+
+.content .comp-services .services .service img, .rich-text .comp-services .services .service img {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: left ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: left ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: left ease-out 250ms, transform ease-out 250ms;
+  transition: left ease-out 250ms, transform ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+.content .comp-services .services .service .btn-circle, .rich-text .comp-services .services .service .btn-circle {
+  display: block;
+  text-align: center;
+  background: #50d2c2;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  top: 118px;
+  left: 50%;
+  margin-left: -20px;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: top ease-out 350ms, left ease-out 350ms,  -webkit-transform ease-out 350ms;
+  transition: top ease-out 350ms, left ease-out 350ms,  -webkit-transform ease-out 350ms;
+  transition: transform ease-out 350ms,  top ease-out 350ms, left ease-out 350ms;
+  transition: transform ease-out 350ms,  top ease-out 350ms, left ease-out 350ms,  -webkit-transform ease-out 350ms;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  /* Mouseover Effect (this will be changed to scroll event trigger) */
+}
+
+.content .comp-services .services .service .btn-circle > span, .rich-text .comp-services .services .service .btn-circle > span {
+  position: relative;
+  top: -1px;
+}
+
+.content .comp-services .services .service .btn-circle:after, .rich-text .comp-services .services .service .btn-circle:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  border: 5px solid #50d2c2;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.content .comp-services .services .service .btn-circle.js-hovered:after, .rich-text .comp-services .services .service .btn-circle.js-hovered:after {
+  -webkit-transition: opacity ease-out 350ms,  border-width ease-out 350ms,  -webkit-transform ease-out 350ms;
+  transition: opacity ease-out 350ms,  border-width ease-out 350ms,  -webkit-transform ease-out 350ms;
+  transition: transform ease-out 350ms,  opacity ease-out 350ms,  border-width ease-out 350ms;
+  transition: transform ease-out 350ms,  opacity ease-out 350ms,  border-width ease-out 350ms,  -webkit-transform ease-out 350ms;
+  -webkit-transform: scale(3);
+  -ms-transform: scale(3);
+  transform: scale(3);
+  opacity: 0;
+  border-width: 0;
+}
+
+.content .comp-services .services .service h2, .rich-text .comp-services .services .service h2 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 175px 0 10px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: margin ease-out 350ms, left ease-out 350ms, -webkit-transform ease-out 350ms;
+  transition: margin ease-out 350ms, left ease-out 350ms, -webkit-transform ease-out 350ms;
+  transition: margin ease-out 350ms, transform ease-out 350ms, left ease-out 350ms;
+  transition: margin ease-out 350ms, transform ease-out 350ms, left ease-out 350ms, -webkit-transform ease-out 350ms;
+}
+
+.content .comp-services .services .service p, .rich-text .comp-services .services .service p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.content .comp-services .services .service ul, .rich-text .comp-services .services .service ul {
+  margin-left: 0;
+}
+
+.content .comp-services .services .service ul > li, .rich-text .comp-services .services .service ul > li {
+  position: absolute;
+  padding-left: 15px;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  list-style: none;
+  margin-left: 0;
+}
+
+.content .comp-services .services .service ul > li + li, .rich-text .comp-services .services .service ul > li + li {
+  margin-top: 5px;
+}
+
+.content .comp-services .services .service ul > li:before, .rich-text .comp-services .services .service ul > li:before {
+  content: "\2022";
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -18px;
+}
+
+.content .comp-services .services .service ul > li > a, .rich-text .comp-services .services .service ul > li > a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+}
+
+.content .comp-services .services .service ul > li > a:hover, .rich-text .comp-services .services .service ul > li > a:hover {
+  color: #50d2c2;
+  border: none;
+  text-decoration: none;
+}
+
+.content .comp-services .services .service.isRevealed, .rich-text .comp-services .services .service.isRevealed {
+  -webkit-animation: revealService 600ms ease-out;
+  animation: revealService 600ms ease-out;
+  top: 0;
+  opacity: 1;
+}
+
+.content .comp-services .services .service.isActive, .rich-text .comp-services .services .service.isActive {
+  width: 60%;
+  padding: 0 0 0 120px;
+  margin: 0;
+  /* Image */
+  /* Content */
+}
+
+.content .comp-services .services .service.isActive .btn-circle, .rich-text .comp-services .services .service.isActive .btn-circle {
+  top: -20px;
+  left: 100%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.content .comp-services .services .service.isActive img, .rich-text .comp-services .services .service.isActive img {
+  -webkit-transform: scale(0.6) translate(-40px, -40px);
+  -ms-transform: scale(0.6) translate(-40px, -40px);
+  transform: scale(0.6) translate(-40px, -40px);
+  left: 0;
+}
+
+.content .comp-services .services .service.isActive h2, .rich-text .comp-services .services .service.isActive h2 {
+  margin-top: 0;
+  left: 0;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.content .comp-services .services .service.isActive p, .rich-text .comp-services .services .service.isActive p {
+  text-align: left;
+}
+
+.content .comp-services .services .service.isActive ul > li.isRevealed, .rich-text .comp-services .services .service.isActive ul > li.isRevealed {
+  position: static;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.content .comp-services .services .service.isNotActive, .rich-text .comp-services .services .service.isNotActive {
+  width: 20%;
+  opacity: 0;
+}
+
+.content .comp-services.container-gradient-background-teal-arrow::before, .rich-text .comp-services.container-gradient-background-teal-arrow::before {
+  position: relative;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 800px) {
+  .content .comp-services, .rich-text .comp-services {
+    /* Background Circle */
+    /* Services */
+  }
+  .content .comp-services .bg-circle.enlarge, .rich-text .comp-services .bg-circle.enlarge {
+    -webkit-transform: scale(20);
+    -ms-transform: scale(20);
+    transform: scale(20);
+  }
+  .content .comp-services .services, .rich-text .comp-services .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 15px 100px;
+    min-height: inherit;
+  }
+  .content .comp-services .services.service, .rich-text .comp-services .services.service {
+    width: 100%;
+    height: 300px;
+    /* States */
+    /* Active i.e. expanded */
+    /* Not-Active i.e. not currently expanded */
+  }
+  .content .comp-services .services.service.isActive, .rich-text .comp-services .services.service.isActive {
+    width: 100%;
+    height: 400px;
+  }
+  .content .comp-services .services.service.isActive .btn-circle, .rich-text .comp-services .services.service.isActive .btn-circle {
+    left: -webkit-calc(100% - 20px);
+    left: calc(100% - 20px);
+  }
+  .content .comp-services .services.service.isNotActive, .rich-text .comp-services .services.service.isNotActive {
+    width: 0;
+    height: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  .content .comp-services, .rich-text .comp-services {
+    /* States */
+    /* Active i.e. expanded */
+    /* Image */
+  }
+  .content .comp-services .services .service.isActive, .rich-text .comp-services .services .service.isActive {
+    padding-left: 160px;
+  }
+  .content .comp-services .isActive img, .rich-text .comp-services .isActive img {
+    -webkit-transform: scale(0.6) translate(40px, -40px);
+    -ms-transform: scale(0.6) translate(40px, -40px);
+    transform: scale(0.6) translate(40px, -40px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .content .comp-services, .rich-text .comp-services {
+    /* States */
+    /* Active i.e. expanded */
+  }
+  .content .comp-services .isActive .btn-circle, .rich-text .comp-services .isActive .btn-circle {
+    top: -50px;
+  }
+}
+
+@-webkit-keyframes revealService {
+  from {
+    top: -60px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes revealService {
+  from {
+    top: -60px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
   }
 }
 

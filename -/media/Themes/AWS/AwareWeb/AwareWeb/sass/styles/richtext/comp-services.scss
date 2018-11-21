@@ -1,0 +1,270 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+/* Component: Services */
+.comp-services{
+    overflow: hidden;
+
+    /* Background Circle */
+    .bg-circle{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background: rgba(0,0,0,.5);
+        z-index: 0;
+        opacity: 0;
+        transition: transform ease-out 350ms, opacity ease-out 350ms;
+
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+
+        &.enlarge {
+            opacity: 1;
+            transform: scale(30);
+        }
+    }
+
+    /* Services */
+    .services{
+        display: flex;
+        justify-content: space-between;
+        padding:60px 0 20px 0;
+        min-height: 510px;
+
+        .service{
+            width:30%;
+            color: #fff;
+            margin: 15px auto 0;
+            position: relative;
+            top: -60px;
+            opacity: 0;
+            z-index: 2;
+
+            &.enableTransitions{
+                transition: 
+                    width ease-out 350ms,
+                    padding ease-out 350ms,
+                    height ease-out 350ms,
+                    margin ease-out 250ms,
+                    opacity ease-out 250ms;
+            }
+
+            /* Image */
+            img{
+                position: absolute;
+                z-index:1;
+                left:50%;
+                transform: translateX(-50%);
+                transition: left ease-out 250ms, transform ease-out 250ms;
+            }
+            /* Circle Button (i.e. trigger) */
+            .btn-circle{
+                display: block;
+                text-align: center;
+                background: #50d2c2;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                position: absolute;
+                top:118px;
+                left:50%;
+                margin-left: -20px;
+                font-size: 26px;
+                cursor: pointer;
+                z-index: 100;
+                transition: transform ease-out 350ms, 
+                    top ease-out 350ms,
+                    left ease-out 350ms;
+
+                -webkit-transform-origin: 50% 50%;
+                -moz-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                -o-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                
+                > span{position:relative;top:-1px;}
+                /* Mouseover Effect (this will be changed to scroll event trigger) */
+                &:after{
+                    content: '';
+                    display: block;
+                    width:40px;
+                    height: 40px;
+                    border-radius: 20px;
+                    position: absolute;
+                    top:0;left:0;
+                    background: none;
+                    border: 5px solid #50d2c2;
+            
+                    -webkit-transform-origin: 50% 50%;
+                    -moz-transform-origin: 50% 50%;
+                    -ms-transform-origin: 50% 50%;
+                    -o-transform-origin: 50% 50%;
+                    transform-origin: 50% 50%;
+                }
+                &.js-hovered:after{
+                    transition: transform ease-out 350ms, 
+                        opacity ease-out 350ms, 
+                        border-width ease-out 350ms;
+                    transform: scale(3);
+                    opacity: 0;
+                    border-width: 0;
+                }
+            }
+
+            /* Content */
+            h2{
+                color: #fff;
+                text-transform: uppercase;
+                margin:175px 0 10px;
+                display: inline-block;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: margin ease-out 350ms, transform ease-out 350ms, left ease-out 350ms;
+            }
+            p{margin-bottom: 10px;text-align: center;}
+            ul {
+                margin-left: 0;
+            }
+            ul > li{
+                position: absolute;
+                padding-left: 15px;
+                opacity: 0;
+                transform: translateX(30px);
+                transition: transform ease-out 250ms, opacity ease-out 250ms;
+                list-style: none;
+                margin-left: 0;
+            }
+            ul > li + li{margin-top: 5px;}
+            ul > li:before{
+                content: "\2022";
+                font-size: 24px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top:-18px;
+            }
+            ul > li > a {
+                color:#fff; 
+                border-bottom: 1px solid #fff; 
+                text-decoration:none;
+            }
+            ul > li > a:hover{
+                color: #50d2c2;
+                border:none;
+                text-decoration:none;
+            }
+
+            /* States */
+            &.isRevealed{
+                animation: revealService 600ms ease-out;
+                top:0;
+                opacity: 1;
+            }
+            /* Active i.e. expanded*/
+            &.isActive{
+                width: 60%;
+                padding: 0 0 0 120px;
+                margin: 0;
+
+                .btn-circle{
+                    top:-20px;
+                    left:100%;
+                    transform: rotate(45deg);
+                }
+
+                /* Image */
+                img{
+                    transform: scale(.6) translate(-40px, -40px);
+                    left: 0;
+                }
+
+                /* Content */
+                h2{
+                    margin-top: 0;
+                    left: 0;
+                    transform: translateX(0);
+                }
+                p{text-align:left;}
+                ul > li.isRevealed{
+                    position: static;
+                    opacity: 1;
+                    transform: translateX(0);												
+                }
+            }
+            /* Not-Active i.e. not currently expanded */
+            &.isNotActive{width: 20%;opacity:0;}
+        }
+    }
+
+    /* Make sure Arrow stays on top of bg-circle */
+    &.container-gradient-background-teal-arrow::before{position:relative;z-index:10;}
+
+    /* Responsive */
+    @media only screen and (max-width: 800px){
+        /* Background Circle */
+        .bg-circle.enlarge{transform: scale(20);}
+
+        /* Services */
+        .services{
+            flex-direction: column;
+            padding: 50px 15px 100px;
+            min-height: inherit;
+
+            &.service{
+                width: 100%;
+                height: 300px;
+
+                /* States */
+                    /* Active i.e. expanded */
+                    &.isActive{
+                        width: 100%;
+                        height: 400px;
+
+                        .btn-circle{
+                            left: calc(100% - 20px);
+                        }
+                    }
+
+                    /* Not-Active i.e. not currently expanded */
+                    &.isNotActive{
+                        width:0;
+                        height:0;
+                    }
+            }
+        }
+    }
+    @media only screen and (min-width: 480px) and (max-width: 800px){
+        /* States */
+            /* Active i.e. expanded */
+            .services .service.isActive{padding-left:160px;}
+
+            /* Image */
+            .isActive img{transform: scale(.6) translate(40px, -40px);}
+
+    }
+    @media only screen and (max-width: 480px){
+        /* States */
+            /* Active i.e. expanded */
+            .isActive .btn-circle{top:-50px;}
+
+    }
+}
+
+
+/* Animations */
+@keyframes revealService{
+    from{
+        top: -60px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
