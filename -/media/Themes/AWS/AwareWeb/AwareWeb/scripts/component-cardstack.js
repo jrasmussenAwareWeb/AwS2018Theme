@@ -5,7 +5,7 @@ Author Notes: This is developed with the intention to work with a specific codeb
 Version: 1.1
 **/
 
-;(function($){
+(function($){
 	// Private Variables
 	var _AWSCardStackInitialized = false;
 

@@ -53,10 +53,10 @@
                         &:after{
                             content: '';
                             position: absolute;
-                            height: 1px; 
+                            height: 1px;
                             left:2px;
                             right: 0;
-                            bottom:16.75px;
+                            bottom:16.87px;
                             background: #222;
                         }
                     }
@@ -130,7 +130,7 @@
             }
         }
     }
-    &.awsInitialized .images > ul > li img {
+    &.awsInitialized .images > ul > li img{
 		animation: fadeInDropShadow .3s ease-in;
 		-webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,.5);
 		box-shadow: 0 0 10px 3px rgba(0,0,0,.5);
