@@ -161,6 +161,28 @@
             bottom: 0;
         }
     }
+   &:focus-within {
+        .promo-body {
+            .field-promoicon {
+                padding: 0 15px 30px 15px;
+                margin-top: -5px;
+
+                img {
+                    width: 50%;
+                    // max-height: 50px;
+                }
+            }
+
+            .field-promotext {
+                opacity: 0;
+                //display: none;
+            }
+        }
+
+        .promo-hover {
+            bottom: 0;
+        }
+    }
     @include respond-to(all-mobile) {
         //margin-bottom: 30px;
         .field-promotext {

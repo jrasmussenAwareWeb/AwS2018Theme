@@ -358,7 +358,7 @@ XA.component.overlay = function($) {
                     }
                 }
             });
-
+            
             // $(this).on('focus', function(args) {
             //     //args.preventDefault();
             //     if (args.currentTarget === overlayClickSource) {

@@ -852,22 +852,22 @@
     padding: 50px 15px 100px;
     min-height: inherit;
   }
-  .content .comp-services .services.service, .rich-text .comp-services .services.service {
+  .content .comp-services .services .service, .rich-text .comp-services .services .service {
     width: 100%;
     height: 300px;
     /* States */
     /* Active i.e. expanded */
     /* Not-Active i.e. not currently expanded */
   }
-  .content .comp-services .services.service.isActive, .rich-text .comp-services .services.service.isActive {
+  .content .comp-services .services .service.isActive, .rich-text .comp-services .services .service.isActive {
     width: 100%;
     height: 400px;
   }
-  .content .comp-services .services.service.isActive .btn-circle, .rich-text .comp-services .services.service.isActive .btn-circle {
+  .content .comp-services .services .service.isActive .btn-circle, .rich-text .comp-services .services .service.isActive .btn-circle {
     left: -webkit-calc(100% - 20px);
     left: calc(100% - 20px);
   }
-  .content .comp-services .services.service.isNotActive, .rich-text .comp-services .services.service.isNotActive {
+  .content .comp-services .services .service.isNotActive, .rich-text .comp-services .services .service.isNotActive {
     width: 0;
     height: 0;
   }

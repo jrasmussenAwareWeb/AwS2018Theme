@@ -626,6 +626,23 @@
   bottom: 0;
 }
 
+.promo-work:focus-within .promo-body .field-promoicon {
+  padding: 0 15px 30px 15px;
+  margin-top: -5px;
+}
+
+.promo-work:focus-within .promo-body .field-promoicon img {
+  width: 50%;
+}
+
+.promo-work:focus-within .promo-body .field-promotext {
+  opacity: 0;
+}
+
+.promo-work:focus-within .promo-hover {
+  bottom: 0;
+}
+
 @media only screen and (max-width: 991px) {
   .promo-work .field-promotext {
     font-size: 18px;
