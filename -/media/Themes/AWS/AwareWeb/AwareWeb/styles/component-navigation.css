@@ -60,6 +60,10 @@
   position: static;
 }
 
+.preview .trending-wrapper, .on-page-editor .trending-wrapper {
+  top: 0;
+}
+
 .navigation {
   background: transparent;
   padding: 10px 0;
