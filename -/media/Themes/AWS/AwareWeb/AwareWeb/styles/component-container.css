@@ -700,6 +700,7 @@
   position: relative;
   top: 69px;
   z-index: 9;
+  /* Mobile */
 }
 
 .trending-wrapper .list-inline.trending {
@@ -726,29 +727,101 @@
   z-index: 10;
 }
 
-.trending-wrapper .list-inline.trending > .component-content ul li, .trending-wrapper .list-inline.trending > .component-content ul li:first-child {
+.trending-wrapper .list-inline.trending > .component-content ul li {
   padding-left: 10px;
 }
 
 @media only screen and (min-width: 1200px) {
-  .trending-wrapper .list-inline.trending > .component-content ul li, .trending-wrapper .list-inline.trending > .component-content ul li:first-child {
+  .trending-wrapper .list-inline.trending > .component-content ul li {
     padding-left: 20px;
   }
 }
 
-.trending-wrapper .list-inline.trending > .component-content ul li:before, .trending-wrapper .list-inline.trending > .component-content ul li:first-child:before {
+.trending-wrapper .list-inline.trending > .component-content ul li:before {
   content: none;
 }
 
-.trending-wrapper .list-inline.trending > .component-content ul li a, .trending-wrapper .list-inline.trending > .component-content ul li:first-child a {
+.trending-wrapper .list-inline.trending > .component-content ul li a {
   font-size: 16px;
   color: #FFFFFF;
   text-decoration: none;
   padding-left: 10px;
 }
 
-.trending-wrapper .list-inline.trending > .component-content ul li a:before, .trending-wrapper .list-inline.trending > .component-content ul li:first-child a:before {
+.trending-wrapper .list-inline.trending > .component-content ul li a:before {
   content: none;
+}
+
+.trending-wrapper .list-inline.trending > .component-content ul li a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  .trending-wrapper {
+    top: 0;
+    background: #4a464e;
+  }
+  .trending-wrapper .list-inline.trending {
+    text-align: left;
+    margin: 10px 0;
+  }
+  .trending-wrapper .list-inline.trending > .component-content {
+    float: none;
+  }
+  .trending-wrapper .list-inline.trending > .component-content h3 {
+    float: none;
+    cursor: pointer;
+    position: relative;
+    padding-left: 15px;
+  }
+  .trending-wrapper .list-inline.trending > .component-content h3:after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -8px;
+    color: #fff;
+  }
+  .trending-wrapper .list-inline.trending > .component-content ul {
+    float: none;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    -webkit-transition: height ease-out 250ms;
+    transition: height ease-out 250ms;
+  }
+  .trending-wrapper .list-inline.trending > .component-content ul li {
+    display: block;
+    padding: 5px 10px;
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+    transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+    transition: opacity ease-out 250ms, transform ease-out 250ms;
+    transition: opacity ease-out 250ms, transform ease-out 250ms, -webkit-transform ease-out 250ms;
+  }
+  .trending-wrapper .list-inline.trending > .component-content ul li.first {
+    margin-left: 0;
+  }
+  .trending-wrapper .list-inline.trending > .component-content ul li + li {
+    margin: 0;
+  }
+  .trending-wrapper .list-inline.trending > .component-content ul li[data-animating="show"] {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .trending-wrapper .list-inline.trending > .component-content.isMobileOpened h3:after {
+    content: '\f077';
+  }
+  .trending-wrapper .list-inline.trending > .component-content.isMobileOpened ul {
+    height: 146px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
