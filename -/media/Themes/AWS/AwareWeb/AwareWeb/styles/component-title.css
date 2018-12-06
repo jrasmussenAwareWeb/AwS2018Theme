@@ -151,3 +151,9 @@
     margin-top: 60px;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .title.title-solutions {
+    margin-top: 0;
+  }
+}

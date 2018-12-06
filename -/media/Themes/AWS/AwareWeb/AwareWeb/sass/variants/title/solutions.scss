@@ -2,4 +2,8 @@
     @include respond-to(all-mobile) {
         margin-top:60px;
     }
+    @include respond-to(all-phone) {
+        margin-top:0;
+    }
 }
+ 

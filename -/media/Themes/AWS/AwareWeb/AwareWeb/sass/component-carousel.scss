@@ -192,6 +192,26 @@
         @include respond-to(desktop) {
             .carousel-inner {top:-68px;}
         }
+        @include respond-to(all-phone) {
+        	.nav{
+        		top:-65px;
+
+        		.nav-items{
+        			.sxa-bullets{
+        				&:before{
+        					border: none;
+        					border-radius: 50%;
+        					-webkit-box-shadow:inset 0 0 3px 2px rgba(0,0,0,.4);
+							box-shadow:inset 0 0 3px 2px rgba(0,0,0,.4);
+        				}
+        				&.active:before{
+        					-webkit-box-shadow: none;
+        					box-shadow: none;
+        				}
+        			}
+        		}
+        	}
+        }
     }
     @include respond-to(all-phone) {
         .content {

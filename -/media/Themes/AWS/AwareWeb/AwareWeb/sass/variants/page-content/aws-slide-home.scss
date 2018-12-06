@@ -23,6 +23,14 @@
             right: 0;
             
             @include respond-to(all-phone) {
+                position: relative;
+                margin: 0 20px !important;
+                top:-30px;
+                padding: 20px 15px 50px;
+                background: #fff;
+                -webkit-box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+				box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+
                 .field-slidetext, .field-slidelink {
                     text-align:center;
                     margin: 0 auto;
@@ -75,14 +83,12 @@
                 @include respond-to(large) {
                     font-size:36px;
                 }
-                @include respond-to(phone-horizontal) {
-                    display:none;
-                }
             }
             @include respond-to(all-phone) {
                 .btn {
-                    padding:7px;
-                    font-size:16px;
+                	padding: 7px;
+                	font-size: 16px;
+                	white-space: initial;
                 }
             }
         }
@@ -115,7 +121,7 @@
                 }
             }
         }
-    }
+    } 
     &.position-right, &.position-left {
         @include respond-to(all-phone) {
             .container.slide-caption, .container.field-slidelink {
@@ -136,7 +142,7 @@
 
     &.text-reverse {
         .component-content {
-            .container.slide-caption *{
+            .container.slide-caption *{ 
                 color:$text-white;
                 h1 { 
                     color: $text-white;
