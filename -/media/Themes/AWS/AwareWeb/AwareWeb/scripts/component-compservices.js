@@ -137,7 +137,6 @@ $(document).ready(function(){
         });
     });
 });
-
 /*
  * Get Browser Width
  * @return {int} browser pixel width

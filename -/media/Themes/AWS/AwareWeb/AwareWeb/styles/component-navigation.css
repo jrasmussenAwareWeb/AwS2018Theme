@@ -23,12 +23,14 @@
 #header {
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
+  height: 69px;
   position: fixed;
   margin: 0 auto;
   top: 0;
   z-index: 100;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  height: 69px;
+  -webkit-transition: height 0.4s ease-in, padding 0.4s ease-in;
+  transition: height 0.4s ease-in, padding 0.4s ease-in;
 }
 
 #header .image {
@@ -38,21 +40,63 @@
 }
 
 #header .image img {
-  max-height: 89px;
-  min-width: 202px;
-  width: auto;
+  min-width: 195px;
+  width: 195px;
+  height: auto;
   position: relative;
+  -webkit-transition: height 0.4s ease-in, width 0.4s ease-in;
+  transition: height 0.4s ease-in, width 0.4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
   #header .image img {
-    max-height: 120px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #header .image img {
+    min-width: 264px;
   }
 }
 
 @media only screen and (max-width: 991px) {
   #header .container {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #header.scrolling {
+    height: auto;
+  }
+  #header.scrolling .image img {
+    min-width: initial;
+    width: 142px;
+  }
+  #header.scrolling .searchOverlay, #header.scrolling #search-launch {
+    height: 50px;
+  }
+  #header.scrolling .searchOverlay a, #header.scrolling #search-launch a {
+    height: 50px;
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #header.scrolling {
+    height: auto;
+  }
+  #header.scrolling .image img {
+    min-width: initial;
+    width: 142px;
+  }
+  #header.scrolling .searchOverlay, #header.scrolling #search-launch {
+    height: 50px;
+  }
+  #header.scrolling .searchOverlay a, #header.scrolling #search-launch a {
+    height: 50px;
+    padding: 10px 10px;
   }
 }
 
@@ -369,6 +413,11 @@
   }
 }
 
+.navigation.navigation-main {
+  -webkit-transition: height 0.4s ease-in, padding 0.4s ease-in;
+  transition: height 0.4s ease-in, padding 0.4s ease-in;
+}
+
 .navigation.navigation-main .component-content > nav {
   position: relative;
   float: right;
@@ -597,6 +646,34 @@
 .navigation.navigation-main.navigation-main-vertical .rel-level2 div > a:hover, .navigation.navigation-main.navigation-main-vertical .rel-level2 div > a:focus {
   color: #cc0000;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .scrolling .navigation.navigation-main {
+    padding: 0;
+  }
+  .scrolling .navigation.navigation-main .rel-level1 > .navigation-title > a {
+    border-width: 0;
+    padding: 14px 0;
+  }
+  .scrolling .navigation.navigation-main.navigation-main-vertical .rel-level1 {
+    padding: 0 8px;
+  }
+  .scrolling .navigation.navigation-main.navigation-main-vertical .rel-level1 > ul {
+    margin-top: 1px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .scrolling .navigation.navigation-main .rel-level1 > .navigation-title > a {
+    padding: 12px 0;
+  }
+  .scrolling .navigation.navigation-main.navigation-main-vertical .rel-level1 {
+    padding: 0 18px;
+  }
+  .scrolling .navigation.navigation-main.navigation-main-vertical .rel-level1 > ul {
+    margin-top: 1px;
+  }
 }
 
 /* breakpoints */

@@ -5,6 +5,7 @@
 
 //Drop Down Navigation Common Part
 .navigation.navigation-main {
+    @include transition(height .4s ease-in, padding .4s ease-in);
     .component-content > nav {
         position: relative; 
         ul {
@@ -221,6 +222,45 @@
                 &:hover, &:focus {
                     color:$text-red;
                     text-decoration:none;
+                }
+            }
+        }
+    }
+
+    .scrolling & {
+        @include respond-to(tablet) {
+            padding: 0;
+            .rel-level1 {
+                > .navigation-title > a {
+                    border-width: 0;
+                    padding: 14px 0;
+                }
+            }
+
+            &.navigation-main-vertical {
+                .rel-level1 {
+                    padding: 0 8px;
+
+                    > ul {
+                        margin-top: 1px;
+                    }
+                }
+            }
+        }
+        @include respond-to(desktop) {
+            .rel-level1 {
+                > .navigation-title > a {
+                    padding: 12px 0;
+                }
+            }
+
+            &.navigation-main-vertical {
+                .rel-level1 {
+                    padding: 0 18px;
+
+                    > ul {
+                        margin-top: 1px;
+                    }
                 }
             }
         }

@@ -45,7 +45,9 @@
             }
         }
     }
-
+    @include respond-to(tablet) {
+        margin-bottom: 12px;
+    }
     /* Mobile */
     @include respond-to(all-phone) {
         top:0;
