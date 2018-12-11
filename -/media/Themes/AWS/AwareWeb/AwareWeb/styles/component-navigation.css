@@ -200,6 +200,11 @@
   }
 }
 
+.navigation.subnavigation, .navigation.subnavigation-landing {
+  position: relative;
+  z-index: 10;
+}
+
 .navigation.subnavigation nav, .navigation.subnavigation-landing nav {
   text-align: center;
   margin: 0;
@@ -215,8 +220,8 @@
 
 .navigation.subnavigation nav .level1 .icon-red, .navigation.subnavigation-landing nav .level1 .icon-red {
   color: #ffffff;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .navigation.subnavigation nav .level1 .icon-red a, .navigation.subnavigation-landing nav .level1 .icon-red a {
@@ -225,33 +230,71 @@
 
 .navigation.subnavigation nav .level1 > .navigation-title > a, .navigation.subnavigation-landing nav .level1 > .navigation-title > a {
   padding: 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  position: relative;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .navigation.subnavigation nav .level1 > .navigation-title > a:hover, .navigation.subnavigation-landing nav .level1 > .navigation-title > a:hover {
   color: #cc0000;
 }
 
+.navigation.subnavigation nav .level1 > .navigation-title > a:after, .navigation.subnavigation-landing nav .level1 > .navigation-title > a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -22px;
+  width: 0;
+  height: 3px;
+  background: #000;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .navigation.subnavigation nav .level1.active > .navigation-title > a, .navigation.subnavigation-landing nav .level1.active > .navigation-title > a {
   color: #cc0000;
-  font-weight: 700;
+}
+
+.navigation.subnavigation nav .level1.active > .navigation-title > a:after, .navigation.subnavigation-landing nav .level1.active > .navigation-title > a:after {
+  -webkit-animation: subnav-active-indicator ease-out 450ms 200ms forwards;
+  animation: subnav-active-indicator ease-out 450ms 200ms forwards;
+}
+
+.navigation.subnavigation nav .level1:hover > .navigation-title > a:after, .navigation.subnavigation-landing nav .level1:hover > .navigation-title > a:after {
+  -webkit-animation: subnav-active-indicator ease-out 250ms forwards;
+  animation: subnav-active-indicator ease-out 250ms forwards;
 }
 
 @media only screen and (max-width: 767px) {
-  .navigation.subnavigation nav .level1, .navigation.subnavigation-landing nav .level1 {
-    text-align: left;
-    padding: 10px;
+  .navigation.subnavigation nav ul, .navigation.subnavigation-landing nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
-  .navigation.subnavigation nav .level1 .icon-red, .navigation.subnavigation-landing nav .level1 .icon-red {
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    margin-right: 10px;
-    float: left;
+  .navigation.subnavigation nav ul .level1, .navigation.subnavigation-landing nav ul .level1 {
+    width: 50%;
+    padding: 25px 20px;
   }
-  .navigation.subnavigation nav .level1 > .navigation > a, .navigation.subnavigation-landing nav .level1 > .navigation > a {
-    font-size: 18px;
+  .navigation.subnavigation nav ul .level1:nth-child(odd), .navigation.subnavigation-landing nav ul .level1:nth-child(odd) {
+    border-right: 1px solid #ccc;
+  }
+  .navigation.subnavigation nav ul .level1:nth-child(1), .navigation.subnavigation-landing nav ul .level1:nth-child(1), .navigation.subnavigation nav ul .level1:nth-child(2), .navigation.subnavigation-landing nav ul .level1:nth-child(2) {
+    border-bottom: 1px solid #ccc;
+  }
+  .navigation.subnavigation nav ul .level1 .icon-red, .navigation.subnavigation-landing nav ul .level1 .icon-red {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+  }
+  .navigation.subnavigation nav ul .level1 .icon-red a, .navigation.subnavigation-landing nav ul .level1 .icon-red a {
+    font-size: 23px;
+  }
+  .navigation.subnavigation nav ul .level1 > .navigation-title > a:after, .navigation.subnavigation-landing nav ul .level1 > .navigation-title > a:after {
+    bottom: -5px;
   }
 }
 
@@ -331,6 +374,31 @@
 @media only screen and (min-width: 768px) {
   .navigation.subnavigation-landing .nav .level1 {
     width: 25%;
+  }
+}
+
+@-webkit-keyframes subnav-active-indicator {
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes subnav-active-indicator {
+  100% {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  @-webkit-keyframes subnav-active-indicator {
+    100% {
+      width: 50%;
+    }
+  }
+  @keyframes subnav-active-indicator {
+    100% {
+      width: 50%;
+    }
   }
 }
 

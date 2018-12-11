@@ -2,6 +2,9 @@
 @import "../../abstracts/mixins";
 
 &.subnavigation {
+	position: relative;
+	z-index: 10;
+
     nav {
         text-align: center;
         margin: 0;
@@ -10,41 +13,72 @@
         .level1 {
             .icon-red {
                 color: #ffffff;
-                @include transition(all .2s ease-in-out);
+                @include transition(box-shadow .2s ease-in-out);
                 a {
                     color: #ffffff;
                 }
             }
             > .navigation-title > a {
                 padding: 5px 15px;
-                @include transition(all .2s ease-in-out);
+                position: relative;
+                @include transition(color .2s ease-in-out);
                 &:hover {
                     color: $text-basic-active;
+                }
+                &:after{
+                	content: '';
+                	display: block;
+                	position: absolute;
+                	left: 50%;
+                	bottom:-22px;
+                	width:0;
+                	height: 3px;
+                	background: #000;
+                	transform: translateX(-50%);
                 }
             }
             
             &.active {
                 > .navigation-title > a {
                     color: $text-basic-active;
-                    font-weight: 700;
+
+                    &:after{
+                    	animation: subnav-active-indicator ease-out 450ms 200ms forwards;
+                    }
                 }
+            }
+
+            &:hover > .navigation-title > a:after{
+                animation: subnav-active-indicator ease-out 250ms forwards;
             }
         }
         @include respond-to(all-phone) {
-            .level1 {
-                text-align: left;
-                padding: 10px;
-                .icon-red {
-                    width: 30px;
-                    height: 30px;
-                    padding: 0;
-                    margin-right: 10px;
-                    float: left;
-                }
-                > .navigation > a {
-                    font-size: 18px;
-                }
-            }
+        	ul{
+	        	display: flex;
+	        	flex-wrap: wrap;
+
+	            .level1 {
+	                width: 50%;
+	                padding: 25px 20px;
+
+	                &:nth-child(odd){border-right: 1px solid #ccc;}
+	                &:nth-child(1), &:nth-child(2){border-bottom: 1px solid #ccc;}
+
+	                .icon-red {
+	                    width: 40px;
+	                    height: 40px;
+	                    margin: 0 auto;
+
+	                    a{font-size: 23px;}
+	                }
+	                > .navigation-title > a {
+
+	                    &:after{
+	                    	bottom: -5px;
+	                    }
+	                }
+	            }
+	        }
         }
         @include respond-to(tablet) {
             nav, ul {
@@ -143,4 +177,15 @@
             }
         }
     }
+}
+
+// Animation Keyframes
+@keyframes subnav-active-indicator{
+	100%{ width: 75%; }
+}
+
+@include respond-to(all-phone){
+	@keyframes subnav-active-indicator{
+		100%{ width: 50%; }
+	}
 }
