@@ -63,17 +63,26 @@
 	        		float: none;
 	        		cursor: pointer;
 	        		position: relative;
-	        		padding-left: 15px;
+                    padding-left: 15px;
+                    visibility: hidden;
 
+                    &:before{
+                        content: 'Trending Topics';
+                        visibility: visible;
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+	        		}
 	        		&:after{
 	        			content: '\f078';
 	        			font-family: 'Font Awesome 5 Pro';
 	        			font-size: 16px;
 	        			position: absolute;
-	        			right: 10px;
+	        			right: 15px;
 	        			top:50%;
 	        			margin-top: -8px; 
-	        			color: #fff;
+                        color: #fff;
+                        visibility: visible;
 	        		}
 	        	}
 	        	ul{

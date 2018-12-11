@@ -779,16 +779,25 @@
     cursor: pointer;
     position: relative;
     padding-left: 15px;
+    visibility: hidden;
+  }
+  .trending-wrapper .list-inline.trending > .component-content h3:before {
+    content: 'Trending Topics';
+    visibility: visible;
+    position: absolute;
+    display: block;
+    width: 100%;
   }
   .trending-wrapper .list-inline.trending > .component-content h3:after {
     content: '\f078';
     font-family: 'Font Awesome 5 Pro';
     font-size: 16px;
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 50%;
     margin-top: -8px;
     color: #fff;
+    visibility: visible;
   }
   .trending-wrapper .list-inline.trending > .component-content ul {
     float: none;
