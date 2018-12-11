@@ -72,7 +72,7 @@
 	        			position: absolute;
 	        			right: 10px;
 	        			top:50%;
-	        			margin-top: -8px;
+	        			margin-top: -8px; 
 	        			color: #fff;
 	        		}
 	        	}
@@ -84,7 +84,7 @@
 	        		transition: height ease-out 250ms;
 
 	        		li{
-	        			&.first{margin-left: 0}
+	        			&.first{margin-left:10px}
 	        			display: block;
 	        			padding: 5px 10px;
 	        			& + li{margin:0;}

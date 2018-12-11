@@ -1143,6 +1143,14 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .content.aws-slide-home .component-content .container.slide-caption, .rich-text.aws-slide-home .component-content .container.slide-caption {
+    position: relative;
+    margin: 0 20px !important;
+    top: -30px;
+    padding: 20px 15px 50px;
+    background: #fff;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  }
   .content.aws-slide-home .component-content .container.slide-caption .field-slidetext, .content.aws-slide-home .component-content .container.slide-caption .field-slidelink, .rich-text.aws-slide-home .component-content .container.slide-caption .field-slidetext, .rich-text.aws-slide-home .component-content .container.slide-caption .field-slidelink {
     text-align: center;
     margin: 0 auto;
@@ -1224,16 +1232,11 @@
   }
 }
 
-@media only screen and (max-width: 639px) {
-  .content.aws-slide-home .component-content .container.slide-caption p, .rich-text.aws-slide-home .component-content .container.slide-caption p {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 767px) {
   .content.aws-slide-home .component-content .container.slide-caption .btn, .rich-text.aws-slide-home .component-content .container.slide-caption .btn {
     padding: 7px;
     font-size: 16px;
+    white-space: initial;
   }
 }
 

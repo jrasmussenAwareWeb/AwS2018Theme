@@ -349,6 +349,20 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .home .carousel .nav {
+    top: -65px;
+  }
+  .home .carousel .nav .nav-items .sxa-bullets:before {
+    border: none;
+    border-radius: 50%;
+    box-shadow: inset 0 0 3px 2px rgba(0, 0, 0, 0.4);
+  }
+  .home .carousel .nav .nav-items .sxa-bullets.active:before {
+    box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .carousel .content h6 {
     font-size: 16px;
     margin-bottom: 5px;

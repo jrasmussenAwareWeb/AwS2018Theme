@@ -811,7 +811,7 @@
     transition: opacity ease-out 250ms, transform ease-out 250ms, -webkit-transform ease-out 250ms;
   }
   .trending-wrapper .list-inline.trending > .component-content ul li.first {
-    margin-left: 0;
+    margin-left: 10px;
   }
   .trending-wrapper .list-inline.trending > .component-content ul li + li {
     margin: 0;
