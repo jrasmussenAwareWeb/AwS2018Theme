@@ -20,30 +20,35 @@
         width: 100%;
         border: none;
         @include clearfix();
+        display:flex;
+        flex-wrap: wrap;
 
         > li {
-            display: block;
-            float: left;
-            width:23%;
-            margin-right:2%;
-            box-sizing: border-box;
+            //display: block;
+            display: flex;
+            //float: left;
+            //width:23%;
+            //margin-right:2%;
+            //box-sizing: border-box;
             border: none;
             position: relative;
-            height: 100%;
-            /*padding: 0 15px;*/
-            padding:0;
-            /*@include respond-to(tablet) {
+            //height: 100%;
+            padding:0 15px;
+            /*
+            @include respond-to(tablet) {
                 padding: 0 15px;
-            }*/
+            }
             @include respond-to(all-phone) {
                 width:100%;
             }
+            */
             .blog-item {
-                min-height: 120px;
+                //min-height: 120px;
                 padding: 0 15px 15px;
                 margin-bottom: 30px;
                 border-top: solid 1px #eaeaea;
                 @include box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.3), $inset: false);
+                display: block;
                 .blog-date {
                     font-size: $font-small;
                     display: inline;
@@ -98,8 +103,19 @@
                 }
             }
         }
+        
+        @include respond-to(tablet) {
+            flex-flow: row wrap;
+            >li {
+                width: 50%;
+            }
+        }
+        @include respond-to(desktop) {
+            >li {
+                width: 25%;
+            }
+        }
     }
-    
 }
 
 //If browser does NOT supports flexbox
@@ -108,27 +124,22 @@
         .search-result-list {
             @include respond-to(tablet) {
                 >li {
-                    width: 50%;
-
                     .blog-item {
-                        height: 336px;
-                        overflow: hidden;
+                        min-height: 336px;
                     }
                 }
             }
             @include respond-to(desktop) {
                 >li {
                     .blog-item {
-                        height: 337px;
+                        min-height: 337px;
                     }
                 }
             }
             @include respond-to(large) {
                 >li {
-                    width: 33.333333%;
-
                     .blog-item {
-                        height: 316px;
+                        min-height: 316px;
                     }
                 }
             }
@@ -137,6 +148,7 @@
 }
 
 //If browser supports flexbox
+/*
 .flexbox {
     .related-resources {
         .search-result-list {
@@ -149,6 +161,7 @@
                 }
             }
             //@include respond-to(tablet) {
+            
             @media only screen and (min-width: 576px) {
                 -webkit-column-count: 2;
                 -moz-column-count: 2;
@@ -176,6 +189,8 @@
                 -moz-column-count: 4;
                 column-count: 4;
             }
+            
         }
     }
 }
+*/

@@ -39,6 +39,11 @@
   width: 100%;
   border: none;
   clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .related-resources .search-result-list:before, .related-resources .search-result-list:after {
@@ -48,33 +53,28 @@
 }
 
 .related-resources .search-result-list > li {
-  display: block;
-  float: left;
-  width: 23%;
-  margin-right: 2%;
-  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   position: relative;
-  height: 100%;
-  /*padding: 0 15px;*/
-  padding: 0;
-  /*@include respond-to(tablet) {
+  padding: 0 15px;
+  /*
+            @include respond-to(tablet) {
                 padding: 0 15px;
-            }*/
-}
-
-@media only screen and (max-width: 767px) {
-  .related-resources .search-result-list > li {
-    width: 100%;
-  }
+            }
+            @include respond-to(all-phone) {
+                width:100%;
+            }
+            */
 }
 
 .related-resources .search-result-list > li .blog-item {
-  min-height: 120px;
   padding: 0 15px 15px;
   margin-bottom: 30px;
   border-top: solid 1px #eaeaea;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: block;
 }
 
 .related-resources .search-result-list > li .blog-item .blog-date {
@@ -143,65 +143,84 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .no-flexbox .related-resources .search-result-list > li {
+  .related-resources .search-result-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+  .related-resources .search-result-list > li {
     width: 50%;
   }
+}
+
+@media only screen and (min-width: 992px) {
+  .related-resources .search-result-list > li {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .no-flexbox .related-resources .search-result-list > li .blog-item {
-    height: 336px;
-    overflow: hidden;
+    min-height: 336px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .no-flexbox .related-resources .search-result-list > li .blog-item {
-    height: 337px;
+    min-height: 337px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .no-flexbox .related-resources .search-result-list > li {
-    width: 33.333333%;
-  }
   .no-flexbox .related-resources .search-result-list > li .blog-item {
-    height: 316px;
+    min-height: 316px;
   }
 }
 
-@media only screen and (max-width: 575px) {
-  .flexbox .related-resources .search-result-list > li {
-    max-width: 345px;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-}
+/*
+.flexbox {
+    .related-resources {
+        .search-result-list {
+            @media only screen and (max-width: 575px) {
+                >li {
+                    max-width: 345px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    float: none;
+                }
+            }
+            //@include respond-to(tablet) {
+            
+            @media only screen and (min-width: 576px) {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+                -webkit-column-gap: 0;
+                -moz-column-gap: 0;
+                column-gap: 30px;
 
-@media only screen and (min-width: 576px) {
-  .flexbox .related-resources .search-result-list {
-    -webkit-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 0;
-    column-gap: 30px;
-  }
-  .flexbox .related-resources .search-result-list > li {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    word-wrap: break-word;
-    background-clip: border-box;
-    float: none;
-    -webkit-column-count: 1;
-    column-count: 1;
-    padding: 0;
-    min-height: 370px;
-  }
+                >li {
+                    width: 100%;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    word-wrap: break-word;
+                    background-clip: border-box;
+                    float: none;
+                    column-count: 1;
+                    padding: 0; 
+                    min-height:370px;
+                }
+            }
+            @include respond-to(desktop) {
+                -webkit-column-count: 4;
+                -moz-column-count: 4;
+                column-count: 4;
+            }
+            
+        }
+    }
 }
-
-@media only screen and (min-width: 992px) {
-  .flexbox .related-resources .search-result-list {
-    -webkit-column-count: 4;
-    column-count: 4;
-  }
-}
+*/
