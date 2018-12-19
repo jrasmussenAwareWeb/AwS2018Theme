@@ -1,8 +1,17 @@
 .partners-wrapper {
     margin-bottom:-2px;
-    @include respond-to(all-phone) {
+    @include respond-to(all-mobile) {
         .image {
             text-align:center;
+            img {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    @include respond-to(tablet) {
+        .component-content{
+            background-position: center center;
         }
     }
 }
