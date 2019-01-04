@@ -1,7 +1,5 @@
 @import "abstracts/mixins";
 @import "abstracts/vars";
-@import "base/fontawesome/mixins";
-@import "base/fontawesome/variables";
 
 .link {
     background: $link-bg;
@@ -18,33 +16,28 @@
     }
 
     //AWS
-    .button, &.btn-back, &.btn-next {
+    .button, .button-inverse {
         a {    
-            @include raleway-font-stack();
-            color: $text-red;
-            font-size: $font-normal;
-            font-weight: 700;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: inline-block;
-            background-color: $bg-white;
-            border: solid 2px $text-red;
-            border-radius: 0;
-
-            &:hover, &:focus {
-                color: $text-white;
-                background-color: $bg-red;
+            @include button();
+            @include btn-fill($text-white, $bg-red);
+            &:hover, &:active, &:focus {
+                padding-right: 25px;
+                padding-left: 11px;
             }
         }
-        
-        &.btn-inverse {
-            background-color: #700000;
-            border-color: #700000;
-            color: #cc0000;
-    
-            &:hover {
-                background-color: #cc0000;
-                color: $text-white;
+    }
+    .button-inverse {
+        a {
+            @include button(#ff0000, #700000, #700000);
+            text-transform: uppercase;
+            @include btn-fill($text-white, $bg-red);
+            &:hover, &:active, &:focus {
+                padding-right: 25px;
+                padding-left: 11px;
+            }
+            span.hidden-xs {
+                @include opensans-font-stack();
+                vertical-align:baseline;
             }
         }
     }
@@ -53,7 +46,11 @@
             a {
                 font-size: $font-medium;
                 text-transform:uppercase;
-                padding: 15px 18px;
+                padding: 15px 30px;
+                @include btn-fill(#ffffff, $bg-red);
+                &:hover, &:active, &:focus {
+                    padding: 15px 40px 15px 20px;
+                }
             }
         }
     }
@@ -63,19 +60,31 @@
         margin-right: 5px;
         margin-bottom: 15px;
     }
-    &.btn-block {
-        &.col-xs-12 {
-            padding-left:0;
-            padding-right:0;
+    &.button-block {
+        a {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        + .button-block {
+            margin-top: 20px;
         }
     }
     &.btn-back, &.btn-next {
         a {
+            @include button();
+            @include transition(box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms);
+            &:hover, &:active, &:focus {
+                color: $text-white;
+                border-color: $text-red;
+                @include box-shadow(0, 80px, 0, $text-red, true)
+            }
             &:before, &:after {
                 @include fa-icon();
                 margin-top: 3px;
                 display: block;
                 position: relative;
+                opacity: 1;
             }
         }
     }
@@ -87,11 +96,17 @@
             float: left;
             margin-right: 8px;
             }
+            &:after {
+                content: none;
+            }
         }
-        &.btn-block {
+        &.button-block {
+            display: block;
+            float: none;
             a {
                 width:100%;
                 text-align:center;
+                display: block;
                 &:before {
                     float:none;
                     display:inline-block;

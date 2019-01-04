@@ -34,39 +34,179 @@
   color: #cc0000;
 }
 
-.link .button a, .link.btn-back a, .link.btn-next a {
+.link .button a, .link .button-inverse a {
   font-family: "Raleway", sans-serif;
   color: #cc0000;
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 18px;
   display: inline-block;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
   border-radius: 0;
+  -webkit-transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+  transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
 }
 
-.link .button a:hover, .link .button a:focus, .link.btn-back a:hover, .link.btn-back a:focus, .link.btn-next a:hover, .link.btn-next a:focus {
+.link .button a:after, .link .button-inverse a:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f061";
+  vertical-align: 0;
+  font-size: .875em;
+  margin-top: 4px;
+  margin-left: -16px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: transform ease-out 250ms, opacity ease-out 250ms;
+  -webkit-transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+.link .button a:hover, .link .button a:active, .link .button a:focus, .link .button-inverse a:hover, .link .button-inverse a:active, .link .button-inverse a:focus {
   color: #FFFFFF;
-  background-color: #cc0000;
+  background-color: inherit;
+  border-color: #cc0000;
+  box-shadow: inset 0 80px 0 #cc0000;
 }
 
-.link .button.btn-inverse, .link.btn-back.btn-inverse, .link.btn-next.btn-inverse {
+.link .button a:hover:after, .link .button a:focus:after, .link .button-inverse a:hover:after, .link .button-inverse a:focus:after {
+  margin-left: -5px;
+  -ms-transform: translate(15px, 0);
+  -webkit-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: 1;
+}
+
+.link .button a:hover, .link .button a:active, .link .button a:focus, .link .button-inverse a:hover, .link .button-inverse a:active, .link .button-inverse a:focus {
+  padding-right: 25px;
+  padding-left: 11px;
+}
+
+.link .button-inverse a {
+  font-family: "Raleway", sans-serif;
+  color: #ff0000;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 18px;
+  display: inline-block;
   background-color: #700000;
-  border-color: #700000;
-  color: #cc0000;
+  border: solid 2px #700000;
+  border-radius: 0;
+  text-transform: uppercase;
+  -webkit-transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+  transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
 }
 
-.link .button.btn-inverse:hover, .link.btn-back.btn-inverse:hover, .link.btn-next.btn-inverse:hover {
-  background-color: #cc0000;
+.link .button-inverse a:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f061";
+  vertical-align: 0;
+  font-size: .875em;
+  margin-top: 4px;
+  margin-left: -16px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: transform ease-out 250ms, opacity ease-out 250ms;
+  -webkit-transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+.link .button-inverse a:hover, .link .button-inverse a:active, .link .button-inverse a:focus {
   color: #FFFFFF;
+  background-color: inherit;
+  border-color: #cc0000;
+  box-shadow: inset 0 80px 0 #cc0000;
+}
+
+.link .button-inverse a:hover:after, .link .button-inverse a:focus:after {
+  margin-left: -5px;
+  -ms-transform: translate(15px, 0);
+  -webkit-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: 1;
+}
+
+.link .button-inverse a:hover, .link .button-inverse a:active, .link .button-inverse a:focus {
+  padding-right: 25px;
+  padding-left: 11px;
+}
+
+.link .button-inverse a span.hidden-xs {
+  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+  vertical-align: baseline;
 }
 
 .link.btn-lg .button a {
   font-size: 18px;
   text-transform: uppercase;
-  padding: 15px 18px;
+  padding: 15px 30px;
+  -webkit-transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+  transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+}
+
+.link.btn-lg .button a:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f061";
+  vertical-align: 0;
+  font-size: .875em;
+  margin-top: 4px;
+  margin-left: -16px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: transform ease-out 250ms, opacity ease-out 250ms;
+  -webkit-transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+.link.btn-lg .button a:hover, .link.btn-lg .button a:active, .link.btn-lg .button a:focus {
+  color: #ffffff;
+  background-color: inherit;
+  border-color: #cc0000;
+  box-shadow: inset 0 80px 0 #cc0000;
+}
+
+.link.btn-lg .button a:hover:after, .link.btn-lg .button a:focus:after {
+  margin-left: -5px;
+  -ms-transform: translate(15px, 0);
+  -webkit-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: 1;
+}
+
+.link.btn-lg .button a:hover, .link.btn-lg .button a:active, .link.btn-lg .button a:focus {
+  padding: 15px 40px 15px 20px;
 }
 
 .link.link-inline {
@@ -76,9 +216,35 @@
   margin-bottom: 15px;
 }
 
-.link.btn-block.col-xs-12 {
-  padding-left: 0;
-  padding-right: 0;
+.link.button-block a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.link.button-block + .button-block {
+  margin-top: 20px;
+}
+
+.link.btn-back a, .link.btn-next a {
+  font-family: "Raleway", sans-serif;
+  color: #cc0000;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 18px;
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: solid 2px #cc0000;
+  border-radius: 0;
+  -webkit-transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+  transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+}
+
+.link.btn-back a:hover, .link.btn-back a:active, .link.btn-back a:focus, .link.btn-next a:hover, .link.btn-next a:active, .link.btn-next a:focus {
+  color: #FFFFFF;
+  border-color: #cc0000;
+  box-shadow: inset 0 80px 0 #cc0000;
 }
 
 .link.btn-back a:before, .link.btn-back a:after, .link.btn-next a:before, .link.btn-next a:after {
@@ -94,6 +260,7 @@
   margin-top: 3px;
   display: block;
   position: relative;
+  opacity: 1;
 }
 
 .link.btn-back {
@@ -106,12 +273,22 @@
   margin-right: 8px;
 }
 
-.link.btn-back.btn-block a {
-  width: 100%;
-  text-align: center;
+.link.btn-back a:after {
+  content: none;
 }
 
-.link.btn-back.btn-block a:before {
+.link.btn-back.button-block {
+  display: block;
+  float: none;
+}
+
+.link.btn-back.button-block a {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.link.btn-back.button-block a:before {
   float: none;
   display: inline-block;
 }

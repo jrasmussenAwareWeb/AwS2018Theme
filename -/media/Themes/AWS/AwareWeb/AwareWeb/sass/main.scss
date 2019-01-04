@@ -119,31 +119,6 @@ h6 {
 .clearfix {
     @include clearfix();
 }
-/*search button ? 042618 this shold be taken out and we should use bootstrap classes instead
-a.btn, input.btn {
-    @include raleway-font-stack();
-    color: $text-red;
-    font-size: $font-normal;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform:uppercase;
-    padding: 15px;
-    display: inline-block;
-    background-color: $bg-white;
-    border: solid 2px $text-red;
-    border-radius: 0;
-
-    &:hover, &:focus {
-        color: $text-white;
-        background-color: $bg-red;
-    }
-}*/
-a.btn {
-    &.btn-lg {
-        font-size: $font-medium;
-        padding: 15px 18px;
-    }
-}
 
 header {
     position:relative;

@@ -32,6 +32,7 @@
 */
   /* breakpoints */
   /* breakpoints */
+  /* breakpoints */
   /*i dont think we need this were using variants/page-content/blog.scss
 .author-image, .author, .article-date {
     float: left;
@@ -61,38 +62,11 @@
 .content.rich-text-contact, .rich-text.rich-text-contact {
   color: #FFFFFF;
   font-size: 18px;
-  margin-left: -15px;
-  padding-right: 60px;
 }
 
 .content.rich-text-contact p, .rich-text.rich-text-contact p {
   margin-top: 0;
   margin-bottom: 30px;
-}
-
-.content.rich-text-contact .btn:last-of-type, .rich-text.rich-text-contact .btn:last-of-type {
-  margin-top: 15px;
-}
-
-@media only screen and (max-width: 767px) {
-  .content.rich-text-contact .btn, .rich-text.rich-text-contact .btn {
-    margin-top: 15px;
-  }
-  .content.rich-text-contact .btn:last-of-type, .rich-text.rich-text-contact .btn:last-of-type {
-    margin-bottom: 60px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .content.rich-text-contact, .rich-text.rich-text-contact {
-    margin-left: auto;
-    padding-right: 15px;
-  }
-}
-
-.content.rich-text-contact span.hidden-xs, .rich-text.rich-text-contact span.hidden-xs {
-  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
-  vertical-align: baseline;
 }
 
 .content.content-page-header, .rich-text.content-page-header {
@@ -327,6 +301,17 @@
   border-left: 0;
 }
 
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
 .content .button-default, .content .default, .rich-text .button-default, .rich-text .default {
   border: 1px solid #d2d2d2;
   font-size: 12px;
@@ -423,13 +408,52 @@
 .content .btn-inverse, .rich-text .btn-inverse {
   background-color: #700000;
   border-color: #700000;
-  color: #cc0000;
+  color: #ff0000;
+  -webkit-transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+  transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+}
+
+.content .btn-inverse:after, .rich-text .btn-inverse:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f061";
+  vertical-align: 0;
+  font-size: .875em;
+  margin-top: 4px;
+  margin-left: -16px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: transform ease-out 250ms, opacity ease-out 250ms;
+  -webkit-transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms, -webkit-transform ease-out 250ms;
 }
 
 .content .btn-inverse:hover, .content .btn-inverse:active, .content .btn-inverse:focus, .rich-text .btn-inverse:hover, .rich-text .btn-inverse:active, .rich-text .btn-inverse:focus {
-  background-color: #cc0000;
+  color: #ffffff;
+  background-color: inherit;
   border-color: #cc0000;
-  color: #FFFFFF;
+  box-shadow: inset 0 80px 0 #cc0000;
+}
+
+.content .btn-inverse:hover:after, .content .btn-inverse:focus:after, .rich-text .btn-inverse:hover:after, .rich-text .btn-inverse:focus:after {
+  margin-left: -5px;
+  -ms-transform: translate(15px, 0);
+  -webkit-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: 1;
+}
+
+.content .btn-inverse:hover, .content .btn-inverse:active, .content .btn-inverse:focus, .rich-text .btn-inverse:hover, .rich-text .btn-inverse:active, .rich-text .btn-inverse:focus {
+  padding: 15px 20px 15px 10px;
 }
 
 .content .btn-info, .rich-text .btn-info {
@@ -1232,9 +1256,68 @@
   }
 }
 
+.content.aws-slide-home .component-content .container.slide-caption .button a, .rich-text.aws-slide-home .component-content .container.slide-caption .button a {
+  font-family: "Raleway", sans-serif;
+  color: #424242;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 18px;
+  display: inline-block;
+  background-color: transparent;
+  border: solid 2px #424242;
+  border-radius: 0;
+  -webkit-transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+  transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+  font-size: 18px;
+}
+
+.content.aws-slide-home .component-content .container.slide-caption .button a:after, .rich-text.aws-slide-home .component-content .container.slide-caption .button a:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f061";
+  vertical-align: 0;
+  font-size: .875em;
+  margin-top: 4px;
+  margin-left: -16px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: transform ease-out 250ms, opacity ease-out 250ms;
+  -webkit-transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+.content.aws-slide-home .component-content .container.slide-caption .button a:hover, .content.aws-slide-home .component-content .container.slide-caption .button a:active, .content.aws-slide-home .component-content .container.slide-caption .button a:focus, .rich-text.aws-slide-home .component-content .container.slide-caption .button a:hover, .rich-text.aws-slide-home .component-content .container.slide-caption .button a:active, .rich-text.aws-slide-home .component-content .container.slide-caption .button a:focus {
+  color: #FFFFFF;
+  background-color: inherit;
+  border-color: #424242;
+  box-shadow: inset 0 80px 0 #424242;
+}
+
+.content.aws-slide-home .component-content .container.slide-caption .button a:hover:after, .content.aws-slide-home .component-content .container.slide-caption .button a:focus:after, .rich-text.aws-slide-home .component-content .container.slide-caption .button a:hover:after, .rich-text.aws-slide-home .component-content .container.slide-caption .button a:focus:after {
+  margin-left: -5px;
+  -ms-transform: translate(15px, 0);
+  -webkit-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: 1;
+}
+
+.content.aws-slide-home .component-content .container.slide-caption .button a:hover, .content.aws-slide-home .component-content .container.slide-caption .button a:active, .content.aws-slide-home .component-content .container.slide-caption .button a:focus, .rich-text.aws-slide-home .component-content .container.slide-caption .button a:hover, .rich-text.aws-slide-home .component-content .container.slide-caption .button a:active, .rich-text.aws-slide-home .component-content .container.slide-caption .button a:focus {
+  padding-right: 25px;
+  padding-left: 11px;
+}
+
 @media only screen and (max-width: 767px) {
-  .content.aws-slide-home .component-content .container.slide-caption .btn, .rich-text.aws-slide-home .component-content .container.slide-caption .btn {
-    padding: 7px;
+  .content.aws-slide-home .component-content .container.slide-caption .button a, .rich-text.aws-slide-home .component-content .container.slide-caption .button a {
     font-size: 16px;
     white-space: initial;
   }

@@ -84,11 +84,24 @@
                     font-size:36px;
                 }
             }
+            .button {
+                a {
+                    @include button(#424242, transparent, #424242);
+                    @include btn-fill($text-white, #424242);
+                    font-size: 18px;
+                    &:hover, &:active, &:focus {
+                        padding-right: 25px;
+                        padding-left: 11px;
+                    }
+                }
+            }
             @include respond-to(all-phone) {
-                .btn {
-                	padding: 7px;
-                	font-size: 16px;
-                	white-space: initial;
+                .button {
+                    a {
+                        //padding: 7px;
+                        font-size: 16px;
+                        white-space: initial;
+                    }
                 }
             }
         }

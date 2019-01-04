@@ -100,10 +100,13 @@
                 margin-top: 0;
                 float:right;
                 padding:15px;
+                @include btn-fill(#ffffff, #cc0000);
+                /*
                 &:hover, &:active, &:focus {
                     background-color: #cc0000;
                     color: $text-white;
                 }
+                */
             }
         }
     }
