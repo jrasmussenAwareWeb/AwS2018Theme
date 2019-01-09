@@ -60,6 +60,11 @@
         cursor: pointer;
         width: 100%;
     }
+    &.initialized {
+        .Side1, .Side0 {
+            position: absolute;
+        }
+    }
     .Side0 {
         -moz-transform:translateY(0deg);
         -webkit-transform:translateY(0deg);

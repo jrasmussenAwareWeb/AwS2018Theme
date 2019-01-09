@@ -89,6 +89,7 @@
                     @include button(#424242, transparent, #424242);
                     @include btn-fill($text-white, #424242);
                     font-size: 18px;
+                    text-transform: uppercase;
                     &:hover, &:active, &:focus {
                         padding-right: 25px;
                         padding-left: 11px;

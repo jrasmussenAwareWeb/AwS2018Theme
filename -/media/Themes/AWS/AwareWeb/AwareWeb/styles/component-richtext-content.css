@@ -1270,6 +1270,7 @@
   -webkit-transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
   transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 .content.aws-slide-home .component-content .container.slide-caption .button a:after, .rich-text.aws-slide-home .component-content .container.slide-caption .button a:after {

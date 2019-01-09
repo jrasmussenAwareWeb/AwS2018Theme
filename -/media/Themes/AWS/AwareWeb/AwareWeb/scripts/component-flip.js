@@ -1,22 +1,30 @@
 XA.component.flip = (function($) {
-    var api = {},
-        sortedSides;
+    //var api = {},
+       // sortedSides;
+
+     var api = {};
 
     function detectMobile() {
         return 'ontouchstart' in window;
     }
 
-    function getSideSortByHeight(valArr) {
-        return sortedSides = sortedSides || valArr.sort(function(a, b) { return a.outerHeight(true) > b.outerHeight(true) })
-    }
+    //function getSideSortByHeight(valArr) {
+        //return sortedSides = sortedSides || valArr.sort(function(a, b) { return a.outerHeight(true) > b.outerHeight(true) })  
+    //}
 
     function equalSideHeight($el) {
-        var side0 = $el.find('.Side0'),
-            side1 = $el.find('.Side1'),
-            sortedSides = getSideSortByHeight([side0, side1]),
-            maxHeight = sortedSides[sortedSides.length - 1].outerHeight(true);
+        var side0 = $el.find('.Side0').css({ position: 'relative' }),
+            side1 = $el.find('.Side1').css({ position: 'relative' }),
+            //sortedSides = getSideSortByHeight([side0, side1]),
+            a = $el.find('.Side0').outerHeight(true),
+            b = $el.find('.Side0').outerHeight(true),
+            //maxHeight = sortedSides[sortedSides.length - 1].outerHeight(true);
+            maxHeight = Math.max(a, b);
         $el.find('.flipsides').css({ 'min-height': maxHeight + 'px' });
-        side0.add(side1).css({ bottom: 0 });
+        //AWS Added
+        $el.addClass('initialized');
+        side0.css({ position: 'absolute', bottom: 0 });
+        side1.css({ position: 'absolute', bottom: 0 });
     }
 
     function disableEmptyFlips($flip) {
@@ -79,6 +87,7 @@ XA.component.flip = (function($) {
 
     function calcHeightOnResize() {
         var flip = $('.flip.initialized');
+        flip.removeClass('initialized');
         flip.each(function() {
             equalSideHeight($(this))
         })
@@ -103,14 +112,14 @@ XA.component.flip = (function($) {
                     $(this).toggleClass('active');
                 });
             }
-
-            $(this).addClass('initialized');
+            
+            //$(this).addClass('initialized');
             equalSideHeight($(this));
             disableEmptyFlips($flipModule);
         });
     };
     return api;
-
+    
 }(jQuery, document));
 
 
