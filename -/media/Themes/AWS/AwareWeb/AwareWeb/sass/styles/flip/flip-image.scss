@@ -138,6 +138,14 @@
                 
                 &:hover {text-decoration: none;}
             }
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.initialized {
+        .Side0 {
+            bottom: auto;
         }
     }
 }

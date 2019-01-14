@@ -175,7 +175,6 @@
 }
 
 .flip.card .Side0 .slide-content .field-content p:last-child {
-  margin-bottom: 0;
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
 }
@@ -630,6 +629,14 @@
 
 .flip.flip-image .Side1 .field-content a:hover {
   text-decoration: none;
+}
+
+.flip.flip-image .Side1 .field-content p:last-child {
+  margin-bottom: 0;
+}
+
+.flip.flip-image.initialized .Side0 {
+  bottom: auto;
 }
 
 .flip .flip.flip-slide-top .Side0, .flip .flip.flip-slide-top .Side1 {

@@ -13,18 +13,19 @@ XA.component.flip = (function($) {
     //}
 
     function equalSideHeight($el) {
-        var side0 = $el.find('.Side0').css({ position: 'relative' }),
-            side1 = $el.find('.Side1').css({ position: 'relative' }),
+        var side0 = $el.find('.Side0').css({ 'position': 'relative' }),
+            side1 = $el.find('.Side1').css({ 'position': 'relative' }),
             //sortedSides = getSideSortByHeight([side0, side1]),
             a = $el.find('.Side0').outerHeight(true),
-            b = $el.find('.Side0').outerHeight(true),
+            b = $el.find('.Side1').outerHeight(true),
             //maxHeight = sortedSides[sortedSides.length - 1].outerHeight(true);
             maxHeight = Math.max(a, b);
+        console.log(a, b);
+        console.log(maxHeight);
         $el.find('.flipsides').css({ 'min-height': maxHeight + 'px' });
-        //AWS Added
         $el.addClass('initialized');
-        side0.css({ position: 'absolute', bottom: 0 });
-        side1.css({ position: 'absolute', bottom: 0 });
+        side0.css({ 'position': 'absolute', 'bottom': 0 });
+        side1.css({ 'position': 'absolute', 'bottom': 0 });
     }
 
     function disableEmptyFlips($flip) {
@@ -94,10 +95,15 @@ XA.component.flip = (function($) {
     }
 
     api.init = function() {
-        var flip = $('.flip:not(.initialized)');
+        var flip = $('.flip:not(.initialized)'),
+            imagesLoaded = 0,
+            flipImages = flip.find('img'),
+            totalImages =  flipImages.length;
+
         $(window).on('resize', function() {
             calcHeightOnResize();
         });
+
         flip.each(function() {
             var $flipModule = $(this).find(".flipsides");
             if ($(this).hasClass('flip-hover') && (!detectMobile())) {
@@ -112,11 +118,34 @@ XA.component.flip = (function($) {
                     $(this).toggleClass('active');
                 });
             }
-            
             //$(this).addClass('initialized');
-            equalSideHeight($(this));
+            //equalSideHeight($(this));
             disableEmptyFlips($flipModule);
         });
+        
+        flipImages.each(function(idx, img) {
+            $('<img>').on('load', imageLoaded).attr('src', flipImages.attr('src'));
+        });
+        
+        // Increment the loaded count and if all are
+        // loaded, call the allImagesLoaded() function.
+        function imageLoaded() {
+            imagesLoaded++;
+            console.log(imagesLoaded, totalImages)
+            if (imagesLoaded === totalImages) {
+              allImagesLoaded();
+            }
+        }
+        
+        function allImagesLoaded() {
+            console.log('ALL IMAGES LOADED');
+            //var flip = $('.flip.initialized');
+            //flip.removeClass('initialized');
+            flip.each(function() {
+                equalSideHeight($(this))
+            })
+        }
+
     };
     return api;
     
