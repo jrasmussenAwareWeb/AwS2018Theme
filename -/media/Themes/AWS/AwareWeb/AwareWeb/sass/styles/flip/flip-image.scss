@@ -35,7 +35,7 @@
             height: 22px;
             padding-top: 14px;
             margin-left: -23px;
-            top: -21.5px;
+            top: -22px;
             position: absolute;
             @include border-radius(23px 23px 0 0);
             @include box-shadow(0, -1px, 1px, rgba(0, 0, 0, 0.10), $inset: false);
@@ -101,7 +101,6 @@
             }
         }
     }
-
     .Side1 {
         color: #fff;
         font-size: $font-small;
@@ -112,6 +111,10 @@
             content: fa-content($fa-var-reply);
             color: #fff;
             background-color: $bg-red;
+        }
+        .col-xs-12 {
+            padding-right: 5px;
+            padding-left: 5px;
         }
         .field-heading {
             color: #fff;
@@ -138,14 +141,19 @@
                 
                 &:hover {text-decoration: none;}
             }
-            p:last-child {
-                margin-bottom: 0;
+            p {
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }
+    /*
     &.initialized {
         .Side0 {
-            bottom: auto;
+            bottom: auto !important;
         }
     }
+    */
 }
