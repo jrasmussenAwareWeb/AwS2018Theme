@@ -48,7 +48,7 @@
   border-radius: 0 !important;
   color: #333;
   font-weight: normal;
-  padding: 8px 2%;
+  padding: 15px;
   clear: both;
 }
 
@@ -56,12 +56,17 @@
   color: #cc0000;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .login input[type="submit"]:hover, .login input[type="reset"]:hover, .login input[type="button"]:hover, .login button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
+  padding: 15px;
+}
+
+.login input[type="submit"]:after, .login input[type="reset"]:after, .login input[type="button"]:after, .login button:after {
+  content: none;
 }
 
 .login input::-moz-focus-inner, .login button::-moz-focus-inner {
@@ -70,7 +75,7 @@
 }
 
 .login input[type="text"] {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .login input[type="text"], .login input[type="email"], .login input[type="password"], .login textarea, .login select {

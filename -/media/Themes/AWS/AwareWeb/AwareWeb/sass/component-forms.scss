@@ -108,6 +108,13 @@
         background: $bg-basic-color;
         cursor: pointer;
         margin-left: 0;
+        padding: 10px 15px;
+        &:hover {
+            padding: 10px 15px;
+        }
+        &:after{
+            content: none;
+        }
     }
     input[type="text"], input[type="password"], input[type="email"], textarea, input[type="file"] {
         //display: inline-block;

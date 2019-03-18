@@ -206,7 +206,7 @@
 }
 
 .link.btn-lg .button a:hover, .link.btn-lg .button a:active, .link.btn-lg .button a:focus {
-  padding: 15px 40px 15px 20px;
+  padding-right: 40px;
 }
 
 .link.link-inline {

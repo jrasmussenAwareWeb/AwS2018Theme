@@ -52,7 +52,7 @@
   border-radius: 0 !important;
   color: #333;
   font-weight: normal;
-  padding: 8px 2%;
+  padding: 15px;
   clear: both;
 }
 
@@ -60,12 +60,17 @@
   color: #cc0000;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .facet-component input[type="submit"]:hover, .facet-component input[type="reset"]:hover, .facet-component input[type="button"]:hover, .facet-component button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
+  padding: 15px;
+}
+
+.facet-component input[type="submit"]:after, .facet-component input[type="reset"]:after, .facet-component input[type="button"]:after, .facet-component button:after {
+  content: none;
 }
 
 .facet-component input::-moz-focus-inner, .facet-component button::-moz-focus-inner {
@@ -74,7 +79,7 @@
 }
 
 .facet-component input[type="text"] {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .facet-component input[type="text"], .facet-component input[type="email"], .facet-component input[type="password"], .facet-component textarea, .facet-component select {
@@ -271,7 +276,7 @@
   border-radius: 0 !important;
   color: #333;
   font-weight: normal;
-  padding: 8px 2%;
+  padding: 15px;
   clear: both;
 }
 
@@ -279,12 +284,17 @@
   color: #cc0000;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .radius-filter input[type="submit"]:hover, .radius-filter input[type="reset"]:hover, .radius-filter input[type="button"]:hover, .radius-filter button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
+  padding: 15px;
+}
+
+.radius-filter input[type="submit"]:after, .radius-filter input[type="reset"]:after, .radius-filter input[type="button"]:after, .radius-filter button:after {
+  content: none;
 }
 
 .radius-filter input::-moz-focus-inner, .radius-filter button::-moz-focus-inner {
@@ -293,7 +303,7 @@
 }
 
 .radius-filter input[type="text"] {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .radius-filter input[type="text"], .radius-filter input[type="email"], .radius-filter input[type="password"], .radius-filter textarea, .radius-filter select {
@@ -510,7 +520,7 @@
   border-radius: 0 !important;
   color: #333;
   font-weight: normal;
-  padding: 8px 2%;
+  padding: 15px;
   clear: both;
 }
 
@@ -518,12 +528,17 @@
   color: #cc0000;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .load-more input[type="submit"]:hover, .load-more input[type="reset"]:hover, .load-more input[type="button"]:hover, .load-more button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
+  padding: 15px;
+}
+
+.load-more input[type="submit"]:after, .load-more input[type="reset"]:after, .load-more input[type="button"]:after, .load-more button:after {
+  content: none;
 }
 
 .load-more input::-moz-focus-inner, .load-more button::-moz-focus-inner {
@@ -532,7 +547,7 @@
 }
 
 .load-more input[type="text"] {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .load-more input[type="text"], .load-more input[type="email"], .load-more input[type="password"], .load-more textarea, .load-more select {
@@ -621,7 +636,7 @@
   border-radius: 0 !important;
   color: #333;
   font-weight: normal;
-  padding: 8px 2%;
+  padding: 15px;
   clear: both;
 }
 
@@ -629,12 +644,17 @@
   color: #cc0000;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .location-filter input[type="submit"]:hover, .location-filter input[type="reset"]:hover, .location-filter input[type="button"]:hover, .location-filter button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
+  padding: 15px;
+}
+
+.location-filter input[type="submit"]:after, .location-filter input[type="reset"]:after, .location-filter input[type="button"]:after, .location-filter button:after {
+  content: none;
 }
 
 .location-filter input::-moz-focus-inner, .location-filter button::-moz-focus-inner {
@@ -643,7 +663,7 @@
 }
 
 .location-filter input[type="text"] {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .location-filter input[type="text"], .location-filter input[type="email"], .location-filter input[type="password"], .location-filter textarea, .location-filter select {
@@ -977,7 +997,7 @@
   border-radius: 0 !important;
   color: #333;
   font-weight: normal;
-  padding: 8px 2%;
+  padding: 15px;
   clear: both;
 }
 
@@ -985,12 +1005,17 @@
   color: #cc0000;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .page-size input[type="submit"]:hover, .page-size input[type="reset"]:hover, .page-size input[type="button"]:hover, .page-size button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
+  padding: 15px;
+}
+
+.page-size input[type="submit"]:after, .page-size input[type="reset"]:after, .page-size input[type="button"]:after, .page-size button:after {
+  content: none;
 }
 
 .page-size input::-moz-focus-inner, .page-size button::-moz-focus-inner {
@@ -999,7 +1024,7 @@
 }
 
 .page-size input[type="text"] {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .page-size input[type="text"], .page-size input[type="email"], .page-size input[type="password"], .page-size textarea, .page-size select {
@@ -1153,7 +1178,7 @@
   border-radius: 0 !important;
   color: #333;
   font-weight: normal;
-  padding: 8px 2%;
+  padding: 15px;
   clear: both;
 }
 
@@ -1161,12 +1186,17 @@
   color: #cc0000;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .search-box input[type="submit"]:hover, .search-box input[type="reset"]:hover, .search-box input[type="button"]:hover, .search-box button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
+  padding: 15px;
+}
+
+.search-box input[type="submit"]:after, .search-box input[type="reset"]:after, .search-box input[type="button"]:after, .search-box button:after {
+  content: none;
 }
 
 .search-box input::-moz-focus-inner, .search-box button::-moz-focus-inner {
@@ -1175,7 +1205,7 @@
 }
 
 .search-box input[type="text"] {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .search-box input[type="text"], .search-box input[type="email"], .search-box input[type="password"], .search-box textarea, .search-box select {
@@ -1388,7 +1418,7 @@
   border-radius: 0 !important;
   color: #333;
   font-weight: normal;
-  padding: 8px 2%;
+  padding: 15px;
   clear: both;
 }
 
@@ -1396,12 +1426,17 @@
   color: #cc0000;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .sort-results input[type="submit"]:hover, .sort-results input[type="reset"]:hover, .sort-results input[type="button"]:hover, .sort-results button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
+  padding: 15px;
+}
+
+.sort-results input[type="submit"]:after, .sort-results input[type="reset"]:after, .sort-results input[type="button"]:after, .sort-results button:after {
+  content: none;
 }
 
 .sort-results input::-moz-focus-inner, .sort-results button::-moz-focus-inner {
@@ -1410,7 +1445,7 @@
 }
 
 .sort-results input[type="text"] {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .sort-results input[type="text"], .sort-results input[type="email"], .sort-results input[type="password"], .sort-results textarea, .sort-results select {

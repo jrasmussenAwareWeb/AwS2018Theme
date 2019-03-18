@@ -96,7 +96,7 @@
     color: #ff0000;
     @include btn-fill(#ffffff, #cc0000);
     &:hover, &:active, &:focus {
-        padding: 15px 20px 15px 10px;
+        padding-right: 20px;
     }
 }
 

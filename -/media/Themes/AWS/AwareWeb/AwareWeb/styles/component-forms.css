@@ -177,7 +177,7 @@
 }
 
 .btn-inverse:hover, .btn-inverse:active, .btn-inverse:focus {
-  padding: 15px 20px 15px 10px;
+  padding-right: 20px;
 }
 
 .btn-info {
@@ -311,6 +311,15 @@
   background: #FFFFFF;
   cursor: pointer;
   margin-left: 0;
+  padding: 10px 15px;
+}
+
+.form input[type="submit"]:hover, .form button:hover, .sitecore-form input[type="submit"]:hover, .sitecore-form button:hover {
+  padding: 10px 15px;
+}
+
+.form input[type="submit"]:after, .form button:after, .sitecore-form input[type="submit"]:after, .sitecore-form button:after {
+  content: none;
 }
 
 .form input[type="text"], .form input[type="password"], .form input[type="email"], .form textarea, .form input[type="file"], .sitecore-form input[type="text"], .sitecore-form input[type="password"], .sitecore-form input[type="email"], .sitecore-form textarea, .sitecore-form input[type="file"] {
@@ -558,12 +567,6 @@
   padding: 15px;
   -webkit-transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
   transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
-  /*
-                &:hover, &:active, &:focus {
-                    background-color: #cc0000;
-                    color: $text-white;
-                }
-                */
 }
 
 .labels-left form .form-group .btn-inverse:after {
@@ -603,6 +606,10 @@
   -webkit-transform: translate(15px, 0);
   transform: translate(15px, 0);
   opacity: 1;
+}
+
+.labels-left form .form-group .btn-inverse:hover, .labels-left form .form-group .btn-inverse:active, .labels-left form .form-group .btn-inverse:focus {
+  padding-right: 20px;
 }
 
 @media (max-width: 1199px) {

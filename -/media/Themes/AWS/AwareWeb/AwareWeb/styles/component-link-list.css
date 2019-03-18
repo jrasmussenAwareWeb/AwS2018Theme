@@ -229,7 +229,7 @@
 }
 
 .link-list .btn-inverse:hover, .link-list .btn-inverse:active, .link-list .btn-inverse:focus {
-  padding: 15px 20px 15px 10px;
+  padding-right: 20px;
 }
 
 .link-list .btn-info {

@@ -11,25 +11,30 @@ input, button {
     border-radius: 0 !important;
     color: $text-basic;
     font-weight: normal;
-    padding: 8px 2%;
+    //padding: 8px 2%;
+    padding: 15px;
     clear: both;
 }
 input[type="submit"], input[type="reset"], input[type="button"], button {
     color: $text-red;
     background-color: $bg-white;
     border: solid 2px $text-red;
-    padding: 10px 15px;
+    padding: 15px;
     &:hover {
         color: $text-white;
         background-color: $bg-red;
+        padding: 15px;
     }
+    &:after{
+        content: none;
+	}
 }
 input::-moz-focus-inner, button::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
 input[type="text"] {
-    font-size: 13px;
+    font-size: 14px;
 }
 input[type="text"], input[type="email"], input[type="password"], textarea, select {
     box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);

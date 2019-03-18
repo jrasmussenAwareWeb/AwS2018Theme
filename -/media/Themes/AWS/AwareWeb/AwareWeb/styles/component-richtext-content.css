@@ -453,7 +453,7 @@
 }
 
 .content .btn-inverse:hover, .content .btn-inverse:active, .content .btn-inverse:focus, .rich-text .btn-inverse:hover, .rich-text .btn-inverse:active, .rich-text .btn-inverse:focus {
-  padding: 15px 20px 15px 10px;
+  padding-right: 20px;
 }
 
 .content .btn-info, .rich-text .btn-info {

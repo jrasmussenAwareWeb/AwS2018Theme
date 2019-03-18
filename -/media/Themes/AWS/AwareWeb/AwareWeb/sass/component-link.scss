@@ -49,7 +49,7 @@
                 padding: 15px 30px;
                 @include btn-fill(#ffffff, $bg-red);
                 &:hover, &:active, &:focus {
-                    padding: 15px 40px 15px 20px;
+                    padding-right: 40px;
                 }
             }
         }

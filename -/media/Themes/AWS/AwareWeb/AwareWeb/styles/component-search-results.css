@@ -49,7 +49,7 @@
   border-radius: 0 !important;
   color: #333;
   font-weight: normal;
-  padding: 8px 2%;
+  padding: 15px;
   clear: both;
 }
 
@@ -57,12 +57,17 @@
   color: #cc0000;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .search-results input[type="submit"]:hover, .search-results input[type="reset"]:hover, .search-results input[type="button"]:hover, .search-results button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
+  padding: 15px;
+}
+
+.search-results input[type="submit"]:after, .search-results input[type="reset"]:after, .search-results input[type="button"]:after, .search-results button:after {
+  content: none;
 }
 
 .search-results input::-moz-focus-inner, .search-results button::-moz-focus-inner {
@@ -71,7 +76,7 @@
 }
 
 .search-results input[type="text"] {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .search-results input[type="text"], .search-results input[type="email"], .search-results input[type="password"], .search-results textarea, .search-results select {
