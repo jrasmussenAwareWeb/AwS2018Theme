@@ -1,22 +1,38 @@
 XA.component.flip = (function($) {
-    var api = {},
-        sortedSides;
+    //var api = {},
+    //    sortedSides;
+
+    var api = {};
 
     function detectMobile() {
         return 'ontouchstart' in window;
     }
 
+    /*
     function getSideSortByHeight(valArr) {
-        return sortedSides = sortedSides || valArr.sort(function(a, b) { return a.outerHeight(true) > b.outerHeight(true) })
+        return sortedSides = sortedSides || valArr.sort(function(a, b) { return a.outerHeight(true) > b.outerHeight(true) });
     }
+    */
 
     function equalSideHeight($el) {
+        /*
         var side0 = $el.find('.Side0'),
             side1 = $el.find('.Side1'),
             sortedSides = getSideSortByHeight([side0, side1]),
             maxHeight = sortedSides[sortedSides.length - 1].outerHeight(true);
+        */
+       
+        //Added
+        $el.find('.flipsides').css({ 'min-height':'auto' });
+        var side0 = $el.find('.Side0').css({bottom: ""}),
+            side1 = $el.find('.Side1').css({bottom: ""}),
+            a = side0.outerHeight(true),
+            b = side1.outerHeight(true),
+            maxHeight = Math.max(a, b);
+        console.log("a = " + a, "b = " + b, "Max Height = " + maxHeight);
         $el.find('.flipsides').css({ 'min-height': maxHeight + 'px' });
-        side0.add(side1).css({ bottom: 0 });
+        side0.css({bottom:0});
+        side1.css({bottom:0});
     }
 
     function disableEmptyFlips($flip) {
@@ -79,6 +95,7 @@ XA.component.flip = (function($) {
 
     function calcHeightOnResize() {
         var flip = $('.flip.initialized');
+
         flip.each(function() {
             equalSideHeight($(this))
         })
@@ -86,9 +103,7 @@ XA.component.flip = (function($) {
 
     api.init = function() {
         var flip = $('.flip:not(.initialized)');
-        $(window).on('resize', function() {
-            calcHeightOnResize();
-        });
+        
         flip.each(function() {
             var $flipModule = $(this).find(".flipsides");
             if ($(this).hasClass('flip-hover') && (!detectMobile())) {
@@ -108,8 +123,26 @@ XA.component.flip = (function($) {
             equalSideHeight($(this));
             disableEmptyFlips($flipModule);
         });
+        
+        //Check to see if flip has images
+        /*
+        flip.has("img").length ? loadImages() : noImages();
+
+        function loadImages() {
+            console.log("has images");
+        }
+
+        function noImages() {
+            console.log("no images");
+        }
+        */
+        $(window).on('resize', function() {
+            calcHeightOnResize();
+        });
     };
     return api;
+
+    
 
 }(jQuery, document));
 

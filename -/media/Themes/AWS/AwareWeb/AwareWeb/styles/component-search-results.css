@@ -63,7 +63,7 @@
 .search-results input[type="submit"]:hover, .search-results input[type="reset"]:hover, .search-results input[type="button"]:hover, .search-results button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
-  padding: 15px;
+  padding: inherit;
 }
 
 .search-results input[type="submit"]:after, .search-results input[type="reset"]:after, .search-results input[type="button"]:after, .search-results button:after {

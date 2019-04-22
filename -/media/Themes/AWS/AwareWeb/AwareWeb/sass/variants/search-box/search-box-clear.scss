@@ -94,8 +94,12 @@
             padding:10px;
         }
         &:hover, &:focus, &:active {
-            background-color:$text-black !important;
+            background-color:#000000 !important;
             border:0;
+            padding:0;
+            &:before {
+                color:$text-white;
+            }
         }
     }
 }

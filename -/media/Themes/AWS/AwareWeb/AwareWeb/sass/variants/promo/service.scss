@@ -1,3 +1,8 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/mixins";
+@import "base/fontawesome/variables";
+
 .promo-service {
     background-color: transparent;
     padding: 0 15px 60px 15px;
@@ -50,15 +55,38 @@
             padding: 0 0 20px 15px;
             vertical-align: middle;
             position: relative;
-        }
-        .promo-title:after {
-            content: "";
-            width: 100px;
-            height: 4px;
-            background-color: #333;
-            display: block;
-            position: absolute;
-            margin-top: 16px;
+
+            &:after {
+                content: "";
+                width: 100px;
+                height: 4px;
+                background-color: #333;
+                display: block;
+                position: absolute;
+                margin-top: 16px;
+            }
+
+            a, p > a {
+                display: inline-block;
+                &:hover {
+                    color: $text-red;
+                    text-decoration: none;
+                }
+                &:focus {
+                    text-decoration: none;
+                }
+                &:after {
+                    @include fa-icon();
+                    font-weight: 600;
+                    font-size: 80%;
+                    content: fa-content($fa-var-arrow-right);
+                    padding-left: 10px;
+                    width: 34px;
+                    height: 28px;
+                    top: -5px;
+                    position: relative;
+                }
+            }
         }
         .promo-icon {
             width: 80px;
@@ -66,6 +94,12 @@
                 width: 80px;
                 height: 80px;
             }
+        }
+    }
+    .promo-body {
+        a.link-arrow {
+            margin-top: 10px;
+            display: inline-block;
         }
     }
     @include respond-to(tablet) {
@@ -157,6 +191,11 @@
                     top: 5px;
                     bottom: 5px;
                     right: 0;
+                }
+                th.link:after {
+                    content: none;
+                    background-color: transparent;
+                    width: 0;
                 }
                 td {
                     width: 67%;

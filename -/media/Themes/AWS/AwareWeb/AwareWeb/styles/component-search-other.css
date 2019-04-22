@@ -66,7 +66,7 @@
 .facet-component input[type="submit"]:hover, .facet-component input[type="reset"]:hover, .facet-component input[type="button"]:hover, .facet-component button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
-  padding: 15px;
+  padding: inherit;
 }
 
 .facet-component input[type="submit"]:after, .facet-component input[type="reset"]:after, .facet-component input[type="button"]:after, .facet-component button:after {
@@ -290,7 +290,7 @@
 .radius-filter input[type="submit"]:hover, .radius-filter input[type="reset"]:hover, .radius-filter input[type="button"]:hover, .radius-filter button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
-  padding: 15px;
+  padding: inherit;
 }
 
 .radius-filter input[type="submit"]:after, .radius-filter input[type="reset"]:after, .radius-filter input[type="button"]:after, .radius-filter button:after {
@@ -534,7 +534,7 @@
 .load-more input[type="submit"]:hover, .load-more input[type="reset"]:hover, .load-more input[type="button"]:hover, .load-more button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
-  padding: 15px;
+  padding: inherit;
 }
 
 .load-more input[type="submit"]:after, .load-more input[type="reset"]:after, .load-more input[type="button"]:after, .load-more button:after {
@@ -650,7 +650,7 @@
 .location-filter input[type="submit"]:hover, .location-filter input[type="reset"]:hover, .location-filter input[type="button"]:hover, .location-filter button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
-  padding: 15px;
+  padding: inherit;
 }
 
 .location-filter input[type="submit"]:after, .location-filter input[type="reset"]:after, .location-filter input[type="button"]:after, .location-filter button:after {
@@ -1011,7 +1011,7 @@
 .page-size input[type="submit"]:hover, .page-size input[type="reset"]:hover, .page-size input[type="button"]:hover, .page-size button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
-  padding: 15px;
+  padding: inherit;
 }
 
 .page-size input[type="submit"]:after, .page-size input[type="reset"]:after, .page-size input[type="button"]:after, .page-size button:after {
@@ -1192,7 +1192,7 @@
 .search-box input[type="submit"]:hover, .search-box input[type="reset"]:hover, .search-box input[type="button"]:hover, .search-box button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
-  padding: 15px;
+  padding: inherit;
 }
 
 .search-box input[type="submit"]:after, .search-box input[type="reset"]:after, .search-box input[type="button"]:after, .search-box button:after {
@@ -1432,7 +1432,7 @@
 .sort-results input[type="submit"]:hover, .sort-results input[type="reset"]:hover, .sort-results input[type="button"]:hover, .sort-results button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
-  padding: 15px;
+  padding: inherit;
 }
 
 .sort-results input[type="submit"]:after, .sort-results input[type="reset"]:after, .sort-results input[type="button"]:after, .sort-results button:after {
@@ -1848,6 +1848,14 @@ button[type="submit"]:hover {
 .search-box-clear .search-box-button-with-redirect:hover,
 .search-box-clear .search-box-button-with-redirect:focus,
 .search-box-clear .search-box-button-with-redirect:active {
-  background-color: #000 !important;
+  background-color: #000000 !important;
   border: 0;
+  padding: 0;
+}
+
+.search-box-clear .search-box-button:hover:before, .search-box-clear .search-box-button:focus:before, .search-box-clear .search-box-button:active:before,
+.search-box-clear .search-box-button-with-redirect:hover:before,
+.search-box-clear .search-box-button-with-redirect:focus:before,
+.search-box-clear .search-box-button-with-redirect:active:before {
+  color: #FFFFFF;
 }

@@ -457,28 +457,7 @@
 
 .flip.flip-image {
   text-align: center;
-  min-height: 222px;
   margin-bottom: 50px;
-  /*
-    .flipsides {
-        @include respond-to(tablet) {
-            min-height: 262px !important;
-        }
-        @include respond-to(desktop) {
-            min-height: 224px !important;
-        }
-        @include respond-to(large) {
-            min-height: 273px !important;
-        }
-    }
-    */
-  /*
-    &.initialized {
-        .Side0 {
-            bottom: auto !important;
-        }
-    }
-    */
 }
 
 .flip.flip-image .field-heading {
@@ -571,10 +550,6 @@
   max-width: 100%;
   padding: 15px 0;
   background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
   z-index: 1;
 }
 
@@ -588,8 +563,8 @@
 }
 
 .flip.flip-image .Side0 .slide-content .field-content img {
-  width: 100% !important;
-  height: auto !important;
+  width: 100%;
+  height: auto;
 }
 
 .flip.flip-image .Side1 {
@@ -649,6 +624,49 @@
 
 .flip.flip-image .Side1 .field-content p:last-child {
   margin-bottom: 0;
+}
+
+.flip.flip-image.initialized .Side0 .slide-heading {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .flip.flip-image.initialized {
+    height: 262px;
+  }
+  .flip.flip-image.initialized .flipsides {
+    height: 262px;
+  }
+  .flip.flip-image.initialized .flipsides .Side0, .flip.flip-image.initialized .flipsides .Side1 {
+    height: 262px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .flip.flip-image.initialized {
+    height: 343px;
+  }
+  .flip.flip-image.initialized .flipsides {
+    height: 343px;
+  }
+  .flip.flip-image.initialized .flipsides .Side0, .flip.flip-image.initialized .flipsides .Side1 {
+    height: 343px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .flip.flip-image.initialized {
+    height: 273px;
+  }
+  .flip.flip-image.initialized .flipsides {
+    height: 273px;
+  }
+  .flip.flip-image.initialized .flipsides .Side0, .flip.flip-image.initialized .flipsides .Side1 {
+    height: 273px;
+  }
 }
 
 .flip .flip.flip-slide-top .Side0, .flip .flip.flip-slide-top .Side1 {

@@ -1,0 +1,54 @@
+.featured-resource{
+	padding: 0;
+	border: 0;
+	margin: 0 auto 30px;
+	max-width: 480px;
+	float: none;
+
+	-webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,.3);
+	box-shadow: 0 0 5px 1px rgba(0,0,0,.3);
+
+	.field-promoicon{float: none;}
+
+	.field-promotext{
+		color: #fff;
+		font-family: "Raleway", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 8px 15px;
+		text-align: center;
+		text-transform: uppercase;
+		background: #66cccc;
+	}
+
+	.field-promolink{
+		padding: 8px 15px;
+		text-align: center;
+
+		a{
+			color: #cc0000;
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	@include respond-to(tablet) {
+		height: 305px;
+		.field-promoicon{height:165px;}
+		.field-promolink{height: 92px;}
+	}
+	@include respond-to(desktop) {
+		height: 305px;
+		margin: 0;
+
+		.field-promoicon{height:140px;}
+		.field-promolink{height: 92px;}
+	}
+	@include respond-to(large) {
+		height: 315px;
+		margin: 0;
+
+		.field-promoicon{height:176px;}
+		.field-promolink{height: 92px;}
+	}
+}

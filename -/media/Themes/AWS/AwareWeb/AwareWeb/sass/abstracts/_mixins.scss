@@ -233,7 +233,7 @@ $break-phone: 380px;
     }
 }
 
-@mixin button($color: $text-red, $bg: $bg-white, $stroke: $text-red) {
+@mixin button($color:$text-red, $bg:$bg-white, $stroke:$text-red) {
 	@include raleway-font-stack();
     color: $color;
     font-size: $font-normal;

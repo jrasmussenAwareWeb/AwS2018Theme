@@ -62,7 +62,7 @@
 .login input[type="submit"]:hover, .login input[type="reset"]:hover, .login input[type="button"]:hover, .login button:hover {
   color: #FFFFFF;
   background-color: #cc0000;
-  padding: 15px;
+  padding: inherit;
 }
 
 .login input[type="submit"]:after, .login input[type="reset"]:after, .login input[type="button"]:after, .login button:after {

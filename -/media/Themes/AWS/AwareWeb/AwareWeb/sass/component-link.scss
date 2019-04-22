@@ -133,8 +133,8 @@
     padding-right: 20px;
 }
 .link-arrow:after {
-    font-weight: 600;
     @include fa-icon();
+    font-weight: 600;
     content: "\f061";
     padding-left: 5px;
 }

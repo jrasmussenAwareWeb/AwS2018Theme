@@ -1,20 +1,6 @@
 &.flip-image {
     text-align: center;
-    min-height: 222px;
     margin-bottom: 50px;
-    /*
-    .flipsides {
-        @include respond-to(tablet) {
-            min-height: 262px !important;
-        }
-        @include respond-to(desktop) {
-            min-height: 224px !important;
-        }
-        @include respond-to(large) {
-            min-height: 273px !important;
-        }
-    }
-    */
     .field-heading {
         @include raleway-font-stack();
         font-weight: 600;
@@ -77,10 +63,6 @@
             max-width: 100%;
             padding: 15px 0;
             background-color: rgba(0, 0, 0, 0.70);
-            position: absolute;
-            left: 15px;
-            right: 15px;
-            bottom: 15px;
             z-index: 1;
 
             .field-heading {
@@ -94,9 +76,8 @@
             }
             .field-content {
                 img {
-                    width: 100% !important;
-                    height: auto !important;
-                    //max-width: 100%;
+                    width: 100%;
+                    height: auto;
                 }
             }
         }
@@ -149,11 +130,42 @@
             }
         }
     }
-    /*
     &.initialized {
         .Side0 {
-            bottom: auto !important;
+            .slide-heading {
+                position: absolute;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+            }
+
+        } 
+        @include respond-to(tablet) {
+            height: 262px;
+            .flipsides {
+                height: 262px;
+                .Side0, .Side1 {
+                    height: 262px;
+                }
+            }
+        }
+        @include respond-to(desktop) {
+            height: 343px;
+            .flipsides {
+                height: 343px;
+                .Side0, .Side1 {
+                    height: 343px;
+                }
+            }
+        }
+        @include respond-to(large) {
+            height: 273px;
+            .flipsides {
+                height: 273px;
+                .Side0, .Side1 {
+                    height: 273px;
+                }
+            }
         }
     }
-    */
 }

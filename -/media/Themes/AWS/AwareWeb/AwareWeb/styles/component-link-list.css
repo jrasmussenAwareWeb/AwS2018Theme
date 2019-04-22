@@ -159,10 +159,18 @@
   text-transform: uppercase;
   padding: 15px;
   display: inline-block;
+  font-family: "Raleway", sans-serif;
+  color: #cc0000;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 18px;
+  display: inline-block;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
   border-radius: 0;
-  color: #cc0000;
+  border-width: 2px;
+  border-radius: 0;
 }
 
 .link-list .btn.btn-lg {
@@ -171,20 +179,75 @@
 }
 
 .link-list .btn-default {
+  font-family: "Raleway", sans-serif;
+  color: #cc0000;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 18px;
+  display: inline-block;
   background-color: #FFFFFF;
   border: solid 2px #cc0000;
+  border-radius: 0;
+  -webkit-transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+  transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
+  border-width: 2px;
+}
+
+.link-list .btn-default:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f061";
+  vertical-align: 0;
+  font-size: .875em;
+  margin-top: 4px;
+  margin-left: -16px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: transform ease-out 250ms, opacity ease-out 250ms;
+  -webkit-transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms;
+  transition: transform ease-out 250ms, opacity ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+.link-list .btn-default:hover, .link-list .btn-default:active, .link-list .btn-default:focus {
   color: #cc0000;
+  background-color: inherit;
+  border-color: #FFFFFF;
+  box-shadow: inset 0 80px 0 #FFFFFF;
+}
+
+.link-list .btn-default:hover:after, .link-list .btn-default:focus:after {
+  margin-left: -5px;
+  -ms-transform: translate(15px, 0);
+  -webkit-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: 1;
 }
 
 .link-list .btn-default:hover, .link-list .btn-default:focus {
-  color: #FFFFFF;
-  background-color: #cc0000;
+  padding-right: 20px;
 }
 
 .link-list .btn-inverse {
-  background-color: #700000;
-  border-color: #700000;
-  color: #ff0000;
+  font-family: "Raleway", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 18px;
+  display: inline-block;
+  background-color: #cc0000;
+  border: solid 2px #cc0000;
+  border-radius: 0;
   -webkit-transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
   transition: box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms;
 }
@@ -214,10 +277,10 @@
 }
 
 .link-list .btn-inverse:hover, .link-list .btn-inverse:active, .link-list .btn-inverse:focus {
-  color: #ffffff;
+  color: #cc0000;
   background-color: inherit;
-  border-color: #cc0000;
-  box-shadow: inset 0 80px 0 #cc0000;
+  border-color: #FFFFFF;
+  box-shadow: inset 0 80px 0 #FFFFFF;
 }
 
 .link-list .btn-inverse:hover:after, .link-list .btn-inverse:focus:after {

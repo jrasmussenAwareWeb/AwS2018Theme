@@ -23,7 +23,7 @@ input[type="submit"], input[type="reset"], input[type="button"], button {
     &:hover {
         color: $text-white;
         background-color: $bg-red;
-        padding: 15px;
+        padding: inherit;
     }
     &:after{
         content: none;

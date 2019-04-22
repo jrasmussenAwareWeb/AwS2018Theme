@@ -70,10 +70,9 @@
     text-transform:uppercase;
     padding: 15px;
     display: inline-block;
-    background-color: $bg-white;
-    border: solid 2px $text-red;
+    @include button($text-red, $bg-white, $text-red);
+    border-width: 2px;
     border-radius: 0;
-    color:$text-red;
     &.btn-lg {
         font-size: $font-medium;
         padding: 15px 18px;
@@ -81,20 +80,17 @@
 }
 
 .btn-default {
-    background-color: $bg-white;
-    border: solid 2px $text-red;
-    color: $text-red;
+    @include button($text-red, $bg-white, $text-red);
+    @include btn-fill($text-red, $text-white);
+    border-width: 2px;
     &:hover, &:focus {
-        color: $text-white;
-        background-color: $bg-red;
+        padding-right: 20px;
     }
 }
 
 .btn-inverse {
-    background-color:#700000;
-    border-color: #700000;
-    color: #ff0000;
-    @include btn-fill(#ffffff, #cc0000);
+    @include button($text-white, $text-red, $text-red);
+    @include btn-fill($text-red, $text-white);
     &:hover, &:active, &:focus {
         padding-right: 20px;
     }
