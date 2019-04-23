@@ -247,6 +247,7 @@ $break-phone: 380px;
 }
 @mixin btn-fill($color, $bg) {
     @include transition(box-shadow ease-out 350ms, padding ease-out 250ms, color ease-out 250ms);
+    //color:$color;
 	&:after{
         @include fa-icon();
         content: fa-content($fa-var-arrow-right);

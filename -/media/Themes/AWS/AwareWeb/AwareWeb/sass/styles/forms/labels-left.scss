@@ -93,16 +93,17 @@
 
             //we only need this until we get the one button out of main
             .btn-inverse {
-                background-color: #700000;
+                background-color: #700000 !important;
                 border:0;
                 box-shadow:none;
-                color: #ff0000;
+                color: #ff0000 !important;
                 margin-top: 0;
                 float:right;
                 padding:15px;
-                @include btn-fill(#ffffff, #cc0000);
+                //@include btn-fill(#ffffff, #cc0000);
                 &:hover, &:active, &:focus {
                     padding-right: 20px;
+                    color:$text-white !important;
                 }
             }
         }

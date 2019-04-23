@@ -89,7 +89,8 @@
 }
 
 .btn-inverse {
-    @include button($text-white, $text-red, $text-red);
+    //@include button($text-white, $text-red, $text-red);
+    @include button($text-red, $text-red, $text-red);
     @include btn-fill($text-red, $text-white);
     &:hover, &:active, &:focus {
         padding-right: 20px;
