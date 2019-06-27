@@ -10,8 +10,9 @@
     position: relative;
     @include border-radius(50%);
     z-index: 1;
-    display:table;
-    vertical-align: middle;
+    //display:table;
+    display: block;
+    //vertical-align: middle;
 
         /*.fa, .fal { 
             vertical-align: middle;
@@ -21,15 +22,19 @@
             color: #fff;
             text-align: center;
             @include border-radius(50%);
-            display: table-row;
+            //display: table-row;
+            display: block;
+            padding: 10px;
             text-decoration:none;
             span {
-                display:table-cell;
+                display:block;
             }
             img {
-                float: left;
+                //float: left;
                 width: 100%;
+                max-width: 100%;
                 height: auto;
+                display: block;
             }
         }
     }
@@ -47,6 +52,10 @@
             height: 120px;
             font-size: 80px;
             margin: -60px auto 15px;
+            a {
+                line-height: 70px;
+                padding: 20px;
+            }
         }
     }
 }

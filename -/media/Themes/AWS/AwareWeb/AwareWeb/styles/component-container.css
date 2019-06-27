@@ -195,6 +195,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .platform-content .title-underline h4:after a {
+    text-decoration: none;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -612,6 +615,7 @@
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
+  background: -webkit-gradient(linear, left top, right bottom, from(#cc0000), to(#840000));
   background: -webkit-linear-gradient(top left, #cc0000, #840000);
   background: linear-gradient(to bottom right, #cc0000, #840000);
   /* Standard syntax */
@@ -659,6 +663,7 @@
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
+  background: -webkit-gradient(linear, left top, right bottom, from(#067385), to(#0e142a));
   background: -webkit-linear-gradient(top left, #067385, #0e142a);
   background: linear-gradient(to bottom right, #067385, #0e142a);
   /* Standard syntax */
@@ -692,6 +697,7 @@
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
+  background: -webkit-gradient(linear, left top, right bottom, from(#067385), to(#0e142a));
   background: -webkit-linear-gradient(top left, #067385, #0e142a);
   background: linear-gradient(to bottom right, #067385, #0e142a);
   /* Standard syntax */
@@ -765,6 +771,7 @@
   left: 0;
   /*background-image: linear-gradient(rgba(0,60,96,0.7),rgba(0,60,96,0.7));
     /*opacity: .6; */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
