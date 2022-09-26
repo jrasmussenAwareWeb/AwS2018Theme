@@ -32,7 +32,7 @@
         "gulp-filter": "^5.0.0",
         "gulp-sass-bulk-import": "^1.0.1",
         "gulp-upload": "^0.0.3",
-        "urllib": "^2.22.0",
+        "urllib": "^2.38.1",
         "formstream": "^1.1.0",
         "form-data": "^2.1.4",
         "request": "^2.81.0",
